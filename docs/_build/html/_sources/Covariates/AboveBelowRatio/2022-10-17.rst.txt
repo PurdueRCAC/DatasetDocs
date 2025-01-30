@@ -28,13 +28,28 @@ Tips:
 -------------------------------------------------------------
 
 **Environment Variables**
-+------------------------------+------------+
-| Variable Name                | Value      |
-+==============================+============+
-| AboveBelowRatio_HOME         | modroot    |
-+------------------------------+------------+
-| RCAC_AboveBelowRatio_ROOT    | modroot    |
-+------------------------------+------------+
-| RCAC_AboveBelowRatio_VERSION | 2022-10-17 |
-+------------------------------+------------+
+
+.. list-table::
+
+   :header-rows: 1
+
+   :widths: 25 75
+
+
+
+   * - **Variable Name**
+
+     - **Value**
+
+   * - ``AboveBelowRatio_HOME``
+
+     - ``modroot``
+
+   * - ``RCAC_AboveBelowRatio_ROOT``
+
+     - ``modroot``
+
+   * - ``RCAC_AboveBelowRatio_VERSION``
+
+     - ``2022-10-17``
 

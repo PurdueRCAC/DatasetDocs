@@ -28,13 +28,28 @@ Tips:
 -------------------------------------------------------------
 
 **Environment Variables**
-+-------------------------------+------------+
-| Variable Name                 | Value      |
-+===============================+============+
-| ForestManagement_HOME         | modroot    |
-+-------------------------------+------------+
-| RCAC_ForestManagement_ROOT    | modroot    |
-+-------------------------------+------------+
-| RCAC_ForestManagement_VERSION | 2021-02-15 |
-+-------------------------------+------------+
+
+.. list-table::
+
+   :header-rows: 1
+
+   :widths: 25 75
+
+
+
+   * - **Variable Name**
+
+     - **Value**
+
+   * - ``ForestManagement_HOME``
+
+     - ``modroot``
+
+   * - ``RCAC_ForestManagement_ROOT``
+
+     - ``modroot``
+
+   * - ``RCAC_ForestManagement_VERSION``
+
+     - ``2021-02-15``
 

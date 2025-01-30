@@ -36,127 +36,256 @@ Tips:
 -------------------------------------------------------------
 
 **Environment Variables**
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| Variable Name                                           | Value                                                           |
-+=========================================================+=================================================================+
-| EME_EM_EARTH_V1                                         | modroot.."/EM_Earth_v1"                                         |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY                    | modroot.."/EM_Earth_v1/deterministic_hourly"                    |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP               | modroot.."/EM_Earth_v1/deterministic_hourly/prcp"               |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_AFRICA        | modroot.."/EM_Earth_v1/deterministic_hourly/prcp/Africa"        |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_ASIA          | modroot.."/EM_Earth_v1/deterministic_hourly/prcp/Asia"          |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_EUROPE        | modroot.."/EM_Earth_v1/deterministic_hourly/prcp/Europe"        |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_NORTHAMERICA  | modroot.."/EM_Earth_v1/deterministic_hourly/prcp/NorthAmerica"  |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_OCEANIA       | modroot.."/EM_Earth_v1/deterministic_hourly/prcp/Oceania"       |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_SOUTHAMERICA  | modroot.."/EM_Earth_v1/deterministic_hourly/prcp/SouthAmerica"  |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW               | modroot.."/EM_Earth_v1/deterministic_hourly/tdew"               |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW_AFRICA        | modroot.."/EM_Earth_v1/deterministic_hourly/tdew/Africa"        |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW_ASIA          | modroot.."/EM_Earth_v1/deterministic_hourly/tdew/Asia"          |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW_EUROPE        | modroot.."/EM_Earth_v1/deterministic_hourly/tdew/Europe"        |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW_NORTHAMERICA  | modroot.."/EM_Earth_v1/deterministic_hourly/tdew/NorthAmerica"  |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW_OCEANIA       | modroot.."/EM_Earth_v1/deterministic_hourly/tdew/Oceania"       |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW_SOUTHAMERICA  | modroot.."/EM_Earth_v1/deterministic_hourly/tdew/SouthAmerica"  |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN              | modroot.."/EM_Earth_v1/deterministic_hourly/tmean"              |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN_AFRICA       | modroot.."/EM_Earth_v1/deterministic_hourly/tmean/Africa"       |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN_ASIA         | modroot.."/EM_Earth_v1/deterministic_hourly/tmean/Asia"         |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN_EUROPE       | modroot.."/EM_Earth_v1/deterministic_hourly/tmean/Europe"       |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN_NORTHAMERICA | modroot.."/EM_Earth_v1/deterministic_hourly/tmean/NorthAmerica" |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN_OCEANIA      | modroot.."/EM_Earth_v1/deterministic_hourly/tmean/Oceania"      |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN_SOUTHAMERICA | modroot.."/EM_Earth_v1/deterministic_hourly/tmean/SouthAmerica" |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_DETERMINISTIC_RAW_DAILY                 | modroot.."/EM_Earth_v1/deterministic_raw_daily"                 |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_DETERMINISTIC_RAW_DAILY_PRCP            | modroot.."/EM_Earth_v1/deterministic_raw_daily/prcp"            |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_DETERMINISTIC_RAW_DAILY_TDEW            | modroot.."/EM_Earth_v1/deterministic_raw_daily/tdew"            |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_DETERMINISTIC_RAW_DAILY_TMEAN           | modroot.."/EM_Earth_v1/deterministic_raw_daily/tmean"           |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_DETERMINISTIC_RAW_DAILY_TRANGE          | modroot.."/EM_Earth_v1/deterministic_raw_daily/trange"          |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY                     | modroot.."/EM_Earth_v1/probabilistic_daily"                     |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP                | modroot.."/EM_Earth_v1/probabilistic_daily/prcp"                |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP_AFRICA         | modroot.."/EM_Earth_v1/probabilistic_daily/prcp/Africa"         |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP_ASIA           | modroot.."/EM_Earth_v1/probabilistic_daily/prcp/Asia"           |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP_EUROPE         | modroot.."/EM_Earth_v1/probabilistic_daily/prcp/Europe"         |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP_NORTHAMERICA   | modroot.."/EM_Earth_v1/probabilistic_daily/prcp/NorthAmerica"   |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP_OCEANIA        | modroot.."/EM_Earth_v1/probabilistic_daily/prcp/Oceania"        |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP_SOUTHAMERICA   | modroot.."/EM_Earth_v1/probabilistic_daily/prcp/SouthAmerica"   |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW                | modroot.."/EM_Earth_v1/probabilistic_daily/tdew"                |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW_AFRICA         | modroot.."/EM_Earth_v1/probabilistic_daily/tdew/Africa"         |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW_ASIA           | modroot.."/EM_Earth_v1/probabilistic_daily/tdew/Asia"           |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW_EUROPE         | modroot.."/EM_Earth_v1/probabilistic_daily/tdew/Europe"         |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW_NORTHAMERICA   | modroot.."/EM_Earth_v1/probabilistic_daily/tdew/NorthAmerica"   |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW_OCEANIA        | modroot.."/EM_Earth_v1/probabilistic_daily/tdew/Oceania"        |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW_SOUTHAMERICA   | modroot.."/EM_Earth_v1/probabilistic_daily/tdew/SouthAmerica"   |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN               | modroot.."/EM_Earth_v1/probabilistic_daily/tmean"               |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN_AFRICA        | modroot.."/EM_Earth_v1/probabilistic_daily/tmean/Africa"        |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN_ASIA          | modroot.."/EM_Earth_v1/probabilistic_daily/tmean/Asia"          |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN_EUROPE        | modroot.."/EM_Earth_v1/probabilistic_daily/tmean/Europe"        |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN_NORTHAMERICA  | modroot.."/EM_Earth_v1/probabilistic_daily/tmean/NorthAmerica"  |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN_OCEANIA       | modroot.."/EM_Earth_v1/probabilistic_daily/tmean/Oceania"       |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN_SOUTHAMERICA  | modroot.."/EM_Earth_v1/probabilistic_daily/tmean/SouthAmerica"  |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE              | modroot.."/EM_Earth_v1/probabilistic_daily/trange"              |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE_AFRICA       | modroot.."/EM_Earth_v1/probabilistic_daily/trange/Africa"       |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE_ASIA         | modroot.."/EM_Earth_v1/probabilistic_daily/trange/Asia"         |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE_EUROPE       | modroot.."/EM_Earth_v1/probabilistic_daily/trange/Europe"       |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE_NORTHAMERICA | modroot.."/EM_Earth_v1/probabilistic_daily/trange/NorthAmerica" |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE_OCEANIA      | modroot.."/EM_Earth_v1/probabilistic_daily/trange/Oceania"      |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE_SOUTHAMERICA | modroot.."/EM_Earth_v1/probabilistic_daily/trange/SouthAmerica" |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| EME_HOME                                                | modroot                                                         |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| RCAC_EME_ROOT                                           | modroot                                                         |
-+---------------------------------------------------------+-----------------------------------------------------------------+
-| RCAC_EME_VERSION                                        | 2021-04-01                                                      |
-+---------------------------------------------------------+-----------------------------------------------------------------+
+
+.. list-table::
+
+   :header-rows: 1
+
+   :widths: 25 75
+
+
+
+   * - **Variable Name**
+
+     - **Value**
+
+   * - ``EME_EM_EARTH_V1``
+
+     - ``modroot.."/EM_Earth_v1"``
+
+   * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY``
+
+     - ``modroot.."/EM_Earth_v1/deterministic_hourly"``
+
+   * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP``
+
+     - ``modroot.."/EM_Earth_v1/deterministic_hourly/prcp"``
+
+   * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_AFRICA``
+
+     - ``modroot.."/EM_Earth_v1/deterministic_hourly/prcp/Africa"``
+
+   * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_ASIA``
+
+     - ``modroot.."/EM_Earth_v1/deterministic_hourly/prcp/Asia"``
+
+   * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_EUROPE``
+
+     - ``modroot.."/EM_Earth_v1/deterministic_hourly/prcp/Europe"``
+
+   * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_NORTHAMERICA``
+
+     - ``modroot.."/EM_Earth_v1/deterministic_hourly/prcp/NorthAmerica"``
+
+   * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_OCEANIA``
+
+     - ``modroot.."/EM_Earth_v1/deterministic_hourly/prcp/Oceania"``
+
+   * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_SOUTHAMERICA``
+
+     - ``modroot.."/EM_Earth_v1/deterministic_hourly/prcp/SouthAmerica"``
+
+   * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW``
+
+     - ``modroot.."/EM_Earth_v1/deterministic_hourly/tdew"``
+
+   * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW_AFRICA``
+
+     - ``modroot.."/EM_Earth_v1/deterministic_hourly/tdew/Africa"``
+
+   * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW_ASIA``
+
+     - ``modroot.."/EM_Earth_v1/deterministic_hourly/tdew/Asia"``
+
+   * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW_EUROPE``
+
+     - ``modroot.."/EM_Earth_v1/deterministic_hourly/tdew/Europe"``
+
+   * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW_NORTHAMERICA``
+
+     - ``modroot.."/EM_Earth_v1/deterministic_hourly/tdew/NorthAmerica"``
+
+   * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW_OCEANIA``
+
+     - ``modroot.."/EM_Earth_v1/deterministic_hourly/tdew/Oceania"``
+
+   * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW_SOUTHAMERICA``
+
+     - ``modroot.."/EM_Earth_v1/deterministic_hourly/tdew/SouthAmerica"``
+
+   * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN``
+
+     - ``modroot.."/EM_Earth_v1/deterministic_hourly/tmean"``
+
+   * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN_AFRICA``
+
+     - ``modroot.."/EM_Earth_v1/deterministic_hourly/tmean/Africa"``
+
+   * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN_ASIA``
+
+     - ``modroot.."/EM_Earth_v1/deterministic_hourly/tmean/Asia"``
+
+   * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN_EUROPE``
+
+     - ``modroot.."/EM_Earth_v1/deterministic_hourly/tmean/Europe"``
+
+   * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN_NORTHAMERICA``
+
+     - ``modroot.."/EM_Earth_v1/deterministic_hourly/tmean/NorthAmerica"``
+
+   * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN_OCEANIA``
+
+     - ``modroot.."/EM_Earth_v1/deterministic_hourly/tmean/Oceania"``
+
+   * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN_SOUTHAMERICA``
+
+     - ``modroot.."/EM_Earth_v1/deterministic_hourly/tmean/SouthAmerica"``
+
+   * - ``EME_EM_EARTH_V1_DETERMINISTIC_RAW_DAILY``
+
+     - ``modroot.."/EM_Earth_v1/deterministic_raw_daily"``
+
+   * - ``EME_EM_EARTH_V1_DETERMINISTIC_RAW_DAILY_PRCP``
+
+     - ``modroot.."/EM_Earth_v1/deterministic_raw_daily/prcp"``
+
+   * - ``EME_EM_EARTH_V1_DETERMINISTIC_RAW_DAILY_TDEW``
+
+     - ``modroot.."/EM_Earth_v1/deterministic_raw_daily/tdew"``
+
+   * - ``EME_EM_EARTH_V1_DETERMINISTIC_RAW_DAILY_TMEAN``
+
+     - ``modroot.."/EM_Earth_v1/deterministic_raw_daily/tmean"``
+
+   * - ``EME_EM_EARTH_V1_DETERMINISTIC_RAW_DAILY_TRANGE``
+
+     - ``modroot.."/EM_Earth_v1/deterministic_raw_daily/trange"``
+
+   * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY``
+
+     - ``modroot.."/EM_Earth_v1/probabilistic_daily"``
+
+   * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP``
+
+     - ``modroot.."/EM_Earth_v1/probabilistic_daily/prcp"``
+
+   * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP_AFRICA``
+
+     - ``modroot.."/EM_Earth_v1/probabilistic_daily/prcp/Africa"``
+
+   * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP_ASIA``
+
+     - ``modroot.."/EM_Earth_v1/probabilistic_daily/prcp/Asia"``
+
+   * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP_EUROPE``
+
+     - ``modroot.."/EM_Earth_v1/probabilistic_daily/prcp/Europe"``
+
+   * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP_NORTHAMERICA``
+
+     - ``modroot.."/EM_Earth_v1/probabilistic_daily/prcp/NorthAmerica"``
+
+   * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP_OCEANIA``
+
+     - ``modroot.."/EM_Earth_v1/probabilistic_daily/prcp/Oceania"``
+
+   * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP_SOUTHAMERICA``
+
+     - ``modroot.."/EM_Earth_v1/probabilistic_daily/prcp/SouthAmerica"``
+
+   * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW``
+
+     - ``modroot.."/EM_Earth_v1/probabilistic_daily/tdew"``
+
+   * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW_AFRICA``
+
+     - ``modroot.."/EM_Earth_v1/probabilistic_daily/tdew/Africa"``
+
+   * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW_ASIA``
+
+     - ``modroot.."/EM_Earth_v1/probabilistic_daily/tdew/Asia"``
+
+   * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW_EUROPE``
+
+     - ``modroot.."/EM_Earth_v1/probabilistic_daily/tdew/Europe"``
+
+   * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW_NORTHAMERICA``
+
+     - ``modroot.."/EM_Earth_v1/probabilistic_daily/tdew/NorthAmerica"``
+
+   * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW_OCEANIA``
+
+     - ``modroot.."/EM_Earth_v1/probabilistic_daily/tdew/Oceania"``
+
+   * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW_SOUTHAMERICA``
+
+     - ``modroot.."/EM_Earth_v1/probabilistic_daily/tdew/SouthAmerica"``
+
+   * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN``
+
+     - ``modroot.."/EM_Earth_v1/probabilistic_daily/tmean"``
+
+   * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN_AFRICA``
+
+     - ``modroot.."/EM_Earth_v1/probabilistic_daily/tmean/Africa"``
+
+   * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN_ASIA``
+
+     - ``modroot.."/EM_Earth_v1/probabilistic_daily/tmean/Asia"``
+
+   * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN_EUROPE``
+
+     - ``modroot.."/EM_Earth_v1/probabilistic_daily/tmean/Europe"``
+
+   * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN_NORTHAMERICA``
+
+     - ``modroot.."/EM_Earth_v1/probabilistic_daily/tmean/NorthAmerica"``
+
+   * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN_OCEANIA``
+
+     - ``modroot.."/EM_Earth_v1/probabilistic_daily/tmean/Oceania"``
+
+   * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN_SOUTHAMERICA``
+
+     - ``modroot.."/EM_Earth_v1/probabilistic_daily/tmean/SouthAmerica"``
+
+   * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE``
+
+     - ``modroot.."/EM_Earth_v1/probabilistic_daily/trange"``
+
+   * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE_AFRICA``
+
+     - ``modroot.."/EM_Earth_v1/probabilistic_daily/trange/Africa"``
+
+   * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE_ASIA``
+
+     - ``modroot.."/EM_Earth_v1/probabilistic_daily/trange/Asia"``
+
+   * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE_EUROPE``
+
+     - ``modroot.."/EM_Earth_v1/probabilistic_daily/trange/Europe"``
+
+   * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE_NORTHAMERICA``
+
+     - ``modroot.."/EM_Earth_v1/probabilistic_daily/trange/NorthAmerica"``
+
+   * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE_OCEANIA``
+
+     - ``modroot.."/EM_Earth_v1/probabilistic_daily/trange/Oceania"``
+
+   * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE_SOUTHAMERICA``
+
+     - ``modroot.."/EM_Earth_v1/probabilistic_daily/trange/SouthAmerica"``
+
+   * - ``EME_HOME``
+
+     - ``modroot``
+
+   * - ``RCAC_EME_ROOT``
+
+     - ``modroot``
+
+   * - ``RCAC_EME_VERSION``
+
+     - ``2021-04-01``
 

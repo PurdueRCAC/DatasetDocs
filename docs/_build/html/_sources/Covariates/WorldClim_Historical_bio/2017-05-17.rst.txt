@@ -28,13 +28,28 @@ Tips:
 -------------------------------------------------------------
 
 **Environment Variables**
-+---------------------------------------+------------+
-| Variable Name                         | Value      |
-+=======================================+============+
-| WorldClim_Historical_bio_HOME         | modroot    |
-+---------------------------------------+------------+
-| RCAC_WorldClim_Historical_bio_ROOT    | modroot    |
-+---------------------------------------+------------+
-| RCAC_WorldClim_Historical_bio_VERSION | 2017-05-17 |
-+---------------------------------------+------------+
+
+.. list-table::
+
+   :header-rows: 1
+
+   :widths: 25 75
+
+
+
+   * - **Variable Name**
+
+     - **Value**
+
+   * - ``WorldClim_Historical_bio_HOME``
+
+     - ``modroot``
+
+   * - ``RCAC_WorldClim_Historical_bio_ROOT``
+
+     - ``modroot``
+
+   * - ``RCAC_WorldClim_Historical_bio_VERSION``
+
+     - ``2017-05-17``
 

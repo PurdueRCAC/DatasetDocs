@@ -38,25 +38,52 @@ Tips:
 -------------------------------------------------------------
 
 **Environment Variables**
-+--------------------------+-----------------+
-| Variable Name            | Value           |
-+==========================+=================+
-| MERIT_HYDRO_DIR          | modroot.."/dir" |
-+--------------------------+-----------------+
-| MERIT_HYDRO_ELV          | modroot.."/elv" |
-+--------------------------+-----------------+
-| MERIT_HYDRO_HND          | modroot.."/hnd" |
-+--------------------------+-----------------+
-| MERIT_HYDRO_UPA          | modroot.."/upa" |
-+--------------------------+-----------------+
-| MERIT_HYDRO_UPG          | modroot.."/upg" |
-+--------------------------+-----------------+
-| MERIT_HYDRO_WTH          | modroot.."/wth" |
-+--------------------------+-----------------+
-| MERIT_HYDRO_HOME         | modroot         |
-+--------------------------+-----------------+
-| RCAC_MERIT_HYDRO_ROOT    | modroot         |
-+--------------------------+-----------------+
-| RCAC_MERIT_HYDRO_VERSION | 2019-05-28      |
-+--------------------------+-----------------+
+
+.. list-table::
+
+   :header-rows: 1
+
+   :widths: 25 75
+
+
+
+   * - **Variable Name**
+
+     - **Value**
+
+   * - ``MERIT_HYDRO_DIR``
+
+     - ``modroot.."/dir"``
+
+   * - ``MERIT_HYDRO_ELV``
+
+     - ``modroot.."/elv"``
+
+   * - ``MERIT_HYDRO_HND``
+
+     - ``modroot.."/hnd"``
+
+   * - ``MERIT_HYDRO_UPA``
+
+     - ``modroot.."/upa"``
+
+   * - ``MERIT_HYDRO_UPG``
+
+     - ``modroot.."/upg"``
+
+   * - ``MERIT_HYDRO_WTH``
+
+     - ``modroot.."/wth"``
+
+   * - ``MERIT_HYDRO_HOME``
+
+     - ``modroot``
+
+   * - ``RCAC_MERIT_HYDRO_ROOT``
+
+     - ``modroot``
+
+   * - ``RCAC_MERIT_HYDRO_VERSION``
+
+     - ``2019-05-28``
 

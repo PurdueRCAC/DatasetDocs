@@ -7,31 +7,64 @@ Category: **igenomes**
 
 
 **Environment Variables**
-+---------------------+-------------------------------------------------+
-| Variable Name       | Value                                           |
-+=====================+=================================================+
-| GRCh38_fasta        | modroot.."/Sequence/WholeGenomeFasta/genome.fa" |
-+---------------------+-------------------------------------------------+
-| GRCh38_bwa          | modroot.."/Sequence/BWAIndex/version0.6.0/"     |
-+---------------------+-------------------------------------------------+
-| GRCh38_bowtie2      | modroot.."/Sequence/Bowtie2Index/"              |
-+---------------------+-------------------------------------------------+
-| GRCh38_star         | modroot.."/Sequence/STARIndex/"                 |
-+---------------------+-------------------------------------------------+
-| GRCh38_bismark      | modroot.."/Sequence/BismarkIndex/"              |
-+---------------------+-------------------------------------------------+
-| GRCh38_gtf          | modroot.."/Annotation/Genes/genes.gtf"          |
-+---------------------+-------------------------------------------------+
-| GRCh38_bed12        | modroot.."/Annotation/Genes/genes.bed"          |
-+---------------------+-------------------------------------------------+
-| GRCh38_mito_name    | chrM                                            |
-+---------------------+-------------------------------------------------+
-| GRCh38_macs_gsize   | 2.7e9                                           |
-+---------------------+-------------------------------------------------+
-| GRCh38_HOME         | modroot                                         |
-+---------------------+-------------------------------------------------+
-| RCAC_GRCh38_ROOT    | modroot                                         |
-+---------------------+-------------------------------------------------+
-| RCAC_GRCh38_VERSION | 2023-04-26                                      |
-+---------------------+-------------------------------------------------+
+
+.. list-table::
+
+   :header-rows: 1
+
+   :widths: 25 75
+
+
+
+   * - **Variable Name**
+
+     - **Value**
+
+   * - ``GRCh38_fasta``
+
+     - ``modroot.."/Sequence/WholeGenomeFasta/genome.fa"``
+
+   * - ``GRCh38_bwa``
+
+     - ``modroot.."/Sequence/BWAIndex/version0.6.0/"``
+
+   * - ``GRCh38_bowtie2``
+
+     - ``modroot.."/Sequence/Bowtie2Index/"``
+
+   * - ``GRCh38_star``
+
+     - ``modroot.."/Sequence/STARIndex/"``
+
+   * - ``GRCh38_bismark``
+
+     - ``modroot.."/Sequence/BismarkIndex/"``
+
+   * - ``GRCh38_gtf``
+
+     - ``modroot.."/Annotation/Genes/genes.gtf"``
+
+   * - ``GRCh38_bed12``
+
+     - ``modroot.."/Annotation/Genes/genes.bed"``
+
+   * - ``GRCh38_mito_name``
+
+     - ``chrM``
+
+   * - ``GRCh38_macs_gsize``
+
+     - ``2.7e9``
+
+   * - ``GRCh38_HOME``
+
+     - ``modroot``
+
+   * - ``RCAC_GRCh38_ROOT``
+
+     - ``modroot``
+
+   * - ``RCAC_GRCh38_VERSION``
+
+     - ``2023-04-26``
 

@@ -33,23 +33,48 @@ Tips:
 -------------------------------------------------------------
 
 **Environment Variables**
-+---------------------------------------+------------------------------------+
-| Variable Name                         | Value                              |
-+=======================================+====================================+
-| Soil_WISE30sec_DATA                   | modroot.."/Data"                   |
-+---------------------------------------+------------------------------------+
-| Soil_WISE30sec_GISFILES               | modroot.."/GISfiles"               |
-+---------------------------------------+------------------------------------+
-| Soil_WISE30sec_GISFILES_INFO          | modroot.."/GISfiles/info"          |
-+---------------------------------------+------------------------------------+
-| Soil_WISE30sec_GISFILES_WISE30SEC_FIN | modroot.."/GISfiles/wise30sec_fin" |
-+---------------------------------------+------------------------------------+
-| Soil_WISE30sec_INTERCHANGEABLE_FORMAT | modroot.."/Interchangeable_format" |
-+---------------------------------------+------------------------------------+
-| Soil_WISE30sec_HOME                   | modroot                            |
-+---------------------------------------+------------------------------------+
-| RCAC_Soil_WISE30sec_ROOT              | modroot                            |
-+---------------------------------------+------------------------------------+
-| RCAC_Soil_WISE30sec_VERSION           | 2021-01-01                         |
-+---------------------------------------+------------------------------------+
+
+.. list-table::
+
+   :header-rows: 1
+
+   :widths: 25 75
+
+
+
+   * - **Variable Name**
+
+     - **Value**
+
+   * - ``Soil_WISE30sec_DATA``
+
+     - ``modroot.."/Data"``
+
+   * - ``Soil_WISE30sec_GISFILES``
+
+     - ``modroot.."/GISfiles"``
+
+   * - ``Soil_WISE30sec_GISFILES_INFO``
+
+     - ``modroot.."/GISfiles/info"``
+
+   * - ``Soil_WISE30sec_GISFILES_WISE30SEC_FIN``
+
+     - ``modroot.."/GISfiles/wise30sec_fin"``
+
+   * - ``Soil_WISE30sec_INTERCHANGEABLE_FORMAT``
+
+     - ``modroot.."/Interchangeable_format"``
+
+   * - ``Soil_WISE30sec_HOME``
+
+     - ``modroot``
+
+   * - ``RCAC_Soil_WISE30sec_ROOT``
+
+     - ``modroot``
+
+   * - ``RCAC_Soil_WISE30sec_VERSION``
+
+     - ``2021-01-01``
 

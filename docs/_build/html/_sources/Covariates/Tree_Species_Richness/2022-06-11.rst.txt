@@ -28,13 +28,28 @@ Tips:
 -------------------------------------------------------------
 
 **Environment Variables**
-+------------------------------------+------------+
-| Variable Name                      | Value      |
-+====================================+============+
-| Tree_Species_Richness_HOME         | modroot    |
-+------------------------------------+------------+
-| RCAC_Tree_Species_Richness_ROOT    | modroot    |
-+------------------------------------+------------+
-| RCAC_Tree_Species_Richness_VERSION | 2022-06-11 |
-+------------------------------------+------------+
+
+.. list-table::
+
+   :header-rows: 1
+
+   :widths: 25 75
+
+
+
+   * - **Variable Name**
+
+     - **Value**
+
+   * - ``Tree_Species_Richness_HOME``
+
+     - ``modroot``
+
+   * - ``RCAC_Tree_Species_Richness_ROOT``
+
+     - ``modroot``
+
+   * - ``RCAC_Tree_Species_Richness_VERSION``
+
+     - ``2022-06-11``
 

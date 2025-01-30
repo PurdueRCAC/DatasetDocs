@@ -28,13 +28,28 @@ Tips:
 -------------------------------------------------------------
 
 **Environment Variables**
-+-------------------------+------------+
-| Variable Name           | Value      |
-+=========================+============+
-| PBCOR_V1.0_HOME         | modroot    |
-+-------------------------+------------+
-| RCAC_PBCOR_V1.0_ROOT    | modroot    |
-+-------------------------+------------+
-| RCAC_PBCOR_V1.0_VERSION | 2020-01-01 |
-+-------------------------+------------+
+
+.. list-table::
+
+   :header-rows: 1
+
+   :widths: 25 75
+
+
+
+   * - **Variable Name**
+
+     - **Value**
+
+   * - ``PBCOR_V1.0_HOME``
+
+     - ``modroot``
+
+   * - ``RCAC_PBCOR_V1.0_ROOT``
+
+     - ``modroot``
+
+   * - ``RCAC_PBCOR_V1.0_VERSION``
+
+     - ``2020-01-01``
 

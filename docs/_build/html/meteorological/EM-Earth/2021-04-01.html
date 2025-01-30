@@ -14,8 +14,8 @@
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="EMDNA Datasets" href="../EMDNA/index.html" />
-    <link rel="prev" title="EM-Earth Datasets" href="index.html" />
+    <link rel="next" title="Dataset: EMDNA (2021-07-13)" href="../EMDNA/2021-07-13.html" />
+    <link rel="prev" title="Dataset: ECCC_RDRSv2.1 (2021-09-07)" href="../ECCC_RDRSv2.1/2021-09-07.html" />
    
   <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
   
@@ -64,130 +64,7 @@ $EME_VERSION                                              Version: 2021-04-01</p
 - To see all environment variables related to EME, you can load the module then use: env | grep EME
 - To unload the module and remove the environment settings: module unload EME
 ————————————————————-</p>
-<p><strong>Environment Variables</strong>
-+———————————————————+—————————————————————–+
-| Variable Name                                           | Value                                                           |
-+=========================================================+=================================================================+
-| EME_EM_EARTH_V1                                         | modroot..”/EM_Earth_v1”                                         |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY                    | modroot..”/EM_Earth_v1/deterministic_hourly”                    |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP               | modroot..”/EM_Earth_v1/deterministic_hourly/prcp”               |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_AFRICA        | modroot..”/EM_Earth_v1/deterministic_hourly/prcp/Africa”        |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_ASIA          | modroot..”/EM_Earth_v1/deterministic_hourly/prcp/Asia”          |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_EUROPE        | modroot..”/EM_Earth_v1/deterministic_hourly/prcp/Europe”        |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_NORTHAMERICA  | modroot..”/EM_Earth_v1/deterministic_hourly/prcp/NorthAmerica”  |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_OCEANIA       | modroot..”/EM_Earth_v1/deterministic_hourly/prcp/Oceania”       |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_SOUTHAMERICA  | modroot..”/EM_Earth_v1/deterministic_hourly/prcp/SouthAmerica”  |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW               | modroot..”/EM_Earth_v1/deterministic_hourly/tdew”               |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW_AFRICA        | modroot..”/EM_Earth_v1/deterministic_hourly/tdew/Africa”        |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW_ASIA          | modroot..”/EM_Earth_v1/deterministic_hourly/tdew/Asia”          |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW_EUROPE        | modroot..”/EM_Earth_v1/deterministic_hourly/tdew/Europe”        |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW_NORTHAMERICA  | modroot..”/EM_Earth_v1/deterministic_hourly/tdew/NorthAmerica”  |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW_OCEANIA       | modroot..”/EM_Earth_v1/deterministic_hourly/tdew/Oceania”       |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW_SOUTHAMERICA  | modroot..”/EM_Earth_v1/deterministic_hourly/tdew/SouthAmerica”  |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN              | modroot..”/EM_Earth_v1/deterministic_hourly/tmean”              |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN_AFRICA       | modroot..”/EM_Earth_v1/deterministic_hourly/tmean/Africa”       |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN_ASIA         | modroot..”/EM_Earth_v1/deterministic_hourly/tmean/Asia”         |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN_EUROPE       | modroot..”/EM_Earth_v1/deterministic_hourly/tmean/Europe”       |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN_NORTHAMERICA | modroot..”/EM_Earth_v1/deterministic_hourly/tmean/NorthAmerica” |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN_OCEANIA      | modroot..”/EM_Earth_v1/deterministic_hourly/tmean/Oceania”      |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN_SOUTHAMERICA | modroot..”/EM_Earth_v1/deterministic_hourly/tmean/SouthAmerica” |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_DETERMINISTIC_RAW_DAILY                 | modroot..”/EM_Earth_v1/deterministic_raw_daily”                 |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_DETERMINISTIC_RAW_DAILY_PRCP            | modroot..”/EM_Earth_v1/deterministic_raw_daily/prcp”            |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_DETERMINISTIC_RAW_DAILY_TDEW            | modroot..”/EM_Earth_v1/deterministic_raw_daily/tdew”            |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_DETERMINISTIC_RAW_DAILY_TMEAN           | modroot..”/EM_Earth_v1/deterministic_raw_daily/tmean”           |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_DETERMINISTIC_RAW_DAILY_TRANGE          | modroot..”/EM_Earth_v1/deterministic_raw_daily/trange”          |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY                     | modroot..”/EM_Earth_v1/probabilistic_daily”                     |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP                | modroot..”/EM_Earth_v1/probabilistic_daily/prcp”                |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP_AFRICA         | modroot..”/EM_Earth_v1/probabilistic_daily/prcp/Africa”         |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP_ASIA           | modroot..”/EM_Earth_v1/probabilistic_daily/prcp/Asia”           |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP_EUROPE         | modroot..”/EM_Earth_v1/probabilistic_daily/prcp/Europe”         |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP_NORTHAMERICA   | modroot..”/EM_Earth_v1/probabilistic_daily/prcp/NorthAmerica”   |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP_OCEANIA        | modroot..”/EM_Earth_v1/probabilistic_daily/prcp/Oceania”        |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP_SOUTHAMERICA   | modroot..”/EM_Earth_v1/probabilistic_daily/prcp/SouthAmerica”   |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW                | modroot..”/EM_Earth_v1/probabilistic_daily/tdew”                |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW_AFRICA         | modroot..”/EM_Earth_v1/probabilistic_daily/tdew/Africa”         |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW_ASIA           | modroot..”/EM_Earth_v1/probabilistic_daily/tdew/Asia”           |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW_EUROPE         | modroot..”/EM_Earth_v1/probabilistic_daily/tdew/Europe”         |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW_NORTHAMERICA   | modroot..”/EM_Earth_v1/probabilistic_daily/tdew/NorthAmerica”   |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW_OCEANIA        | modroot..”/EM_Earth_v1/probabilistic_daily/tdew/Oceania”        |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW_SOUTHAMERICA   | modroot..”/EM_Earth_v1/probabilistic_daily/tdew/SouthAmerica”   |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN               | modroot..”/EM_Earth_v1/probabilistic_daily/tmean”               |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN_AFRICA        | modroot..”/EM_Earth_v1/probabilistic_daily/tmean/Africa”        |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN_ASIA          | modroot..”/EM_Earth_v1/probabilistic_daily/tmean/Asia”          |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN_EUROPE        | modroot..”/EM_Earth_v1/probabilistic_daily/tmean/Europe”        |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN_NORTHAMERICA  | modroot..”/EM_Earth_v1/probabilistic_daily/tmean/NorthAmerica”  |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN_OCEANIA       | modroot..”/EM_Earth_v1/probabilistic_daily/tmean/Oceania”       |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN_SOUTHAMERICA  | modroot..”/EM_Earth_v1/probabilistic_daily/tmean/SouthAmerica”  |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE              | modroot..”/EM_Earth_v1/probabilistic_daily/trange”              |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE_AFRICA       | modroot..”/EM_Earth_v1/probabilistic_daily/trange/Africa”       |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE_ASIA         | modroot..”/EM_Earth_v1/probabilistic_daily/trange/Asia”         |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE_EUROPE       | modroot..”/EM_Earth_v1/probabilistic_daily/trange/Europe”       |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE_NORTHAMERICA | modroot..”/EM_Earth_v1/probabilistic_daily/trange/NorthAmerica” |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE_OCEANIA      | modroot..”/EM_Earth_v1/probabilistic_daily/trange/Oceania”      |
-+———————————————————+—————————————————————–+
-| EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE_SOUTHAMERICA | modroot..”/EM_Earth_v1/probabilistic_daily/trange/SouthAmerica” |
-+———————————————————+—————————————————————–+
-| EME_HOME                                                | modroot                                                         |
-+———————————————————+—————————————————————–+
-| RCAC_EME_ROOT                                           | modroot                                                         |
-+———————————————————+—————————————————————–+
-| RCAC_EME_VERSION                                        | 2021-04-01                                                      |
-+———————————————————+—————————————————————–+</p>
+<p><strong>Environment Variables</strong></p>
 </section>
 </section>
 
@@ -224,16 +101,16 @@ $EME_VERSION                                              Version: 2021-04-01</p
 <li class="toctree-l1"><a class="reference internal" href="../../hydrological/index.html">hydrological Datasets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../igenomes/index.html">igenomes Datasets</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">meteorological Datasets</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../ECCC_RDRSv2.1/index.html">ECCC_RDRSv2.1 Datasets</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="index.html">EM-Earth Datasets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../EMDNA/index.html">EMDNA Datasets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ERA5/index.html">ERA5 Datasets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ERA5_small/index.html">ERA5_small Datasets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../NASA_NEX-GDDP-CMIP6/index.html">NASA_NEX-GDDP-CMIP6 Datasets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ORNL_Daymet/index.html">ORNL_Daymet Datasets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Ouranos_ESPO-G6-R2/index.html">Ouranos_ESPO-G6-R2 Datasets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../SC-Earth/index.html">SC-Earth Datasets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../SCDNA/index.html">SCDNA Datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ECCC_RDRSv2.1/2021-09-07.html">Dataset: ECCC_RDRSv2.1 (2021-09-07)</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Dataset: EM-Earth (2021-04-01)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../EMDNA/2021-07-13.html">Dataset: EMDNA (2021-07-13)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ERA5/2018-06-14.html">Dataset: ERA5 (2018-06-14)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ERA5_small/2018-06-14.html">Dataset: ERA5_small (2018-06-14)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../NASA_NEX-GDDP-CMIP6/2022-02-22.html">Dataset: NASA_NEX-GDDP-CMIP6 (2022-02-22)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ORNL_Daymet/2022-11-01.html">Dataset: ORNL_Daymet (2022-11-01)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Ouranos_ESPO-G6-R2/2024-01-11.html">Dataset: Ouranos_ESPO-G6-R2 (2024-01-11)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../SC-Earth/2021-07-01.html">Dataset: SC-Earth (2021-07-01)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../SCDNA/2020-10-02.html">Dataset: SCDNA (2020-10-02)</a></li>
 </ul>
 </li>
 </ul>
@@ -243,10 +120,8 @@ $EME_VERSION                                              Version: 2021-04-01</p
 <ul>
   <li><a href="../../index.html">Documentation overview</a><ul>
   <li><a href="../index.html">meteorological Datasets</a><ul>
-  <li><a href="index.html">EM-Earth Datasets</a><ul>
-      <li>Previous: <a href="index.html" title="previous chapter">EM-Earth Datasets</a></li>
-      <li>Next: <a href="../EMDNA/index.html" title="next chapter">EMDNA Datasets</a></li>
-  </ul></li>
+      <li>Previous: <a href="../ECCC_RDRSv2.1/2021-09-07.html" title="previous chapter">Dataset: ECCC_RDRSv2.1 (2021-09-07)</a></li>
+      <li>Next: <a href="../EMDNA/2021-07-13.html" title="next chapter">Dataset: EMDNA (2021-07-13)</a></li>
   </ul></li>
   </ul></li>
 </ul>

@@ -28,13 +28,28 @@ Tips:
 -------------------------------------------------------------
 
 **Environment Variables**
-+---------------------+------------+
-| Variable Name       | Value      |
-+=====================+============+
-| Cattle_HOME         | modroot    |
-+---------------------+------------+
-| RCAC_Cattle_ROOT    | modroot    |
-+---------------------+------------+
-| RCAC_Cattle_VERSION | 2018-08-23 |
-+---------------------+------------+
+
+.. list-table::
+
+   :header-rows: 1
+
+   :widths: 25 75
+
+
+
+   * - **Variable Name**
+
+     - **Value**
+
+   * - ``Cattle_HOME``
+
+     - ``modroot``
+
+   * - ``RCAC_Cattle_ROOT``
+
+     - ``modroot``
+
+   * - ``RCAC_Cattle_VERSION``
+
+     - ``2018-08-23``
 

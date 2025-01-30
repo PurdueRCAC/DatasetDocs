@@ -38,43 +38,88 @@ Tips:
 -------------------------------------------------------------
 
 **Environment Variables**
-+-------------------------------+--------------------------------------+
-| Variable Name                 | Value                                |
-+===============================+======================================+
-| ERA5_ERA5GRIB                 | modroot.."/ERA5GRIB"                 |
-+-------------------------------+--------------------------------------+
-| ERA5_ERA5GRIB_HRES            | modroot.."/ERA5GRIB/HRES"            |
-+-------------------------------+--------------------------------------+
-| ERA5_ERA5GRIB_HRES_DAILY      | modroot.."/ERA5GRIB/HRES/Daily"      |
-+-------------------------------+--------------------------------------+
-| ERA5_ERA5GRIB_HRES_DAILY_1940 | modroot.."/ERA5GRIB/HRES/Daily/1940" |
-+-------------------------------+--------------------------------------+
-| ERA5_ERA5GRIB_HRES_DAILY_1941 | modroot.."/ERA5GRIB/HRES/Daily/1941" |
-+-------------------------------+--------------------------------------+
-| ERA5_ERA5GRIB_HRES_DAILY_1942 | modroot.."/ERA5GRIB/HRES/Daily/1942" |
-+-------------------------------+--------------------------------------+
-| ERA5_ERA5GRIB_HRES_DAILY_1943 | modroot.."/ERA5GRIB/HRES/Daily/1943" |
-+-------------------------------+--------------------------------------+
-| ERA5_ERA5GRIB_HRES_DAILY_1944 | modroot.."/ERA5GRIB/HRES/Daily/1944" |
-+-------------------------------+--------------------------------------+
-| ERA5_ERA5GRIB_HRES_DAILY_1945 | modroot.."/ERA5GRIB/HRES/Daily/1945" |
-+-------------------------------+--------------------------------------+
-| ERA5_ERA5GRIB_HRES_DAILY_1946 | modroot.."/ERA5GRIB/HRES/Daily/1946" |
-+-------------------------------+--------------------------------------+
-| ERA5_ERA5GRIB_HRES_DAILY_1947 | modroot.."/ERA5GRIB/HRES/Daily/1947" |
-+-------------------------------+--------------------------------------+
-| ERA5_ERA5GRIB_HRES_DAILY_1948 | modroot.."/ERA5GRIB/HRES/Daily/1948" |
-+-------------------------------+--------------------------------------+
-| ERA5_ERA5GRIB_HRES_DAILY_1949 | modroot.."/ERA5GRIB/HRES/Daily/1949" |
-+-------------------------------+--------------------------------------+
-| ERA5_ERA5GRIB_HRES_DAILY_1950 | modroot.."/ERA5GRIB/HRES/Daily/1950" |
-+-------------------------------+--------------------------------------+
-| ERA5_ERA5GRIB_HRES_DAILY_1951 | modroot.."/ERA5GRIB/HRES/Daily/1951" |
-+-------------------------------+--------------------------------------+
-| ERA5_HOME                     | modroot                              |
-+-------------------------------+--------------------------------------+
-| RCAC_ERA5_ROOT                | modroot                              |
-+-------------------------------+--------------------------------------+
-| RCAC_ERA5_VERSION             | 2018-06-14                           |
-+-------------------------------+--------------------------------------+
+
+.. list-table::
+
+   :header-rows: 1
+
+   :widths: 25 75
+
+
+
+   * - **Variable Name**
+
+     - **Value**
+
+   * - ``ERA5_ERA5GRIB``
+
+     - ``modroot.."/ERA5GRIB"``
+
+   * - ``ERA5_ERA5GRIB_HRES``
+
+     - ``modroot.."/ERA5GRIB/HRES"``
+
+   * - ``ERA5_ERA5GRIB_HRES_DAILY``
+
+     - ``modroot.."/ERA5GRIB/HRES/Daily"``
+
+   * - ``ERA5_ERA5GRIB_HRES_DAILY_1940``
+
+     - ``modroot.."/ERA5GRIB/HRES/Daily/1940"``
+
+   * - ``ERA5_ERA5GRIB_HRES_DAILY_1941``
+
+     - ``modroot.."/ERA5GRIB/HRES/Daily/1941"``
+
+   * - ``ERA5_ERA5GRIB_HRES_DAILY_1942``
+
+     - ``modroot.."/ERA5GRIB/HRES/Daily/1942"``
+
+   * - ``ERA5_ERA5GRIB_HRES_DAILY_1943``
+
+     - ``modroot.."/ERA5GRIB/HRES/Daily/1943"``
+
+   * - ``ERA5_ERA5GRIB_HRES_DAILY_1944``
+
+     - ``modroot.."/ERA5GRIB/HRES/Daily/1944"``
+
+   * - ``ERA5_ERA5GRIB_HRES_DAILY_1945``
+
+     - ``modroot.."/ERA5GRIB/HRES/Daily/1945"``
+
+   * - ``ERA5_ERA5GRIB_HRES_DAILY_1946``
+
+     - ``modroot.."/ERA5GRIB/HRES/Daily/1946"``
+
+   * - ``ERA5_ERA5GRIB_HRES_DAILY_1947``
+
+     - ``modroot.."/ERA5GRIB/HRES/Daily/1947"``
+
+   * - ``ERA5_ERA5GRIB_HRES_DAILY_1948``
+
+     - ``modroot.."/ERA5GRIB/HRES/Daily/1948"``
+
+   * - ``ERA5_ERA5GRIB_HRES_DAILY_1949``
+
+     - ``modroot.."/ERA5GRIB/HRES/Daily/1949"``
+
+   * - ``ERA5_ERA5GRIB_HRES_DAILY_1950``
+
+     - ``modroot.."/ERA5GRIB/HRES/Daily/1950"``
+
+   * - ``ERA5_ERA5GRIB_HRES_DAILY_1951``
+
+     - ``modroot.."/ERA5GRIB/HRES/Daily/1951"``
+
+   * - ``ERA5_HOME``
+
+     - ``modroot``
+
+   * - ``RCAC_ERA5_ROOT``
+
+     - ``modroot``
+
+   * - ``RCAC_ERA5_VERSION``
+
+     - ``2018-06-14``
 

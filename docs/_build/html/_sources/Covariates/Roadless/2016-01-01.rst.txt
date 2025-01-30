@@ -28,13 +28,28 @@ Tips:
 -------------------------------------------------------------
 
 **Environment Variables**
-+-----------------------+------------+
-| Variable Name         | Value      |
-+=======================+============+
-| Roadless_HOME         | modroot    |
-+-----------------------+------------+
-| RCAC_Roadless_ROOT    | modroot    |
-+-----------------------+------------+
-| RCAC_Roadless_VERSION | 2016-01-01 |
-+-----------------------+------------+
+
+.. list-table::
+
+   :header-rows: 1
+
+   :widths: 25 75
+
+
+
+   * - **Variable Name**
+
+     - **Value**
+
+   * - ``Roadless_HOME``
+
+     - ``modroot``
+
+   * - ``RCAC_Roadless_ROOT``
+
+     - ``modroot``
+
+   * - ``RCAC_Roadless_VERSION``
+
+     - ``2016-01-01``
 

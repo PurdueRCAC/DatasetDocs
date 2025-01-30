@@ -9,33 +9,68 @@ The contents of the annotation directories were downloaded from Ensembl on: July
 Annotation files in this directory and subdirectories were downloaded from EnsemblGenomes release 27. Ensembl now uses the name 'ASM294v2, May 2009' for this assembly.
 
 **Environment Variables**
-+------------------+-------------------------------------------------+
-| Variable Name    | Value                                           |
-+==================+=================================================+
-| EF2_fasta        | modroot.."/Sequence/WholeGenomeFasta/genome.fa" |
-+------------------+-------------------------------------------------+
-| EF2_bwa          | modroot.."/Sequence/BWAIndex/version0.6.0/"     |
-+------------------+-------------------------------------------------+
-| EF2_bowtie2      | modroot.."/Sequence/Bowtie2Index/"              |
-+------------------+-------------------------------------------------+
-| EF2_star         | modroot.."/Sequence/STARIndex/"                 |
-+------------------+-------------------------------------------------+
-| EF2_bismark      | modroot.."/Sequence/BismarkIndex/"              |
-+------------------+-------------------------------------------------+
-| EF2_gtf          | modroot.."/Annotation/Genes/genes.gtf"          |
-+------------------+-------------------------------------------------+
-| EF2_bed12        | modroot.."/Annotation/Genes/genes.bed"          |
-+------------------+-------------------------------------------------+
-| EF2_readme       | modroot.."/Annotation/README.txt"               |
-+------------------+-------------------------------------------------+
-| EF2_mito_name    | MT                                              |
-+------------------+-------------------------------------------------+
-| EF2_macs_gsize   | 1.21e7                                          |
-+------------------+-------------------------------------------------+
-| EF2_HOME         | modroot                                         |
-+------------------+-------------------------------------------------+
-| RCAC_EF2_ROOT    | modroot                                         |
-+------------------+-------------------------------------------------+
-| RCAC_EF2_VERSION | 2023-04-26                                      |
-+------------------+-------------------------------------------------+
+
+.. list-table::
+
+   :header-rows: 1
+
+   :widths: 25 75
+
+
+
+   * - **Variable Name**
+
+     - **Value**
+
+   * - ``EF2_fasta``
+
+     - ``modroot.."/Sequence/WholeGenomeFasta/genome.fa"``
+
+   * - ``EF2_bwa``
+
+     - ``modroot.."/Sequence/BWAIndex/version0.6.0/"``
+
+   * - ``EF2_bowtie2``
+
+     - ``modroot.."/Sequence/Bowtie2Index/"``
+
+   * - ``EF2_star``
+
+     - ``modroot.."/Sequence/STARIndex/"``
+
+   * - ``EF2_bismark``
+
+     - ``modroot.."/Sequence/BismarkIndex/"``
+
+   * - ``EF2_gtf``
+
+     - ``modroot.."/Annotation/Genes/genes.gtf"``
+
+   * - ``EF2_bed12``
+
+     - ``modroot.."/Annotation/Genes/genes.bed"``
+
+   * - ``EF2_readme``
+
+     - ``modroot.."/Annotation/README.txt"``
+
+   * - ``EF2_mito_name``
+
+     - ``MT``
+
+   * - ``EF2_macs_gsize``
+
+     - ``1.21e7``
+
+   * - ``EF2_HOME``
+
+     - ``modroot``
+
+   * - ``RCAC_EF2_ROOT``
+
+     - ``modroot``
+
+   * - ``RCAC_EF2_VERSION``
+
+     - ``2023-04-26``
 

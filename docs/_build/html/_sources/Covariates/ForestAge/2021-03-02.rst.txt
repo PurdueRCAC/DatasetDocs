@@ -28,13 +28,28 @@ Tips:
 -------------------------------------------------------------
 
 **Environment Variables**
-+------------------------+------------+
-| Variable Name          | Value      |
-+========================+============+
-| ForestAge_HOME         | modroot    |
-+------------------------+------------+
-| RCAC_ForestAge_ROOT    | modroot    |
-+------------------------+------------+
-| RCAC_ForestAge_VERSION | 2021-03-02 |
-+------------------------+------------+
+
+.. list-table::
+
+   :header-rows: 1
+
+   :widths: 25 75
+
+
+
+   * - **Variable Name**
+
+     - **Value**
+
+   * - ``ForestAge_HOME``
+
+     - ``modroot``
+
+   * - ``RCAC_ForestAge_ROOT``
+
+     - ``modroot``
+
+   * - ``RCAC_ForestAge_VERSION``
+
+     - ``2021-03-02``
 
