@@ -1,6 +1,5 @@
-=================================
-Dataset: PlantedYear (2022-05-06)
-=================================
+PlantedYear
+===========
 
 Category: **Covariates**
 
@@ -28,33 +27,21 @@ Tips:
 - To unload the module and remove the environment settings: module unload PlantedYear
 -------------------------------------------------------------
 
-**Environment Variables**
+Environment Variables
+---------------------
 
 .. list-table::
-
    :header-rows: 1
-
    :widths: 25 75
 
-
-
    * - **Variable Name**
-
      - **Value**
-
    * - ``PlantedYear_DATASET``
-
      - ``modroot.."/dataset"``
-
    * - ``PlantedYear_HOME``
-
      - ``modroot``
-
    * - ``RCAC_PlantedYear_ROOT``
-
      - ``modroot``
-
    * - ``RCAC_PlantedYear_VERSION``
-
      - ``2022-05-06``
 

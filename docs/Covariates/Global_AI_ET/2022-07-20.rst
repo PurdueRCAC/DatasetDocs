@@ -1,6 +1,5 @@
-==================================
-Dataset: Global_AI_ET (2022-07-20)
-==================================
+Global_AI_ET
+============
 
 Category: **Covariates**
 
@@ -27,29 +26,19 @@ Tips:
 - To unload the module and remove the environment settings: module unload Global_AI_ET
 -------------------------------------------------------------
 
-**Environment Variables**
+Environment Variables
+---------------------
 
 .. list-table::
-
    :header-rows: 1
-
    :widths: 25 75
 
-
-
    * - **Variable Name**
-
      - **Value**
-
    * - ``Global_AI_ET_HOME``
-
      - ``modroot``
-
    * - ``RCAC_Global_AI_ET_ROOT``
-
      - ``modroot``
-
    * - ``RCAC_Global_AI_ET_VERSION``
-
      - ``2022-07-20``
 

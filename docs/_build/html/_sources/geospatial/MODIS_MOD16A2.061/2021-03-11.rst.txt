@@ -1,6 +1,5 @@
-=======================================
-Dataset: MODIS_MOD16A2.061 (2021-03-11)
-=======================================
+MODIS_MOD16A2.061
+=================
 
 Category: **geospatial**
 
@@ -35,605 +34,307 @@ Tips:
 - To unload the module and remove the environment settings: module unload MODIS_EVAPOTRANSPIRATION_V61
 -------------------------------------------------------------
 
-**Environment Variables**
+Environment Variables
+---------------------
 
 .. list-table::
-
    :header-rows: 1
-
    :widths: 25 75
 
-
-
    * - **Variable Name**
-
      - **Value**
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_01_01``
-
      - ``modroot.."/2021.01.01"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_01_09``
-
      - ``modroot.."/2021.01.09"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_01_17``
-
      - ``modroot.."/2021.01.17"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_01_25``
-
      - ``modroot.."/2021.01.25"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_02_02``
-
      - ``modroot.."/2021.02.02"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_02_10``
-
      - ``modroot.."/2021.02.10"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_02_18``
-
      - ``modroot.."/2021.02.18"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_02_26``
-
      - ``modroot.."/2021.02.26"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_03_06``
-
      - ``modroot.."/2021.03.06"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_03_14``
-
      - ``modroot.."/2021.03.14"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_03_22``
-
      - ``modroot.."/2021.03.22"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_03_30``
-
      - ``modroot.."/2021.03.30"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_04_07``
-
      - ``modroot.."/2021.04.07"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_04_15``
-
      - ``modroot.."/2021.04.15"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_04_23``
-
      - ``modroot.."/2021.04.23"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_05_01``
-
      - ``modroot.."/2021.05.01"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_05_09``
-
      - ``modroot.."/2021.05.09"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_05_17``
-
      - ``modroot.."/2021.05.17"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_05_25``
-
      - ``modroot.."/2021.05.25"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_06_02``
-
      - ``modroot.."/2021.06.02"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_06_10``
-
      - ``modroot.."/2021.06.10"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_06_18``
-
      - ``modroot.."/2021.06.18"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_06_26``
-
      - ``modroot.."/2021.06.26"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_07_04``
-
      - ``modroot.."/2021.07.04"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_07_12``
-
      - ``modroot.."/2021.07.12"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_07_20``
-
      - ``modroot.."/2021.07.20"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_07_28``
-
      - ``modroot.."/2021.07.28"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_08_05``
-
      - ``modroot.."/2021.08.05"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_08_13``
-
      - ``modroot.."/2021.08.13"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_08_21``
-
      - ``modroot.."/2021.08.21"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_08_29``
-
      - ``modroot.."/2021.08.29"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_09_06``
-
      - ``modroot.."/2021.09.06"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_09_14``
-
      - ``modroot.."/2021.09.14"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_09_22``
-
      - ``modroot.."/2021.09.22"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_09_30``
-
      - ``modroot.."/2021.09.30"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_10_08``
-
      - ``modroot.."/2021.10.08"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_10_16``
-
      - ``modroot.."/2021.10.16"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_10_24``
-
      - ``modroot.."/2021.10.24"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_11_01``
-
      - ``modroot.."/2021.11.01"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_11_09``
-
      - ``modroot.."/2021.11.09"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_11_17``
-
      - ``modroot.."/2021.11.17"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_11_25``
-
      - ``modroot.."/2021.11.25"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_12_03``
-
      - ``modroot.."/2021.12.03"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_12_11``
-
      - ``modroot.."/2021.12.11"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_12_19``
-
      - ``modroot.."/2021.12.19"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2021_12_27``
-
      - ``modroot.."/2021.12.27"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_01_01``
-
      - ``modroot.."/2022.01.01"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_01_09``
-
      - ``modroot.."/2022.01.09"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_01_17``
-
      - ``modroot.."/2022.01.17"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_01_25``
-
      - ``modroot.."/2022.01.25"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_02_02``
-
      - ``modroot.."/2022.02.02"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_02_10``
-
      - ``modroot.."/2022.02.10"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_02_18``
-
      - ``modroot.."/2022.02.18"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_02_26``
-
      - ``modroot.."/2022.02.26"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_03_06``
-
      - ``modroot.."/2022.03.06"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_03_14``
-
      - ``modroot.."/2022.03.14"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_03_22``
-
      - ``modroot.."/2022.03.22"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_03_30``
-
      - ``modroot.."/2022.03.30"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_04_07``
-
      - ``modroot.."/2022.04.07"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_04_15``
-
      - ``modroot.."/2022.04.15"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_04_23``
-
      - ``modroot.."/2022.04.23"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_05_01``
-
      - ``modroot.."/2022.05.01"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_05_09``
-
      - ``modroot.."/2022.05.09"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_05_17``
-
      - ``modroot.."/2022.05.17"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_05_25``
-
      - ``modroot.."/2022.05.25"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_06_02``
-
      - ``modroot.."/2022.06.02"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_06_10``
-
      - ``modroot.."/2022.06.10"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_06_18``
-
      - ``modroot.."/2022.06.18"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_06_26``
-
      - ``modroot.."/2022.06.26"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_07_04``
-
      - ``modroot.."/2022.07.04"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_07_12``
-
      - ``modroot.."/2022.07.12"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_07_20``
-
      - ``modroot.."/2022.07.20"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_07_28``
-
      - ``modroot.."/2022.07.28"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_08_05``
-
      - ``modroot.."/2022.08.05"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_08_13``
-
      - ``modroot.."/2022.08.13"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_08_21``
-
      - ``modroot.."/2022.08.21"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_08_29``
-
      - ``modroot.."/2022.08.29"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_09_06``
-
      - ``modroot.."/2022.09.06"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_09_14``
-
      - ``modroot.."/2022.09.14"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_09_22``
-
      - ``modroot.."/2022.09.22"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_09_30``
-
      - ``modroot.."/2022.09.30"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_10_08``
-
      - ``modroot.."/2022.10.08"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_10_16``
-
      - ``modroot.."/2022.10.16"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_10_24``
-
      - ``modroot.."/2022.10.24"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_11_01``
-
      - ``modroot.."/2022.11.01"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_11_09``
-
      - ``modroot.."/2022.11.09"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_11_17``
-
      - ``modroot.."/2022.11.17"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_11_25``
-
      - ``modroot.."/2022.11.25"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_12_03``
-
      - ``modroot.."/2022.12.03"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_12_11``
-
      - ``modroot.."/2022.12.11"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_12_19``
-
      - ``modroot.."/2022.12.19"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2022_12_27``
-
      - ``modroot.."/2022.12.27"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_01_01``
-
      - ``modroot.."/2023.01.01"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_01_09``
-
      - ``modroot.."/2023.01.09"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_01_17``
-
      - ``modroot.."/2023.01.17"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_01_25``
-
      - ``modroot.."/2023.01.25"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_02_02``
-
      - ``modroot.."/2023.02.02"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_02_10``
-
      - ``modroot.."/2023.02.10"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_02_18``
-
      - ``modroot.."/2023.02.18"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_02_26``
-
      - ``modroot.."/2023.02.26"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_03_06``
-
      - ``modroot.."/2023.03.06"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_03_14``
-
      - ``modroot.."/2023.03.14"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_03_22``
-
      - ``modroot.."/2023.03.22"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_03_30``
-
      - ``modroot.."/2023.03.30"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_04_07``
-
      - ``modroot.."/2023.04.07"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_04_15``
-
      - ``modroot.."/2023.04.15"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_04_23``
-
      - ``modroot.."/2023.04.23"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_05_01``
-
      - ``modroot.."/2023.05.01"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_05_09``
-
      - ``modroot.."/2023.05.09"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_05_17``
-
      - ``modroot.."/2023.05.17"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_05_25``
-
      - ``modroot.."/2023.05.25"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_06_02``
-
      - ``modroot.."/2023.06.02"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_06_10``
-
      - ``modroot.."/2023.06.10"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_06_18``
-
      - ``modroot.."/2023.06.18"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_06_26``
-
      - ``modroot.."/2023.06.26"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_07_04``
-
      - ``modroot.."/2023.07.04"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_07_12``
-
      - ``modroot.."/2023.07.12"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_07_20``
-
      - ``modroot.."/2023.07.20"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_07_28``
-
      - ``modroot.."/2023.07.28"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_08_05``
-
      - ``modroot.."/2023.08.05"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_08_13``
-
      - ``modroot.."/2023.08.13"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_08_21``
-
      - ``modroot.."/2023.08.21"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_08_29``
-
      - ``modroot.."/2023.08.29"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_09_06``
-
      - ``modroot.."/2023.09.06"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_09_14``
-
      - ``modroot.."/2023.09.14"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_09_22``
-
      - ``modroot.."/2023.09.22"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_09_30``
-
      - ``modroot.."/2023.09.30"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_10_08``
-
      - ``modroot.."/2023.10.08"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_10_16``
-
      - ``modroot.."/2023.10.16"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_10_24``
-
      - ``modroot.."/2023.10.24"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_11_01``
-
      - ``modroot.."/2023.11.01"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_11_09``
-
      - ``modroot.."/2023.11.09"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_11_17``
-
      - ``modroot.."/2023.11.17"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_11_25``
-
      - ``modroot.."/2023.11.25"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_12_03``
-
      - ``modroot.."/2023.12.03"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_12_11``
-
      - ``modroot.."/2023.12.11"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_12_19``
-
      - ``modroot.."/2023.12.19"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2023_12_27``
-
      - ``modroot.."/2023.12.27"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2024_01_01``
-
      - ``modroot.."/2024.01.01"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2024_01_09``
-
      - ``modroot.."/2024.01.09"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2024_01_17``
-
      - ``modroot.."/2024.01.17"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2024_01_25``
-
      - ``modroot.."/2024.01.25"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2024_02_02``
-
      - ``modroot.."/2024.02.02"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_2024_02_10``
-
      - ``modroot.."/2024.02.10"``
-
    * - ``MODIS_EVAPOTRANSPIRATION_V61_HOME``
-
      - ``modroot``
-
    * - ``RCAC_MODIS_EVAPOTRANSPIRATION_V61_ROOT``
-
      - ``modroot``
-
    * - ``RCAC_MODIS_EVAPOTRANSPIRATION_V61_VERSION``
-
      - ``2021-03-11``
 

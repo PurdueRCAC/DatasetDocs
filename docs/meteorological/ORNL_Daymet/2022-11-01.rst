@@ -1,6 +1,5 @@
-=================================
-Dataset: ORNL_Daymet (2022-11-01)
-=================================
+ORNL_Daymet
+===========
 
 Category: **meteorological**
 
@@ -29,29 +28,19 @@ Tips:
 - To unload the module and remove the environment settings: module unload DAYMET
 -------------------------------------------------------------
 
-**Environment Variables**
+Environment Variables
+---------------------
 
 .. list-table::
-
    :header-rows: 1
-
    :widths: 25 75
 
-
-
    * - **Variable Name**
-
      - **Value**
-
    * - ``DAYMET_HOME``
-
      - ``modroot``
-
    * - ``RCAC_DAYMET_ROOT``
-
      - ``modroot``
-
    * - ``RCAC_DAYMET_VERSION``
-
      - ``2022-11-01``
 

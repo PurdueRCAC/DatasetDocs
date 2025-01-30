@@ -1,6 +1,5 @@
-======================================
-Dataset: ForestManagement (2021-02-15)
-======================================
+ForestManagement
+================
 
 Category: **Covariates**
 
@@ -27,29 +26,19 @@ Tips:
 - To unload the module and remove the environment settings: module unload ForestManagement
 -------------------------------------------------------------
 
-**Environment Variables**
+Environment Variables
+---------------------
 
 .. list-table::
-
    :header-rows: 1
-
    :widths: 25 75
 
-
-
    * - **Variable Name**
-
      - **Value**
-
    * - ``ForestManagement_HOME``
-
      - ``modroot``
-
    * - ``RCAC_ForestManagement_ROOT``
-
      - ``modroot``
-
    * - ``RCAC_ForestManagement_VERSION``
-
      - ``2021-02-15``
 

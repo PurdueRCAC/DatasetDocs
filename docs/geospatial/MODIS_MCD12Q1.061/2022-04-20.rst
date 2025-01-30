@@ -1,6 +1,5 @@
-=======================================
-Dataset: MODIS_MCD12Q1.061 (2022-04-20)
-=======================================
+MODIS_MCD12Q1.061
+=================
 
 Category: **geospatial**
 
@@ -35,117 +34,63 @@ Tips:
 - To unload the module and remove the environment settings: module unload MODIS_LAND_COVER_V61
 -------------------------------------------------------------
 
-**Environment Variables**
+Environment Variables
+---------------------
 
 .. list-table::
-
    :header-rows: 1
-
    :widths: 25 75
 
-
-
    * - **Variable Name**
-
      - **Value**
-
    * - ``MODIS_LAND_COVER_V61_2001_01_01``
-
      - ``modroot.."/2001.01.01"``
-
    * - ``MODIS_LAND_COVER_V61_2002_01_01``
-
      - ``modroot.."/2002.01.01"``
-
    * - ``MODIS_LAND_COVER_V61_2003_01_01``
-
      - ``modroot.."/2003.01.01"``
-
    * - ``MODIS_LAND_COVER_V61_2004_01_01``
-
      - ``modroot.."/2004.01.01"``
-
    * - ``MODIS_LAND_COVER_V61_2005_01_01``
-
      - ``modroot.."/2005.01.01"``
-
    * - ``MODIS_LAND_COVER_V61_2006_01_01``
-
      - ``modroot.."/2006.01.01"``
-
    * - ``MODIS_LAND_COVER_V61_2007_01_01``
-
      - ``modroot.."/2007.01.01"``
-
    * - ``MODIS_LAND_COVER_V61_2008_01_01``
-
      - ``modroot.."/2008.01.01"``
-
    * - ``MODIS_LAND_COVER_V61_2009_01_01``
-
      - ``modroot.."/2009.01.01"``
-
    * - ``MODIS_LAND_COVER_V61_2010_01_01``
-
      - ``modroot.."/2010.01.01"``
-
    * - ``MODIS_LAND_COVER_V61_2011_01_01``
-
      - ``modroot.."/2011.01.01"``
-
    * - ``MODIS_LAND_COVER_V61_2012_01_01``
-
      - ``modroot.."/2012.01.01"``
-
    * - ``MODIS_LAND_COVER_V61_2013_01_01``
-
      - ``modroot.."/2013.01.01"``
-
    * - ``MODIS_LAND_COVER_V61_2014_01_01``
-
      - ``modroot.."/2014.01.01"``
-
    * - ``MODIS_LAND_COVER_V61_2015_01_01``
-
      - ``modroot.."/2015.01.01"``
-
    * - ``MODIS_LAND_COVER_V61_2016_01_01``
-
      - ``modroot.."/2016.01.01"``
-
    * - ``MODIS_LAND_COVER_V61_2017_01_01``
-
      - ``modroot.."/2017.01.01"``
-
    * - ``MODIS_LAND_COVER_V61_2018_01_01``
-
      - ``modroot.."/2018.01.01"``
-
    * - ``MODIS_LAND_COVER_V61_2019_01_01``
-
      - ``modroot.."/2019.01.01"``
-
    * - ``MODIS_LAND_COVER_V61_2020_01_01``
-
      - ``modroot.."/2020.01.01"``
-
    * - ``MODIS_LAND_COVER_V61_2021_01_01``
-
      - ``modroot.."/2021.01.01"``
-
    * - ``MODIS_LAND_COVER_V61_2022_01_01``
-
      - ``modroot.."/2022.01.01"``
-
    * - ``MODIS_LAND_COVER_V61_HOME``
-
      - ``modroot``
-
    * - ``RCAC_MODIS_LAND_COVER_V61_ROOT``
-
      - ``modroot``
-
    * - ``RCAC_MODIS_LAND_COVER_V61_VERSION``
-
      - ``2022-04-20``
 

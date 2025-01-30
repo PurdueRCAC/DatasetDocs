@@ -1,6 +1,5 @@
-===================================
-Dataset: ECCC_RDRSv2.1 (2021-09-07)
-===================================
+ECCC_RDRSv2.1
+=============
 
 Category: **meteorological**
 
@@ -37,497 +36,253 @@ Tips:
 - To unload the module and remove the environment settings: module unload ECCC_RDRS
 -------------------------------------------------------------
 
-**Environment Variables**
+Environment Variables
+---------------------
 
 .. list-table::
-
    :header-rows: 1
-
    :widths: 25 75
 
-
-
    * - **Variable Name**
-
      - **Value**
-
    * - ``ECCC_RDRS_1980``
-
      - ``modroot.."/1980"``
-
    * - ``ECCC_RDRS_1980_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/1980/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_1980_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/1980/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_1981``
-
      - ``modroot.."/1981"``
-
    * - ``ECCC_RDRS_1981_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/1981/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_1981_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/1981/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_1982``
-
      - ``modroot.."/1982"``
-
    * - ``ECCC_RDRS_1982_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/1982/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_1982_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/1982/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_1983``
-
      - ``modroot.."/1983"``
-
    * - ``ECCC_RDRS_1983_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/1983/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_1983_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/1983/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_1984``
-
      - ``modroot.."/1984"``
-
    * - ``ECCC_RDRS_1984_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/1984/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_1984_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/1984/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_1985``
-
      - ``modroot.."/1985"``
-
    * - ``ECCC_RDRS_1985_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/1985/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_1985_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/1985/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_1986``
-
      - ``modroot.."/1986"``
-
    * - ``ECCC_RDRS_1986_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/1986/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_1986_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/1986/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_1987``
-
      - ``modroot.."/1987"``
-
    * - ``ECCC_RDRS_1987_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/1987/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_1987_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/1987/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_1988``
-
      - ``modroot.."/1988"``
-
    * - ``ECCC_RDRS_1988_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/1988/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_1988_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/1988/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_1989``
-
      - ``modroot.."/1989"``
-
    * - ``ECCC_RDRS_1989_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/1989/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_1989_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/1989/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_1990``
-
      - ``modroot.."/1990"``
-
    * - ``ECCC_RDRS_1990_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/1990/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_1990_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/1990/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_1991``
-
      - ``modroot.."/1991"``
-
    * - ``ECCC_RDRS_1991_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/1991/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_1991_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/1991/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_1992``
-
      - ``modroot.."/1992"``
-
    * - ``ECCC_RDRS_1992_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/1992/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_1992_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/1992/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_1993``
-
      - ``modroot.."/1993"``
-
    * - ``ECCC_RDRS_1993_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/1993/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_1993_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/1993/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_1994``
-
      - ``modroot.."/1994"``
-
    * - ``ECCC_RDRS_1994_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/1994/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_1994_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/1994/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_1995``
-
      - ``modroot.."/1995"``
-
    * - ``ECCC_RDRS_1995_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/1995/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_1995_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/1995/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_1996``
-
      - ``modroot.."/1996"``
-
    * - ``ECCC_RDRS_1996_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/1996/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_1996_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/1996/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_1997``
-
      - ``modroot.."/1997"``
-
    * - ``ECCC_RDRS_1997_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/1997/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_1997_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/1997/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_1998``
-
      - ``modroot.."/1998"``
-
    * - ``ECCC_RDRS_1998_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/1998/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_1998_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/1998/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_1999``
-
      - ``modroot.."/1999"``
-
    * - ``ECCC_RDRS_1999_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/1999/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_1999_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/1999/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_2000``
-
      - ``modroot.."/2000"``
-
    * - ``ECCC_RDRS_2000_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/2000/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_2000_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/2000/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_2001``
-
      - ``modroot.."/2001"``
-
    * - ``ECCC_RDRS_2001_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/2001/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_2001_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/2001/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_2002``
-
      - ``modroot.."/2002"``
-
    * - ``ECCC_RDRS_2002_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/2002/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_2002_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/2002/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_2003``
-
      - ``modroot.."/2003"``
-
    * - ``ECCC_RDRS_2003_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/2003/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_2003_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/2003/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_2004``
-
      - ``modroot.."/2004"``
-
    * - ``ECCC_RDRS_2004_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/2004/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_2004_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/2004/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_2005``
-
      - ``modroot.."/2005"``
-
    * - ``ECCC_RDRS_2005_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/2005/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_2005_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/2005/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_2006``
-
      - ``modroot.."/2006"``
-
    * - ``ECCC_RDRS_2006_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/2006/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_2006_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/2006/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_2007``
-
      - ``modroot.."/2007"``
-
    * - ``ECCC_RDRS_2007_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/2007/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_2007_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/2007/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_2008``
-
      - ``modroot.."/2008"``
-
    * - ``ECCC_RDRS_2008_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/2008/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_2008_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/2008/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_2009``
-
      - ``modroot.."/2009"``
-
    * - ``ECCC_RDRS_2009_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/2009/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_2009_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/2009/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_2010``
-
      - ``modroot.."/2010"``
-
    * - ``ECCC_RDRS_2010_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/2010/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_2010_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/2010/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_2011``
-
      - ``modroot.."/2011"``
-
    * - ``ECCC_RDRS_2011_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/2011/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_2011_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/2011/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_2012``
-
      - ``modroot.."/2012"``
-
    * - ``ECCC_RDRS_2012_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/2012/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_2012_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/2012/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_2013``
-
      - ``modroot.."/2013"``
-
    * - ``ECCC_RDRS_2013_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/2013/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_2013_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/2013/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_2014``
-
      - ``modroot.."/2014"``
-
    * - ``ECCC_RDRS_2014_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/2014/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_2014_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/2014/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_2015``
-
      - ``modroot.."/2015"``
-
    * - ``ECCC_RDRS_2015_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/2015/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_2015_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/2015/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_2016``
-
      - ``modroot.."/2016"``
-
    * - ``ECCC_RDRS_2016_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/2016/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_2016_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/2016/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_2017``
-
      - ``modroot.."/2017"``
-
    * - ``ECCC_RDRS_2017_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/2017/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_2017_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/2017/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_2018``
-
      - ``modroot.."/2018"``
-
    * - ``ECCC_RDRS_2018_LICENCE_GENERAL_ECCC_TXT``
-
      - ``modroot.."/2018/LICENCE_GENERAL_ECCC.txt"``
-
    * - ``ECCC_RDRS_2018_LICENSE_CASPAR_TXT``
-
      - ``modroot.."/2018/license_CaSPAr.txt"``
-
    * - ``ECCC_RDRS_HOME``
-
      - ``modroot``
-
    * - ``RCAC_ECCC_RDRS_ROOT``
-
      - ``modroot``
-
    * - ``RCAC_ECCC_RDRS_VERSION``
-
      - ``2021-09-07``
 

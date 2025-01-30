@@ -1,6 +1,5 @@
-===========================
-Dataset: EMDNA (2021-07-13)
-===========================
+EMDNA
+=====
 
 Category: **meteorological**
 
@@ -32,41 +31,25 @@ Tips:
 - To unload the module and remove the environment settings: module unload EMDNA
 -------------------------------------------------------------
 
-**Environment Variables**
+Environment Variables
+---------------------
 
 .. list-table::
-
    :header-rows: 1
-
    :widths: 25 75
 
-
-
    * - **Variable Name**
-
      - **Value**
-
    * - ``EMDNA_EMDNA_ESTIMATE``
-
      - ``modroot.."/EMDNA_estimate"``
-
    * - ``EMDNA_EMDNA_SAMPLE``
-
      - ``modroot.."/EMDNA_sample"``
-
    * - ``EMDNA_OI_ESTIMATE``
-
      - ``modroot.."/OI_estimate"``
-
    * - ``EMDNA_HOME``
-
      - ``modroot``
-
    * - ``RCAC_EMDNA_ROOT``
-
      - ``modroot``
-
    * - ``RCAC_EMDNA_VERSION``
-
      - ``2021-07-13``
 

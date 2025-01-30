@@ -1,6 +1,5 @@
-============================
-Dataset: Cattle (2018-08-23)
-============================
+Cattle
+======
 
 Category: **Covariates**
 
@@ -27,29 +26,19 @@ Tips:
 - To unload the module and remove the environment settings: module unload Cattle
 -------------------------------------------------------------
 
-**Environment Variables**
+Environment Variables
+---------------------
 
 .. list-table::
-
    :header-rows: 1
-
    :widths: 25 75
 
-
-
    * - **Variable Name**
-
      - **Value**
-
    * - ``Cattle_HOME``
-
      - ``modroot``
-
    * - ``RCAC_Cattle_ROOT``
-
      - ``modroot``
-
    * - ``RCAC_Cattle_VERSION``
-
      - ``2018-08-23``
 

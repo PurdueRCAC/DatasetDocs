@@ -1,70 +1,39 @@
-=========================
-Dataset: dm6 (2023-04-26)
-=========================
+dm6
+===
 
 Category: **igenomes**
 
-
-
-**Environment Variables**
+Environment Variables
+---------------------
 
 .. list-table::
-
    :header-rows: 1
-
    :widths: 25 75
 
-
-
    * - **Variable Name**
-
      - **Value**
-
    * - ``dm6_fasta``
-
      - ``modroot.."/Sequence/WholeGenomeFasta/genome.fa"``
-
    * - ``dm6_bwa``
-
      - ``modroot.."/Sequence/BWAIndex/version0.6.0/"``
-
    * - ``dm6_bowtie2``
-
      - ``modroot.."/Sequence/Bowtie2Index/"``
-
    * - ``dm6_star``
-
      - ``modroot.."/Sequence/STARIndex/"``
-
    * - ``dm6_bismark``
-
      - ``modroot.."/Sequence/BismarkIndex/"``
-
    * - ``dm6_gtf``
-
      - ``modroot.."/Annotation/Genes/genes.gtf"``
-
    * - ``dm6_bed12``
-
      - ``modroot.."/Annotation/Genes/genes.bed"``
-
    * - ``dm6_mito_name``
-
      - ``chrM``
-
    * - ``dm6_macs_gsize``
-
      - ``1.2e8``
-
    * - ``dm6_HOME``
-
      - ``modroot``
-
    * - ``RCAC_dm6_ROOT``
-
      - ``modroot``
-
    * - ``RCAC_dm6_VERSION``
-
      - ``2023-04-26``
 

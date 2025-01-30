@@ -1,6 +1,5 @@
-==========================
-Dataset: GEDI (2022-03-29)
-==========================
+GEDI
+====
 
 Category: **Covariates**
 
@@ -27,29 +26,19 @@ Tips:
 - To unload the module and remove the environment settings: module unload GEDI
 -------------------------------------------------------------
 
-**Environment Variables**
+Environment Variables
+---------------------
 
 .. list-table::
-
    :header-rows: 1
-
    :widths: 25 75
 
-
-
    * - **Variable Name**
-
      - **Value**
-
    * - ``GEDI_HOME``
-
      - ``modroot``
-
    * - ``RCAC_GEDI_ROOT``
-
      - ``modroot``
-
    * - ``RCAC_GEDI_VERSION``
-
      - ``2022-03-29``
 

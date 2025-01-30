@@ -1,6 +1,5 @@
-================================
-Dataset: PBCOR_V1.0 (2020-01-01)
-================================
+PBCOR_V1.0
+==========
 
 Category: **Covariates**
 
@@ -27,29 +26,19 @@ Tips:
 - To unload the module and remove the environment settings: module unload PBCOR_V1.0
 -------------------------------------------------------------
 
-**Environment Variables**
+Environment Variables
+---------------------
 
 .. list-table::
-
    :header-rows: 1
-
    :widths: 25 75
 
-
-
    * - **Variable Name**
-
      - **Value**
-
    * - ``PBCOR_V1.0_HOME``
-
      - ``modroot``
-
    * - ``RCAC_PBCOR_V1.0_ROOT``
-
      - ``modroot``
-
    * - ``RCAC_PBCOR_V1.0_VERSION``
-
      - ``2020-01-01``
 

@@ -1,6 +1,5 @@
-==================================
-Dataset: MERIT_Basins (2019-07-24)
-==================================
+MERIT_Basins
+============
 
 Category: **hydrological**
 
@@ -37,89 +36,49 @@ Tips:
 - To unload the module and remove the environment settings: module unload MERIT_BASINS
 -------------------------------------------------------------
 
-**Environment Variables**
+Environment Variables
+---------------------
 
 .. list-table::
-
    :header-rows: 1
-
    :widths: 25 75
 
-
-
    * - **Variable Name**
-
      - **Value**
-
    * - ``MERIT_BASINS_MERIT_HYDRO_V00_BASINS_V01``
-
      - ``modroot.."/MERIT_Hydro_v00_Basins_v01"``
-
    * - ``MERIT_BASINS_MERIT_HYDRO_V00_BASINS_V01_LEVEL_01``
-
      - ``modroot.."/MERIT_Hydro_v00_Basins_v01/level_01"``
-
    * - ``MERIT_BASINS_MERIT_HYDRO_V00_BASINS_V01_LEVEL_01_ADDITIONAL_PROPERTIES``
-
      - ``modroot.."/MERIT_Hydro_v00_Basins_v01/level_01/additional_properties"``
-
    * - ``MERIT_BASINS_MERIT_HYDRO_V00_BASINS_V01_LEVEL_02``
-
      - ``modroot.."/MERIT_Hydro_v00_Basins_v01/level_02"``
-
    * - ``MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01``
-
      - ``modroot.."/MERIT_Hydro_v07_Basins_v01"``
-
    * - ``MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01_BUGFIX1``
-
      - ``modroot.."/MERIT_Hydro_v07_Basins_v01_bugfix1"``
-
    * - ``MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01_BUGFIX1_COASTAL_HILLSLOPES``
-
      - ``modroot.."/MERIT_Hydro_v07_Basins_v01_bugfix1/coastal_hillslopes"``
-
    * - ``MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01_BUGFIX1_PFAF_LEVEL_01``
-
      - ``modroot.."/MERIT_Hydro_v07_Basins_v01_bugfix1/pfaf_level_01"``
-
    * - ``MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01_BUGFIX1_PFAF_LEVEL_02``
-
      - ``modroot.."/MERIT_Hydro_v07_Basins_v01_bugfix1/pfaf_level_02"``
-
    * - ``MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01_PFAF_LEVEL_01``
-
      - ``modroot.."/MERIT_Hydro_v07_Basins_v01/pfaf_level_01"``
-
    * - ``MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01_PFAF_LEVEL_02``
-
      - ``modroot.."/MERIT_Hydro_v07_Basins_v01/pfaf_level_02"``
-
    * - ``MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01_README_TXT``
-
      - ``modroot.."/MERIT_Hydro_v07_Basins_v01/ReadMe.txt"``
-
    * - ``MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01_ZIP``
-
      - ``modroot.."/MERIT_Hydro_v07_Basins_v01/zip"``
-
    * - ``MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01_ZIP_PFAF_LEVEL_01``
-
      - ``modroot.."/MERIT_Hydro_v07_Basins_v01/zip/pfaf_level_01"``
-
    * - ``MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01_ZIP_PFAF_LEVEL_02``
-
      - ``modroot.."/MERIT_Hydro_v07_Basins_v01/zip/pfaf_level_02"``
-
    * - ``MERIT_BASINS_HOME``
-
      - ``modroot``
-
    * - ``RCAC_MERIT_BASINS_ROOT``
-
      - ``modroot``
-
    * - ``RCAC_MERIT_BASINS_VERSION``
-
      - ``2019-07-24``
 

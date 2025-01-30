@@ -6,6 +6,7 @@ Welcome! Below are the top-level dataset categories.
 
 .. toctree::
    :maxdepth: 2
+   :titlesonly:
    :caption: Categories
 
    Covariates/index

@@ -4,6 +4,7 @@ Covariates Datasets
 
 .. toctree::
    :maxdepth: 2
+   :titlesonly:
    :caption: Datasets
 
    AboveBelowRatio/2022-10-17

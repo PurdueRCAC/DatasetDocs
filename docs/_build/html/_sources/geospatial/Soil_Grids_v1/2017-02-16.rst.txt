@@ -1,6 +1,5 @@
-===================================
-Dataset: Soil_Grids_v1 (2017-02-16)
-===================================
+Soil_Grids_v1
+=============
 
 Category: **geospatial**
 
@@ -37,53 +36,31 @@ Tips:
 - To unload the module and remove the environment settings: module unload SOIL_GRIDS_V1
 -------------------------------------------------------------
 
-**Environment Variables**
+Environment Variables
+---------------------
 
 .. list-table::
-
    :header-rows: 1
-
    :widths: 25 75
 
-
-
    * - **Variable Name**
-
      - **Value**
-
    * - ``SOIL_GRIDS_V1_SOILGRIDS``
-
      - ``modroot.."/soilgrids"``
-
    * - ``SOIL_GRIDS_V1_SOILGRIDS_FORMER``
-
      - ``modroot.."/soilgrids/former"``
-
    * - ``SOIL_GRIDS_V1_SOILGRIDS_FORMER_2017_03_10``
-
      - ``modroot.."/soilgrids/former/2017-03-10"``
-
    * - ``SOIL_GRIDS_V1_SOILGRIDS_FORMER_2017_03_10_DATA``
-
      - ``modroot.."/soilgrids/former/2017-03-10/data"``
-
    * - ``SOIL_GRIDS_V1_SOILGRIDS_FORMER_2017_03_10_DATA_LEGENDS``
-
      - ``modroot.."/soilgrids/former/2017-03-10/data/legends"``
-
    * - ``SOIL_GRIDS_V1_SOILGRIDS_FORMER_2017_03_10_DATA_LEGENDS_TEST``
-
      - ``modroot.."/soilgrids/former/2017-03-10/data/legends/test"``
-
    * - ``SOIL_GRIDS_V1_HOME``
-
      - ``modroot``
-
    * - ``RCAC_SOIL_GRIDS_V1_ROOT``
-
      - ``modroot``
-
    * - ``RCAC_SOIL_GRIDS_V1_VERSION``
-
      - ``2017-02-16``
 

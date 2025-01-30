@@ -1,6 +1,5 @@
-==========================
-Dataset: ce10 (2023-04-26)
-==========================
+ce10
+====
 
 Category: **igenomes**
 
@@ -8,69 +7,39 @@ The contents of the annotation directories were downloaded from UCSC on: July 17
 
 SmallRNA annotation files were downloaded from miRBase release 21.
 
-**Environment Variables**
+Environment Variables
+---------------------
 
 .. list-table::
-
    :header-rows: 1
-
    :widths: 25 75
 
-
-
    * - **Variable Name**
-
      - **Value**
-
    * - ``ce10_fasta``
-
      - ``modroot.."/Sequence/WholeGenomeFasta/genome.fa"``
-
    * - ``ce10_bwa``
-
      - ``modroot.."/Sequence/BWAIndex/version0.6.0/"``
-
    * - ``ce10_bowtie2``
-
      - ``modroot.."/Sequence/Bowtie2Index/"``
-
    * - ``ce10_star``
-
      - ``modroot.."/Sequence/STARIndex/"``
-
    * - ``ce10_bismark``
-
      - ``modroot.."/Sequence/BismarkIndex/"``
-
    * - ``ce10_gtf``
-
      - ``modroot.."/Annotation/Genes/genes.gtf"``
-
    * - ``ce10_bed12``
-
      - ``modroot.."/Annotation/Genes/genes.bed"``
-
    * - ``ce10_readme``
-
      - ``modroot.."/Annotation/README.txt"``
-
    * - ``ce10_mito_name``
-
      - ``chrM``
-
    * - ``ce10_macs_gsize``
-
      - ``9e7``
-
    * - ``ce10_HOME``
-
      - ``modroot``
-
    * - ``RCAC_ce10_ROOT``
-
      - ``modroot``
-
    * - ``RCAC_ce10_VERSION``
-
      - ``2023-04-26``
 

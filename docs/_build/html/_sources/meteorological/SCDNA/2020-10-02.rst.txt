@@ -1,6 +1,5 @@
-===========================
-Dataset: SCDNA (2020-10-02)
-===========================
+SCDNA
+=====
 
 Category: **meteorological**
 
@@ -31,37 +30,23 @@ Tips:
 - To unload the module and remove the environment settings: module unload SCDNA
 -------------------------------------------------------------
 
-**Environment Variables**
+Environment Variables
+---------------------
 
 .. list-table::
-
    :header-rows: 1
-
    :widths: 25 75
 
-
-
    * - **Variable Name**
-
      - **Value**
-
    * - ``SCDNA___MACOSX``
-
      - ``modroot.."/__MACOSX"``
-
    * - ``SCDNA___MACOSX___OVERLAP_STATION_LIST_TXT``
-
      - ``modroot.."/__MACOSX/._overlap_station_list.txt"``
-
    * - ``SCDNA_HOME``
-
      - ``modroot``
-
    * - ``RCAC_SCDNA_ROOT``
-
      - ``modroot``
-
    * - ``RCAC_SCDNA_VERSION``
-
      - ``2020-10-02``
 

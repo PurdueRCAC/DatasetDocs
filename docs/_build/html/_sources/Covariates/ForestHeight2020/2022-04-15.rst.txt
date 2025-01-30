@@ -1,6 +1,5 @@
-======================================
-Dataset: ForestHeight2020 (2022-04-15)
-======================================
+ForestHeight2020
+================
 
 Category: **Covariates**
 
@@ -31,45 +30,27 @@ Tips:
 - To unload the module and remove the environment settings: module unload ForestHeight2020
 -------------------------------------------------------------
 
-**Environment Variables**
+Environment Variables
+---------------------
 
 .. list-table::
-
    :header-rows: 1
-
    :widths: 25 75
 
-
-
    * - **Variable Name**
-
      - **Value**
-
    * - ``ForestHeight2020_1KM_AGGREGATED``
-
      - ``modroot.."/1km_Aggregated"``
-
    * - ``ForestHeight2020_30KM_AGGREGATED``
-
      - ``modroot.."/30km_Aggregated"``
-
    * - ``ForestHeight2020_30M_ORIGINAL``
-
      - ``modroot.."/30m_Original"``
-
    * - ``ForestHeight2020_3KM_AGGREGATED``
-
      - ``modroot.."/3km_Aggregated"``
-
    * - ``ForestHeight2020_HOME``
-
      - ``modroot``
-
    * - ``RCAC_ForestHeight2020_ROOT``
-
      - ``modroot``
-
    * - ``RCAC_ForestHeight2020_VERSION``
-
      - ``2022-04-15``
 

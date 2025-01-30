@@ -1,6 +1,5 @@
-===============================
-Dataset: ForestAge (2021-03-02)
-===============================
+ForestAge
+=========
 
 Category: **Covariates**
 
@@ -27,29 +26,19 @@ Tips:
 - To unload the module and remove the environment settings: module unload ForestAge
 -------------------------------------------------------------
 
-**Environment Variables**
+Environment Variables
+---------------------
 
 .. list-table::
-
    :header-rows: 1
-
    :widths: 25 75
 
-
-
    * - **Variable Name**
-
      - **Value**
-
    * - ``ForestAge_HOME``
-
      - ``modroot``
-
    * - ``RCAC_ForestAge_ROOT``
-
      - ``modroot``
-
    * - ``RCAC_ForestAge_VERSION``
-
      - ``2021-03-02``
 

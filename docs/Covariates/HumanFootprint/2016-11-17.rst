@@ -1,6 +1,5 @@
-====================================
-Dataset: HumanFootprint (2016-11-17)
-====================================
+HumanFootprint
+==============
 
 Category: **Covariates**
 
@@ -29,37 +28,23 @@ Tips:
 - To unload the module and remove the environment settings: module unload HumanFootprint
 -------------------------------------------------------------
 
-**Environment Variables**
+Environment Variables
+---------------------
 
 .. list-table::
-
    :header-rows: 1
-
    :widths: 25 75
 
-
-
    * - **Variable Name**
-
      - **Value**
-
    * - ``HumanFootprint_MAPS``
-
      - ``modroot.."/Maps"``
-
    * - ``HumanFootprint_MAPS_INFO``
-
      - ``modroot.."/Maps/info"``
-
    * - ``HumanFootprint_HOME``
-
      - ``modroot``
-
    * - ``RCAC_HumanFootprint_ROOT``
-
      - ``modroot``
-
    * - ``RCAC_HumanFootprint_VERSION``
-
      - ``2016-11-17``
 

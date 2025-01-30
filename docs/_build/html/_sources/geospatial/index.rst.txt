@@ -4,6 +4,7 @@ geospatial Datasets
 
 .. toctree::
    :maxdepth: 2
+   :titlesonly:
    :caption: Datasets
 
    MERIT_Hydro/2019-05-28

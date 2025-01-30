@@ -1,66 +1,37 @@
-==============================
-Dataset: Rnor_6.0 (2023-04-26)
-==============================
+Rnor_6.0
+========
 
 Category: **igenomes**
 
-
-
-**Environment Variables**
+Environment Variables
+---------------------
 
 .. list-table::
-
    :header-rows: 1
-
    :widths: 25 75
 
-
-
    * - **Variable Name**
-
      - **Value**
-
    * - ``Rnor60_fasta``
-
      - ``modroot.."/Sequence/WholeGenomeFasta/genome.fa"``
-
    * - ``Rnor60_bwa``
-
      - ``modroot.."/Sequence/BWAIndex/version0.6.0/"``
-
    * - ``Rnor60_bowtie2``
-
      - ``modroot.."/Sequence/Bowtie2Index/"``
-
    * - ``Rnor60_star``
-
      - ``modroot.."/Sequence/STARIndex/"``
-
    * - ``Rnor60_bismark``
-
      - ``modroot.."/Sequence/BismarkIndex/"``
-
    * - ``Rnor60_gtf``
-
      - ``modroot.."/Annotation/Genes/genes.gtf"``
-
    * - ``Rnor60_bed12``
-
      - ``modroot.."/Annotation/Genes/genes.bed"``
-
    * - ``Rnor60_mito_name``
-
      - ``MT``
-
    * - ``Rnor_6.0_HOME``
-
      - ``modroot``
-
    * - ``RCAC_Rnor_6.0_ROOT``
-
      - ``modroot``
-
    * - ``RCAC_Rnor_6.0_VERSION``
-
      - ``2023-04-26``
 

@@ -1,6 +1,5 @@
-===================================
-Dataset: ProtectedArea (2019-01-01)
-===================================
+ProtectedArea
+=============
 
 Category: **Covariates**
 
@@ -31,45 +30,27 @@ Tips:
 - To unload the module and remove the environment settings: module unload ProtectedArea
 -------------------------------------------------------------
 
-**Environment Variables**
+Environment Variables
+---------------------
 
 .. list-table::
-
    :header-rows: 1
-
    :widths: 25 75
 
-
-
    * - **Variable Name**
-
      - **Value**
-
    * - ``ProtectedArea_RESOURCES_IN_ENGLISH``
-
      - ``modroot.."/Resources_in_English"``
-
    * - ``ProtectedArea_WDPA_WDOECM_OCT2022_PUBLIC_AS_SHP_0``
-
      - ``modroot.."/WDPA_WDOECM_Oct2022_Public_AS_shp_0"``
-
    * - ``ProtectedArea_WDPA_WDOECM_OCT2022_PUBLIC_AS_SHP_1``
-
      - ``modroot.."/WDPA_WDOECM_Oct2022_Public_AS_shp_1"``
-
    * - ``ProtectedArea_WDPA_WDOECM_OCT2022_PUBLIC_AS_SHP_2``
-
      - ``modroot.."/WDPA_WDOECM_Oct2022_Public_AS_shp_2"``
-
    * - ``ProtectedArea_HOME``
-
      - ``modroot``
-
    * - ``RCAC_ProtectedArea_ROOT``
-
      - ``modroot``
-
    * - ``RCAC_ProtectedArea_VERSION``
-
      - ``2019-01-01``
 

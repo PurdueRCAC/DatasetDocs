@@ -1,6 +1,5 @@
-======================================
-Dataset: CHELSA_2011-2040 (2020-09-05)
-======================================
+CHELSA_2011-2040
+================
 
 Category: **Covariates**
 
@@ -27,29 +26,19 @@ Tips:
 - To unload the module and remove the environment settings: module unload CHELSA_2011-2040
 -------------------------------------------------------------
 
-**Environment Variables**
+Environment Variables
+---------------------
 
 .. list-table::
-
    :header-rows: 1
-
    :widths: 25 75
 
-
-
    * - **Variable Name**
-
      - **Value**
-
    * - ``CHELSA_2011-2040_HOME``
-
      - ``modroot``
-
    * - ``RCAC_CHELSA_2011-2040_ROOT``
-
      - ``modroot``
-
    * - ``RCAC_CHELSA_2011-2040_VERSION``
-
      - ``2020-09-05``
 

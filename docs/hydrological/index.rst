@@ -4,6 +4,7 @@ hydrological Datasets
 
 .. toctree::
    :maxdepth: 2
+   :titlesonly:
    :caption: Datasets
 
    CAMELS/2017-10-20

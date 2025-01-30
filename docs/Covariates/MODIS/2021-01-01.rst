@@ -1,6 +1,5 @@
-===========================
-Dataset: MODIS (2021-01-01)
-===========================
+MODIS
+=====
 
 Category: **Covariates**
 
@@ -34,65 +33,37 @@ Tips:
 - To unload the module and remove the environment settings: module unload MODIS
 -------------------------------------------------------------
 
-**Environment Variables**
+Environment Variables
+---------------------
 
 .. list-table::
-
    :header-rows: 1
-
    :widths: 25 75
 
-
-
    * - **Variable Name**
-
      - **Value**
-
    * - ``MODIS_MAXEVI``
-
      - ``modroot.."/maxEVI"``
-
    * - ``MODIS_MAXLAI``
-
      - ``modroot.."/maxLAI"``
-
    * - ``MODIS_MAXNDVI``
-
      - ``modroot.."/maxNDVI"``
-
    * - ``MODIS_MEANB1``
-
      - ``modroot.."/meanB1"``
-
    * - ``MODIS_MEANFPAR``
-
      - ``modroot.."/meanFpar"``
-
    * - ``MODIS_MEANLST_DAY``
-
      - ``modroot.."/meanLST_day"``
-
    * - ``MODIS_SUMET``
-
      - ``modroot.."/sumET"``
-
    * - ``MODIS_SUMGPP``
-
      - ``modroot.."/sumGPP"``
-
    * - ``MODIS_SUMPET``
-
      - ``modroot.."/sumPET"``
-
    * - ``MODIS_HOME``
-
      - ``modroot``
-
    * - ``RCAC_MODIS_ROOT``
-
      - ``modroot``
-
    * - ``RCAC_MODIS_VERSION``
-
      - ``2021-01-01``
 

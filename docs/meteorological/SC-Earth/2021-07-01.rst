@@ -1,6 +1,5 @@
-==============================
-Dataset: SC-Earth (2021-07-01)
-==============================
+SC-Earth
+========
 
 Category: **meteorological**
 
@@ -28,29 +27,19 @@ Tips:
 - To unload the module and remove the environment settings: module unload SCE
 -------------------------------------------------------------
 
-**Environment Variables**
+Environment Variables
+---------------------
 
 .. list-table::
-
    :header-rows: 1
-
    :widths: 25 75
 
-
-
    * - **Variable Name**
-
      - **Value**
-
    * - ``SCE_HOME``
-
      - ``modroot``
-
    * - ``RCAC_SCE_ROOT``
-
      - ``modroot``
-
    * - ``RCAC_SCE_VERSION``
-
      - ``2021-07-01``
 
