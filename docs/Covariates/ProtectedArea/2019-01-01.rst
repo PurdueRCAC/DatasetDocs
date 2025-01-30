@@ -1,0 +1,52 @@
+===================================
+Dataset: ProtectedArea (2019-01-01)
+===================================
+
+Category: **Covariates**
+
+World Database on Protected Areas
+
+Contains protected area boundaries and conservation status.
+
+This dataset contains data with the following attributes:
+  - Time Resolution: 2019
+  - Spatial Resolution: Shapefile
+  - DOI: N/A
+  - Link: https://www.protectedplanet.net/en
+
+Environment variables included:
+-------------------------------------------------------------
+$ProtectedArea_RESOURCES_IN_ENGLISH                 Location: /anvil/datasets/Covariates/ProtectedArea/Resources_in_English
+$ProtectedArea_WDPA_WDOECM_OCT2022_PUBLIC_AS_SHP_0  Location: /anvil/datasets/Covariates/ProtectedArea/WDPA_WDOECM_Oct2022_Public_AS_shp_0
+$ProtectedArea_WDPA_WDOECM_OCT2022_PUBLIC_AS_SHP_1  Location: /anvil/datasets/Covariates/ProtectedArea/WDPA_WDOECM_Oct2022_Public_AS_shp_1
+$ProtectedArea_WDPA_WDOECM_OCT2022_PUBLIC_AS_SHP_2  Location: /anvil/datasets/Covariates/ProtectedArea/WDPA_WDOECM_Oct2022_Public_AS_shp_2
+
+$ProtectedArea_HOME                                 Location: /anvil/datasets/Covariates/ProtectedArea
+$ProtectedArea_ROOT                                 Location: /anvil/datasets/Covariates/ProtectedArea
+$ProtectedArea_VERSION                              Version: 2019-01-01
+
+Tips:
+- Use echo $ENV_NAME to check the environment value.
+- To see all environment variables related to ProtectedArea, you can load the module then use: env | grep ProtectedArea
+- To unload the module and remove the environment settings: module unload ProtectedArea
+-------------------------------------------------------------
+
+**Environment Variables**
++---------------------------------------------------+-------------------------------------------------+
+| Variable Name                                     | Value                                           |
++===================================================+=================================================+
+| ProtectedArea_RESOURCES_IN_ENGLISH                | modroot.."/Resources_in_English"                |
++---------------------------------------------------+-------------------------------------------------+
+| ProtectedArea_WDPA_WDOECM_OCT2022_PUBLIC_AS_SHP_0 | modroot.."/WDPA_WDOECM_Oct2022_Public_AS_shp_0" |
++---------------------------------------------------+-------------------------------------------------+
+| ProtectedArea_WDPA_WDOECM_OCT2022_PUBLIC_AS_SHP_1 | modroot.."/WDPA_WDOECM_Oct2022_Public_AS_shp_1" |
++---------------------------------------------------+-------------------------------------------------+
+| ProtectedArea_WDPA_WDOECM_OCT2022_PUBLIC_AS_SHP_2 | modroot.."/WDPA_WDOECM_Oct2022_Public_AS_shp_2" |
++---------------------------------------------------+-------------------------------------------------+
+| ProtectedArea_HOME                                | modroot                                         |
++---------------------------------------------------+-------------------------------------------------+
+| RCAC_ProtectedArea_ROOT                           | modroot                                         |
++---------------------------------------------------+-------------------------------------------------+
+| RCAC_ProtectedArea_VERSION                        | 2019-01-01                                      |
++---------------------------------------------------+-------------------------------------------------+
+

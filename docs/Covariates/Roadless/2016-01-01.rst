@@ -1,0 +1,40 @@
+==============================
+Dataset: Roadless (2016-01-01)
+==============================
+
+Category: **Covariates**
+
+Global Roadless Areas
+
+A global map of roadless areas for conservation purposes.
+
+This dataset contains data with the following attributes:
+  - Time Resolution: ?
+  - Spatial Resolution: Shapefile
+  - DOI: N/A
+  - Link: http://www.roadless.online/data/
+
+Environment variables included:
+-------------------------------------------------------------
+
+$Roadless_HOME     Location: /anvil/datasets/Covariates/Roadless
+$Roadless_ROOT     Location: /anvil/datasets/Covariates/Roadless
+$Roadless_VERSION  Version: 2016-01-01
+
+Tips:
+- Use echo $ENV_NAME to check the environment value.
+- To see all environment variables related to Roadless, you can load the module then use: env | grep Roadless
+- To unload the module and remove the environment settings: module unload Roadless
+-------------------------------------------------------------
+
+**Environment Variables**
++-----------------------+------------+
+| Variable Name         | Value      |
++=======================+============+
+| Roadless_HOME         | modroot    |
++-----------------------+------------+
+| RCAC_Roadless_ROOT    | modroot    |
++-----------------------+------------+
+| RCAC_Roadless_VERSION | 2016-01-01 |
++-----------------------+------------+
+

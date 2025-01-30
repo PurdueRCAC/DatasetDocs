@@ -1,0 +1,96 @@
+=========================================
+Dataset: MODIS_MOD16A3GF.061 (2021-03-11)
+=========================================
+
+Category: **geospatial**
+
+MODIS MOD16A3GF.061:
+
+This dataset provides annual gap-filled global terrestrial evapotranspiration data, supporting long-term studies in
+water resources and ecosystem monitoring.
+
+This dataset contains data with the following attributes:
+  - Time Resolution: N/A
+  - Spatial Resolution: N/A
+  - DOI: 10.5067/MODIS/MOD16A3GF.061
+  - Link: https://app.globus.org/file-manager?origin_id=765a60bd-a1d1-4aae-a119-56a20bb68e4c&origin_path=%2F
+
+Environment variables included:
+-------------------------------------------------------------
+$MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_2000_02_18  Location: /anvil/datasets/geospatial/MODIS_MOD16A3GF.061/2000.02.18
+$MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_2001_01_01  Location: /anvil/datasets/geospatial/MODIS_MOD16A3GF.061/2001.01.01
+$MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_2002_01_01  Location: /anvil/datasets/geospatial/MODIS_MOD16A3GF.061/2002.01.01
+$MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_2003_01_01  Location: /anvil/datasets/geospatial/MODIS_MOD16A3GF.061/2003.01.01
+$MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_2004_01_01  Location: /anvil/datasets/geospatial/MODIS_MOD16A3GF.061/2004.01.01
+
+19 additional environment variables not shown.
+
+$MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_HOME        Location: /anvil/datasets/geospatial/MODIS_MOD16A3GF.061
+$MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_ROOT        Location: /anvil/datasets/geospatial/MODIS_MOD16A3GF.061
+$MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_VERSION     Version: 2021-03-11
+
+Tips:
+- Use echo $ENV_NAME to check the environment value.
+- To see all environment variables related to MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61, you can load the module then use: env | grep MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61
+- To unload the module and remove the environment settings: module unload MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61
+-------------------------------------------------------------
+
+**Environment Variables**
++-------------------------------------------------------------+------------------------+
+| Variable Name                                               | Value                  |
++=============================================================+========================+
+| MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_2000_02_18   | modroot.."/2000.02.18" |
++-------------------------------------------------------------+------------------------+
+| MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_2001_01_01   | modroot.."/2001.01.01" |
++-------------------------------------------------------------+------------------------+
+| MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_2002_01_01   | modroot.."/2002.01.01" |
++-------------------------------------------------------------+------------------------+
+| MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_2003_01_01   | modroot.."/2003.01.01" |
++-------------------------------------------------------------+------------------------+
+| MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_2004_01_01   | modroot.."/2004.01.01" |
++-------------------------------------------------------------+------------------------+
+| MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_2005_01_01   | modroot.."/2005.01.01" |
++-------------------------------------------------------------+------------------------+
+| MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_2006_01_01   | modroot.."/2006.01.01" |
++-------------------------------------------------------------+------------------------+
+| MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_2007_01_01   | modroot.."/2007.01.01" |
++-------------------------------------------------------------+------------------------+
+| MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_2008_01_01   | modroot.."/2008.01.01" |
++-------------------------------------------------------------+------------------------+
+| MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_2009_01_01   | modroot.."/2009.01.01" |
++-------------------------------------------------------------+------------------------+
+| MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_2010_01_01   | modroot.."/2010.01.01" |
++-------------------------------------------------------------+------------------------+
+| MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_2011_01_01   | modroot.."/2011.01.01" |
++-------------------------------------------------------------+------------------------+
+| MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_2012_01_01   | modroot.."/2012.01.01" |
++-------------------------------------------------------------+------------------------+
+| MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_2013_01_01   | modroot.."/2013.01.01" |
++-------------------------------------------------------------+------------------------+
+| MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_2014_01_01   | modroot.."/2014.01.01" |
++-------------------------------------------------------------+------------------------+
+| MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_2015_01_01   | modroot.."/2015.01.01" |
++-------------------------------------------------------------+------------------------+
+| MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_2016_01_01   | modroot.."/2016.01.01" |
++-------------------------------------------------------------+------------------------+
+| MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_2017_01_01   | modroot.."/2017.01.01" |
++-------------------------------------------------------------+------------------------+
+| MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_2018_01_01   | modroot.."/2018.01.01" |
++-------------------------------------------------------------+------------------------+
+| MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_2019_01_01   | modroot.."/2019.01.01" |
++-------------------------------------------------------------+------------------------+
+| MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_2020_01_01   | modroot.."/2020.01.01" |
++-------------------------------------------------------------+------------------------+
+| MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_2021_01_01   | modroot.."/2021.01.01" |
++-------------------------------------------------------------+------------------------+
+| MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_2022_01_01   | modroot.."/2022.01.01" |
++-------------------------------------------------------------+------------------------+
+| MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_2023_01_01   | modroot.."/2023.01.01" |
++-------------------------------------------------------------+------------------------+
+| MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_HOME         | modroot                |
++-------------------------------------------------------------+------------------------+
+| RCAC_MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_ROOT    | modroot                |
++-------------------------------------------------------------+------------------------+
+| RCAC_MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61_VERSION | 2021-03-11             |
++-------------------------------------------------------------+------------------------+
+
