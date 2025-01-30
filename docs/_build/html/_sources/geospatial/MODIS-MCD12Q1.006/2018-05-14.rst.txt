@@ -1,0 +1,88 @@
+=======================================
+Dataset: MODIS-MCD12Q1.006 (2018-05-14)
+=======================================
+
+Category: **geospatial**
+
+MODIS - MCD12Q1.006
+
+This dataset provides annual land cover type data derived from the MODIS sensor. It includes classifications such as
+forests, grasslands, and urban areas, aiding in land cover change analysis and environmental assessments.
+
+This dataset contains data with the following attributes:
+  - Time Resolution: N/A
+  - Spatial Resolution: N/A
+  - DOI: 10.5067/MODIS/MCD12Q1.006
+  - Link: https://app.globus.org/file-manager?origin_id=ef71859e-e7d2-4132-952a-38e5f259ab0b&origin_path=%2F
+
+Environment variables included:
+-------------------------------------------------------------
+$MODIS_LAND_COVER_V6_2001_01_01  Location: /anvil/datasets/geospatial/MODIS-MCD12Q1.006/2001.01.01
+$MODIS_LAND_COVER_V6_2002_01_01  Location: /anvil/datasets/geospatial/MODIS-MCD12Q1.006/2002.01.01
+$MODIS_LAND_COVER_V6_2003_01_01  Location: /anvil/datasets/geospatial/MODIS-MCD12Q1.006/2003.01.01
+$MODIS_LAND_COVER_V6_2004_01_01  Location: /anvil/datasets/geospatial/MODIS-MCD12Q1.006/2004.01.01
+$MODIS_LAND_COVER_V6_2005_01_01  Location: /anvil/datasets/geospatial/MODIS-MCD12Q1.006/2005.01.01
+
+15 additional environment variables not shown.
+
+$MODIS_LAND_COVER_V6_HOME        Location: /anvil/datasets/geospatial/MODIS-MCD12Q1.006
+$MODIS_LAND_COVER_V6_ROOT        Location: /anvil/datasets/geospatial/MODIS-MCD12Q1.006
+$MODIS_LAND_COVER_V6_VERSION     Version: 2018-05-14
+
+Tips:
+- Use echo $ENV_NAME to check the environment value.
+- To see all environment variables related to MODIS_LAND_COVER_V6, you can load the module then use: env | grep MODIS_LAND_COVER_V6
+- To unload the module and remove the environment settings: module unload MODIS_LAND_COVER_V6
+-------------------------------------------------------------
+
+**Environment Variables**
++----------------------------------+------------------------+
+| Variable Name                    | Value                  |
++==================================+========================+
+| MODIS_LAND_COVER_V6_2001_01_01   | modroot.."/2001.01.01" |
++----------------------------------+------------------------+
+| MODIS_LAND_COVER_V6_2002_01_01   | modroot.."/2002.01.01" |
++----------------------------------+------------------------+
+| MODIS_LAND_COVER_V6_2003_01_01   | modroot.."/2003.01.01" |
++----------------------------------+------------------------+
+| MODIS_LAND_COVER_V6_2004_01_01   | modroot.."/2004.01.01" |
++----------------------------------+------------------------+
+| MODIS_LAND_COVER_V6_2005_01_01   | modroot.."/2005.01.01" |
++----------------------------------+------------------------+
+| MODIS_LAND_COVER_V6_2006_01_01   | modroot.."/2006.01.01" |
++----------------------------------+------------------------+
+| MODIS_LAND_COVER_V6_2007_01_01   | modroot.."/2007.01.01" |
++----------------------------------+------------------------+
+| MODIS_LAND_COVER_V6_2008_01_01   | modroot.."/2008.01.01" |
++----------------------------------+------------------------+
+| MODIS_LAND_COVER_V6_2009_01_01   | modroot.."/2009.01.01" |
++----------------------------------+------------------------+
+| MODIS_LAND_COVER_V6_2010_01_01   | modroot.."/2010.01.01" |
++----------------------------------+------------------------+
+| MODIS_LAND_COVER_V6_2011_01_01   | modroot.."/2011.01.01" |
++----------------------------------+------------------------+
+| MODIS_LAND_COVER_V6_2012_01_01   | modroot.."/2012.01.01" |
++----------------------------------+------------------------+
+| MODIS_LAND_COVER_V6_2013_01_01   | modroot.."/2013.01.01" |
++----------------------------------+------------------------+
+| MODIS_LAND_COVER_V6_2014_01_01   | modroot.."/2014.01.01" |
++----------------------------------+------------------------+
+| MODIS_LAND_COVER_V6_2015_01_01   | modroot.."/2015.01.01" |
++----------------------------------+------------------------+
+| MODIS_LAND_COVER_V6_2016_01_01   | modroot.."/2016.01.01" |
++----------------------------------+------------------------+
+| MODIS_LAND_COVER_V6_2017_01_01   | modroot.."/2017.01.01" |
++----------------------------------+------------------------+
+| MODIS_LAND_COVER_V6_2018_01_01   | modroot.."/2018.01.01" |
++----------------------------------+------------------------+
+| MODIS_LAND_COVER_V6_2019_01_01   | modroot.."/2019.01.01" |
++----------------------------------+------------------------+
+| MODIS_LAND_COVER_V6_2020_01_01   | modroot.."/2020.01.01" |
++----------------------------------+------------------------+
+| MODIS_LAND_COVER_V6_HOME         | modroot                |
++----------------------------------+------------------------+
+| RCAC_MODIS_LAND_COVER_V6_ROOT    | modroot                |
++----------------------------------+------------------------+
+| RCAC_MODIS_LAND_COVER_V6_VERSION | 2018-05-14             |
++----------------------------------+------------------------+
+

@@ -1,0 +1,40 @@
+============================
+Dataset: Cattle (2018-08-23)
+============================
+
+Category: **Covariates**
+
+Global cattle distribution in 2010
+
+Distribution of cattle in 2010 expressed in total number of cattle per pixel (5 min of arc)
+
+This dataset contains data with the following attributes:
+  - Time Resolution: 2010
+  - Spatial Resolution: 10 km
+  - DOI: 10.7910/DVN/GIVQ75
+  - Link: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/GIVQ75
+
+Environment variables included:
+-------------------------------------------------------------
+
+$Cattle_HOME     Location: /anvil/datasets/Covariates/Cattle
+$Cattle_ROOT     Location: /anvil/datasets/Covariates/Cattle
+$Cattle_VERSION  Version: 2018-08-23
+
+Tips:
+- Use echo $ENV_NAME to check the environment value.
+- To see all environment variables related to Cattle, you can load the module then use: env | grep Cattle
+- To unload the module and remove the environment settings: module unload Cattle
+-------------------------------------------------------------
+
+**Environment Variables**
++---------------------+------------+
+| Variable Name       | Value      |
++=====================+============+
+| Cattle_HOME         | modroot    |
++---------------------+------------+
+| RCAC_Cattle_ROOT    | modroot    |
++---------------------+------------+
+| RCAC_Cattle_VERSION | 2018-08-23 |
++---------------------+------------+
+

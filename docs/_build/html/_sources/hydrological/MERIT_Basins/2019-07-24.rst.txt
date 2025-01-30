@@ -1,0 +1,80 @@
+==================================
+Dataset: MERIT_Basins (2019-07-24)
+==================================
+
+Category: **hydrological**
+
+MERIT Basins (Multi-Error-Removed Improved-Terrain Basins)
+
+MERIT Basins is a dataset derived from the MERIT Hydro digital elevation model, delineating global river basins and sub-
+basins. It provides information on basin boundaries and hydrological flow directions, making it suitable for
+hydrological modeling and water resource management. The dataset supports large-scale studies of river networks and
+basin-level hydrology.
+
+This dataset contains data with the following attributes:
+  - Time Resolution: N/A
+  - Spatial Resolution: N/A
+  - DOI: 10.1029/2019WR025287
+  - Link: https://app.globus.org/file-manager?origin_id=42666942-fcce-4b56-9087-fd9c1c75d0ef&origin_path=%2F
+
+Environment variables included:
+-------------------------------------------------------------
+$MERIT_BASINS_MERIT_HYDRO_V00_BASINS_V01                                 Location: /anvil/datasets/hydrological/MERIT_Basins/MERIT_Hydro_v00_Basins_v01
+$MERIT_BASINS_MERIT_HYDRO_V00_BASINS_V01_LEVEL_01                        Location: /anvil/datasets/hydrological/MERIT_Basins/MERIT_Hydro_v00_Basins_v01/level_01
+$MERIT_BASINS_MERIT_HYDRO_V00_BASINS_V01_LEVEL_01_ADDITIONAL_PROPERTIES  Location: /anvil/datasets/hydrological/MERIT_Basins/MERIT_Hydro_v00_Basins_v01/level_01/additional_properties
+$MERIT_BASINS_MERIT_HYDRO_V00_BASINS_V01_LEVEL_02                        Location: /anvil/datasets/hydrological/MERIT_Basins/MERIT_Hydro_v00_Basins_v01/level_02
+$MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01                                 Location: /anvil/datasets/hydrological/MERIT_Basins/MERIT_Hydro_v07_Basins_v01
+
+10 additional environment variables not shown.
+
+$MERIT_BASINS_HOME                                                       Location: /anvil/datasets/hydrological/MERIT_Basins
+$MERIT_BASINS_ROOT                                                       Location: /anvil/datasets/hydrological/MERIT_Basins
+$MERIT_BASINS_VERSION                                                    Version: 2019-07-24
+
+Tips:
+- Use echo $ENV_NAME to check the environment value.
+- To see all environment variables related to MERIT_BASINS, you can load the module then use: env | grep MERIT_BASINS
+- To unload the module and remove the environment settings: module unload MERIT_BASINS
+-------------------------------------------------------------
+
+**Environment Variables**
++------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| Variable Name                                                          | Value                                                                 |
++========================================================================+=======================================================================+
+| MERIT_BASINS_MERIT_HYDRO_V00_BASINS_V01                                | modroot.."/MERIT_Hydro_v00_Basins_v01"                                |
++------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| MERIT_BASINS_MERIT_HYDRO_V00_BASINS_V01_LEVEL_01                       | modroot.."/MERIT_Hydro_v00_Basins_v01/level_01"                       |
++------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| MERIT_BASINS_MERIT_HYDRO_V00_BASINS_V01_LEVEL_01_ADDITIONAL_PROPERTIES | modroot.."/MERIT_Hydro_v00_Basins_v01/level_01/additional_properties" |
++------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| MERIT_BASINS_MERIT_HYDRO_V00_BASINS_V01_LEVEL_02                       | modroot.."/MERIT_Hydro_v00_Basins_v01/level_02"                       |
++------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01                                | modroot.."/MERIT_Hydro_v07_Basins_v01"                                |
++------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01_BUGFIX1                        | modroot.."/MERIT_Hydro_v07_Basins_v01_bugfix1"                        |
++------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01_BUGFIX1_COASTAL_HILLSLOPES     | modroot.."/MERIT_Hydro_v07_Basins_v01_bugfix1/coastal_hillslopes"     |
++------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01_BUGFIX1_PFAF_LEVEL_01          | modroot.."/MERIT_Hydro_v07_Basins_v01_bugfix1/pfaf_level_01"          |
++------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01_BUGFIX1_PFAF_LEVEL_02          | modroot.."/MERIT_Hydro_v07_Basins_v01_bugfix1/pfaf_level_02"          |
++------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01_PFAF_LEVEL_01                  | modroot.."/MERIT_Hydro_v07_Basins_v01/pfaf_level_01"                  |
++------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01_PFAF_LEVEL_02                  | modroot.."/MERIT_Hydro_v07_Basins_v01/pfaf_level_02"                  |
++------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01_README_TXT                     | modroot.."/MERIT_Hydro_v07_Basins_v01/ReadMe.txt"                     |
++------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01_ZIP                            | modroot.."/MERIT_Hydro_v07_Basins_v01/zip"                            |
++------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01_ZIP_PFAF_LEVEL_01              | modroot.."/MERIT_Hydro_v07_Basins_v01/zip/pfaf_level_01"              |
++------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01_ZIP_PFAF_LEVEL_02              | modroot.."/MERIT_Hydro_v07_Basins_v01/zip/pfaf_level_02"              |
++------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| MERIT_BASINS_HOME                                                      | modroot                                                               |
++------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| RCAC_MERIT_BASINS_ROOT                                                 | modroot                                                               |
++------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| RCAC_MERIT_BASINS_VERSION                                              | 2019-07-24                                                            |
++------------------------------------------------------------------------+-----------------------------------------------------------------------+
+

@@ -1,0 +1,40 @@
+======================================
+Dataset: CHELSA_2011-2040 (2020-09-05)
+======================================
+
+Category: **Covariates**
+
+CHELSA Climate Data for 2011-2040
+
+Climatic data projections for analysis and modeling.
+
+This dataset contains data with the following attributes:
+  - Time Resolution: 2011-2040
+  - Spatial Resolution: 1km
+  - DOI: 10.1038/sdata.2017.122
+  - Link: https://www.nature.com/articles/sdata2017122
+
+Environment variables included:
+-------------------------------------------------------------
+
+$CHELSA_2011-2040_HOME     Location: /anvil/datasets/Covariates/CHELSA_2011-2040
+$CHELSA_2011-2040_ROOT     Location: /anvil/datasets/Covariates/CHELSA_2011-2040
+$CHELSA_2011-2040_VERSION  Version: 2020-09-05
+
+Tips:
+- Use echo $ENV_NAME to check the environment value.
+- To see all environment variables related to CHELSA_2011-2040, you can load the module then use: env | grep CHELSA_2011-2040
+- To unload the module and remove the environment settings: module unload CHELSA_2011-2040
+-------------------------------------------------------------
+
+**Environment Variables**
++-------------------------------+------------+
+| Variable Name                 | Value      |
++===============================+============+
+| CHELSA_2011-2040_HOME         | modroot    |
++-------------------------------+------------+
+| RCAC_CHELSA_2011-2040_ROOT    | modroot    |
++-------------------------------+------------+
+| RCAC_CHELSA_2011-2040_VERSION | 2020-09-05 |
++-------------------------------+------------+
+

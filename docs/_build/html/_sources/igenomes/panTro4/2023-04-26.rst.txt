@@ -1,0 +1,39 @@
+=============================
+Dataset: panTro4 (2023-04-26)
+=============================
+
+Category: **igenomes**
+
+The contents of the annotation directories were downloaded from UCSC on: July 17, 2015.
+
+SmallRNA annotation files were downloaded from miRBase release 21.
+
+**Environment Variables**
++----------------------+-------------------------------------------------+
+| Variable Name        | Value                                           |
++======================+=================================================+
+| panTro4_fasta        | modroot.."/Sequence/WholeGenomeFasta/genome.fa" |
++----------------------+-------------------------------------------------+
+| panTro4_bwa          | modroot.."/Sequence/BWAIndex/version0.6.0/"     |
++----------------------+-------------------------------------------------+
+| panTro4_bowtie2      | modroot.."/Sequence/Bowtie2Index/"              |
++----------------------+-------------------------------------------------+
+| panTro4_star         | modroot.."/Sequence/STARIndex/"                 |
++----------------------+-------------------------------------------------+
+| panTro4_bismark      | modroot.."/Sequence/BismarkIndex/"              |
++----------------------+-------------------------------------------------+
+| panTro4_gtf          | modroot.."/Annotation/Genes/genes.gtf"          |
++----------------------+-------------------------------------------------+
+| panTro4_bed12        | modroot.."/Annotation/Genes/genes.bed"          |
++----------------------+-------------------------------------------------+
+| panTro4_readme       | modroot.."/Annotation/README.txt"               |
++----------------------+-------------------------------------------------+
+| panTro4_mito_name    | chrM                                            |
++----------------------+-------------------------------------------------+
+| panTro4_HOME         | modroot                                         |
++----------------------+-------------------------------------------------+
+| RCAC_panTro4_ROOT    | modroot                                         |
++----------------------+-------------------------------------------------+
+| RCAC_panTro4_VERSION | 2023-04-26                                      |
++----------------------+-------------------------------------------------+
+
