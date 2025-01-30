@@ -32,21 +32,44 @@ Tips:
 -------------------------------------------------------------
 
 **Environment Variables**
-+----------------------------------+-----------------------------+
-| Variable Name                    | Value                       |
-+==================================+=============================+
-| ForestHeight2020_1KM_AGGREGATED  | modroot.."/1km_Aggregated"  |
-+----------------------------------+-----------------------------+
-| ForestHeight2020_30KM_AGGREGATED | modroot.."/30km_Aggregated" |
-+----------------------------------+-----------------------------+
-| ForestHeight2020_30M_ORIGINAL    | modroot.."/30m_Original"    |
-+----------------------------------+-----------------------------+
-| ForestHeight2020_3KM_AGGREGATED  | modroot.."/3km_Aggregated"  |
-+----------------------------------+-----------------------------+
-| ForestHeight2020_HOME            | modroot                     |
-+----------------------------------+-----------------------------+
-| RCAC_ForestHeight2020_ROOT       | modroot                     |
-+----------------------------------+-----------------------------+
-| RCAC_ForestHeight2020_VERSION    | 2022-04-15                  |
-+----------------------------------+-----------------------------+
+
+.. list-table::
+
+   :header-rows: 1
+
+   :widths: 25 75
+
+
+
+   * - **Variable Name**
+
+     - **Value**
+
+   * - ``ForestHeight2020_1KM_AGGREGATED``
+
+     - ``modroot.."/1km_Aggregated"``
+
+   * - ``ForestHeight2020_30KM_AGGREGATED``
+
+     - ``modroot.."/30km_Aggregated"``
+
+   * - ``ForestHeight2020_30M_ORIGINAL``
+
+     - ``modroot.."/30m_Original"``
+
+   * - ``ForestHeight2020_3KM_AGGREGATED``
+
+     - ``modroot.."/3km_Aggregated"``
+
+   * - ``ForestHeight2020_HOME``
+
+     - ``modroot``
+
+   * - ``RCAC_ForestHeight2020_ROOT``
+
+     - ``modroot``
+
+   * - ``RCAC_ForestHeight2020_VERSION``
+
+     - ``2022-04-15``
 

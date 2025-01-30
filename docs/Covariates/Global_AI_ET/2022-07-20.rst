@@ -28,13 +28,28 @@ Tips:
 -------------------------------------------------------------
 
 **Environment Variables**
-+---------------------------+------------+
-| Variable Name             | Value      |
-+===========================+============+
-| Global_AI_ET_HOME         | modroot    |
-+---------------------------+------------+
-| RCAC_Global_AI_ET_ROOT    | modroot    |
-+---------------------------+------------+
-| RCAC_Global_AI_ET_VERSION | 2022-07-20 |
-+---------------------------+------------+
+
+.. list-table::
+
+   :header-rows: 1
+
+   :widths: 25 75
+
+
+
+   * - **Variable Name**
+
+     - **Value**
+
+   * - ``Global_AI_ET_HOME``
+
+     - ``modroot``
+
+   * - ``RCAC_Global_AI_ET_ROOT``
+
+     - ``modroot``
+
+   * - ``RCAC_Global_AI_ET_VERSION``
+
+     - ``2022-07-20``
 

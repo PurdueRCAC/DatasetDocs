@@ -30,13 +30,28 @@ Tips:
 -------------------------------------------------------------
 
 **Environment Variables**
-+---------------------+------------+
-| Variable Name       | Value      |
-+=====================+============+
-| DAYMET_HOME         | modroot    |
-+---------------------+------------+
-| RCAC_DAYMET_ROOT    | modroot    |
-+---------------------+------------+
-| RCAC_DAYMET_VERSION | 2022-11-01 |
-+---------------------+------------+
+
+.. list-table::
+
+   :header-rows: 1
+
+   :widths: 25 75
+
+
+
+   * - **Variable Name**
+
+     - **Value**
+
+   * - ``DAYMET_HOME``
+
+     - ``modroot``
+
+   * - ``RCAC_DAYMET_ROOT``
+
+     - ``modroot``
+
+   * - ``RCAC_DAYMET_VERSION``
+
+     - ``2022-11-01``
 

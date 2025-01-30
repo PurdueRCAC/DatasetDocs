@@ -9,31 +9,64 @@ The contents of the annotation directories were downloaded from UCSC on: July 17
 SmallRNA annotation files were downloaded from miRBase release 21.
 
 **Environment Variables**
-+----------------------+-------------------------------------------------+
-| Variable Name        | Value                                           |
-+======================+=================================================+
-| susScr3_fasta        | modroot.."/Sequence/WholeGenomeFasta/genome.fa" |
-+----------------------+-------------------------------------------------+
-| susScr3_bwa          | modroot.."/Sequence/BWAIndex/version0.6.0/"     |
-+----------------------+-------------------------------------------------+
-| susScr3_bowtie2      | modroot.."/Sequence/Bowtie2Index/"              |
-+----------------------+-------------------------------------------------+
-| susScr3_star         | modroot.."/Sequence/STARIndex/"                 |
-+----------------------+-------------------------------------------------+
-| susScr3_bismark      | modroot.."/Sequence/BismarkIndex/"              |
-+----------------------+-------------------------------------------------+
-| susScr3_gtf          | modroot.."/Annotation/Genes/genes.gtf"          |
-+----------------------+-------------------------------------------------+
-| susScr3_bed12        | modroot.."/Annotation/Genes/genes.bed"          |
-+----------------------+-------------------------------------------------+
-| susScr3_readme       | modroot.."/Annotation/README.txt"               |
-+----------------------+-------------------------------------------------+
-| susScr3_mito_name    | chrM                                            |
-+----------------------+-------------------------------------------------+
-| susScr3_HOME         | modroot                                         |
-+----------------------+-------------------------------------------------+
-| RCAC_susScr3_ROOT    | modroot                                         |
-+----------------------+-------------------------------------------------+
-| RCAC_susScr3_VERSION | 2023-04-26                                      |
-+----------------------+-------------------------------------------------+
+
+.. list-table::
+
+   :header-rows: 1
+
+   :widths: 25 75
+
+
+
+   * - **Variable Name**
+
+     - **Value**
+
+   * - ``susScr3_fasta``
+
+     - ``modroot.."/Sequence/WholeGenomeFasta/genome.fa"``
+
+   * - ``susScr3_bwa``
+
+     - ``modroot.."/Sequence/BWAIndex/version0.6.0/"``
+
+   * - ``susScr3_bowtie2``
+
+     - ``modroot.."/Sequence/Bowtie2Index/"``
+
+   * - ``susScr3_star``
+
+     - ``modroot.."/Sequence/STARIndex/"``
+
+   * - ``susScr3_bismark``
+
+     - ``modroot.."/Sequence/BismarkIndex/"``
+
+   * - ``susScr3_gtf``
+
+     - ``modroot.."/Annotation/Genes/genes.gtf"``
+
+   * - ``susScr3_bed12``
+
+     - ``modroot.."/Annotation/Genes/genes.bed"``
+
+   * - ``susScr3_readme``
+
+     - ``modroot.."/Annotation/README.txt"``
+
+   * - ``susScr3_mito_name``
+
+     - ``chrM``
+
+   * - ``susScr3_HOME``
+
+     - ``modroot``
+
+   * - ``RCAC_susScr3_ROOT``
+
+     - ``modroot``
+
+   * - ``RCAC_susScr3_VERSION``
+
+     - ``2023-04-26``
 

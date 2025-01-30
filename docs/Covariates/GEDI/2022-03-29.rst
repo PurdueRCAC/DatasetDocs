@@ -28,13 +28,28 @@ Tips:
 -------------------------------------------------------------
 
 **Environment Variables**
-+-------------------+------------+
-| Variable Name     | Value      |
-+===================+============+
-| GEDI_HOME         | modroot    |
-+-------------------+------------+
-| RCAC_GEDI_ROOT    | modroot    |
-+-------------------+------------+
-| RCAC_GEDI_VERSION | 2022-03-29 |
-+-------------------+------------+
+
+.. list-table::
+
+   :header-rows: 1
+
+   :widths: 25 75
+
+
+
+   * - **Variable Name**
+
+     - **Value**
+
+   * - ``GEDI_HOME``
+
+     - ``modroot``
+
+   * - ``RCAC_GEDI_ROOT``
+
+     - ``modroot``
+
+   * - ``RCAC_GEDI_VERSION``
+
+     - ``2022-03-29``
 

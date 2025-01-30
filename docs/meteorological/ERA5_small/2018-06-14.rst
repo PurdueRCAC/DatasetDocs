@@ -30,13 +30,28 @@ Tips:
 -------------------------------------------------------------
 
 **Environment Variables**
-+-------------------------+------------+
-| Variable Name           | Value      |
-+=========================+============+
-| ERA5_HYDRO_HOME         | modroot    |
-+-------------------------+------------+
-| RCAC_ERA5_HYDRO_ROOT    | modroot    |
-+-------------------------+------------+
-| RCAC_ERA5_HYDRO_VERSION | 2018-06-14 |
-+-------------------------+------------+
+
+.. list-table::
+
+   :header-rows: 1
+
+   :widths: 25 75
+
+
+
+   * - **Variable Name**
+
+     - **Value**
+
+   * - ``ERA5_HYDRO_HOME``
+
+     - ``modroot``
+
+   * - ``RCAC_ERA5_HYDRO_ROOT``
+
+     - ``modroot``
+
+   * - ``RCAC_ERA5_HYDRO_VERSION``
+
+     - ``2018-06-14``
 

@@ -9,31 +9,64 @@ The contents of the annotation directories were downloaded from UCSC on: July 17
 SmallRNA annotation files were downloaded from miRBase release 21.
 
 **Environment Variables**
-+----------------------+-------------------------------------------------+
-| Variable Name        | Value                                           |
-+======================+=================================================+
-| canFam3_fasta        | modroot.."/Sequence/WholeGenomeFasta/genome.fa" |
-+----------------------+-------------------------------------------------+
-| canFam3_bwa          | modroot.."/Sequence/BWAIndex/version0.6.0/"     |
-+----------------------+-------------------------------------------------+
-| canFam3_bowtie2      | modroot.."/Sequence/Bowtie2Index/"              |
-+----------------------+-------------------------------------------------+
-| canFam3_star         | modroot.."/Sequence/STARIndex/"                 |
-+----------------------+-------------------------------------------------+
-| canFam3_bismark      | modroot.."/Sequence/BismarkIndex/"              |
-+----------------------+-------------------------------------------------+
-| canFam3_gtf          | modroot.."/Annotation/Genes/genes.gtf"          |
-+----------------------+-------------------------------------------------+
-| canFam3_bed12        | modroot.."/Annotation/Genes/genes.bed"          |
-+----------------------+-------------------------------------------------+
-| canFam3_readme       | modroot.."/Annotation/README.txt"               |
-+----------------------+-------------------------------------------------+
-| canFam3_mito_name    | chrM                                            |
-+----------------------+-------------------------------------------------+
-| canFam3_HOME         | modroot                                         |
-+----------------------+-------------------------------------------------+
-| RCAC_canFam3_ROOT    | modroot                                         |
-+----------------------+-------------------------------------------------+
-| RCAC_canFam3_VERSION | 2023-04-26                                      |
-+----------------------+-------------------------------------------------+
+
+.. list-table::
+
+   :header-rows: 1
+
+   :widths: 25 75
+
+
+
+   * - **Variable Name**
+
+     - **Value**
+
+   * - ``canFam3_fasta``
+
+     - ``modroot.."/Sequence/WholeGenomeFasta/genome.fa"``
+
+   * - ``canFam3_bwa``
+
+     - ``modroot.."/Sequence/BWAIndex/version0.6.0/"``
+
+   * - ``canFam3_bowtie2``
+
+     - ``modroot.."/Sequence/Bowtie2Index/"``
+
+   * - ``canFam3_star``
+
+     - ``modroot.."/Sequence/STARIndex/"``
+
+   * - ``canFam3_bismark``
+
+     - ``modroot.."/Sequence/BismarkIndex/"``
+
+   * - ``canFam3_gtf``
+
+     - ``modroot.."/Annotation/Genes/genes.gtf"``
+
+   * - ``canFam3_bed12``
+
+     - ``modroot.."/Annotation/Genes/genes.bed"``
+
+   * - ``canFam3_readme``
+
+     - ``modroot.."/Annotation/README.txt"``
+
+   * - ``canFam3_mito_name``
+
+     - ``chrM``
+
+   * - ``canFam3_HOME``
+
+     - ``modroot``
+
+   * - ``RCAC_canFam3_ROOT``
+
+     - ``modroot``
+
+   * - ``RCAC_canFam3_VERSION``
+
+     - ``2023-04-26``
 

@@ -29,13 +29,28 @@ Tips:
 -------------------------------------------------------------
 
 **Environment Variables**
-+------------------+------------+
-| Variable Name    | Value      |
-+==================+============+
-| SCE_HOME         | modroot    |
-+------------------+------------+
-| RCAC_SCE_ROOT    | modroot    |
-+------------------+------------+
-| RCAC_SCE_VERSION | 2021-07-01 |
-+------------------+------------+
+
+.. list-table::
+
+   :header-rows: 1
+
+   :widths: 25 75
+
+
+
+   * - **Variable Name**
+
+     - **Value**
+
+   * - ``SCE_HOME``
+
+     - ``modroot``
+
+   * - ``RCAC_SCE_ROOT``
+
+     - ``modroot``
+
+   * - ``RCAC_SCE_VERSION``
+
+     - ``2021-07-01``
 
