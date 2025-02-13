@@ -1,6 +1,8 @@
-==========================
-Dataset: ERA5 (2018-06-14)
-==========================
+====
+ERA5
+====
+
+Version: 2018-06-14
 
 Category: **meteorological**
 
@@ -12,16 +14,22 @@ ERA5
 ERA5 is a comprehensive reanalysis dataset produced by the European Centre for Medium-Range Weather Forecasts (ECMWF). It offers hourly estimates of atmospheric, land, and oceanic variables from January 1940 to the present, with a global spatial resolution of approximately 30 km. ERA5 is widely used for climate research, weather forecasting, and environmental monitoring.
 
 This dataset contains data with the following attributes:
+
 * Time Resolution: Hourly (Jan 1940 - Present)
+
 * Spatial Resolution: 30km - Global
+
 * DOI: 10.24381/cds.adbb2d47
+
 * Link: https://console.cloud.google.com/storage/browser/gcp-public-data-arco-era5/raw?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))
 
 **Tips:**
+
 * Use echo $ENV_NAME to check the environment value.
+
 * To see all environment variables related to ERA5, you can load the module then use: env | grep ERA5
+
 * To unload the module and remove the environment settings: module unload ERA5
--------------------------------------------------------------
 
 Usage
 -----

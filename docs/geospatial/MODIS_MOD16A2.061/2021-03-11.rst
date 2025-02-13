@@ -1,6 +1,8 @@
-=======================================
-Dataset: MODIS_MOD16A2.061 (2021-03-11)
-=======================================
+=================
+MODIS_MOD16A2.061
+=================
+
+Version: 2021-03-11
 
 Category: **geospatial**
 
@@ -12,16 +14,22 @@ MODIS MOD16A2.061
 This dataset provides 8-day estimates of global terrestrial evapotranspiration and potential evapotranspiration. It supports studies in hydrology, agriculture, and climate science.
 
 This dataset contains data with the following attributes:
+
 * Time Resolution: N/A
+
 * Spatial Resolution: N/A
+
 * DOI: 10.5067/MODIS/MOD16A2.061
+
 * Link: https://app.globus.org/file-manager?origin_id=fc37cdc2-f1ee-49e5-8c93-d5049ef813c4&origin_path=%2F
 
 **Tips:**
+
 * Use echo $ENV_NAME to check the environment value.
+
 * To see all environment variables related to MODIS_EVAPOTRANSPIRATION_V61, you can load the module then use: env | grep MODIS_EVAPOTRANSPIRATION_V61
+
 * To unload the module and remove the environment settings: module unload MODIS_EVAPOTRANSPIRATION_V61
--------------------------------------------------------------
 
 Usage
 -----

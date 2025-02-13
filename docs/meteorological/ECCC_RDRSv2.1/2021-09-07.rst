@@ -1,6 +1,8 @@
-===================================
-Dataset: ECCC_RDRSv2.1 (2021-09-07)
-===================================
+=============
+ECCC_RDRSv2.1
+=============
+
+Version: 2021-09-07
 
 Category: **meteorological**
 
@@ -12,16 +14,22 @@ ECCC RDRS (Environment and Climate Change Canada Regional Deterministic Reforeca
 The RDRSv2.1 dataset is a high-resolution atmospheric reanalysis produced by Environment and Climate Change Canada (ECCC). It offers hourly data from January 1980 to December 2018, covering North America at a 10 km spatial resolution. The dataset includes variables such as temperature, precipitation, and wind, and is utilized in hydrological modeling and climate studies.
 
 This dataset contains data with the following attributes:
+
 * Time Resolution: Hourly (Jan 1980 - Dec 2018)
+
 * Spatial Resolution: 10km - North America
+
 * DOI: 10.5194/hess-25-4917-2021
+
 * Link: https://app.globus.org/file-manager?origin_id=3e4b05eb-7d5f-4c11-8280-f2b009e69a92&origin_path=%2F
 
 **Tips:**
+
 * Use echo $ENV_NAME to check the environment value.
+
 * To see all environment variables related to ECCC_RDRS, you can load the module then use: env | grep ECCC_RDRS
+
 * To unload the module and remove the environment settings: module unload ECCC_RDRS
--------------------------------------------------------------
 
 Usage
 -----

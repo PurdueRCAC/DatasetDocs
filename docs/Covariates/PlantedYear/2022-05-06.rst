@@ -1,6 +1,8 @@
-=================================
-Dataset: PlantedYear (2022-05-06)
-=================================
+===========
+PlantedYear
+===========
+
+Version: 2022-05-06
 
 Category: **Covariates**
 
@@ -12,16 +14,22 @@ Global Plantation Year Data
 Year of planting for global plantation areas.
 
 This dataset contains data with the following attributes:
+
 * Time Resolution: ?
+
 * Spatial Resolution: 30 m
+
 * DOI: 10.1038/s41597-022-01260-2
+
 * Link: https://doi.org/10.6084/m9.figshare.19070084.v2
 
 **Tips:**
+
 * Use echo $ENV_NAME to check the environment value.
+
 * To see all environment variables related to PlantedYear, you can load the module then use: env | grep PlantedYear
+
 * To unload the module and remove the environment settings: module unload PlantedYear
--------------------------------------------------------------
 
 Usage
 -----

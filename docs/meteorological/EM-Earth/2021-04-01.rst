@@ -1,6 +1,8 @@
-==============================
-Dataset: EM-Earth (2021-04-01)
-==============================
+========
+EM-Earth
+========
+
+Version: 2021-04-01
 
 Category: **meteorological**
 
@@ -12,16 +14,22 @@ EM-Earth
 EM-Earth is a global dataset offering hourly and daily meteorological variables from January 1950 to December 2019. With an 11 km spatial resolution, it supports climate modeling, environmental assessments, and related research endeavors.
 
 This dataset contains data with the following attributes:
+
 * Time Resolution: Hourly/Daily (Jan 1950 - Dec 2019)
+
 * Spatial Resolution: 11km - Global
+
 * DOI: 10.1175/BAMS-D-21-0106.1
+
 * Link: https://www.frdr-dfdr.ca/repo/dataset/8d30ab02-f2bd-4d05-ae43-11f4a387e5ad
 
 **Tips:**
+
 * Use echo $ENV_NAME to check the environment value.
+
 * To see all environment variables related to EME, you can load the module then use: env | grep EME
+
 * To unload the module and remove the environment settings: module unload EME
--------------------------------------------------------------
 
 Usage
 -----

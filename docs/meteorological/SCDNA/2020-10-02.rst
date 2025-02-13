@@ -1,6 +1,8 @@
-===========================
-Dataset: SCDNA (2020-10-02)
-===========================
+=====
+SCDNA
+=====
+
+Version: 2020-10-02
 
 Category: **meteorological**
 
@@ -12,16 +14,22 @@ SCDNA (Surface Climate Data for North America)
 SCDNA is a point-based dataset offering daily surface climate variables across North America from January 1979 to December 2018. It includes temperature, precipitation, and other essential climate metrics, supporting localized climate analyses.
 
 This dataset contains data with the following attributes:
+
 * Time Resolution: Daily (Jan 1979 - Dec 2018)
+
 * Spatial Resolution: Point-based - North America
+
 * DOI: 10.5194/essd-12-2381-2020
+
 * Link: https://zenodo.org/records/3953310
 
 **Tips:**
+
 * Use echo $ENV_NAME to check the environment value.
+
 * To see all environment variables related to SCDNA, you can load the module then use: env | grep SCDNA
+
 * To unload the module and remove the environment settings: module unload SCDNA
--------------------------------------------------------------
 
 Usage
 -----

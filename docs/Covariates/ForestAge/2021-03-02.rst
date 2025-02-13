@@ -1,6 +1,8 @@
-===============================
-Dataset: ForestAge (2021-03-02)
-===============================
+=========
+ForestAge
+=========
+
+Version: 2021-03-02
 
 Category: **Covariates**
 
@@ -12,16 +14,22 @@ Global Forest Age
 Mapped global forest age from inventories, biomass, and climate data.
 
 This dataset contains data with the following attributes:
+
 * Time Resolution: 2010
+
 * Spatial Resolution: 1 km
+
 * DOI: 10.5194/essd-13-4881-2021
+
 * Link: https://doi.org/10.17871/ForestAgeBGI.2021
 
 **Tips:**
+
 * Use echo $ENV_NAME to check the environment value.
+
 * To see all environment variables related to ForestAge, you can load the module then use: env | grep ForestAge
+
 * To unload the module and remove the environment settings: module unload ForestAge
--------------------------------------------------------------
 
 Usage
 -----

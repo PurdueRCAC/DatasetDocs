@@ -1,6 +1,8 @@
-==============================================
-Dataset: WorldClim_Historical_bio (2017-05-17)
-==============================================
+========================
+WorldClim_Historical_bio
+========================
+
+Version: 2017-05-17
 
 Category: **Covariates**
 
@@ -12,16 +14,22 @@ WorldClim Historical Climate Data
 Historical climate data for global land areas.
 
 This dataset contains data with the following attributes:
+
 * Time Resolution: 1970-2000
+
 * Spatial Resolution: 30 arc-seconds (~1 km)
+
 * DOI: 10.1038/sdata.2017.190
+
 * Link: https://www.worldclim.org/data/worldclim21.html
 
 **Tips:**
+
 * Use echo $ENV_NAME to check the environment value.
+
 * To see all environment variables related to WorldClim_Historical_bio, you can load the module then use: env | grep WorldClim_Historical_bio
+
 * To unload the module and remove the environment settings: module unload WorldClim_Historical_bio
--------------------------------------------------------------
 
 Usage
 -----

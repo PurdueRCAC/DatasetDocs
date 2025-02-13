@@ -1,6 +1,8 @@
-===================================
-Dataset: ProtectedArea (2019-01-01)
-===================================
+=============
+ProtectedArea
+=============
+
+Version: 2019-01-01
 
 Category: **Covariates**
 
@@ -12,16 +14,22 @@ World Database on Protected Areas
 Contains protected area boundaries and conservation status.
 
 This dataset contains data with the following attributes:
+
 * Time Resolution: 2019
+
 * Spatial Resolution: Shapefile
+
 * DOI: N/A
+
 * Link: https://www.protectedplanet.net/en
 
 **Tips:**
+
 * Use echo $ENV_NAME to check the environment value.
+
 * To see all environment variables related to ProtectedArea, you can load the module then use: env | grep ProtectedArea
+
 * To unload the module and remove the environment settings: module unload ProtectedArea
--------------------------------------------------------------
 
 Usage
 -----

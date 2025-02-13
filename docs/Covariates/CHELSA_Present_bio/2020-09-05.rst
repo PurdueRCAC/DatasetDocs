@@ -1,6 +1,8 @@
-========================================
-Dataset: CHELSA_Present_bio (2020-09-05)
-========================================
+==================
+CHELSA_Present_bio
+==================
+
+Version: 2020-09-05
 
 Category: **Covariates**
 
@@ -12,16 +14,22 @@ CHELSA Bioclimatic Variables
 High-resolution climatic data for present-day bioclimatic analysis.
 
 This dataset contains data with the following attributes:
+
 * Time Resolution: 1979-2013
+
 * Spatial Resolution: 1 km
+
 * DOI: 10.1038/sdata.2017.122
+
 * Link: https://chelsa-climate.org/bioclim/
 
 **Tips:**
+
 * Use echo $ENV_NAME to check the environment value.
+
 * To see all environment variables related to CHELSA_Present_bio, you can load the module then use: env | grep CHELSA_Present_bio
+
 * To unload the module and remove the environment settings: module unload CHELSA_Present_bio
--------------------------------------------------------------
 
 Usage
 -----
