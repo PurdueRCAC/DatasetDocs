@@ -10,9 +10,15 @@ The documentation for all available datasets can be found online at [ReadTheDocs
 
 The documentation is stored in the `/docs` directory of this repository and is continuously built and updated on Read the Docs.
 
+### Use of Datasets
+
+The datasets provided in this repository are federated and play a crucial role in enhancing the efficacy of HPC-optimized workflows across various research domains. Anvil's community dataset storage offers smooth and high-speed access to large-scale datasets, significantly benefiting scientific workflows. The hundreds of terabytes of meteorological and geospatial datasets available on Anvil have been essential for the seamless operation of our tools and scientific efforts, allowing researchers to focus more on scientific discovery rather than navigating data-related challenges.
+
+For more information about Anvil and its capabilities, please visit the [RCAC Anvil page](https://www.rcac.purdue.edu/compute/anvil).
+
 ## Documentation Generator
 
-The documentation generator tool automatically creates and maintains documentation for scientific datasets by parsing Lmod module files and creating structured documentation in reStructuredText format.
+The documentation generator tool automatically creates and maintains documentation for scientific datasets by parsing Lmod module files and creating structured documentation in reStructuredText (rst) format.
 
 ### Features
 
@@ -58,8 +64,8 @@ The generated documentation follows this structure:
 
 ```
 docs/
-├── index.rst                 # Main documentation index
-├── category1/               # Top-level dataset category
+├── index.rst               # Main documentation index
+├── category1/              # Top-level dataset category
 │   ├── dataset1/           # Dataset subdirectory
 │   │   └── YYYY-MM-DD.rst  # Version-specific documentation
 │   └── index.rst           # Category index
@@ -90,4 +96,4 @@ Please feel free to submit a Pull Request.
 
 ## License
 
-[Add your license information here]
+This project is licensed under the Open Source License License - see the [LICENSE](LICENSE.txt) file for details.

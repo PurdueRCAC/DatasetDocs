@@ -1,5 +1,5 @@
 ================
-equCab2 Datasets
+EquCab2 Datasets
 ================
 
 .. toctree::

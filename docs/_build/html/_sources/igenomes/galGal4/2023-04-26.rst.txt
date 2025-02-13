@@ -1,11 +1,7 @@
-galGal4
+Galgal4
 =======
 
 Category: **igenomes**
-
-The contents of the annotation directories were downloaded from UCSC on: July 17, 2015.
-
-SmallRNA annotation files were downloaded from miRBase release 21.
 
 Environment Variables
 ---------------------
@@ -16,28 +12,26 @@ Environment Variables
 
    * - **Variable Name**
      - **Value**
-   * - ``galGal4_fasta``
+   * - ``Galgal4_fasta``
      - ``modroot.."/Sequence/WholeGenomeFasta/genome.fa"``
-   * - ``galGal4_bwa``
+   * - ``Galgal4_bwa``
      - ``modroot.."/Sequence/BWAIndex/version0.6.0/"``
-   * - ``galGal4_bowtie2``
+   * - ``Galgal4_bowtie2``
      - ``modroot.."/Sequence/Bowtie2Index/"``
-   * - ``galGal4_star``
+   * - ``Galgal4_star``
      - ``modroot.."/Sequence/STARIndex/"``
-   * - ``galGal4_bismark``
+   * - ``Galgal4_bismark``
      - ``modroot.."/Sequence/BismarkIndex/"``
-   * - ``galGal4_gtf``
+   * - ``Galgal4_gtf``
      - ``modroot.."/Annotation/Genes/genes.gtf"``
-   * - ``galGal4_bed12``
+   * - ``Galgal4_bed12``
      - ``modroot.."/Annotation/Genes/genes.bed"``
-   * - ``galGal4_readme``
-     - ``modroot.."/Annotation/README.txt"``
-   * - ``galGal4_mito_name``
-     - ``chrM``
-   * - ``galGal4_HOME``
+   * - ``Galgal4_mito_name``
+     - ``MT``
+   * - ``Galgal4_HOME``
      - ``modroot``
-   * - ``RCAC_galGal4_ROOT``
+   * - ``RCAC_Galgal4_ROOT``
      - ``modroot``
-   * - ``RCAC_galGal4_VERSION``
+   * - ``RCAC_Galgal4_VERSION``
      - ``2023-04-26``
 

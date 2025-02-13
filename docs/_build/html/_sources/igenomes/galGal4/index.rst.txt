@@ -1,5 +1,5 @@
 ================
-galGal4 Datasets
+Galgal4 Datasets
 ================
 
 .. toctree::

@@ -145,7 +145,7 @@ def clean_help_text(help_text: str) -> str:
             if current_paragraph:
                 fixed_lines.append(' '.join(current_paragraph))
                 current_paragraph = []
-            fixed_lines.append('\n**Tips:**')  # Make it bold in RST
+            fixed_lines.append('**Tips:**\n')  # Make it bold in RST and add newline
             in_tips = True
             in_attributes = False
             continue
