@@ -1,5 +1,5 @@
 =============================
-Dataset: equCab2 (2023-04-26)
+Dataset: EquCab2 (2023-04-26)
 =============================
 
 Category: **igenomes**
@@ -7,9 +7,9 @@ Category: **igenomes**
 Description
 -----------
 
-The contents of the annotation directories were downloaded from UCSC on: July 17, 2015.
+The contents of the annotation directories were downloaded from Ensembl on: July 17, 2015.
 
-SmallRNA annotation files were downloaded from miRBase release 21.
+Gene annotation files were downloaded from Ensembl release 81. SmallRNA annotation files were downloaded from miRBase release 21.
 
 Usage
 -----
@@ -18,7 +18,7 @@ To find and load available datasets::
 
     $ module avail
     $ module load datasets
-    $ module spider datasets/igenomes/equCab2
+    $ module spider datasets/igenomes/EquCab2
 
 Environment Variables
 -------------------
@@ -29,27 +29,27 @@ Environment Variables
 
    * - **Variable Name**
      - **Value**
-   * - ``equCab2_fasta``
-     - ``/anvil/datasets/igenomes/Equus_caballus/UCSC/equCab2/Sequence/WholeGenomeFasta/genome.fa``
-   * - ``equCab2_bwa``
-     - ``/anvil/datasets/igenomes/Equus_caballus/UCSC/equCab2/Sequence/BWAIndex/version0.6.0/``
-   * - ``equCab2_bowtie2``
-     - ``/anvil/datasets/igenomes/Equus_caballus/UCSC/equCab2/Sequence/Bowtie2Index/``
-   * - ``equCab2_star``
-     - ``/anvil/datasets/igenomes/Equus_caballus/UCSC/equCab2/Sequence/STARIndex/``
-   * - ``equCab2_bismark``
-     - ``/anvil/datasets/igenomes/Equus_caballus/UCSC/equCab2/Sequence/BismarkIndex/``
-   * - ``equCab2_gtf``
-     - ``/anvil/datasets/igenomes/Equus_caballus/UCSC/equCab2/Annotation/Genes/genes.gtf``
-   * - ``equCab2_bed12``
-     - ``/anvil/datasets/igenomes/Equus_caballus/UCSC/equCab2/Annotation/Genes/genes.bed``
-   * - ``equCab2_readme``
-     - ``/anvil/datasets/igenomes/Equus_caballus/UCSC/equCab2/Annotation/README.txt``
-   * - ``equCab2_mito_name``
-     - ``chrM``
-   * - ``equCab2_HOME``
-     - ``/anvil/datasets/igenomes/Equus_caballus/UCSC/equCab2``
-   * - ``RCAC_equCab2_ROOT``
-     - ``/anvil/datasets/igenomes/Equus_caballus/UCSC/equCab2``
-   * - ``RCAC_equCab2_VERSION``
+   * - ``EquCab2_fasta``
+     - ``/anvil/datasets/igenomes/Equus_caballus/Ensembl/EquCab2/Sequence/WholeGenomeFasta/genome.fa``
+   * - ``EquCab2_bwa``
+     - ``/anvil/datasets/igenomes/Equus_caballus/Ensembl/EquCab2/Sequence/BWAIndex/version0.6.0/``
+   * - ``EquCab2_bowtie2``
+     - ``/anvil/datasets/igenomes/Equus_caballus/Ensembl/EquCab2/Sequence/Bowtie2Index/``
+   * - ``EquCab2_star``
+     - ``/anvil/datasets/igenomes/Equus_caballus/Ensembl/EquCab2/Sequence/STARIndex/``
+   * - ``EquCab2_bismark``
+     - ``/anvil/datasets/igenomes/Equus_caballus/Ensembl/EquCab2/Sequence/BismarkIndex/``
+   * - ``EquCab2_gtf``
+     - ``/anvil/datasets/igenomes/Equus_caballus/Ensembl/EquCab2/Annotation/Genes/genes.gtf``
+   * - ``EquCab2_bed12``
+     - ``/anvil/datasets/igenomes/Equus_caballus/Ensembl/EquCab2/Annotation/Genes/genes.bed``
+   * - ``EquCab2_readme``
+     - ``/anvil/datasets/igenomes/Equus_caballus/Ensembl/EquCab2/Annotation/README.txt``
+   * - ``EquCab2_mito_name``
+     - ``MT``
+   * - ``EquCab2_HOME``
+     - ``/anvil/datasets/igenomes/Equus_caballus/Ensembl/EquCab2``
+   * - ``RCAC_EquCab2_ROOT``
+     - ``/anvil/datasets/igenomes/Equus_caballus/Ensembl/EquCab2``
+   * - ``RCAC_EquCab2_VERSION``
      - ``2023-04-26``
