@@ -51,6 +51,11 @@ def parse_lua_file(lua_file: Path):
     """
     content = lua_file.read_text(encoding='utf-8')
 
+    # First find modroot if it exists
+    modroot_pattern = re.compile(r'local\s+modroot\s*=\s*"([^"]+)"')
+    modroot_match = modroot_pattern.search(content)
+    modroot = modroot_match.group(1) if modroot_match else ""
+
     # Extract help text (first match)
     help_match = HELP_PATTERN.search(content)
     help_text = help_match.group(1) if help_match else ""
@@ -64,6 +69,19 @@ def parse_lua_file(lua_file: Path):
         # Remove wrapping quotes if present
         if val_raw.startswith('"') and val_raw.endswith('"'):
             val_raw = val_raw[1:-1]
+        
+        # Handle modroot concatenation (modroot.."/path" or just modroot)
+        if 'modroot' in val_raw:
+            if val_raw == 'modroot':
+                val_raw = modroot
+            else:
+                # Replace modroot.."/path" with actual path
+                val_raw = val_raw.replace('modroot..', '')
+                if val_raw.startswith('"'):
+                    val_raw = val_raw[1:]
+                if val_raw.endswith('"'):
+                    val_raw = val_raw[:-1]
+                val_raw = modroot + val_raw
 
         envvars[env_var] = val_raw
 
@@ -82,6 +100,107 @@ def extract_version_from_filename(filename: str):
     else:
         return base
 
+def clean_help_text(help_text: str) -> str:
+    """
+    Remove only the environment variables listing section from help text if present.
+    Removes everything from 'Environment variables included:' through the variable listings,
+    up to but not including the Tips section or next major section.
+    Also cleans up line wrapping and formatting.
+    """
+    # Pattern to match the environment variables section:
+    # Starts with "Environment variables included:"
+    # Followed by dashed line
+    # Contains variable listings
+    # Ends at the last environment variable or "additional variables not shown" line
+    # Stops before Tips or next section
+    env_section_pattern = re.compile(
+        r'Environment variables included:\s*\n-{5,}\n(?:.*?\$[^\n]+\n)+(?:.*?additional.*?not shown.*?\n\n)?(?:\$[^\n]+\n)*\n',
+        re.DOTALL | re.MULTILINE
+    )
+    
+    # Remove just the environment variables listing section
+    cleaned_text = env_section_pattern.sub('\n', help_text)
+    
+    # Split into lines and process
+    lines = cleaned_text.split('\n')
+    fixed_lines = []
+    current_paragraph = []
+    in_list = False
+    in_tips = False
+    in_attributes = False
+    
+    for line in lines:
+        stripped = line.strip()
+        
+        # Handle empty lines - they mark paragraph boundaries
+        if not stripped:
+            if current_paragraph:
+                fixed_lines.append(' '.join(current_paragraph))
+                current_paragraph = []
+            fixed_lines.append('')
+            continue
+            
+        # Handle Tips section
+        if stripped == 'Tips:':
+            if current_paragraph:
+                fixed_lines.append(' '.join(current_paragraph))
+                current_paragraph = []
+            fixed_lines.append('**Tips:**')  # Make it bold in RST
+            in_tips = True
+            in_attributes = False
+            continue
+            
+        # Handle attributes section
+        if stripped == 'This dataset contains data with the following attributes:':
+            if current_paragraph:
+                fixed_lines.append(' '.join(current_paragraph))
+                current_paragraph = []
+            fixed_lines.append(stripped)
+            in_attributes = True
+            in_tips = False
+            continue
+            
+        # Handle list items
+        if stripped.startswith('- '):
+            if current_paragraph:
+                fixed_lines.append(' '.join(current_paragraph))
+                current_paragraph = []
+            # Format as proper RST bullet list
+            if in_tips or in_attributes:
+                # Add proper RST bullet list indentation
+                fixed_lines.append('* ' + stripped[2:])
+            else:
+                fixed_lines.append(stripped)
+            in_list = True
+            continue
+            
+        # Handle dashed lines
+        if re.match(r'^-+$', stripped):
+            if current_paragraph:
+                fixed_lines.append(' '.join(current_paragraph))
+                current_paragraph = []
+            fixed_lines.append(stripped)
+            continue
+            
+        # Regular paragraph text
+        if in_list:
+            fixed_lines.append(stripped)
+        else:
+            current_paragraph.append(stripped)
+    
+    # Don't forget the last paragraph
+    if current_paragraph:
+        fixed_lines.append(' '.join(current_paragraph))
+    
+    # Join lines and clean up
+    cleaned_text = '\n'.join(fixed_lines)
+    
+    # Clean up multiple newlines but preserve intentional spacing
+    cleaned_text = re.sub(r'\n{3,}', '\n\n', cleaned_text)
+    cleaned_text = re.sub(r' +', ' ', cleaned_text)  # Normalize spaces within lines
+    
+    return cleaned_text.strip()
+
 def generate_rst_file(
     category: str,
     dataset_name: str,
@@ -93,44 +212,48 @@ def generate_rst_file(
     """
     Write an .rst file capturing the help text and environment variables.
 
-    Example structure in the RST:
-
+    Structure:
         =====================================
         Dataset: {dataset_name} ({version})
         =====================================
 
         Category: {category}
 
+        Description
+        -----------
         {help_text}
 
-        **Environment Variables**
+        Usage
+        -----
+        To find and load available datasets::
 
-        .. list-table::
-           :header-rows: 1
-           :widths: 25 75
+            $ module avail
+            $ module load datasets
+            $ module spider datasets/{category}/{dataset_name}
 
-           * - **Variable Name**
-             - **Value**
-           * - ``ENV_VAR``
-             - ``ENV_VALUE``
+        Environment Variables
+        -------------------
+        {env_table}
     """
     title_line = f"Dataset: {dataset_name} ({version})"
     underline = "=" * len(title_line)
 
+    # Clean the help text to remove environment variables section
+    cleaned_help_text = clean_help_text(help_text)
+
     # Create a list-table for environment variables
     if envvars:
         env_table_lines = []
-        env_table_lines.append("**Environment Variables**\n")
-        env_table_lines.append(".. list-table::\n")
-        env_table_lines.append("   :header-rows: 1\n")
-        env_table_lines.append("   :widths: 25 75\n")
-        env_table_lines.append("\n")
-        env_table_lines.append("   * - **Variable Name**\n")
-        env_table_lines.append("     - **Value**\n")
+        env_table_lines.append(".. list-table::")
+        env_table_lines.append("   :header-rows: 1")
+        env_table_lines.append("   :widths: 25 75")
+        env_table_lines.append("")
+        env_table_lines.append("   * - **Variable Name**")
+        env_table_lines.append("     - **Value**")
 
         for name, val in envvars.items():
-            env_table_lines.append(f"   * - ``{name}``\n")
-            env_table_lines.append(f"     - ``{val}``\n")
+            env_table_lines.append(f"   * - ``{name}``")
+            env_table_lines.append(f"     - ``{val}``")
 
         env_table = "\n".join(env_table_lines)
     else:
@@ -138,9 +261,28 @@ def generate_rst_file(
         env_table = "(No environment variables found)\n"
 
     with open(output_file, 'w', encoding='utf-8') as f:
+        # Title
         f.write(f"{underline}\n{title_line}\n{underline}\n\n")
+        
+        # Category
         f.write(f"Category: **{category}**\n\n")
-        f.write(help_text.strip() + "\n\n")
+        
+        # Description section
+        f.write("Description\n")
+        f.write("-----------\n\n")
+        f.write(cleaned_help_text + "\n\n")
+        
+        # Usage section
+        f.write("Usage\n")
+        f.write("-----\n\n")
+        f.write("To find and load available datasets::\n\n")
+        f.write("    $ module avail\n")
+        f.write("    $ module load datasets\n")
+        f.write(f"    $ module spider datasets/{category}/{dataset_name}\n\n")
+        
+        # Environment Variables section
+        f.write("Environment Variables\n")
+        f.write("-------------------\n\n")
         f.write(env_table + "\n")
 
 def main():
@@ -255,7 +397,7 @@ def main():
         f_main.write("   :maxdepth: 2\n")
         f_main.write("   :caption: Categories\n\n")
 
-        # Reference each category’s index.rst
+        # Reference each category's index.rst
         for category in sorted(categories_dict.keys()):
             f_main.write(f"   {category}/index\n")
 
