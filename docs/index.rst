@@ -5,7 +5,7 @@ Federated Datasets Documentation
 Welcome! Below are the top-level dataset categories.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Categories
 
    Covariates/index
