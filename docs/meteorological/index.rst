@@ -4,7 +4,6 @@ meteorological Datasets
 
 .. toctree::
    :maxdepth: 2
-   :titlesonly:
    :caption: Datasets
 
    ECCC_RDRSv2.1/2021-09-07

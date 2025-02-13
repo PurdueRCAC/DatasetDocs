@@ -1,41 +1,39 @@
-EM-Earth
-========
+==============================
+Dataset: EM-Earth (2021-04-01)
+==============================
 
 Category: **meteorological**
 
+Description
+-----------
+
 EM-Earth
 
-EM-Earth is a global dataset offering hourly and daily meteorological variables from January 1950 to December 2019. With
-an 11 km spatial resolution, it supports climate modeling, environmental assessments, and related research endeavors.
+EM-Earth is a global dataset offering hourly and daily meteorological variables from January 1950 to December 2019. With an 11 km spatial resolution, it supports climate modeling, environmental assessments, and related research endeavors.
 
 This dataset contains data with the following attributes:
-  - Time Resolution: Hourly/Daily (Jan 1950 - Dec 2019)
-  - Spatial Resolution: 11km - Global
-  - DOI: 10.1175/BAMS-D-21-0106.1
-  - Link: https://www.frdr-dfdr.ca/repo/dataset/8d30ab02-f2bd-4d05-ae43-11f4a387e5ad
+* Time Resolution: Hourly/Daily (Jan 1950 - Dec 2019)
+* Spatial Resolution: 11km - Global
+* DOI: 10.1175/BAMS-D-21-0106.1
+* Link: https://www.frdr-dfdr.ca/repo/dataset/8d30ab02-f2bd-4d05-ae43-11f4a387e5ad
 
-Environment variables included:
+**Tips:**
+* Use echo $ENV_NAME to check the environment value.
+* To see all environment variables related to EME, you can load the module then use: env | grep EME
+* To unload the module and remove the environment settings: module unload EME
 -------------------------------------------------------------
-$EME_EM_EARTH_V1                                          Location: /anvil/datasets/meteorological/EM-Earth/EM_Earth_v1
-$EME_EM_EARTH_V1_DETERMINISTIC_HOURLY                     Location: /anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly
-$EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP                Location: /anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/prcp
-$EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_AFRICA         Location: /anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/prcp/Africa
-$EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_ASIA           Location: /anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/prcp/Asia
 
-52 additional environment variables not shown.
+Usage
+-----
 
-$EME_HOME                                                 Location: /anvil/datasets/meteorological/EM-Earth
-$EME_ROOT                                                 Location: /anvil/datasets/meteorological/EM-Earth
-$EME_VERSION                                              Version: 2021-04-01
+To find and load available datasets::
 
-Tips:
-- Use echo $ENV_NAME to check the environment value.
-- To see all environment variables related to EME, you can load the module then use: env | grep EME
-- To unload the module and remove the environment settings: module unload EME
--------------------------------------------------------------
+    $ module avail
+    $ module load datasets
+    $ module spider datasets/meteorological/EM-Earth
 
 Environment Variables
----------------------
+-------------------
 
 .. list-table::
    :header-rows: 1
@@ -44,123 +42,122 @@ Environment Variables
    * - **Variable Name**
      - **Value**
    * - ``EME_EM_EARTH_V1``
-     - ``modroot.."/EM_Earth_v1"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1``
    * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY``
-     - ``modroot.."/EM_Earth_v1/deterministic_hourly"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly``
    * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP``
-     - ``modroot.."/EM_Earth_v1/deterministic_hourly/prcp"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/prcp``
    * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_AFRICA``
-     - ``modroot.."/EM_Earth_v1/deterministic_hourly/prcp/Africa"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/prcp/Africa``
    * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_ASIA``
-     - ``modroot.."/EM_Earth_v1/deterministic_hourly/prcp/Asia"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/prcp/Asia``
    * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_EUROPE``
-     - ``modroot.."/EM_Earth_v1/deterministic_hourly/prcp/Europe"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/prcp/Europe``
    * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_NORTHAMERICA``
-     - ``modroot.."/EM_Earth_v1/deterministic_hourly/prcp/NorthAmerica"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/prcp/NorthAmerica``
    * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_OCEANIA``
-     - ``modroot.."/EM_Earth_v1/deterministic_hourly/prcp/Oceania"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/prcp/Oceania``
    * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_SOUTHAMERICA``
-     - ``modroot.."/EM_Earth_v1/deterministic_hourly/prcp/SouthAmerica"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/prcp/SouthAmerica``
    * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW``
-     - ``modroot.."/EM_Earth_v1/deterministic_hourly/tdew"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/tdew``
    * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW_AFRICA``
-     - ``modroot.."/EM_Earth_v1/deterministic_hourly/tdew/Africa"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/tdew/Africa``
    * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW_ASIA``
-     - ``modroot.."/EM_Earth_v1/deterministic_hourly/tdew/Asia"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/tdew/Asia``
    * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW_EUROPE``
-     - ``modroot.."/EM_Earth_v1/deterministic_hourly/tdew/Europe"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/tdew/Europe``
    * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW_NORTHAMERICA``
-     - ``modroot.."/EM_Earth_v1/deterministic_hourly/tdew/NorthAmerica"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/tdew/NorthAmerica``
    * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW_OCEANIA``
-     - ``modroot.."/EM_Earth_v1/deterministic_hourly/tdew/Oceania"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/tdew/Oceania``
    * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW_SOUTHAMERICA``
-     - ``modroot.."/EM_Earth_v1/deterministic_hourly/tdew/SouthAmerica"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/tdew/SouthAmerica``
    * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN``
-     - ``modroot.."/EM_Earth_v1/deterministic_hourly/tmean"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/tmean``
    * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN_AFRICA``
-     - ``modroot.."/EM_Earth_v1/deterministic_hourly/tmean/Africa"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/tmean/Africa``
    * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN_ASIA``
-     - ``modroot.."/EM_Earth_v1/deterministic_hourly/tmean/Asia"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/tmean/Asia``
    * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN_EUROPE``
-     - ``modroot.."/EM_Earth_v1/deterministic_hourly/tmean/Europe"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/tmean/Europe``
    * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN_NORTHAMERICA``
-     - ``modroot.."/EM_Earth_v1/deterministic_hourly/tmean/NorthAmerica"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/tmean/NorthAmerica``
    * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN_OCEANIA``
-     - ``modroot.."/EM_Earth_v1/deterministic_hourly/tmean/Oceania"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/tmean/Oceania``
    * - ``EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN_SOUTHAMERICA``
-     - ``modroot.."/EM_Earth_v1/deterministic_hourly/tmean/SouthAmerica"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/tmean/SouthAmerica``
    * - ``EME_EM_EARTH_V1_DETERMINISTIC_RAW_DAILY``
-     - ``modroot.."/EM_Earth_v1/deterministic_raw_daily"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_raw_daily``
    * - ``EME_EM_EARTH_V1_DETERMINISTIC_RAW_DAILY_PRCP``
-     - ``modroot.."/EM_Earth_v1/deterministic_raw_daily/prcp"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_raw_daily/prcp``
    * - ``EME_EM_EARTH_V1_DETERMINISTIC_RAW_DAILY_TDEW``
-     - ``modroot.."/EM_Earth_v1/deterministic_raw_daily/tdew"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_raw_daily/tdew``
    * - ``EME_EM_EARTH_V1_DETERMINISTIC_RAW_DAILY_TMEAN``
-     - ``modroot.."/EM_Earth_v1/deterministic_raw_daily/tmean"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_raw_daily/tmean``
    * - ``EME_EM_EARTH_V1_DETERMINISTIC_RAW_DAILY_TRANGE``
-     - ``modroot.."/EM_Earth_v1/deterministic_raw_daily/trange"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_raw_daily/trange``
    * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY``
-     - ``modroot.."/EM_Earth_v1/probabilistic_daily"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily``
    * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP``
-     - ``modroot.."/EM_Earth_v1/probabilistic_daily/prcp"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/prcp``
    * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP_AFRICA``
-     - ``modroot.."/EM_Earth_v1/probabilistic_daily/prcp/Africa"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/prcp/Africa``
    * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP_ASIA``
-     - ``modroot.."/EM_Earth_v1/probabilistic_daily/prcp/Asia"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/prcp/Asia``
    * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP_EUROPE``
-     - ``modroot.."/EM_Earth_v1/probabilistic_daily/prcp/Europe"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/prcp/Europe``
    * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP_NORTHAMERICA``
-     - ``modroot.."/EM_Earth_v1/probabilistic_daily/prcp/NorthAmerica"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/prcp/NorthAmerica``
    * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP_OCEANIA``
-     - ``modroot.."/EM_Earth_v1/probabilistic_daily/prcp/Oceania"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/prcp/Oceania``
    * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP_SOUTHAMERICA``
-     - ``modroot.."/EM_Earth_v1/probabilistic_daily/prcp/SouthAmerica"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/prcp/SouthAmerica``
    * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW``
-     - ``modroot.."/EM_Earth_v1/probabilistic_daily/tdew"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/tdew``
    * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW_AFRICA``
-     - ``modroot.."/EM_Earth_v1/probabilistic_daily/tdew/Africa"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/tdew/Africa``
    * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW_ASIA``
-     - ``modroot.."/EM_Earth_v1/probabilistic_daily/tdew/Asia"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/tdew/Asia``
    * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW_EUROPE``
-     - ``modroot.."/EM_Earth_v1/probabilistic_daily/tdew/Europe"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/tdew/Europe``
    * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW_NORTHAMERICA``
-     - ``modroot.."/EM_Earth_v1/probabilistic_daily/tdew/NorthAmerica"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/tdew/NorthAmerica``
    * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW_OCEANIA``
-     - ``modroot.."/EM_Earth_v1/probabilistic_daily/tdew/Oceania"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/tdew/Oceania``
    * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW_SOUTHAMERICA``
-     - ``modroot.."/EM_Earth_v1/probabilistic_daily/tdew/SouthAmerica"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/tdew/SouthAmerica``
    * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN``
-     - ``modroot.."/EM_Earth_v1/probabilistic_daily/tmean"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/tmean``
    * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN_AFRICA``
-     - ``modroot.."/EM_Earth_v1/probabilistic_daily/tmean/Africa"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/tmean/Africa``
    * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN_ASIA``
-     - ``modroot.."/EM_Earth_v1/probabilistic_daily/tmean/Asia"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/tmean/Asia``
    * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN_EUROPE``
-     - ``modroot.."/EM_Earth_v1/probabilistic_daily/tmean/Europe"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/tmean/Europe``
    * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN_NORTHAMERICA``
-     - ``modroot.."/EM_Earth_v1/probabilistic_daily/tmean/NorthAmerica"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/tmean/NorthAmerica``
    * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN_OCEANIA``
-     - ``modroot.."/EM_Earth_v1/probabilistic_daily/tmean/Oceania"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/tmean/Oceania``
    * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN_SOUTHAMERICA``
-     - ``modroot.."/EM_Earth_v1/probabilistic_daily/tmean/SouthAmerica"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/tmean/SouthAmerica``
    * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE``
-     - ``modroot.."/EM_Earth_v1/probabilistic_daily/trange"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/trange``
    * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE_AFRICA``
-     - ``modroot.."/EM_Earth_v1/probabilistic_daily/trange/Africa"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/trange/Africa``
    * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE_ASIA``
-     - ``modroot.."/EM_Earth_v1/probabilistic_daily/trange/Asia"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/trange/Asia``
    * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE_EUROPE``
-     - ``modroot.."/EM_Earth_v1/probabilistic_daily/trange/Europe"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/trange/Europe``
    * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE_NORTHAMERICA``
-     - ``modroot.."/EM_Earth_v1/probabilistic_daily/trange/NorthAmerica"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/trange/NorthAmerica``
    * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE_OCEANIA``
-     - ``modroot.."/EM_Earth_v1/probabilistic_daily/trange/Oceania"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/trange/Oceania``
    * - ``EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE_SOUTHAMERICA``
-     - ``modroot.."/EM_Earth_v1/probabilistic_daily/trange/SouthAmerica"``
+     - ``/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/trange/SouthAmerica``
    * - ``EME_HOME``
-     - ``modroot``
+     - ``/anvil/datasets/meteorological/EM-Earth``
    * - ``RCAC_EME_ROOT``
-     - ``modroot``
+     - ``/anvil/datasets/meteorological/EM-Earth``
    * - ``RCAC_EME_VERSION``
      - ``2021-04-01``
-

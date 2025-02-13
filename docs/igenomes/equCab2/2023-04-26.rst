@@ -1,14 +1,27 @@
-equCab2
-=======
+=============================
+Dataset: equCab2 (2023-04-26)
+=============================
 
 Category: **igenomes**
+
+Description
+-----------
 
 The contents of the annotation directories were downloaded from UCSC on: July 17, 2015.
 
 SmallRNA annotation files were downloaded from miRBase release 21.
 
+Usage
+-----
+
+To find and load available datasets::
+
+    $ module avail
+    $ module load datasets
+    $ module spider datasets/igenomes/equCab2
+
 Environment Variables
----------------------
+-------------------
 
 .. list-table::
    :header-rows: 1
@@ -17,27 +30,26 @@ Environment Variables
    * - **Variable Name**
      - **Value**
    * - ``equCab2_fasta``
-     - ``modroot.."/Sequence/WholeGenomeFasta/genome.fa"``
+     - ``/anvil/datasets/igenomes/Equus_caballus/UCSC/equCab2/Sequence/WholeGenomeFasta/genome.fa``
    * - ``equCab2_bwa``
-     - ``modroot.."/Sequence/BWAIndex/version0.6.0/"``
+     - ``/anvil/datasets/igenomes/Equus_caballus/UCSC/equCab2/Sequence/BWAIndex/version0.6.0/``
    * - ``equCab2_bowtie2``
-     - ``modroot.."/Sequence/Bowtie2Index/"``
+     - ``/anvil/datasets/igenomes/Equus_caballus/UCSC/equCab2/Sequence/Bowtie2Index/``
    * - ``equCab2_star``
-     - ``modroot.."/Sequence/STARIndex/"``
+     - ``/anvil/datasets/igenomes/Equus_caballus/UCSC/equCab2/Sequence/STARIndex/``
    * - ``equCab2_bismark``
-     - ``modroot.."/Sequence/BismarkIndex/"``
+     - ``/anvil/datasets/igenomes/Equus_caballus/UCSC/equCab2/Sequence/BismarkIndex/``
    * - ``equCab2_gtf``
-     - ``modroot.."/Annotation/Genes/genes.gtf"``
+     - ``/anvil/datasets/igenomes/Equus_caballus/UCSC/equCab2/Annotation/Genes/genes.gtf``
    * - ``equCab2_bed12``
-     - ``modroot.."/Annotation/Genes/genes.bed"``
+     - ``/anvil/datasets/igenomes/Equus_caballus/UCSC/equCab2/Annotation/Genes/genes.bed``
    * - ``equCab2_readme``
-     - ``modroot.."/Annotation/README.txt"``
+     - ``/anvil/datasets/igenomes/Equus_caballus/UCSC/equCab2/Annotation/README.txt``
    * - ``equCab2_mito_name``
      - ``chrM``
    * - ``equCab2_HOME``
-     - ``modroot``
+     - ``/anvil/datasets/igenomes/Equus_caballus/UCSC/equCab2``
    * - ``RCAC_equCab2_ROOT``
-     - ``modroot``
+     - ``/anvil/datasets/igenomes/Equus_caballus/UCSC/equCab2``
    * - ``RCAC_equCab2_VERSION``
      - ``2023-04-26``
-

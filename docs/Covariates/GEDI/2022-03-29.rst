@@ -1,33 +1,39 @@
-GEDI
-====
+==========================
+Dataset: GEDI (2022-03-29)
+==========================
 
 Category: **Covariates**
+
+Description
+-----------
 
 GEDI Land Surface Metrics
 
 Gridded land surface metrics from GEDI data.
 
 This dataset contains data with the following attributes:
-  - Time Resolution: 2019-2022
-  - Spatial Resolution: 1 km
-  - DOI: 10.3334/ORNLDAAC/1952
-  - Link: https://daac.ornl.gov/cgi-bin/dsviewer.pl?ds_id=2017
+* Time Resolution: 2019-2022
+* Spatial Resolution: 1 km
+* DOI: 10.3334/ORNLDAAC/1952
+* Link: https://daac.ornl.gov/cgi-bin/dsviewer.pl?ds_id=2017
 
-Environment variables included:
+**Tips:**
+* Use echo $ENV_NAME to check the environment value.
+* To see all environment variables related to GEDI, you can load the module then use: env | grep GEDI
+* To unload the module and remove the environment settings: module unload GEDI
 -------------------------------------------------------------
 
-$GEDI_HOME     Location: /anvil/datasets/Covariates/GEDI
-$GEDI_ROOT     Location: /anvil/datasets/Covariates/GEDI
-$GEDI_VERSION  Version: 2022-03-29
+Usage
+-----
 
-Tips:
-- Use echo $ENV_NAME to check the environment value.
-- To see all environment variables related to GEDI, you can load the module then use: env | grep GEDI
-- To unload the module and remove the environment settings: module unload GEDI
--------------------------------------------------------------
+To find and load available datasets::
+
+    $ module avail
+    $ module load datasets
+    $ module spider datasets/Covariates/GEDI
 
 Environment Variables
----------------------
+-------------------
 
 .. list-table::
    :header-rows: 1
@@ -36,9 +42,8 @@ Environment Variables
    * - **Variable Name**
      - **Value**
    * - ``GEDI_HOME``
-     - ``modroot``
+     - ``/anvil/datasets/Covariates/GEDI``
    * - ``RCAC_GEDI_ROOT``
-     - ``modroot``
+     - ``/anvil/datasets/Covariates/GEDI``
    * - ``RCAC_GEDI_VERSION``
      - ``2022-03-29``
-

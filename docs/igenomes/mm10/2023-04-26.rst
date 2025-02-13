@@ -1,14 +1,27 @@
-mm10
-====
+==========================
+Dataset: mm10 (2023-04-26)
+==========================
 
 Category: **igenomes**
+
+Description
+-----------
 
 The contents of the annotation directories were downloaded from UCSC on: July 17, 2015.
 
 SmallRNA annotation files were downloaded from miRBase release 21.
 
+Usage
+-----
+
+To find and load available datasets::
+
+    $ module avail
+    $ module load datasets
+    $ module spider datasets/igenomes/mm10
+
 Environment Variables
----------------------
+-------------------
 
 .. list-table::
    :header-rows: 1
@@ -17,29 +30,28 @@ Environment Variables
    * - **Variable Name**
      - **Value**
    * - ``mm10_fasta``
-     - ``modroot.."/Sequence/WholeGenomeFasta/genome.fa"``
+     - ``/anvil/datasets/igenomes/Mus_musculus/UCSC/mm10/Sequence/WholeGenomeFasta/genome.fa``
    * - ``mm10_bwa``
-     - ``modroot.."/Sequence/BWAIndex/version0.6.0/"``
+     - ``/anvil/datasets/igenomes/Mus_musculus/UCSC/mm10/Sequence/BWAIndex/version0.6.0/``
    * - ``mm10_bowtie2``
-     - ``modroot.."/Sequence/Bowtie2Index/"``
+     - ``/anvil/datasets/igenomes/Mus_musculus/UCSC/mm10/Sequence/Bowtie2Index/``
    * - ``mm10_star``
-     - ``modroot.."/Sequence/STARIndex/"``
+     - ``/anvil/datasets/igenomes/Mus_musculus/UCSC/mm10/Sequence/STARIndex/``
    * - ``mm10_bismark``
-     - ``modroot.."/Sequence/BismarkIndex/"``
+     - ``/anvil/datasets/igenomes/Mus_musculus/UCSC/mm10/Sequence/BismarkIndex/``
    * - ``mm10_gtf``
-     - ``modroot.."/Annotation/Genes/genes.gtf"``
+     - ``/anvil/datasets/igenomes/Mus_musculus/UCSC/mm10/Annotation/Genes/genes.gtf``
    * - ``mm10_bed12``
-     - ``modroot.."/Annotation/Genes/genes.bed"``
+     - ``/anvil/datasets/igenomes/Mus_musculus/UCSC/mm10/Annotation/Genes/genes.bed``
    * - ``mm10_readme``
-     - ``modroot.."/Annotation/README.txt"``
+     - ``/anvil/datasets/igenomes/Mus_musculus/UCSC/mm10/Annotation/README.txt``
    * - ``mm10_mito_name``
      - ``chrM``
    * - ``mm10_macs_gsize``
      - ``1.87e9``
    * - ``mm10_HOME``
-     - ``modroot``
+     - ``/anvil/datasets/igenomes/Mus_musculus/UCSC/mm10``
    * - ``RCAC_mm10_ROOT``
-     - ``modroot``
+     - ``/anvil/datasets/igenomes/Mus_musculus/UCSC/mm10``
    * - ``RCAC_mm10_VERSION``
      - ``2023-04-26``
-

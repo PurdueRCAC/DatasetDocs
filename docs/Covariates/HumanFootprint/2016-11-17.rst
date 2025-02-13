@@ -1,35 +1,39 @@
-HumanFootprint
-==============
+====================================
+Dataset: HumanFootprint (2016-11-17)
+====================================
 
 Category: **Covariates**
+
+Description
+-----------
 
 Human Footprint Data
 
 Global human footprint analysis at 1km resolution.
 
 This dataset contains data with the following attributes:
-  - Time Resolution: 1993
-  - Spatial Resolution: 1 km
-  - DOI: 10.5061/dryad.052q5
-  - Link: https://datadryad.org/stash/dataset/doi:10.5061/dryad.052q5
+* Time Resolution: 1993
+* Spatial Resolution: 1 km
+* DOI: 10.5061/dryad.052q5
+* Link: https://datadryad.org/stash/dataset/doi:10.5061/dryad.052q5
 
-Environment variables included:
+**Tips:**
+* Use echo $ENV_NAME to check the environment value.
+* To see all environment variables related to HumanFootprint, you can load the module then use: env | grep HumanFootprint
+* To unload the module and remove the environment settings: module unload HumanFootprint
 -------------------------------------------------------------
-$HumanFootprint_MAPS       Location: /anvil/datasets/Covariates/HumanFootprint/Maps
-$HumanFootprint_MAPS_INFO  Location: /anvil/datasets/Covariates/HumanFootprint/Maps/info
 
-$HumanFootprint_HOME       Location: /anvil/datasets/Covariates/HumanFootprint
-$HumanFootprint_ROOT       Location: /anvil/datasets/Covariates/HumanFootprint
-$HumanFootprint_VERSION    Version: 2016-11-17
+Usage
+-----
 
-Tips:
-- Use echo $ENV_NAME to check the environment value.
-- To see all environment variables related to HumanFootprint, you can load the module then use: env | grep HumanFootprint
-- To unload the module and remove the environment settings: module unload HumanFootprint
--------------------------------------------------------------
+To find and load available datasets::
+
+    $ module avail
+    $ module load datasets
+    $ module spider datasets/Covariates/HumanFootprint
 
 Environment Variables
----------------------
+-------------------
 
 .. list-table::
    :header-rows: 1
@@ -38,13 +42,12 @@ Environment Variables
    * - **Variable Name**
      - **Value**
    * - ``HumanFootprint_MAPS``
-     - ``modroot.."/Maps"``
+     - ``/anvil/datasets/Covariates/HumanFootprint/Maps``
    * - ``HumanFootprint_MAPS_INFO``
-     - ``modroot.."/Maps/info"``
+     - ``/anvil/datasets/Covariates/HumanFootprint/Maps/info``
    * - ``HumanFootprint_HOME``
-     - ``modroot``
+     - ``/anvil/datasets/Covariates/HumanFootprint``
    * - ``RCAC_HumanFootprint_ROOT``
-     - ``modroot``
+     - ``/anvil/datasets/Covariates/HumanFootprint``
    * - ``RCAC_HumanFootprint_VERSION``
      - ``2016-11-17``
-

@@ -1,37 +1,39 @@
-SCDNA
-=====
+===========================
+Dataset: SCDNA (2020-10-02)
+===========================
 
 Category: **meteorological**
 
+Description
+-----------
+
 SCDNA (Surface Climate Data for North America)
 
-SCDNA is a point-based dataset offering daily surface climate variables across North America from January 1979 to
-December 2018. It includes temperature, precipitation, and other essential climate metrics, supporting localized climate
-analyses.
+SCDNA is a point-based dataset offering daily surface climate variables across North America from January 1979 to December 2018. It includes temperature, precipitation, and other essential climate metrics, supporting localized climate analyses.
 
 This dataset contains data with the following attributes:
-  - Time Resolution: Daily (Jan 1979 - Dec 2018)
-  - Spatial Resolution: Point-based - North America
-  - DOI: 10.5194/essd-12-2381-2020
-  - Link: https://zenodo.org/records/3953310
+* Time Resolution: Daily (Jan 1979 - Dec 2018)
+* Spatial Resolution: Point-based - North America
+* DOI: 10.5194/essd-12-2381-2020
+* Link: https://zenodo.org/records/3953310
 
-Environment variables included:
+**Tips:**
+* Use echo $ENV_NAME to check the environment value.
+* To see all environment variables related to SCDNA, you can load the module then use: env | grep SCDNA
+* To unload the module and remove the environment settings: module unload SCDNA
 -------------------------------------------------------------
-$SCDNA___MACOSX                             Location: /anvil/datasets/meteorological/SCDNA/__MACOSX
-$SCDNA___MACOSX___OVERLAP_STATION_LIST_TXT  Location: /anvil/datasets/meteorological/SCDNA/__MACOSX/._overlap_station_list.txt
 
-$SCDNA_HOME                                 Location: /anvil/datasets/meteorological/SCDNA
-$SCDNA_ROOT                                 Location: /anvil/datasets/meteorological/SCDNA
-$SCDNA_VERSION                              Version: 2020-10-02
+Usage
+-----
 
-Tips:
-- Use echo $ENV_NAME to check the environment value.
-- To see all environment variables related to SCDNA, you can load the module then use: env | grep SCDNA
-- To unload the module and remove the environment settings: module unload SCDNA
--------------------------------------------------------------
+To find and load available datasets::
+
+    $ module avail
+    $ module load datasets
+    $ module spider datasets/meteorological/SCDNA
 
 Environment Variables
----------------------
+-------------------
 
 .. list-table::
    :header-rows: 1
@@ -40,13 +42,12 @@ Environment Variables
    * - **Variable Name**
      - **Value**
    * - ``SCDNA___MACOSX``
-     - ``modroot.."/__MACOSX"``
+     - ``/anvil/datasets/meteorological/SCDNA/__MACOSX``
    * - ``SCDNA___MACOSX___OVERLAP_STATION_LIST_TXT``
-     - ``modroot.."/__MACOSX/._overlap_station_list.txt"``
+     - ``/anvil/datasets/meteorological/SCDNA/__MACOSX/._overlap_station_list.txt``
    * - ``SCDNA_HOME``
-     - ``modroot``
+     - ``/anvil/datasets/meteorological/SCDNA``
    * - ``RCAC_SCDNA_ROOT``
-     - ``modroot``
+     - ``/anvil/datasets/meteorological/SCDNA``
    * - ``RCAC_SCDNA_VERSION``
      - ``2020-10-02``
-

@@ -1,43 +1,39 @@
-ERA5
-====
+==========================
+Dataset: ERA5 (2018-06-14)
+==========================
 
 Category: **meteorological**
 
+Description
+-----------
+
 ERA5
 
-ERA5 is a comprehensive reanalysis dataset produced by the European Centre for Medium-Range Weather Forecasts (ECMWF).
-It offers hourly estimates of atmospheric, land, and oceanic variables from January 1940 to the present, with a global
-spatial resolution of approximately 30 km. ERA5 is widely used for climate research, weather forecasting, and
-environmental monitoring.
+ERA5 is a comprehensive reanalysis dataset produced by the European Centre for Medium-Range Weather Forecasts (ECMWF). It offers hourly estimates of atmospheric, land, and oceanic variables from January 1940 to the present, with a global spatial resolution of approximately 30 km. ERA5 is widely used for climate research, weather forecasting, and environmental monitoring.
 
 This dataset contains data with the following attributes:
-  - Time Resolution: Hourly (Jan 1940 - Present)
-  - Spatial Resolution: 30km - Global
-  - DOI: 10.24381/cds.adbb2d47
-  - Link: https://console.cloud.google.com/storage/browser/gcp-public-data-arco-era5/raw?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))
+* Time Resolution: Hourly (Jan 1940 - Present)
+* Spatial Resolution: 30km - Global
+* DOI: 10.24381/cds.adbb2d47
+* Link: https://console.cloud.google.com/storage/browser/gcp-public-data-arco-era5/raw?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))
 
-Environment variables included:
+**Tips:**
+* Use echo $ENV_NAME to check the environment value.
+* To see all environment variables related to ERA5, you can load the module then use: env | grep ERA5
+* To unload the module and remove the environment settings: module unload ERA5
 -------------------------------------------------------------
-$ERA5_ERA5GRIB                  Location: /anvil/datasets/meteorological/ERA5/ERA5GRIB
-$ERA5_ERA5GRIB_HRES             Location: /anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES
-$ERA5_ERA5GRIB_HRES_DAILY       Location: /anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES/Daily
-$ERA5_ERA5GRIB_HRES_DAILY_1940  Location: /anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES/Daily/1940
-$ERA5_ERA5GRIB_HRES_DAILY_1941  Location: /anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES/Daily/1941
 
-10 additional environment variables not shown.
+Usage
+-----
 
-$ERA5_HOME                      Location: /anvil/datasets/meteorological/ERA5
-$ERA5_ROOT                      Location: /anvil/datasets/meteorological/ERA5
-$ERA5_VERSION                   Version: 2018-06-14
+To find and load available datasets::
 
-Tips:
-- Use echo $ENV_NAME to check the environment value.
-- To see all environment variables related to ERA5, you can load the module then use: env | grep ERA5
-- To unload the module and remove the environment settings: module unload ERA5
--------------------------------------------------------------
+    $ module avail
+    $ module load datasets
+    $ module spider datasets/meteorological/ERA5
 
 Environment Variables
----------------------
+-------------------
 
 .. list-table::
    :header-rows: 1
@@ -46,39 +42,38 @@ Environment Variables
    * - **Variable Name**
      - **Value**
    * - ``ERA5_ERA5GRIB``
-     - ``modroot.."/ERA5GRIB"``
+     - ``/anvil/datasets/meteorological/ERA5/ERA5GRIB``
    * - ``ERA5_ERA5GRIB_HRES``
-     - ``modroot.."/ERA5GRIB/HRES"``
+     - ``/anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES``
    * - ``ERA5_ERA5GRIB_HRES_DAILY``
-     - ``modroot.."/ERA5GRIB/HRES/Daily"``
+     - ``/anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES/Daily``
    * - ``ERA5_ERA5GRIB_HRES_DAILY_1940``
-     - ``modroot.."/ERA5GRIB/HRES/Daily/1940"``
+     - ``/anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES/Daily/1940``
    * - ``ERA5_ERA5GRIB_HRES_DAILY_1941``
-     - ``modroot.."/ERA5GRIB/HRES/Daily/1941"``
+     - ``/anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES/Daily/1941``
    * - ``ERA5_ERA5GRIB_HRES_DAILY_1942``
-     - ``modroot.."/ERA5GRIB/HRES/Daily/1942"``
+     - ``/anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES/Daily/1942``
    * - ``ERA5_ERA5GRIB_HRES_DAILY_1943``
-     - ``modroot.."/ERA5GRIB/HRES/Daily/1943"``
+     - ``/anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES/Daily/1943``
    * - ``ERA5_ERA5GRIB_HRES_DAILY_1944``
-     - ``modroot.."/ERA5GRIB/HRES/Daily/1944"``
+     - ``/anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES/Daily/1944``
    * - ``ERA5_ERA5GRIB_HRES_DAILY_1945``
-     - ``modroot.."/ERA5GRIB/HRES/Daily/1945"``
+     - ``/anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES/Daily/1945``
    * - ``ERA5_ERA5GRIB_HRES_DAILY_1946``
-     - ``modroot.."/ERA5GRIB/HRES/Daily/1946"``
+     - ``/anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES/Daily/1946``
    * - ``ERA5_ERA5GRIB_HRES_DAILY_1947``
-     - ``modroot.."/ERA5GRIB/HRES/Daily/1947"``
+     - ``/anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES/Daily/1947``
    * - ``ERA5_ERA5GRIB_HRES_DAILY_1948``
-     - ``modroot.."/ERA5GRIB/HRES/Daily/1948"``
+     - ``/anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES/Daily/1948``
    * - ``ERA5_ERA5GRIB_HRES_DAILY_1949``
-     - ``modroot.."/ERA5GRIB/HRES/Daily/1949"``
+     - ``/anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES/Daily/1949``
    * - ``ERA5_ERA5GRIB_HRES_DAILY_1950``
-     - ``modroot.."/ERA5GRIB/HRES/Daily/1950"``
+     - ``/anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES/Daily/1950``
    * - ``ERA5_ERA5GRIB_HRES_DAILY_1951``
-     - ``modroot.."/ERA5GRIB/HRES/Daily/1951"``
+     - ``/anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES/Daily/1951``
    * - ``ERA5_HOME``
-     - ``modroot``
+     - ``/anvil/datasets/meteorological/ERA5``
    * - ``RCAC_ERA5_ROOT``
-     - ``modroot``
+     - ``/anvil/datasets/meteorological/ERA5``
    * - ``RCAC_ERA5_VERSION``
      - ``2018-06-14``
-

@@ -1,10 +1,25 @@
-WBcel235
-========
+==============================
+Dataset: WBcel235 (2023-04-26)
+==============================
 
 Category: **igenomes**
 
+Description
+-----------
+
+
+
+Usage
+-----
+
+To find and load available datasets::
+
+    $ module avail
+    $ module load datasets
+    $ module spider datasets/igenomes/WBcel235
+
 Environment Variables
----------------------
+-------------------
 
 .. list-table::
    :header-rows: 1
@@ -13,27 +28,26 @@ Environment Variables
    * - **Variable Name**
      - **Value**
    * - ``WBcel235_fasta``
-     - ``modroot.."/Sequence/WholeGenomeFasta/genome.fa"``
+     - ``/anvil/datasets/igenomes/Caenorhabditis_elegans/Ensembl/WBcel235/Sequence/WholeGenomeFasta/genome.fa``
    * - ``WBcel235_bwa``
-     - ``modroot.."/Sequence/BWAIndex/version0.6.0/"``
+     - ``/anvil/datasets/igenomes/Caenorhabditis_elegans/Ensembl/WBcel235/Sequence/BWAIndex/version0.6.0/``
    * - ``WBcel235_bowtie2``
-     - ``modroot.."/Sequence/Bowtie2Index/"``
+     - ``/anvil/datasets/igenomes/Caenorhabditis_elegans/Ensembl/WBcel235/Sequence/Bowtie2Index/``
    * - ``WBcel235_star``
-     - ``modroot.."/Sequence/STARIndex/"``
+     - ``/anvil/datasets/igenomes/Caenorhabditis_elegans/Ensembl/WBcel235/Sequence/STARIndex/``
    * - ``WBcel235_bismark``
-     - ``modroot.."/Sequence/BismarkIndex/"``
+     - ``/anvil/datasets/igenomes/Caenorhabditis_elegans/Ensembl/WBcel235/Sequence/BismarkIndex/``
    * - ``WBcel235_gtf``
-     - ``modroot.."/Annotation/Genes/genes.gtf"``
+     - ``/anvil/datasets/igenomes/Caenorhabditis_elegans/Ensembl/WBcel235/Annotation/Genes/genes.gtf``
    * - ``WBcel235_bed12``
-     - ``modroot.."/Annotation/Genes/genes.bed"``
+     - ``/anvil/datasets/igenomes/Caenorhabditis_elegans/Ensembl/WBcel235/Annotation/Genes/genes.bed``
    * - ``WBcel235_mito_name``
      - ``MtDNA``
    * - ``WBcel235_macs_gsize``
      - ``9e7``
    * - ``WBcel235_HOME``
-     - ``modroot``
+     - ``/anvil/datasets/igenomes/Caenorhabditis_elegans/Ensembl/WBcel235``
    * - ``RCAC_WBcel235_ROOT``
-     - ``modroot``
+     - ``/anvil/datasets/igenomes/Caenorhabditis_elegans/Ensembl/WBcel235``
    * - ``RCAC_WBcel235_VERSION``
      - ``2023-04-26``
-

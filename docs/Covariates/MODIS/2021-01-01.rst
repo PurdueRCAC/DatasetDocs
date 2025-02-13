@@ -1,40 +1,39 @@
-MODIS
-=====
+===========================
+Dataset: MODIS (2021-01-01)
+===========================
 
 Category: **Covariates**
+
+Description
+-----------
 
 Enhanced Vegetation Index
 
 MODIS data for vegetation index analysis.
 
 This dataset contains data with the following attributes:
-  - Time Resolution: 2000-2019
-  - Spatial Resolution: 1 km
-  - DOI: N/A
-  - Link: Obtained from Dr. Xiaolu Tang
+* Time Resolution: 2000-2019
+* Spatial Resolution: 1 km
+* DOI: N/A
+* Link: Obtained from Dr. Xiaolu Tang
 
-Environment variables included:
+**Tips:**
+* Use echo $ENV_NAME to check the environment value.
+* To see all environment variables related to MODIS, you can load the module then use: env | grep MODIS
+* To unload the module and remove the environment settings: module unload MODIS
 -------------------------------------------------------------
-$MODIS_MAXEVI       Location: /anvil/datasets/Covariates/MODIS/maxEVI
-$MODIS_MAXLAI       Location: /anvil/datasets/Covariates/MODIS/maxLAI
-$MODIS_MAXNDVI      Location: /anvil/datasets/Covariates/MODIS/maxNDVI
-$MODIS_MEANB1       Location: /anvil/datasets/Covariates/MODIS/meanB1
-$MODIS_MEANFPAR     Location: /anvil/datasets/Covariates/MODIS/meanFpar
 
-4 additional environment variables not shown.
+Usage
+-----
 
-$MODIS_HOME         Location: /anvil/datasets/Covariates/MODIS
-$MODIS_ROOT         Location: /anvil/datasets/Covariates/MODIS
-$MODIS_VERSION      Version: 2021-01-01
+To find and load available datasets::
 
-Tips:
-- Use echo $ENV_NAME to check the environment value.
-- To see all environment variables related to MODIS, you can load the module then use: env | grep MODIS
-- To unload the module and remove the environment settings: module unload MODIS
--------------------------------------------------------------
+    $ module avail
+    $ module load datasets
+    $ module spider datasets/Covariates/MODIS
 
 Environment Variables
----------------------
+-------------------
 
 .. list-table::
    :header-rows: 1
@@ -43,27 +42,26 @@ Environment Variables
    * - **Variable Name**
      - **Value**
    * - ``MODIS_MAXEVI``
-     - ``modroot.."/maxEVI"``
+     - ``/anvil/datasets/Covariates/MODIS/maxEVI``
    * - ``MODIS_MAXLAI``
-     - ``modroot.."/maxLAI"``
+     - ``/anvil/datasets/Covariates/MODIS/maxLAI``
    * - ``MODIS_MAXNDVI``
-     - ``modroot.."/maxNDVI"``
+     - ``/anvil/datasets/Covariates/MODIS/maxNDVI``
    * - ``MODIS_MEANB1``
-     - ``modroot.."/meanB1"``
+     - ``/anvil/datasets/Covariates/MODIS/meanB1``
    * - ``MODIS_MEANFPAR``
-     - ``modroot.."/meanFpar"``
+     - ``/anvil/datasets/Covariates/MODIS/meanFpar``
    * - ``MODIS_MEANLST_DAY``
-     - ``modroot.."/meanLST_day"``
+     - ``/anvil/datasets/Covariates/MODIS/meanLST_day``
    * - ``MODIS_SUMET``
-     - ``modroot.."/sumET"``
+     - ``/anvil/datasets/Covariates/MODIS/sumET``
    * - ``MODIS_SUMGPP``
-     - ``modroot.."/sumGPP"``
+     - ``/anvil/datasets/Covariates/MODIS/sumGPP``
    * - ``MODIS_SUMPET``
-     - ``modroot.."/sumPET"``
+     - ``/anvil/datasets/Covariates/MODIS/sumPET``
    * - ``MODIS_HOME``
-     - ``modroot``
+     - ``/anvil/datasets/Covariates/MODIS``
    * - ``RCAC_MODIS_ROOT``
-     - ``modroot``
+     - ``/anvil/datasets/Covariates/MODIS``
    * - ``RCAC_MODIS_VERSION``
      - ``2021-01-01``
-

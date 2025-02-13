@@ -1,33 +1,39 @@
-Topography_Amatulli_etal
-========================
+==============================================
+Dataset: Topography_Amatulli_etal (2020-05-28)
+==============================================
 
 Category: **Covariates**
+
+Description
+-----------
 
 Global Topographic Variables
 
 High-resolution topographic data for biodiversity modeling.
 
 This dataset contains data with the following attributes:
-  - Time Resolution: ?
-  - Spatial Resolution: 1 km
-  - DOI: 10.1038/sdata.2018.40
-  - Link: https://www.earthenv.org/topography
+* Time Resolution: ?
+* Spatial Resolution: 1 km
+* DOI: 10.1038/sdata.2018.40
+* Link: https://www.earthenv.org/topography
 
-Environment variables included:
+**Tips:**
+* Use echo $ENV_NAME to check the environment value.
+* To see all environment variables related to Topography_Amatulli_etal, you can load the module then use: env | grep Topography_Amatulli_etal
+* To unload the module and remove the environment settings: module unload Topography_Amatulli_etal
 -------------------------------------------------------------
 
-$Topography_Amatulli_etal_HOME     Location: /anvil/datasets/Covariates/Topography_Amatulli_etal
-$Topography_Amatulli_etal_ROOT     Location: /anvil/datasets/Covariates/Topography_Amatulli_etal
-$Topography_Amatulli_etal_VERSION  Version: 2020-05-28
+Usage
+-----
 
-Tips:
-- Use echo $ENV_NAME to check the environment value.
-- To see all environment variables related to Topography_Amatulli_etal, you can load the module then use: env | grep Topography_Amatulli_etal
-- To unload the module and remove the environment settings: module unload Topography_Amatulli_etal
--------------------------------------------------------------
+To find and load available datasets::
+
+    $ module avail
+    $ module load datasets
+    $ module spider datasets/Covariates/Topography_Amatulli_etal
 
 Environment Variables
----------------------
+-------------------
 
 .. list-table::
    :header-rows: 1
@@ -36,9 +42,8 @@ Environment Variables
    * - **Variable Name**
      - **Value**
    * - ``Topography_Amatulli_etal_HOME``
-     - ``modroot``
+     - ``/anvil/datasets/Covariates/Topography_Amatulli_etal``
    * - ``RCAC_Topography_Amatulli_etal_ROOT``
-     - ``modroot``
+     - ``/anvil/datasets/Covariates/Topography_Amatulli_etal``
    * - ``RCAC_Topography_Amatulli_etal_VERSION``
      - ``2020-05-28``
-

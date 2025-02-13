@@ -1,10 +1,25 @@
-GRCh38
-======
+============================
+Dataset: GRCh38 (2023-04-26)
+============================
 
 Category: **igenomes**
 
+Description
+-----------
+
+
+
+Usage
+-----
+
+To find and load available datasets::
+
+    $ module avail
+    $ module load datasets
+    $ module spider datasets/igenomes/GRCh38
+
 Environment Variables
----------------------
+-------------------
 
 .. list-table::
    :header-rows: 1
@@ -13,27 +28,26 @@ Environment Variables
    * - **Variable Name**
      - **Value**
    * - ``GRCh38_fasta``
-     - ``modroot.."/Sequence/WholeGenomeFasta/genome.fa"``
+     - ``/anvil/datasets/igenomes/Homo_sapiens/NCBI/GRCh38/Sequence/WholeGenomeFasta/genome.fa``
    * - ``GRCh38_bwa``
-     - ``modroot.."/Sequence/BWAIndex/version0.6.0/"``
+     - ``/anvil/datasets/igenomes/Homo_sapiens/NCBI/GRCh38/Sequence/BWAIndex/version0.6.0/``
    * - ``GRCh38_bowtie2``
-     - ``modroot.."/Sequence/Bowtie2Index/"``
+     - ``/anvil/datasets/igenomes/Homo_sapiens/NCBI/GRCh38/Sequence/Bowtie2Index/``
    * - ``GRCh38_star``
-     - ``modroot.."/Sequence/STARIndex/"``
+     - ``/anvil/datasets/igenomes/Homo_sapiens/NCBI/GRCh38/Sequence/STARIndex/``
    * - ``GRCh38_bismark``
-     - ``modroot.."/Sequence/BismarkIndex/"``
+     - ``/anvil/datasets/igenomes/Homo_sapiens/NCBI/GRCh38/Sequence/BismarkIndex/``
    * - ``GRCh38_gtf``
-     - ``modroot.."/Annotation/Genes/genes.gtf"``
+     - ``/anvil/datasets/igenomes/Homo_sapiens/NCBI/GRCh38/Annotation/Genes/genes.gtf``
    * - ``GRCh38_bed12``
-     - ``modroot.."/Annotation/Genes/genes.bed"``
+     - ``/anvil/datasets/igenomes/Homo_sapiens/NCBI/GRCh38/Annotation/Genes/genes.bed``
    * - ``GRCh38_mito_name``
      - ``chrM``
    * - ``GRCh38_macs_gsize``
      - ``2.7e9``
    * - ``GRCh38_HOME``
-     - ``modroot``
+     - ``/anvil/datasets/igenomes/Homo_sapiens/NCBI/GRCh38``
    * - ``RCAC_GRCh38_ROOT``
-     - ``modroot``
+     - ``/anvil/datasets/igenomes/Homo_sapiens/NCBI/GRCh38``
    * - ``RCAC_GRCh38_VERSION``
      - ``2023-04-26``
-

@@ -1,14 +1,27 @@
-galGal4
-=======
+=============================
+Dataset: galGal4 (2023-04-26)
+=============================
 
 Category: **igenomes**
+
+Description
+-----------
 
 The contents of the annotation directories were downloaded from UCSC on: July 17, 2015.
 
 SmallRNA annotation files were downloaded from miRBase release 21.
 
+Usage
+-----
+
+To find and load available datasets::
+
+    $ module avail
+    $ module load datasets
+    $ module spider datasets/igenomes/galGal4
+
 Environment Variables
----------------------
+-------------------
 
 .. list-table::
    :header-rows: 1
@@ -17,27 +30,26 @@ Environment Variables
    * - **Variable Name**
      - **Value**
    * - ``galGal4_fasta``
-     - ``modroot.."/Sequence/WholeGenomeFasta/genome.fa"``
+     - ``/anvil/datasets/igenomes/Gallus_gallus/UCSC/galGal4/Sequence/WholeGenomeFasta/genome.fa``
    * - ``galGal4_bwa``
-     - ``modroot.."/Sequence/BWAIndex/version0.6.0/"``
+     - ``/anvil/datasets/igenomes/Gallus_gallus/UCSC/galGal4/Sequence/BWAIndex/version0.6.0/``
    * - ``galGal4_bowtie2``
-     - ``modroot.."/Sequence/Bowtie2Index/"``
+     - ``/anvil/datasets/igenomes/Gallus_gallus/UCSC/galGal4/Sequence/Bowtie2Index/``
    * - ``galGal4_star``
-     - ``modroot.."/Sequence/STARIndex/"``
+     - ``/anvil/datasets/igenomes/Gallus_gallus/UCSC/galGal4/Sequence/STARIndex/``
    * - ``galGal4_bismark``
-     - ``modroot.."/Sequence/BismarkIndex/"``
+     - ``/anvil/datasets/igenomes/Gallus_gallus/UCSC/galGal4/Sequence/BismarkIndex/``
    * - ``galGal4_gtf``
-     - ``modroot.."/Annotation/Genes/genes.gtf"``
+     - ``/anvil/datasets/igenomes/Gallus_gallus/UCSC/galGal4/Annotation/Genes/genes.gtf``
    * - ``galGal4_bed12``
-     - ``modroot.."/Annotation/Genes/genes.bed"``
+     - ``/anvil/datasets/igenomes/Gallus_gallus/UCSC/galGal4/Annotation/Genes/genes.bed``
    * - ``galGal4_readme``
-     - ``modroot.."/Annotation/README.txt"``
+     - ``/anvil/datasets/igenomes/Gallus_gallus/UCSC/galGal4/Annotation/README.txt``
    * - ``galGal4_mito_name``
      - ``chrM``
    * - ``galGal4_HOME``
-     - ``modroot``
+     - ``/anvil/datasets/igenomes/Gallus_gallus/UCSC/galGal4``
    * - ``RCAC_galGal4_ROOT``
-     - ``modroot``
+     - ``/anvil/datasets/igenomes/Gallus_gallus/UCSC/galGal4``
    * - ``RCAC_galGal4_VERSION``
      - ``2023-04-26``
-

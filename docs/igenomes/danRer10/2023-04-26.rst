@@ -1,10 +1,25 @@
-danRer10
-========
+==============================
+Dataset: danRer10 (2023-04-26)
+==============================
 
 Category: **igenomes**
 
+Description
+-----------
+
+
+
+Usage
+-----
+
+To find and load available datasets::
+
+    $ module avail
+    $ module load datasets
+    $ module spider datasets/igenomes/danRer10
+
 Environment Variables
----------------------
+-------------------
 
 .. list-table::
    :header-rows: 1
@@ -13,27 +28,26 @@ Environment Variables
    * - **Variable Name**
      - **Value**
    * - ``danRer10_fasta``
-     - ``modroot.."/Sequence/WholeGenomeFasta/genome.fa"``
+     - ``/anvil/datasets/igenomes/Danio_rerio/UCSC/danRer10/Sequence/WholeGenomeFasta/genome.fa``
    * - ``danRer10_bwa``
-     - ``modroot.."/Sequence/BWAIndex/version0.6.0/"``
+     - ``/anvil/datasets/igenomes/Danio_rerio/UCSC/danRer10/Sequence/BWAIndex/version0.6.0/``
    * - ``danRer10_bowtie2``
-     - ``modroot.."/Sequence/Bowtie2Index/"``
+     - ``/anvil/datasets/igenomes/Danio_rerio/UCSC/danRer10/Sequence/Bowtie2Index/``
    * - ``danRer10_star``
-     - ``modroot.."/Sequence/STARIndex/"``
+     - ``/anvil/datasets/igenomes/Danio_rerio/UCSC/danRer10/Sequence/STARIndex/``
    * - ``danRer10_bismark``
-     - ``modroot.."/Sequence/BismarkIndex/"``
+     - ``/anvil/datasets/igenomes/Danio_rerio/UCSC/danRer10/Sequence/BismarkIndex/``
    * - ``danRer10_gtf``
-     - ``modroot.."/Annotation/Genes/genes.gtf"``
+     - ``/anvil/datasets/igenomes/Danio_rerio/UCSC/danRer10/Annotation/Genes/genes.gtf``
    * - ``danRer10_bed12``
-     - ``modroot.."/Annotation/Genes/genes.bed"``
+     - ``/anvil/datasets/igenomes/Danio_rerio/UCSC/danRer10/Annotation/Genes/genes.bed``
    * - ``danRer10_mito_name``
      - ``chrM``
    * - ``danRer10_macs_gsize``
      - ``1.37e9``
    * - ``danRer10_HOME``
-     - ``modroot``
+     - ``/anvil/datasets/igenomes/Danio_rerio/UCSC/danRer10``
    * - ``RCAC_danRer10_ROOT``
-     - ``modroot``
+     - ``/anvil/datasets/igenomes/Danio_rerio/UCSC/danRer10``
    * - ``RCAC_danRer10_VERSION``
      - ``2023-04-26``
-

@@ -1,33 +1,39 @@
-Cattle
-======
+============================
+Dataset: Cattle (2018-08-23)
+============================
 
 Category: **Covariates**
+
+Description
+-----------
 
 Global cattle distribution in 2010
 
 Distribution of cattle in 2010 expressed in total number of cattle per pixel (5 min of arc)
 
 This dataset contains data with the following attributes:
-  - Time Resolution: 2010
-  - Spatial Resolution: 10 km
-  - DOI: 10.7910/DVN/GIVQ75
-  - Link: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/GIVQ75
+* Time Resolution: 2010
+* Spatial Resolution: 10 km
+* DOI: 10.7910/DVN/GIVQ75
+* Link: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/GIVQ75
 
-Environment variables included:
+**Tips:**
+* Use echo $ENV_NAME to check the environment value.
+* To see all environment variables related to Cattle, you can load the module then use: env | grep Cattle
+* To unload the module and remove the environment settings: module unload Cattle
 -------------------------------------------------------------
 
-$Cattle_HOME     Location: /anvil/datasets/Covariates/Cattle
-$Cattle_ROOT     Location: /anvil/datasets/Covariates/Cattle
-$Cattle_VERSION  Version: 2018-08-23
+Usage
+-----
 
-Tips:
-- Use echo $ENV_NAME to check the environment value.
-- To see all environment variables related to Cattle, you can load the module then use: env | grep Cattle
-- To unload the module and remove the environment settings: module unload Cattle
--------------------------------------------------------------
+To find and load available datasets::
+
+    $ module avail
+    $ module load datasets
+    $ module spider datasets/Covariates/Cattle
 
 Environment Variables
----------------------
+-------------------
 
 .. list-table::
    :header-rows: 1
@@ -36,9 +42,8 @@ Environment Variables
    * - **Variable Name**
      - **Value**
    * - ``Cattle_HOME``
-     - ``modroot``
+     - ``/anvil/datasets/Covariates/Cattle``
    * - ``RCAC_Cattle_ROOT``
-     - ``modroot``
+     - ``/anvil/datasets/Covariates/Cattle``
    * - ``RCAC_Cattle_VERSION``
      - ``2018-08-23``
-

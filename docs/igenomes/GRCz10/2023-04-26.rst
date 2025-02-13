@@ -1,10 +1,25 @@
-GRCz10
-======
+============================
+Dataset: GRCz10 (2023-04-26)
+============================
 
 Category: **igenomes**
 
+Description
+-----------
+
+
+
+Usage
+-----
+
+To find and load available datasets::
+
+    $ module avail
+    $ module load datasets
+    $ module spider datasets/igenomes/GRCz10
+
 Environment Variables
----------------------
+-------------------
 
 .. list-table::
    :header-rows: 1
@@ -13,25 +28,24 @@ Environment Variables
    * - **Variable Name**
      - **Value**
    * - ``GRCz10_fasta``
-     - ``modroot.."/Sequence/WholeGenomeFasta/genome.fa"``
+     - ``/anvil/datasets/igenomes/Danio_rerio/Ensembl/GRCz10/Sequence/WholeGenomeFasta/genome.fa``
    * - ``GRCz10_bwa``
-     - ``modroot.."/Sequence/BWAIndex/version0.6.0/"``
+     - ``/anvil/datasets/igenomes/Danio_rerio/Ensembl/GRCz10/Sequence/BWAIndex/version0.6.0/``
    * - ``GRCz10_bowtie2``
-     - ``modroot.."/Sequence/Bowtie2Index/"``
+     - ``/anvil/datasets/igenomes/Danio_rerio/Ensembl/GRCz10/Sequence/Bowtie2Index/``
    * - ``GRCz10_star``
-     - ``modroot.."/Sequence/STARIndex/"``
+     - ``/anvil/datasets/igenomes/Danio_rerio/Ensembl/GRCz10/Sequence/STARIndex/``
    * - ``GRCz10_bismark``
-     - ``modroot.."/Sequence/BismarkIndex/"``
+     - ``/anvil/datasets/igenomes/Danio_rerio/Ensembl/GRCz10/Sequence/BismarkIndex/``
    * - ``GRCz10_gtf``
-     - ``modroot.."/Annotation/Genes/genes.gtf"``
+     - ``/anvil/datasets/igenomes/Danio_rerio/Ensembl/GRCz10/Annotation/Genes/genes.gtf``
    * - ``GRCz10_bed12``
-     - ``modroot.."/Annotation/Genes/genes.bed"``
+     - ``/anvil/datasets/igenomes/Danio_rerio/Ensembl/GRCz10/Annotation/Genes/genes.bed``
    * - ``GRCz10_mito_name``
      - ``MT``
    * - ``GRCz10_HOME``
-     - ``modroot``
+     - ``/anvil/datasets/igenomes/Danio_rerio/Ensembl/GRCz10``
    * - ``RCAC_GRCz10_ROOT``
-     - ``modroot``
+     - ``/anvil/datasets/igenomes/Danio_rerio/Ensembl/GRCz10``
    * - ``RCAC_GRCz10_VERSION``
      - ``2023-04-26``
-

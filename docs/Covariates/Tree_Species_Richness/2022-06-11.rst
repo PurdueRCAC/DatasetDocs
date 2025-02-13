@@ -1,33 +1,39 @@
-Tree_Species_Richness
-=====================
+===========================================
+Dataset: Tree_Species_Richness (2022-06-11)
+===========================================
 
 Category: **Covariates**
+
+Description
+-----------
 
 Global Tree Species Richness
 
 Dataset on global tree species diversity and richness.
 
 This dataset contains data with the following attributes:
-  - Time Resolution: ?
-  - Spatial Resolution: 3 km
-  - DOI: 10.1038/s41597-020-00752-4
-  - Link: https://doi.org/10.6084/m9.figshare.20055488
+* Time Resolution: ?
+* Spatial Resolution: 3 km
+* DOI: 10.1038/s41597-020-00752-4
+* Link: https://doi.org/10.6084/m9.figshare.20055488
 
-Environment variables included:
+**Tips:**
+* Use echo $ENV_NAME to check the environment value.
+* To see all environment variables related to Tree_Species_Richness, you can load the module then use: env | grep Tree_Species_Richness
+* To unload the module and remove the environment settings: module unload Tree_Species_Richness
 -------------------------------------------------------------
 
-$Tree_Species_Richness_HOME     Location: /anvil/datasets/Covariates/Tree_Species_Richness
-$Tree_Species_Richness_ROOT     Location: /anvil/datasets/Covariates/Tree_Species_Richness
-$Tree_Species_Richness_VERSION  Version: 2022-06-11
+Usage
+-----
 
-Tips:
-- Use echo $ENV_NAME to check the environment value.
-- To see all environment variables related to Tree_Species_Richness, you can load the module then use: env | grep Tree_Species_Richness
-- To unload the module and remove the environment settings: module unload Tree_Species_Richness
--------------------------------------------------------------
+To find and load available datasets::
+
+    $ module avail
+    $ module load datasets
+    $ module spider datasets/Covariates/Tree_Species_Richness
 
 Environment Variables
----------------------
+-------------------
 
 .. list-table::
    :header-rows: 1
@@ -36,9 +42,8 @@ Environment Variables
    * - **Variable Name**
      - **Value**
    * - ``Tree_Species_Richness_HOME``
-     - ``modroot``
+     - ``/anvil/datasets/Covariates/Tree_Species_Richness``
    * - ``RCAC_Tree_Species_Richness_ROOT``
-     - ``modroot``
+     - ``/anvil/datasets/Covariates/Tree_Species_Richness``
    * - ``RCAC_Tree_Species_Richness_VERSION``
      - ``2022-06-11``
-
