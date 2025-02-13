@@ -1,25 +1,11 @@
-===========================================
-Purdue RCAC Dataset Documentation Home
-===========================================
+================================
+Federated Datasets Documentation
+================================
 
-Welcome to the Purdue RCAC Dataset Documentation, a ReadTheDocs portal designed to provide researchers with comprehensive information about the datasets hosted on Purdue RCAC’s Anvil. For more details on the hosting environment, please visit the `RCAC Anvil website <https://www.rcac.purdue.edu/anvil>`_.
-
-Introduction
-============
-
-This documentation serves as a centralized guide to navigating and utilizing the diverse datasets available through Purdue RCAC. Each dataset module is packaged with a set of environment variables and is managed using Lmod, the module system that enables you to easily load and unload datasets as needed.
-
-If you want to look in specific categories, here are some of the key sections:
-- **Category Overview:** Browse datasets grouped by scientific domains or research interests.
-- **Dataset Details:** Access in-depth metadata for each dataset, including time and spatial resolution, DOI, and publication date.
-- **Usage Instructions:** Learn how to load modules, inspect environment variables, and leverage Lmod's module spider feature.
-
-Dataset Categories
-==================
-Below are the top-level dataset categories available in this documentation:
+Welcome! Below are the top-level dataset categories.
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Categories
 
    Covariates/index

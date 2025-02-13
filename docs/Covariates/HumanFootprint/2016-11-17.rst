@@ -1,6 +1,8 @@
-====================================
-Dataset: HumanFootprint (2016-11-17)
-====================================
+==============
+HumanFootprint
+==============
+
+Version: 2016-11-17
 
 Category: **Covariates**
 
@@ -12,16 +14,22 @@ Human Footprint Data
 Global human footprint analysis at 1km resolution.
 
 This dataset contains data with the following attributes:
+
 * Time Resolution: 1993
+
 * Spatial Resolution: 1 km
+
 * DOI: 10.5061/dryad.052q5
+
 * Link: https://datadryad.org/stash/dataset/doi:10.5061/dryad.052q5
 
 **Tips:**
+
 * Use echo $ENV_NAME to check the environment value.
+
 * To see all environment variables related to HumanFootprint, you can load the module then use: env | grep HumanFootprint
+
 * To unload the module and remove the environment settings: module unload HumanFootprint
--------------------------------------------------------------
 
 Usage
 -----

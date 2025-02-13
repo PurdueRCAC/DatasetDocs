@@ -1,6 +1,8 @@
-=========================================
-Dataset: MODIS_MOD16A3GF.061 (2021-03-11)
-=========================================
+===================
+MODIS_MOD16A3GF.061
+===================
+
+Version: 2021-03-11
 
 Category: **geospatial**
 
@@ -12,16 +14,22 @@ MODIS MOD16A3GF.061:
 This dataset provides annual gap-filled global terrestrial evapotranspiration data, supporting long-term studies in water resources and ecosystem monitoring.
 
 This dataset contains data with the following attributes:
+
 * Time Resolution: N/A
+
 * Spatial Resolution: N/A
+
 * DOI: 10.5067/MODIS/MOD16A3GF.061
+
 * Link: https://app.globus.org/file-manager?origin_id=765a60bd-a1d1-4aae-a119-56a20bb68e4c&origin_path=%2F
 
 **Tips:**
+
 * Use echo $ENV_NAME to check the environment value.
+
 * To see all environment variables related to MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61, you can load the module then use: env | grep MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61
+
 * To unload the module and remove the environment settings: module unload MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61
--------------------------------------------------------------
 
 Usage
 -----

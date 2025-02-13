@@ -1,6 +1,8 @@
-======================================
-Dataset: ForestManagement (2021-02-15)
-======================================
+================
+ForestManagement
+================
+
+Version: 2021-02-15
 
 Category: **Covariates**
 
@@ -12,16 +14,22 @@ Forest Management Classes
 Detailed forest management data at a 100m resolution.
 
 This dataset contains data with the following attributes:
+
 * Time Resolution: 2015
+
 * Spatial Resolution: 100 m
+
 * DOI: 10.1038/s41597-022-01332-3
+
 * Link: https://zenodo.org/record/5879022#.ZDmgPbrMKUk
 
 **Tips:**
+
 * Use echo $ENV_NAME to check the environment value.
+
 * To see all environment variables related to ForestManagement, you can load the module then use: env | grep ForestManagement
+
 * To unload the module and remove the environment settings: module unload ForestManagement
--------------------------------------------------------------
 
 Usage
 -----

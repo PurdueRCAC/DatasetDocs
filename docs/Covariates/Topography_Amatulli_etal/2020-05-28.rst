@@ -1,6 +1,8 @@
-==============================================
-Dataset: Topography_Amatulli_etal (2020-05-28)
-==============================================
+========================
+Topography_Amatulli_etal
+========================
+
+Version: 2020-05-28
 
 Category: **Covariates**
 
@@ -12,16 +14,22 @@ Global Topographic Variables
 High-resolution topographic data for biodiversity modeling.
 
 This dataset contains data with the following attributes:
+
 * Time Resolution: ?
+
 * Spatial Resolution: 1 km
+
 * DOI: 10.1038/sdata.2018.40
+
 * Link: https://www.earthenv.org/topography
 
 **Tips:**
+
 * Use echo $ENV_NAME to check the environment value.
+
 * To see all environment variables related to Topography_Amatulli_etal, you can load the module then use: env | grep Topography_Amatulli_etal
+
 * To unload the module and remove the environment settings: module unload Topography_Amatulli_etal
--------------------------------------------------------------
 
 Usage
 -----

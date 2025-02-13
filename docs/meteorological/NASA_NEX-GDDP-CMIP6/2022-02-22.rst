@@ -1,6 +1,8 @@
-=========================================
-Dataset: NASA_NEX-GDDP-CMIP6 (2022-02-22)
-=========================================
+===================
+NASA_NEX-GDDP-CMIP6
+===================
+
+Version: 2022-02-22
 
 Category: **meteorological**
 
@@ -12,16 +14,22 @@ NASA NEX-GDDP-CMIP6 (NASA Earth Exchange Global Daily Downscaled Projections - C
 NEX-GDDP-CMIP6 provides global downscaled climate scenarios derived from CMIP6 models. It includes daily projections of maximum and minimum temperatures and precipitation at a spatial resolution of 0.25 degrees (~25 km x 25 km) for the periods from 1950 through 2100. The dataset is designed to assist in evaluating climate change impacts at local to regional scales.
 
 This dataset contains data with the following attributes:
+
 * Time Resolution: Daily (Jan 1950 - Dec 2100)
+
 * Spatial Resolution: 30km - Global
+
 * DOI: 10.1038/s41597-022-01393-4
+
 * Link: https://app.globus.org/file-manager?origin_id=05dbc4e8-9731-4202-aac3-ef31dc743cd1&origin_path=%2F
 
 **Tips:**
+
 * Use echo $ENV_NAME to check the environment value.
+
 * To see all environment variables related to NEXGDDP, you can load the module then use: env | grep NEXGDDP
+
 * To unload the module and remove the environment settings: module unload NEXGDDP
--------------------------------------------------------------
 
 Usage
 -----

@@ -1,6 +1,8 @@
-========================================
-Dataset: Ouranos_ESPO-G6-R2 (2024-01-11)
-========================================
+==================
+Ouranos_ESPO-G6-R2
+==================
+
+Version: 2024-01-11
 
 Category: **meteorological**
 
@@ -12,16 +14,22 @@ Ouranos ESPO-G6-R2
 Developed by Ouranos, a Canadian consortium on regional climatology and adaptation to climate change, the ESPO-G6-R2 dataset comprises daily climate projections from January 1950 to December 2100. Covering North America at a 10 km resolution, it includes multiple General Circulation Model (GCM) outputs, scenarios, ensemble members, and variables. The dataset is used in climate research and adaptation planning.
 
 This dataset contains data with the following attributes:
+
 * Time Resolution: Daily (Jan 1950 - Dec 2100)
+
 * Spatial Resolution: 10km - North America
+
 * DOI: 10.1038/s41597-023-02855-z
+
 * Link: https://app.globus.org/file-manager?origin_id=0b8a029d-a21e-4fb1-bf6e-0e9e3cd2d1c3&origin_path=%2F
 
 **Tips:**
+
 * Use echo $ENV_NAME to check the environment value.
+
 * To see all environment variables related to OURANOS_ESPO, you can load the module then use: env | grep OURANOS_ESPO
+
 * To unload the module and remove the environment settings: module unload OURANOS_ESPO
--------------------------------------------------------------
 
 Usage
 -----

@@ -1,6 +1,8 @@
-======================================
-Dataset: CHELSA_2071-2100 (2020-09-05)
-======================================
+================
+CHELSA_2071-2100
+================
+
+Version: 2020-09-05
 
 Category: **Covariates**
 
@@ -12,16 +14,22 @@ CHELSA Climate Data for 2071-2100
 End-of-century climate projections.
 
 This dataset contains data with the following attributes:
+
 * Time Resolution: 2071-2100
+
 * Spatial Resolution: 1km
+
 * DOI: 10.1038/sdata.2017.122
+
 * Link: https://www.nature.com/articles/sdata2017122
 
 **Tips:**
+
 * Use echo $ENV_NAME to check the environment value.
+
 * To see all environment variables related to CHELSA_2071-2100, you can load the module then use: env | grep CHELSA_2071-2100
+
 * To unload the module and remove the environment settings: module unload CHELSA_2071-2100
--------------------------------------------------------------
 
 Usage
 -----

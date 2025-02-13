@@ -1,6 +1,8 @@
-===========================
-Dataset: EMDNA (2021-07-13)
-===========================
+=====
+EMDNA
+=====
+
+Version: 2021-07-13
 
 Category: **meteorological**
 
@@ -12,16 +14,22 @@ EMDNA (Environment and Climate Change Canada Meteorological Data Network Archive
 EMDNA provides high-resolution meteorological data for North America, offering hourly and daily variables from January 1979 to December 2018 at an 11 km resolution. It serves as a valuable resource for climate studies and environmental monitoring.
 
 This dataset contains data with the following attributes:
+
 * Time Resolution: Hourly/Daily (Jan 1979 - Dec 2018)
+
 * Spatial Resolution: 11km - North America
+
 * DOI: 10.5194/essd-13-3337-2021
+
 * Link: https://www.frdr-dfdr.ca/repo/dataset/4bb24ee2-73e1-43a8-a929-126d2eb2bfa3
 
 **Tips:**
+
 * Use echo $ENV_NAME to check the environment value.
+
 * To see all environment variables related to EMDNA, you can load the module then use: env | grep EMDNA
+
 * To unload the module and remove the environment settings: module unload EMDNA
--------------------------------------------------------------
 
 Usage
 -----

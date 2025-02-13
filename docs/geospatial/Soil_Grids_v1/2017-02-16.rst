@@ -1,6 +1,8 @@
-===================================
-Dataset: Soil_Grids_v1 (2017-02-16)
-===================================
+=============
+Soil_Grids_v1
+=============
+
+Version: 2017-02-16
 
 Category: **geospatial**
 
@@ -12,16 +14,22 @@ Soil Grids v1
 Soil Grids v1 is a global dataset that maps soil properties at six standard depths (0–5 cm, 5–15 cm, 15–30 cm, 30–60 cm, 60–100 cm, and 100–200 cm). It includes variables such as soil organic carbon, pH, texture, and bulk density. The dataset is derived from soil profile observations and machine learning methods, and it has a spatial resolution of 250 meters. Soil Grids v1 is used for research in agriculture, forestry, and soil science.
 
 This dataset contains data with the following attributes:
+
 * Time Resolution: N/A
+
 * Spatial Resolution: N/A
+
 * DOI: 10.1371/journal.pone.0169748
+
 * Link: https://app.globus.org/file-manager?origin_id=b06f4aa7-87c2-4657-a06c-3008557ec725&origin_path=%2F
 
 **Tips:**
+
 * Use echo $ENV_NAME to check the environment value.
+
 * To see all environment variables related to SOIL_GRIDS_V1, you can load the module then use: env | grep SOIL_GRIDS_V1
+
 * To unload the module and remove the environment settings: module unload SOIL_GRIDS_V1
--------------------------------------------------------------
 
 Usage
 -----
