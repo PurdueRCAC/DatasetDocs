@@ -145,7 +145,7 @@ def clean_help_text(help_text: str) -> str:
             if current_paragraph:
                 fixed_lines.append(' '.join(current_paragraph))
                 current_paragraph = []
-            fixed_lines.append('**Tips:**')  # Make it bold in RST
+            fixed_lines.append('\n**Tips:**')  # Make it bold in RST
             in_tips = True
             in_attributes = False
             continue
@@ -155,7 +155,7 @@ def clean_help_text(help_text: str) -> str:
             if current_paragraph:
                 fixed_lines.append(' '.join(current_paragraph))
                 current_paragraph = []
-            fixed_lines.append(stripped)
+            fixed_lines.append(stripped + '\n')  # Add extra newline for list
             in_attributes = True
             in_tips = False
             continue
@@ -165,21 +165,17 @@ def clean_help_text(help_text: str) -> str:
             if current_paragraph:
                 fixed_lines.append(' '.join(current_paragraph))
                 current_paragraph = []
-            # Format as proper RST bullet list
+            # Format as proper RST bullet list with proper indentation
             if in_tips or in_attributes:
-                # Add proper RST bullet list indentation
                 fixed_lines.append('* ' + stripped[2:])
+                fixed_lines.append('')  # Add blank line after each bullet point
             else:
                 fixed_lines.append(stripped)
             in_list = True
             continue
             
-        # Handle dashed lines
+        # Handle dashed lines - skip them
         if re.match(r'^-+$', stripped):
-            if current_paragraph:
-                fixed_lines.append(' '.join(current_paragraph))
-                current_paragraph = []
-            fixed_lines.append(stripped)
             continue
             
         # Regular paragraph text
@@ -214,7 +210,7 @@ def generate_rst_file(
 
     Structure:
         =====================================
-        Dataset: {dataset_name} ({version})
+        {dataset_name}
         =====================================
 
         Category: {category}
@@ -235,7 +231,7 @@ def generate_rst_file(
         -------------------
         {env_table}
     """
-    title_line = f"Dataset: {dataset_name} ({version})"
+    title_line = dataset_name  # Simplified title
     underline = "=" * len(title_line)
 
     # Clean the help text to remove environment variables section
@@ -263,6 +259,10 @@ def generate_rst_file(
     with open(output_file, 'w', encoding='utf-8') as f:
         # Title
         f.write(f"{underline}\n{title_line}\n{underline}\n\n")
+        
+        # Version (as a subtitle)
+        if version:
+            f.write(f"Version: {version}\n\n")
         
         # Category
         f.write(f"Category: **{category}**\n\n")
@@ -412,4 +412,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 

@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from generate_docs import parse_lua_file, clean_help_text, generate_rst_file
 from pathlib import Path
 
@@ -22,4 +26,4 @@ def main():
     print(Path("test_output.rst").read_text())
 
 if __name__ == "__main__":
-    main() 
+    main()
