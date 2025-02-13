@@ -1,0 +1,214 @@
+{
+    "Covariates": {
+        "AboveBelowRatio": {
+            "folder": "AboveBelowRatio",
+            "time_resolution": "?",
+            "spatial_resolution": "1 km",
+            "doi": "N/A",
+            "link": "Directly obtained from the author",
+            "publication_date": "2022-10-17",
+            "title": "Aboveground biomass to belowground biomass ratio",
+            "description": "Ratio derived from biomass studies to explore environmental drivers."
+        },
+        "Cattle": {
+            "folder": "Cattle",
+            "time_resolution": "2010",
+            "spatial_resolution": "10 km",
+            "doi": "10.7910/DVN/GIVQ75",
+            "link": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/GIVQ75",
+            "publication_date": "2018-08-23",
+            "title": "Global cattle distribution in 2010",
+            "description": "Distribution of cattle in 2010 expressed in total number of cattle per pixel (5 min of arc)"
+        },
+        "CHELSA_2011-2040": {
+            "folder": "CHELSA_2011-2040",
+            "time_resolution": "2011-2040",
+            "spatial_resolution": "1km",
+            "doi": "10.1038/sdata.2017.122",
+            "link": "https://www.nature.com/articles/sdata2017122",
+            "publication_date": "2020-09-05",
+            "title": "CHELSA Climate Data for 2011-2040",
+            "description": "Climatic data projections for analysis and modeling."
+        },
+        "CHELSA_2041-2070": {
+            "folder": "CHELSA_2041-2070",
+            "time_resolution": "2041-2070",
+            "spatial_resolution": "1km",
+            "doi": "10.1038/sdata.2017.122",
+            "link": "https://www.nature.com/articles/sdata2017122",
+            "publication_date": "2020-09-05",
+            "title": "CHELSA Climate Data for 2041-2070",
+            "description": "Climatic data projections for mid-century climate modeling."
+        },
+        "CHELSA_2071-2100": {
+            "folder": "CHELSA_2071-2100",
+            "time_resolution": "2071-2100",
+            "spatial_resolution": "1km",
+            "doi": "10.1038/sdata.2017.122",
+            "link": "https://www.nature.com/articles/sdata2017122",
+            "publication_date": "2020-09-05",
+            "title": "CHELSA Climate Data for 2071-2100",
+            "description": "End-of-century climate projections."
+        },
+        "CHELSA_Present_bio": {
+            "folder": "CHELSA_Present_bio",
+            "time_resolution": "1979-2013",
+            "spatial_resolution": "1 km",
+            "doi": "10.1038/sdata.2017.122",
+            "link": "https://chelsa-climate.org/bioclim/",
+            "publication_date": "2020-09-05",
+            "title": "CHELSA Bioclimatic Variables",
+            "description": "High-resolution climatic data for present-day bioclimatic analysis."
+        },
+        "ForestAge": {
+            "folder": "ForestAge",
+            "time_resolution": "2010",
+            "spatial_resolution": "1 km",
+            "doi": "10.5194/essd-13-4881-2021",
+            "link": "https://doi.org/10.17871/ForestAgeBGI.2021",
+            "publication_date": "2021-03-02",
+            "title": "Global Forest Age",
+            "description": "Mapped global forest age from inventories, biomass, and climate data."
+        },
+        "ForestHeight2020": {
+            "folder": "ForestHeight2020",
+            "time_resolution": "2020",
+            "spatial_resolution": "30 m",
+            "doi": "N/A",
+            "link": "https://glad.umd.edu/dataset/GLCLUC2020",
+            "publication_date": "2022-04-15",
+            "title": "Global Forest Canopy Height",
+            "description": "Integration of GEDI and Landsat data for global forest canopy height."
+        },
+        "ForestManagement": {
+            "folder": "ForestManagement",
+            "time_resolution": "2015",
+            "spatial_resolution": "100 m",
+            "doi": "10.1038/s41597-022-01332-3",
+            "link": "https://zenodo.org/record/5879022#.ZDmgPbrMKUk",
+            "publication_date": "2021-02-15",
+            "title": "Forest Management Classes",
+            "description": "Detailed forest management data at a 100m resolution."
+        },
+        "GEDI": {
+            "folder": "GEDI",
+            "time_resolution": "2019-2022",
+            "spatial_resolution": "1 km",
+            "doi": "10.3334/ORNLDAAC/1952",
+            "link": "https://daac.ornl.gov/cgi-bin/dsviewer.pl?ds_id=2017",
+            "publication_date": "2022-03-29",
+            "title": "GEDI Land Surface Metrics",
+            "description": "Gridded land surface metrics from GEDI data."
+        },
+        "Global_AI_ET": {
+            "folder": "Global_AI_ET",
+            "time_resolution": "1970-2000",
+            "spatial_resolution": "1 km",
+            "doi": "10.6084/m9.figshare.7504448.v6",
+            "link": "https://figshare.com/articles/dataset/Global_Aridity_Index_and_Potential_Evapotranspiration_ET0_Climate_Database_v2/7504448/6",
+            "publication_date": "2022-07-20",
+            "title": "Global Aridity Index",
+            "description": "Global annual indexed aridity derived from evapotranspiration."
+        },
+        "HumanFootprint": {
+            "folder": "HumanFootprint",
+            "time_resolution": "1993",
+            "spatial_resolution": "1 km",
+            "doi": "10.5061/dryad.052q5",
+            "link": "https://datadryad.org/stash/dataset/doi:10.5061/dryad.052q5",
+            "publication_date": "2016-11-17",
+            "title": "Human Footprint Data",
+            "description": "Global human footprint analysis at 1km resolution."
+        },
+        "MODIS": {
+            "folder": "MODIS",
+            "time_resolution": "2000-2019",
+            "spatial_resolution": "1 km",
+            "doi": "N/A",
+            "link": "Obtained from Dr. Xiaolu Tang",
+            "publication_date": "2021-01-01",
+            "title": "Enhanced Vegetation Index",
+            "description": "MODIS data for vegetation index analysis."
+        },
+        "PBCOR_V1.0": {
+            "folder": "PBCOR_V1.0",
+            "time_resolution": "1979-2013",
+            "spatial_resolution": "1 km",
+            "doi": "10.1175/JCLI-D-19-0332.1",
+            "link": "http://www.gloh2o.org/pbcor/",
+            "publication_date": "2020-01-01",
+            "title": "Bias-Corrected Precipitation",
+            "description": "Corrected global high-resolution precipitation climatologies."
+        },
+        "PlantedYear": {
+            "folder": "PlantedYear",
+            "time_resolution": "?",
+            "spatial_resolution": "30 m",
+            "doi": "10.1038/s41597-022-01260-2",
+            "link": "https://doi.org/10.6084/m9.figshare.19070084.v2",
+            "publication_date": "2022-05-06",
+            "title": "Global Plantation Year Data",
+            "description": "Year of planting for global plantation areas."
+        },
+        "ProtectedArea": {
+            "folder": "ProtectedArea",
+            "time_resolution": "2019",
+            "spatial_resolution": "Shapefile",
+            "doi": "N/A",
+            "link": "https://www.protectedplanet.net/en",
+            "publication_date": "2019-01-01",
+            "title": "World Database on Protected Areas",
+            "description": "Contains protected area boundaries and conservation status."
+        },
+        "Roadless": {
+            "folder": "Roadless",
+            "time_resolution": "?",
+            "spatial_resolution": "Shapefile",
+            "doi": "N/A",
+            "link": "http://www.roadless.online/data/",
+            "publication_date": "2016-01-01",
+            "title": "Global Roadless Areas",
+            "description": "A global map of roadless areas for conservation purposes."
+        },
+        "Soil_WISE30sec": {
+            "folder": "Soil_WISE30sec",
+            "time_resolution": "?",
+            "spatial_resolution": "30 arc-seconds (~1 km)",
+            "doi": "10.1016/j.geoderma.2021.115738",
+            "link": "https://data.isric.org/geonetwork/srv/eng/catalog.search",
+            "publication_date": "2021-01-01",
+            "title": "WISE30sec Soil Properties",
+            "description": "Harmonized global soil property database for modeling applications."
+        },
+        "Topography_Amatulli_etal": {
+            "folder": "Topography_Amatulli_etal",
+            "time_resolution": "?",
+            "spatial_resolution": "1 km",
+            "doi": "10.1038/sdata.2018.40",
+            "link": "https://www.earthenv.org/topography",
+            "publication_date": "2020-05-28",
+            "title": "Global Topographic Variables",
+            "description": "High-resolution topographic data for biodiversity modeling."
+        },
+        "Tree_Species_Richness": {
+            "folder": "Tree_Species_Richness",
+            "time_resolution": "?",
+            "spatial_resolution": "3 km",
+            "doi": "10.1038/s41597-020-00752-4",
+            "link": "https://doi.org/10.6084/m9.figshare.20055488",
+            "publication_date": "2022-06-11",
+            "title": "Global Tree Species Richness",
+            "description": "Dataset on global tree species diversity and richness."
+        },
+        "WorldClim_Historical_bio": {
+            "folder": "WorldClim_Historical_bio",
+            "time_resolution": "1970-2000",
+            "spatial_resolution": "30 arc-seconds (~1 km)",
+            "doi": "10.1038/sdata.2017.190",
+            "link": "https://www.worldclim.org/data/worldclim21.html",
+            "publication_date": "2017-05-17",
+            "title": "WorldClim Historical Climate Data",
+            "description": "Historical climate data for global land areas."
+        }
+    }
+}

@@ -1,0 +1,195 @@
+{
+    "meteorological": {
+        "ECCC_RDRS": {
+            "folder": "ECCC_RDRSv2.1",
+            "time_resolution": "Hourly (Jan 1980 - Dec 2018)",
+            "spatial_resolution": "10km - North America",
+            "doi": "10.5194/hess-25-4917-2021",
+            "link": "https://app.globus.org/file-manager?origin_id=3e4b05eb-7d5f-4c11-8280-f2b009e69a92&origin_path=%2F",
+            "publication_date": "2021-09-07",
+            "title": "ECCC RDRS (Environment and Climate Change Canada Regional Deterministic Reforecast System)",
+            "description": "The RDRSv2.1 dataset is a high-resolution atmospheric reanalysis produced by Environment and Climate Change Canada (ECCC). It offers hourly data from January 1980 to December 2018, covering North America at a 10 km spatial resolution. The dataset includes variables such as temperature, precipitation, and wind, and is utilized in hydrological modeling and climate studies."
+        },
+        "NEXGDDP": {
+            "folder": "NASA_NEX-GDDP-CMIP6",
+            "time_resolution": "Daily (Jan 1950 - Dec 2100)",
+            "spatial_resolution": "30km - Global",
+            "doi": "10.1038/s41597-022-01393-4",
+            "link": "https://app.globus.org/file-manager?origin_id=05dbc4e8-9731-4202-aac3-ef31dc743cd1&origin_path=%2F",
+            "publication_date": "2022-02-22", 
+            "title": "NASA NEX-GDDP-CMIP6 (NASA Earth Exchange Global Daily Downscaled Projections - CMIP6)",
+            "description": "NEX-GDDP-CMIP6 provides global downscaled climate scenarios derived from CMIP6 models. It includes daily projections of maximum and minimum temperatures and precipitation at a spatial resolution of 0.25 degrees (~25 km x 25 km) for the periods from 1950 through 2100. The dataset is designed to assist in evaluating climate change impacts at local to regional scales."
+        },
+        "DAYMET": {
+            "folder": "ORNL_Daymet",
+            "time_resolution": "Daily (Jan 1980 - Dec 2022)",
+            "spatial_resolution": "1km - North America",
+            "doi": "10.3334/ORNLDAAC/2129",
+            "link": "https://app.globus.org/file-manager?origin_id=2070a9db-caac-48d0-8aa7-05c176a49f88&origin_path=%2F",
+            "publication_date": "2022-11-01",
+            "title": "ORNL Daymet",
+            "description": "Daymet offers daily surface meteorological data for North America, including variables such as temperature, precipitation, and radiation. Spanning from January 1980 to December 2022, it provides data at a 1 km spatial resolution. The dataset supports ecological, hydrological, and agricultural research."
+        },
+        "OURANOS_ESPO": {
+            "folder": "Ouranos_ESPO-G6-R2",
+            "time_resolution": "Daily (Jan 1950 - Dec 2100)",
+            "spatial_resolution": "10km - North America",
+            "doi": "10.1038/s41597-023-02855-z",
+            "link": "https://app.globus.org/file-manager?origin_id=0b8a029d-a21e-4fb1-bf6e-0e9e3cd2d1c3&origin_path=%2F",
+            "publication_date": "2024-01-11", 
+            "title": "Ouranos ESPO-G6-R2",
+            "description": "Developed by Ouranos, a Canadian consortium on regional climatology and adaptation to climate change, the ESPO-G6-R2 dataset comprises daily climate projections from January 1950 to December 2100. Covering North America at a 10 km resolution, it includes multiple General Circulation Model (GCM) outputs, scenarios, ensemble members, and variables. The dataset is used in climate research and adaptation planning."
+        },
+        "ERA5": {
+            "folder": "ERA5",
+            "time_resolution": "Hourly (Jan 1940 - Present)",
+            "spatial_resolution": "30km - Global",
+            "doi": "10.24381/cds.adbb2d47",
+            "link": "https://console.cloud.google.com/storage/browser/gcp-public-data-arco-era5/raw?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))",
+            "publication_date": "2018-06-14",
+            "title": "ERA5",
+            "description": "ERA5 is a comprehensive reanalysis dataset produced by the European Centre for Medium-Range Weather Forecasts (ECMWF). It offers hourly estimates of atmospheric, land, and oceanic variables from January 1940 to the present, with a global spatial resolution of approximately 30 km. ERA5 is widely used for climate research, weather forecasting, and environmental monitoring."
+        },
+        "ERA5_HYDRO": {
+            "folder": "ERA5_small",
+            "time_resolution": "Hourly (Jan 1950 - Dec 2020)",
+            "spatial_resolution": "30km - Global",
+            "doi": "10.24381/cds.adbb2d47",
+            "link": "https://app.globus.org/file-manager?origin_id=6d8a51dd-711a-4862-ab6e-340b1589c4c6&origin_path=%2F",
+            "publication_date": "2018-06-14",
+            "title": "ERA5 (Subset for Hydrological Modelling)",
+            "description": "This subset of ERA5 focuses on variables pertinent to hydrological modeling. Providing hourly data from January 1950 to December 2020 at a 30 km global resolution, it is tailored for studies involving water resources and hydrological processes."
+        },
+        "EME": {
+            "folder": "EM-Earth",
+            "time_resolution": "Hourly/Daily (Jan 1950 - Dec 2019)",
+            "spatial_resolution": "11km - Global",
+            "doi": "10.1175/BAMS-D-21-0106.1",
+            "link": "https://www.frdr-dfdr.ca/repo/dataset/8d30ab02-f2bd-4d05-ae43-11f4a387e5ad",
+            "publication_date": "2021-04-01",
+            "title": "EM-Earth",
+            "description": "EM-Earth is a global dataset offering hourly and daily meteorological variables from January 1950 to December 2019. With an 11 km spatial resolution, it supports climate modeling, environmental assessments, and related research endeavors."
+        },
+        "EMDNA": {
+            "folder": "EMDNA",
+            "time_resolution": "Hourly/Daily (Jan 1979 - Dec 2018)",
+            "spatial_resolution": "11km - North America",
+            "doi": "10.5194/essd-13-3337-2021",
+            "link": "https://www.frdr-dfdr.ca/repo/dataset/4bb24ee2-73e1-43a8-a929-126d2eb2bfa3",
+            "publication_date": "2021-07-13",
+            "title": "EMDNA (Environment and Climate Change Canada Meteorological Data Network Archive)",
+            "description": "EMDNA provides high-resolution meteorological data for North America, offering hourly and daily variables from January 1979 to December 2018 at an 11 km resolution. It serves as a valuable resource for climate studies and environmental monitoring."
+        },
+        "SCDNA": {
+            "folder": "SCDNA",
+            "time_resolution": "Daily (Jan 1979 - Dec 2018)",
+            "spatial_resolution": "Point-based - North America",
+            "doi": "10.5194/essd-12-2381-2020",
+            "link": "https://zenodo.org/records/3953310",
+            "publication_date": "2020-10-02",
+            "title": "SCDNA (Surface Climate Data for North America)",
+            "description": "SCDNA is a point-based dataset offering daily surface climate variables across North America from January 1979 to December 2018. It includes temperature, precipitation, and other essential climate metrics, supporting localized climate analyses."
+        },
+        "SCE": {
+            "folder": "SC-Earth",
+            "time_resolution": "Daily (Jan 1950 - Dec 2019)",
+            "spatial_resolution": "Point-based - Global",
+            "doi": "10.1175/JCLI-D-21-0067.1",
+            "link": "https://zenodo.org/records/4762586",
+            "publication_date": "2021-07-01",
+            "title": "SC-Earth (Surface Climate Data for Earth)",
+            "description": "SC-Earth provides global point-based daily surface climate data from January 1950 to December 2019. It encompasses various climate variables, facilitating comprehensive climate research and modeling efforts."
+        }
+    },
+    "geospatial": {
+        "MERIT_HYDRO": {
+            "folder": "MERIT_Hydro",
+            "doi": "10.1029/2019WR024873",
+            "link": "https://app.globus.org/file-manager?origin_id=ed0c7900-6369-4340-9354-12be791ee8e4&origin_path=%2F",
+            "publication_date": "2019-05-28",
+            "title": "MERIT Hydro (Multi-Error-Removed Improved-Terrain Hydrography)",
+            "description": "MERIT Hydro is a high-resolution global hydrography dataset developed to enhance the accuracy of river networks and watershed boundaries. By correcting errors in existing digital elevation models, it provides detailed information on river flow directions, streamlines, and catchment areas. The dataset is utilized in hydrological modeling and water resource management."
+        },
+        "NALCMS": {
+            "folder": "NALCMS",
+            "link": "http://www.cec.org/north-american-land-change-monitoring-system/",
+            "publication_date": "2020-01-01",
+            "title": "NALCMS (North American Land Change Monitoring System)",
+            "description": "NALCMS offers land cover and land change data across North America. It provides consistent and harmonized land cover classifications, supporting environmental monitoring, resource management, and land-use planning."
+        },
+        "MODIS_LAND_COVER_V6": {
+            "folder": "MODIS-MCD12Q1.006",
+            "doi": "10.5067/MODIS/MCD12Q1.006",
+            "link": "https://app.globus.org/file-manager?origin_id=ef71859e-e7d2-4132-952a-38e5f259ab0b&origin_path=%2F",
+            "publication_date": "2018-05-14",
+            "title": "MODIS - MCD12Q1.006",
+            "description": "This dataset provides annual land cover type data derived from the MODIS sensor. It includes classifications such as forests, grasslands, and urban areas, aiding in land cover change analysis and environmental assessments."
+        },
+        "MODIS_LAND_COVER_V61": {
+            "folder": "MODIS_MCD12Q1.061",
+            "doi": "10.5067/MODIS/MCD12Q1.061",
+            "link": "https://app.globus.org/file-manager?origin_id=bfc25d77-927c-4c88-b63a-13b698759056&origin_path=%2F",
+            "publication_date": "2022-04-20",
+            "title": "MODIS MCD12Q1.061",
+            "description": "An updated version of the MODIS land cover dataset, MCD12Q1.061 offers improved classification algorithms and data quality, providing annual global land cover information for various applications."
+        },
+        "MODIS_EVAPOTRANSPIRATION_V61": {
+            "folder": "MODIS_MOD16A2.061",
+            "doi": "10.5067/MODIS/MOD16A2.061",
+            "link": "https://app.globus.org/file-manager?origin_id=fc37cdc2-f1ee-49e5-8c93-d5049ef813c4&origin_path=%2F",
+            "publication_date": "2021-03-11",
+            "title": "MODIS MOD16A2.061",
+            "description": "This dataset provides 8-day estimates of global terrestrial evapotranspiration and potential evapotranspiration. It supports studies in hydrology, agriculture, and climate science."
+        },
+        "MODIS_EVAPOTRANSPIRATION_GAP_FILLED_V61": {
+            "folder": "MODIS_MOD16A2GF.061",
+            "doi": "10.5067/MODIS/MOD16A2GF.061",
+            "link": "https://app.globus.org/file-manager?origin_id=0ade39e5-a643-4406-8ba3-ad5796c2c2df&origin_path=%2F",
+            "publication_date": "2021-03-11",
+            "title": "MODIS MOD16A2GF.061",
+            "description": "A gap-filled version of the MOD16A2 dataset, it offers continuous 8-day global evapotranspiration data, addressing missing values and enhancing data usability."
+        },
+        "MODIS_EVAPOTRANSPIRATION_GAP_FILLED_YEARLY_V61": {
+            "folder": "MODIS_MOD16A3GF.061",
+            "doi": "10.5067/MODIS/MOD16A3GF.061",
+            "link": "https://app.globus.org/file-manager?origin_id=765a60bd-a1d1-4aae-a119-56a20bb68e4c&origin_path=%2F",
+            "publication_date": "2021-03-11",
+            "title": "MODIS MOD16A3GF.061:",
+            "description": "This dataset provides annual gap-filled global terrestrial evapotranspiration data, supporting long-term studies in water resources and ecosystem monitoring."
+        },
+        "MODIS_AQUA_EVAPOTRANSPIRATION_V61": {
+            "folder": "MODIS_MYD16A2.061",
+            "doi": "10.5067/MODIS/MYD16A2.061",
+            "link": "https://app.globus.org/file-manager?origin_id=92ca7734-34ca-4c2d-a013-7d5a1ca2c27a&origin_path=%2F",
+            "publication_date": "2021-03-11",
+            "title": "MODIS MYD16A2.061",
+            "description": "The MYD16A2.061 dataset provides 8-day evapotranspiration (ET) and potential evapotranspiration (PET) data derived from the Moderate Resolution Imaging Spectroradiometer (MODIS) aboard the Aqua satellite. The data is available globally and supports studies related to water cycles, vegetation health, and land-atmosphere interactions."
+        },
+        "SOIL_GRIDS_V1": {
+            "folder": "Soil_Grids_v1",
+            "doi": "10.1371/journal.pone.0169748",
+            "link": "https://app.globus.org/file-manager?origin_id=b06f4aa7-87c2-4657-a06c-3008557ec725&origin_path=%2F",
+            "publication_date": "2017-02-16",
+            "title": "Soil Grids v1",
+            "description": "Soil Grids v1 is a global dataset that maps soil properties at six standard depths (0–5 cm, 5–15 cm, 15–30 cm, 30–60 cm, 60–100 cm, and 100–200 cm). It includes variables such as soil organic carbon, pH, texture, and bulk density. The dataset is derived from soil profile observations and machine learning methods, and it has a spatial resolution of 250 meters. Soil Grids v1 is used for research in agriculture, forestry, and soil science."
+        }
+    },
+    "hydrological": {
+        "MERIT_BASINS": {
+            "folder": "MERIT_Basins",
+            "doi": "10.1029/2019WR025287",
+            "link": "https://app.globus.org/file-manager?origin_id=42666942-fcce-4b56-9087-fd9c1c75d0ef&origin_path=%2F",
+            "publication_date": "2019-07-24",
+            "title": "MERIT Basins (Multi-Error-Removed Improved-Terrain Basins)",
+            "description": "MERIT Basins is a dataset derived from the MERIT Hydro digital elevation model, delineating global river basins and sub-basins. It provides information on basin boundaries and hydrological flow directions, making it suitable for hydrological modeling and water resource management. The dataset supports large-scale studies of river networks and basin-level hydrology."
+        },
+        "CAMELS": {
+            "folder": "CAMELS",
+            "doi": "10.5194/hess-21-5293-2017",
+            "link": "https://app.globus.org/file-manager?origin_id=bcd84d49-2bc8-4d52-891f-a472d4e05056&origin_path=%2F",
+            "publication_date": "2017-10-20",
+            "title": "CAMELS (Catchment Attributes and Meteorology for Large-Sample Studies)",
+            "description": "CAMELS is a collection of datasets combining hydrological and meteorological observations with catchment attributes for hundreds of catchments across the United States and other regions. The dataset includes attributes such as geology, soil, climate, and land cover, along with daily streamflow and precipitation data. CAMELS is used for understanding hydrological processes, benchmarking hydrological models, and conducting comparative studies across diverse catchments."
+        }
+    }
+}
