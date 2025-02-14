@@ -1,0 +1,52 @@
+=======
+Galgal4
+=======
+
+Version: 2023-04-26
+
+Category: **igenomes**
+
+Description
+-----------
+
+
+
+Usage
+-----
+
+To find and load available datasets::
+
+    $ module avail
+    $ module load datasets
+    $ module load igenomes/Galgal4/2023-04-26
+Environment Variables
+-------------------
+
+.. list-table::
+   :header-rows: 1
+   :widths: 25 75
+
+   * - **Variable Name**
+     - **Value**
+   * - ``Galgal4_fasta``
+     - ``/anvil/datasets/igenomes/Gallus_gallus/Ensembl/Galgal4/Sequence/WholeGenomeFasta/genome.fa``
+   * - ``Galgal4_bwa``
+     - ``/anvil/datasets/igenomes/Gallus_gallus/Ensembl/Galgal4/Sequence/BWAIndex/version0.6.0/``
+   * - ``Galgal4_bowtie2``
+     - ``/anvil/datasets/igenomes/Gallus_gallus/Ensembl/Galgal4/Sequence/Bowtie2Index/``
+   * - ``Galgal4_star``
+     - ``/anvil/datasets/igenomes/Gallus_gallus/Ensembl/Galgal4/Sequence/STARIndex/``
+   * - ``Galgal4_bismark``
+     - ``/anvil/datasets/igenomes/Gallus_gallus/Ensembl/Galgal4/Sequence/BismarkIndex/``
+   * - ``Galgal4_gtf``
+     - ``/anvil/datasets/igenomes/Gallus_gallus/Ensembl/Galgal4/Annotation/Genes/genes.gtf``
+   * - ``Galgal4_bed12``
+     - ``/anvil/datasets/igenomes/Gallus_gallus/Ensembl/Galgal4/Annotation/Genes/genes.bed``
+   * - ``Galgal4_mito_name``
+     - ``MT``
+   * - ``Galgal4_HOME``
+     - ``/anvil/datasets/igenomes/Gallus_gallus/Ensembl/Galgal4``
+   * - ``RCAC_Galgal4_ROOT``
+     - ``/anvil/datasets/igenomes/Gallus_gallus/Ensembl/Galgal4``
+   * - ``RCAC_Galgal4_VERSION``
+     - ``2023-04-26``
