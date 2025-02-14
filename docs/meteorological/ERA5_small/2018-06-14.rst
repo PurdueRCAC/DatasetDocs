@@ -38,8 +38,7 @@ To find and load available datasets::
 
     $ module avail
     $ module load datasets
-    $ module spider datasets/meteorological/ERA5_small
-
+    $ module load meteorological/ERA5_small/2018-06-14
 Environment Variables
 -------------------
 

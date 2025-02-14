@@ -38,8 +38,7 @@ To find and load available datasets::
 
     $ module avail
     $ module load datasets
-    $ module spider datasets/Covariates/ForestHeight2020
-
+    $ module load Covariates/ForestHeight2020/2022-04-15
 Environment Variables
 -------------------
 

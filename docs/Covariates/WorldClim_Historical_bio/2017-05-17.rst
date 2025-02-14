@@ -38,8 +38,7 @@ To find and load available datasets::
 
     $ module avail
     $ module load datasets
-    $ module spider datasets/Covariates/WorldClim_Historical_bio
-
+    $ module load Covariates/WorldClim_Historical_bio/2017-05-17
 Environment Variables
 -------------------
 

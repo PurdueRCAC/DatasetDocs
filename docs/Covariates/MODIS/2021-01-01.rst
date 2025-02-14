@@ -38,8 +38,7 @@ To find and load available datasets::
 
     $ module avail
     $ module load datasets
-    $ module spider datasets/Covariates/MODIS
-
+    $ module load Covariates/MODIS/2021-01-01
 Environment Variables
 -------------------
 

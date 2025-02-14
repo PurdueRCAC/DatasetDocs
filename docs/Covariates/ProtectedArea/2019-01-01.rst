@@ -38,8 +38,7 @@ To find and load available datasets::
 
     $ module avail
     $ module load datasets
-    $ module spider datasets/Covariates/ProtectedArea
-
+    $ module load Covariates/ProtectedArea/2019-01-01
 Environment Variables
 -------------------
 

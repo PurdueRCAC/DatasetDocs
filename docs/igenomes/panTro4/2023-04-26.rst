@@ -20,8 +20,7 @@ To find and load available datasets::
 
     $ module avail
     $ module load datasets
-    $ module spider datasets/igenomes/panTro4
-
+    $ module load igenomes/panTro4/2023-04-26
 Environment Variables
 -------------------
 

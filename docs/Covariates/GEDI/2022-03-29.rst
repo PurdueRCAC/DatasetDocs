@@ -38,8 +38,7 @@ To find and load available datasets::
 
     $ module avail
     $ module load datasets
-    $ module spider datasets/Covariates/GEDI
-
+    $ module load Covariates/GEDI/2022-03-29
 Environment Variables
 -------------------
 

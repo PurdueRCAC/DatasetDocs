@@ -38,8 +38,7 @@ To find and load available datasets::
 
     $ module avail
     $ module load datasets
-    $ module spider datasets/meteorological/ORNL_Daymet
-
+    $ module load meteorological/ORNL_Daymet/2022-11-01
 Environment Variables
 -------------------
 

@@ -38,8 +38,7 @@ To find and load available datasets::
 
     $ module avail
     $ module load datasets
-    $ module spider datasets/Covariates/HumanFootprint
-
+    $ module load Covariates/HumanFootprint/2016-11-17
 Environment Variables
 -------------------
 

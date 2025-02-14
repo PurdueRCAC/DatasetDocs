@@ -38,8 +38,7 @@ To find and load available datasets::
 
     $ module avail
     $ module load datasets
-    $ module spider datasets/meteorological/EMDNA
-
+    $ module load meteorological/EMDNA/2021-07-13
 Environment Variables
 -------------------
 

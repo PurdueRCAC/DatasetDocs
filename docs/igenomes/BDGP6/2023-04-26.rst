@@ -18,8 +18,7 @@ To find and load available datasets::
 
     $ module avail
     $ module load datasets
-    $ module spider datasets/igenomes/BDGP6
-
+    $ module load igenomes/BDGP6/2023-04-26
 Environment Variables
 -------------------
 

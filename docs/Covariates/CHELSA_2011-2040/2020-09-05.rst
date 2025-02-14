@@ -38,8 +38,7 @@ To find and load available datasets::
 
     $ module avail
     $ module load datasets
-    $ module spider datasets/Covariates/CHELSA_2011-2040
-
+    $ module load Covariates/CHELSA_2011-2040/2020-09-05
 Environment Variables
 -------------------
 

@@ -38,8 +38,7 @@ To find and load available datasets::
 
     $ module avail
     $ module load datasets
-    $ module spider datasets/Covariates/PlantedYear
-
+    $ module load Covariates/PlantedYear/2022-05-06
 Environment Variables
 -------------------
 

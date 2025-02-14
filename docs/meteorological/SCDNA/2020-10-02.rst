@@ -38,8 +38,7 @@ To find and load available datasets::
 
     $ module avail
     $ module load datasets
-    $ module spider datasets/meteorological/SCDNA
-
+    $ module load meteorological/SCDNA/2020-10-02
 Environment Variables
 -------------------
 

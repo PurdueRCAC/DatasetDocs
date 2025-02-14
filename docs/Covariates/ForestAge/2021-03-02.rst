@@ -38,8 +38,7 @@ To find and load available datasets::
 
     $ module avail
     $ module load datasets
-    $ module spider datasets/Covariates/ForestAge
-
+    $ module load Covariates/ForestAge/2021-03-02
 Environment Variables
 -------------------
 

@@ -38,8 +38,7 @@ To find and load available datasets::
 
     $ module avail
     $ module load datasets
-    $ module spider datasets/Covariates/Cattle
-
+    $ module load Covariates/Cattle/2018-08-23
 Environment Variables
 -------------------
 

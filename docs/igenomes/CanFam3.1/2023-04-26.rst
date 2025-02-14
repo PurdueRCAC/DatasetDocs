@@ -20,8 +20,7 @@ To find and load available datasets::
 
     $ module avail
     $ module load datasets
-    $ module spider datasets/igenomes/CanFam3.1
-
+    $ module load igenomes/CanFam3.1/2023-04-26
 Environment Variables
 -------------------
 

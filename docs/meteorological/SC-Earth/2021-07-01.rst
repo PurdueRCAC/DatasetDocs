@@ -38,8 +38,7 @@ To find and load available datasets::
 
     $ module avail
     $ module load datasets
-    $ module spider datasets/meteorological/SC-Earth
-
+    $ module load meteorological/SC-Earth/2021-07-01
 Environment Variables
 -------------------
 

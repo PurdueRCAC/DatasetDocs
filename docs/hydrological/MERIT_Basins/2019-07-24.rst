@@ -38,8 +38,7 @@ To find and load available datasets::
 
     $ module avail
     $ module load datasets
-    $ module spider datasets/hydrological/MERIT_Basins
-
+    $ module load hydrological/MERIT_Basins/2019-07-24
 Environment Variables
 -------------------
 

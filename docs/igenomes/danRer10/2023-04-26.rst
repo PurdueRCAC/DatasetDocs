@@ -18,8 +18,7 @@ To find and load available datasets::
 
     $ module avail
     $ module load datasets
-    $ module spider datasets/igenomes/danRer10
-
+    $ module load igenomes/danRer10/2023-04-26
 Environment Variables
 -------------------
 

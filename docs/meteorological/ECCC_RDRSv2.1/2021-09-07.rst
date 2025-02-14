@@ -38,8 +38,7 @@ To find and load available datasets::
 
     $ module avail
     $ module load datasets
-    $ module spider datasets/meteorological/ECCC_RDRSv2.1
-
+    $ module load meteorological/ECCC_RDRSv2.1/2021-09-07
 Environment Variables
 -------------------
 

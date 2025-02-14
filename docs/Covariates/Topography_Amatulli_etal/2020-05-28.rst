@@ -38,8 +38,7 @@ To find and load available datasets::
 
     $ module avail
     $ module load datasets
-    $ module spider datasets/Covariates/Topography_Amatulli_etal
-
+    $ module load Covariates/Topography_Amatulli_etal/2020-05-28
 Environment Variables
 -------------------
 

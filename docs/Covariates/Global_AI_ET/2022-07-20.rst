@@ -38,8 +38,7 @@ To find and load available datasets::
 
     $ module avail
     $ module load datasets
-    $ module spider datasets/Covariates/Global_AI_ET
-
+    $ module load Covariates/Global_AI_ET/2022-07-20
 Environment Variables
 -------------------
 

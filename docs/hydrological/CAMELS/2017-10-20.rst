@@ -38,8 +38,7 @@ To find and load available datasets::
 
     $ module avail
     $ module load datasets
-    $ module spider datasets/hydrological/CAMELS
-
+    $ module load hydrological/CAMELS/2017-10-20
 Environment Variables
 -------------------
 

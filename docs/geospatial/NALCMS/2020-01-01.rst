@@ -38,8 +38,7 @@ To find and load available datasets::
 
     $ module avail
     $ module load datasets
-    $ module spider datasets/geospatial/NALCMS
-
+    $ module load geospatial/NALCMS/2020-01-01
 Environment Variables
 -------------------
 

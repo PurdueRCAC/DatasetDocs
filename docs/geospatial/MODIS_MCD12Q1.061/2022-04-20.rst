@@ -38,8 +38,7 @@ To find and load available datasets::
 
     $ module avail
     $ module load datasets
-    $ module spider datasets/geospatial/MODIS_MCD12Q1.061
-
+    $ module load geospatial/MODIS_MCD12Q1.061/2022-04-20
 Environment Variables
 -------------------
 

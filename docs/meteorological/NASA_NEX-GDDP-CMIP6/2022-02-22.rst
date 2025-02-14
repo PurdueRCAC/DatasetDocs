@@ -38,8 +38,7 @@ To find and load available datasets::
 
     $ module avail
     $ module load datasets
-    $ module spider datasets/meteorological/NASA_NEX-GDDP-CMIP6
-
+    $ module load meteorological/NASA_NEX-GDDP-CMIP6/2022-02-22
 Environment Variables
 -------------------
 

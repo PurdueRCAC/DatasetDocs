@@ -20,8 +20,7 @@ To find and load available datasets::
 
     $ module avail
     $ module load datasets
-    $ module spider datasets/igenomes/Mmul_1
-
+    $ module load igenomes/Mmul_1/2023-04-26
 Environment Variables
 -------------------
 
