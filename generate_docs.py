@@ -278,7 +278,7 @@ def generate_rst_file(
         f.write("To find and load available datasets::\n\n")
         f.write("    $ module avail\n")
         f.write("    $ module load datasets\n")
-        f.write(f"    $ module spider datasets/{category}/{dataset_name}\n\n")
+        f.write(f"    $ module load {category}/{dataset_name}/{version}\n")
         
         # Environment Variables section
         f.write("Environment Variables\n")
