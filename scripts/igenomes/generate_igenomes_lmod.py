@@ -86,8 +86,6 @@ def generate_module(modroot, version_date):
 
     # Fixed variables to always include
     fixed_vars = {
-        "mito_name": "MT",
-        "macs_gsize": "1.87e9",
         "HOME": modroot
     }
 
@@ -128,6 +126,10 @@ def main():
         print("Error: {} is not a valid directory.".format(top_dir))
         sys.exit(1)
 
+    # Define the output base directory (relative to the current working directory).
+    output_base = os.path.join(os.getcwd(), "igenomes_lua")
+    os.makedirs(output_base, exist_ok=True)
+
     version_date = datetime.date.today().strftime("%Y-%m-%d")
     count = 0
 
@@ -146,9 +148,8 @@ def main():
         for modroot in release_dirs:
             # Determine the release name as the leaf of modroot.
             release_name = os.path.basename(os.path.normpath(modroot))
-            # Build output directory: place it under the organism directory with the release name.
-            out_dir = os.path.join(org_path, release_name)
-            # Create output directory if it doesn't exist.
+            # Build output directory: output_base/organism/release_name
+            out_dir = os.path.join(output_base, organism, release_name)
             os.makedirs(out_dir, exist_ok=True)
 
             module_content = generate_module(modroot, version_date)
