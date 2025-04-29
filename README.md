@@ -102,6 +102,50 @@ These tools are designed to:
 
 See the individual module docstrings and code for usage examples and further details.
 
+### Chat API (HTTP)
+
+The `chat_server.py` module provides an HTTP API for interacting with the AI-powered chat assistant. This allows you to send messages and receive responses via simple HTTP requests, making it easy to integrate with web frontends or other systems.
+
+**Endpoint:**
+
+    GET /chat
+
+**Query Parameters:**
+- `message` (required): The user message to send to the assistant.
+- `session_id` (optional): A unique identifier for the conversation session. If omitted, a default session is used. This allows for multi-turn conversations per user/session.
+
+**Example Request:**
+
+```
+GET http://localhost:5000/chat?message=What+datasets+are+available%3F&session_id=testuser
+```
+
+**Example Response:**
+
+```
+{
+  "response": "The following datasets are available: ..."
+}
+```
+
+**Error Responses:**
+- If the `message` parameter is missing:
+  ```
+  { "error": "Missing required GET parameter: message" }
+  ```
+- If the chat backend fails:
+  ```
+  { "error": "Failed to retrieve a response from the API." }
+  ```
+
+You can run the server with:
+
+```
+python ai_search/chat_server.py
+```
+
+and then interact with it using any HTTP client (browser, curl, Postman, etc.).
+
 ## Contributing
 
 Contributions are welcome! You can contribute in several ways:
