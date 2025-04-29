@@ -14,3 +14,6 @@ tags
 
 # Mac specific files
 .DS_Store 
+
+# Secrets
+secrets.json

@@ -84,6 +84,24 @@ make html
 
 The built documentation will be available in `docs/_build/html/`.
 
+## AI Search Functionality (`ai_search`)
+
+The `ai_search` directory provides advanced AI-powered search and knowledge management tools that integrate with the DatasetDocs ecosystem. These tools enable programmatic uploading, tagging, and management of documentation files as well as conversational search via large language models (LLMs).
+
+### Overview of Modules
+
+- **`knowledge_manager.py`**: Handles API interactions for managing the knowledge base. Supports uploading files, adding files to knowledge bases, tagging documents, retrieving document lists, and deleting documents via RESTful endpoints. This is the core for programmatic knowledge base management.
+- **`chat.py`**: Provides a command-line chatbot interface that connects to an LLM API (such as OpenWebUI/AnvilGPT). It allows users to ask questions and receive answers based on the indexed documentation and datasets.
+- **`dataset_uploader.py`**: Automates the process of finding, renaming, and uploading `.rst` documentation files into the knowledge base, associating them with the correct knowledge base for datasets.
+- **`config.py`**: Loads API keys and endpoint URLs from a `secrets.json` configuration file, enabling secure and flexible deployment.
+
+These tools are designed to:
+- Automate ingestion and management of dataset documentation into an AI-powered knowledge base
+- Enable conversational and programmatic search over documentation using LLMs
+- Support tagging, organization, and bulk management of documentation assets
+
+See the individual module docstrings and code for usage examples and further details.
+
 ## Contributing
 
 Contributions are welcome! You can contribute in several ways:
