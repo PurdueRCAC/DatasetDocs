@@ -2,7 +2,7 @@
 Federated Datasets Documentation
 ================================
 
-Welcome! Below are the top-level dataset categories.
+Welcome! Below are the top-level dataset categories on Purdue Anvil HPC cluster.
 
 .. toctree::
    :maxdepth: 2
