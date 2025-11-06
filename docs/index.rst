@@ -14,10 +14,10 @@ Welcome! Below are the top-level dataset categories on Purdue Anvil HPC cluster.
    igenomes/index
    meteorological/index
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
+.. Comment out before we make them work...
+   Indices and tables
+   ==================
+   
+   * :ref:`genindex`
+   * :ref:`modindex`
+   * :ref:`search`
