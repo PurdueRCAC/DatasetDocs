@@ -53,7 +53,12 @@
 <li class="toctree-l2"><a class="reference internal" href="../EM-Earth/2021-04-01.html">EM-Earth</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../EMDNA/2021-07-13.html">EMDNA</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ERA5/2018-06-14.html">ERA5</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">ERA5_small</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">ERA5_small</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#environment-variables">Environment Variables</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../NASA_NEX-GDDP-CMIP6/2022-02-22.html">NASA_NEX-GDDP-CMIP6</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ORNL_Daymet/2022-11-01.html">ORNL_Daymet</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Ouranos_ESPO-G6-R2/2024-01-11.html">Ouranos_ESPO-G6-R2</a></li>
@@ -61,6 +66,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../SCDNA/2020-10-02.html">SCDNA</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../geoai/index.html">geoai Datasets</a></li>
 </ul>
 
         </div>
@@ -90,30 +96,34 @@
              
   <section id="era5-small">
 <h1>ERA5_small<a class="headerlink" href="#era5-small" title="Link to this heading"></a></h1>
+<p>Version: 2018-06-14</p>
 <p>Category: <strong>meteorological</strong></p>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
 <p>ERA5 (Subset for Hydrological Modelling)</p>
-<p>This subset of ERA5 focuses on variables pertinent to hydrological modeling. Providing hourly data from January 1950 to
-December 2020 at a 30 km global resolution, it is tailored for studies involving water resources and hydrological
-processes.</p>
-<dl class="simple">
-<dt>This dataset contains data with the following attributes:</dt><dd><ul class="simple">
+<p>This subset of ERA5 focuses on variables pertinent to hydrological modeling. Providing hourly data from January 1950 to December 2020 at a 30 km global resolution, it is tailored for studies involving water resources and hydrological processes.</p>
+<p>This dataset contains data with the following attributes:</p>
+<ul class="simple">
 <li><p>Time Resolution: Hourly (Jan 1950 - Dec 2020)</p></li>
 <li><p>Spatial Resolution: 30km - Global</p></li>
 <li><p>DOI: 10.24381/cds.adbb2d47</p></li>
 <li><p>Link: <a class="reference external" href="https://app.globus.org/file-manager?origin_id=6d8a51dd-711a-4862-ab6e-340b1589c4c6&amp;origin_path=%2F">https://app.globus.org/file-manager?origin_id=6d8a51dd-711a-4862-ab6e-340b1589c4c6&amp;origin_path=%2F</a></p></li>
 </ul>
-</dd>
-</dl>
-<section id="environment-variables-included">
-<h2>Environment variables included:<a class="headerlink" href="#environment-variables-included" title="Link to this heading"></a></h2>
-<p>$ERA5_HYDRO_HOME     Location: /anvil/datasets/meteorological/ERA5_small
-$ERA5_HYDRO_ROOT     Location: /anvil/datasets/meteorological/ERA5_small
-$ERA5_HYDRO_VERSION  Version: 2018-06-14</p>
-<p>Tips:
-- Use echo $ENV_NAME to check the environment value.
-- To see all environment variables related to ERA5_HYDRO, you can load the module then use: env | grep ERA5_HYDRO
-- To unload the module and remove the environment settings: module unload ERA5_HYDRO
-————————————————————-</p>
+<p><strong>Tips:</strong></p>
+<ul class="simple">
+<li><p>Use echo $ENV_NAME to check the environment value.</p></li>
+<li><p>To see all environment variables related to ERA5_HYDRO, you can load the module then use: env | grep ERA5_HYDRO</p></li>
+<li><p>To unload the module and remove the environment settings: module unload ERA5_HYDRO</p></li>
+</ul>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h2>
+<p>To find and load available datasets:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ module avail
+$ module load datasets
+$ module load meteorological/ERA5_small/2018-06-14
+</pre></div>
+</div>
 </section>
 <section id="environment-variables">
 <h2>Environment Variables<a class="headerlink" href="#environment-variables" title="Link to this heading"></a></h2>
@@ -129,10 +139,10 @@ $ERA5_HYDRO_VERSION  Version: 2018-06-14</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ERA5_HYDRO_HOME</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ERA5_small</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_ERA5_HYDRO_ROOT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ERA5_small</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_ERA5_HYDRO_VERSION</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">2018-06-14</span></code></p></td>

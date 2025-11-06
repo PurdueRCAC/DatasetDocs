@@ -50,7 +50,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../../igenomes/index.html">igenomes Datasets</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">meteorological Datasets</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../ECCC_RDRSv2.1/2021-09-07.html">ECCC_RDRSv2.1</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">EM-Earth</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">EM-Earth</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#environment-variables">Environment Variables</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../EMDNA/2021-07-13.html">EMDNA</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ERA5/2018-06-14.html">ERA5</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ERA5_small/2018-06-14.html">ERA5_small</a></li>
@@ -61,6 +66,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../SCDNA/2020-10-02.html">SCDNA</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../geoai/index.html">geoai Datasets</a></li>
 </ul>
 
         </div>
@@ -90,35 +96,34 @@
              
   <section id="em-earth">
 <h1>EM-Earth<a class="headerlink" href="#em-earth" title="Link to this heading"></a></h1>
+<p>Version: 2021-04-01</p>
 <p>Category: <strong>meteorological</strong></p>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
 <p>EM-Earth</p>
-<p>EM-Earth is a global dataset offering hourly and daily meteorological variables from January 1950 to December 2019. With
-an 11 km spatial resolution, it supports climate modeling, environmental assessments, and related research endeavors.</p>
-<dl class="simple">
-<dt>This dataset contains data with the following attributes:</dt><dd><ul class="simple">
+<p>EM-Earth is a global dataset offering hourly and daily meteorological variables from January 1950 to December 2019. With an 11 km spatial resolution, it supports climate modeling, environmental assessments, and related research endeavors.</p>
+<p>This dataset contains data with the following attributes:</p>
+<ul class="simple">
 <li><p>Time Resolution: Hourly/Daily (Jan 1950 - Dec 2019)</p></li>
 <li><p>Spatial Resolution: 11km - Global</p></li>
 <li><p>DOI: 10.1175/BAMS-D-21-0106.1</p></li>
 <li><p>Link: <a class="reference external" href="https://www.frdr-dfdr.ca/repo/dataset/8d30ab02-f2bd-4d05-ae43-11f4a387e5ad">https://www.frdr-dfdr.ca/repo/dataset/8d30ab02-f2bd-4d05-ae43-11f4a387e5ad</a></p></li>
 </ul>
-</dd>
-</dl>
-<section id="environment-variables-included">
-<h2>Environment variables included:<a class="headerlink" href="#environment-variables-included" title="Link to this heading"></a></h2>
-<p>$EME_EM_EARTH_V1                                          Location: /anvil/datasets/meteorological/EM-Earth/EM_Earth_v1
-$EME_EM_EARTH_V1_DETERMINISTIC_HOURLY                     Location: /anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly
-$EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP                Location: /anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/prcp
-$EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_AFRICA         Location: /anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/prcp/Africa
-$EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_ASIA           Location: /anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/prcp/Asia</p>
-<p>52 additional environment variables not shown.</p>
-<p>$EME_HOME                                                 Location: /anvil/datasets/meteorological/EM-Earth
-$EME_ROOT                                                 Location: /anvil/datasets/meteorological/EM-Earth
-$EME_VERSION                                              Version: 2021-04-01</p>
-<p>Tips:
-- Use echo $ENV_NAME to check the environment value.
-- To see all environment variables related to EME, you can load the module then use: env | grep EME
-- To unload the module and remove the environment settings: module unload EME
-————————————————————-</p>
+<p><strong>Tips:</strong></p>
+<ul class="simple">
+<li><p>Use echo $ENV_NAME to check the environment value.</p></li>
+<li><p>To see all environment variables related to EME, you can load the module then use: env | grep EME</p></li>
+<li><p>To unload the module and remove the environment settings: module unload EME</p></li>
+</ul>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h2>
+<p>To find and load available datasets:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ module avail
+$ module load datasets
+$ module load meteorological/EM-Earth/2021-04-01
+</pre></div>
+</div>
 </section>
 <section id="environment-variables">
 <h2>Environment Variables<a class="headerlink" href="#environment-variables" title="Link to this heading"></a></h2>
@@ -134,181 +139,181 @@ $EME_VERSION                                              Version: 2021-04-01</p
 </thead>
 <tbody>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_DETERMINISTIC_HOURLY</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/deterministic_hourly&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/deterministic_hourly/prcp&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/prcp</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_AFRICA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/deterministic_hourly/prcp/Africa&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/prcp/Africa</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_ASIA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/deterministic_hourly/prcp/Asia&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/prcp/Asia</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_EUROPE</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/deterministic_hourly/prcp/Europe&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/prcp/Europe</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_NORTHAMERICA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/deterministic_hourly/prcp/NorthAmerica&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/prcp/NorthAmerica</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_OCEANIA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/deterministic_hourly/prcp/Oceania&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/prcp/Oceania</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_PRCP_SOUTHAMERICA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/deterministic_hourly/prcp/SouthAmerica&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/prcp/SouthAmerica</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/deterministic_hourly/tdew&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/tdew</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW_AFRICA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/deterministic_hourly/tdew/Africa&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/tdew/Africa</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW_ASIA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/deterministic_hourly/tdew/Asia&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/tdew/Asia</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW_EUROPE</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/deterministic_hourly/tdew/Europe&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/tdew/Europe</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW_NORTHAMERICA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/deterministic_hourly/tdew/NorthAmerica&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/tdew/NorthAmerica</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW_OCEANIA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/deterministic_hourly/tdew/Oceania&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/tdew/Oceania</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TDEW_SOUTHAMERICA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/deterministic_hourly/tdew/SouthAmerica&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/tdew/SouthAmerica</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/deterministic_hourly/tmean&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/tmean</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN_AFRICA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/deterministic_hourly/tmean/Africa&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/tmean/Africa</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN_ASIA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/deterministic_hourly/tmean/Asia&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/tmean/Asia</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN_EUROPE</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/deterministic_hourly/tmean/Europe&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/tmean/Europe</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN_NORTHAMERICA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/deterministic_hourly/tmean/NorthAmerica&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/tmean/NorthAmerica</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN_OCEANIA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/deterministic_hourly/tmean/Oceania&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/tmean/Oceania</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_DETERMINISTIC_HOURLY_TMEAN_SOUTHAMERICA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/deterministic_hourly/tmean/SouthAmerica&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_hourly/tmean/SouthAmerica</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_DETERMINISTIC_RAW_DAILY</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/deterministic_raw_daily&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_raw_daily</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_DETERMINISTIC_RAW_DAILY_PRCP</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/deterministic_raw_daily/prcp&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_raw_daily/prcp</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_DETERMINISTIC_RAW_DAILY_TDEW</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/deterministic_raw_daily/tdew&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_raw_daily/tdew</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_DETERMINISTIC_RAW_DAILY_TMEAN</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/deterministic_raw_daily/tmean&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_raw_daily/tmean</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_DETERMINISTIC_RAW_DAILY_TRANGE</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/deterministic_raw_daily/trange&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/deterministic_raw_daily/trange</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_PROBABILISTIC_DAILY</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/probabilistic_daily&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/probabilistic_daily/prcp&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/prcp</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP_AFRICA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/probabilistic_daily/prcp/Africa&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/prcp/Africa</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP_ASIA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/probabilistic_daily/prcp/Asia&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/prcp/Asia</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP_EUROPE</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/probabilistic_daily/prcp/Europe&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/prcp/Europe</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP_NORTHAMERICA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/probabilistic_daily/prcp/NorthAmerica&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/prcp/NorthAmerica</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP_OCEANIA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/probabilistic_daily/prcp/Oceania&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/prcp/Oceania</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_PROBABILISTIC_DAILY_PRCP_SOUTHAMERICA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/probabilistic_daily/prcp/SouthAmerica&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/prcp/SouthAmerica</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/probabilistic_daily/tdew&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/tdew</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW_AFRICA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/probabilistic_daily/tdew/Africa&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/tdew/Africa</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW_ASIA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/probabilistic_daily/tdew/Asia&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/tdew/Asia</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW_EUROPE</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/probabilistic_daily/tdew/Europe&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/tdew/Europe</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW_NORTHAMERICA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/probabilistic_daily/tdew/NorthAmerica&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/tdew/NorthAmerica</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW_OCEANIA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/probabilistic_daily/tdew/Oceania&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/tdew/Oceania</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TDEW_SOUTHAMERICA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/probabilistic_daily/tdew/SouthAmerica&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/tdew/SouthAmerica</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/probabilistic_daily/tmean&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/tmean</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN_AFRICA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/probabilistic_daily/tmean/Africa&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/tmean/Africa</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN_ASIA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/probabilistic_daily/tmean/Asia&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/tmean/Asia</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN_EUROPE</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/probabilistic_daily/tmean/Europe&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/tmean/Europe</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN_NORTHAMERICA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/probabilistic_daily/tmean/NorthAmerica&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/tmean/NorthAmerica</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN_OCEANIA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/probabilistic_daily/tmean/Oceania&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/tmean/Oceania</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TMEAN_SOUTHAMERICA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/probabilistic_daily/tmean/SouthAmerica&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/tmean/SouthAmerica</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/probabilistic_daily/trange&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/trange</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE_AFRICA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/probabilistic_daily/trange/Africa&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/trange/Africa</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE_ASIA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/probabilistic_daily/trange/Asia&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/trange/Asia</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE_EUROPE</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/probabilistic_daily/trange/Europe&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/trange/Europe</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE_NORTHAMERICA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/probabilistic_daily/trange/NorthAmerica&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/trange/NorthAmerica</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE_OCEANIA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/probabilistic_daily/trange/Oceania&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/trange/Oceania</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">EME_EM_EARTH_V1_PROBABILISTIC_DAILY_TRANGE_SOUTHAMERICA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/EM_Earth_v1/probabilistic_daily/trange/SouthAmerica&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth/EM_Earth_v1/probabilistic_daily/trange/SouthAmerica</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">EME_HOME</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_EME_ROOT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/EM-Earth</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_EME_VERSION</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">2021-04-01</span></code></p></td>

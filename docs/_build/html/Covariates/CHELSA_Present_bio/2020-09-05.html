@@ -49,7 +49,12 @@
 <li class="toctree-l2"><a class="reference internal" href="../CHELSA_2011-2040/2020-09-05.html">CHELSA_2011-2040</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../CHELSA_2041-2070/2020-09-05.html">CHELSA_2041-2070</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../CHELSA_2071-2100/2020-09-05.html">CHELSA_2071-2100</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">CHELSA_Present_bio</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">CHELSA_Present_bio</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#environment-variables">Environment Variables</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../Cattle/2018-08-23.html">Cattle</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ForestAge/2021-03-02.html">ForestAge</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ForestHeight2020/2022-04-15.html">ForestHeight2020</a></li>
@@ -72,6 +77,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../hydrological/index.html">hydrological Datasets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../igenomes/index.html">igenomes Datasets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../meteorological/index.html">meteorological Datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../geoai/index.html">geoai Datasets</a></li>
 </ul>
 
         </div>
@@ -101,28 +107,34 @@
              
   <section id="chelsa-present-bio">
 <h1>CHELSA_Present_bio<a class="headerlink" href="#chelsa-present-bio" title="Link to this heading"></a></h1>
+<p>Version: 2020-09-05</p>
 <p>Category: <strong>Covariates</strong></p>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
 <p>CHELSA Bioclimatic Variables</p>
 <p>High-resolution climatic data for present-day bioclimatic analysis.</p>
-<dl class="simple">
-<dt>This dataset contains data with the following attributes:</dt><dd><ul class="simple">
+<p>This dataset contains data with the following attributes:</p>
+<ul class="simple">
 <li><p>Time Resolution: 1979-2013</p></li>
 <li><p>Spatial Resolution: 1 km</p></li>
 <li><p>DOI: 10.1038/sdata.2017.122</p></li>
 <li><p>Link: <a class="reference external" href="https://chelsa-climate.org/bioclim/">https://chelsa-climate.org/bioclim/</a></p></li>
 </ul>
-</dd>
-</dl>
-<section id="environment-variables-included">
-<h2>Environment variables included:<a class="headerlink" href="#environment-variables-included" title="Link to this heading"></a></h2>
-<p>$CHELSA_Present_bio_HOME     Location: /anvil/datasets/Covariates/CHELSA_Present_bio
-$CHELSA_Present_bio_ROOT     Location: /anvil/datasets/Covariates/CHELSA_Present_bio
-$CHELSA_Present_bio_VERSION  Version: 2020-09-05</p>
-<p>Tips:
-- Use echo $ENV_NAME to check the environment value.
-- To see all environment variables related to CHELSA_Present_bio, you can load the module then use: env | grep CHELSA_Present_bio
-- To unload the module and remove the environment settings: module unload CHELSA_Present_bio
-————————————————————-</p>
+<p><strong>Tips:</strong></p>
+<ul class="simple">
+<li><p>Use echo $ENV_NAME to check the environment value.</p></li>
+<li><p>To see all environment variables related to CHELSA_Present_bio, you can load the module then use: env | grep CHELSA_Present_bio</p></li>
+<li><p>To unload the module and remove the environment settings: module unload CHELSA_Present_bio</p></li>
+</ul>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h2>
+<p>To find and load available datasets:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ module avail
+$ module load datasets
+$ module load Covariates/CHELSA_Present_bio/2020-09-05
+</pre></div>
+</div>
 </section>
 <section id="environment-variables">
 <h2>Environment Variables<a class="headerlink" href="#environment-variables" title="Link to this heading"></a></h2>
@@ -138,10 +150,10 @@ $CHELSA_Present_bio_VERSION  Version: 2020-09-05</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CHELSA_Present_bio_HOME</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/Covariates/CHELSA_Present_bio</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_CHELSA_Present_bio_ROOT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/Covariates/CHELSA_Present_bio</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_CHELSA_Present_bio_VERSION</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">2020-09-05</span></code></p></td>

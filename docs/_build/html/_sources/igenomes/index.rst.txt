@@ -4,7 +4,6 @@ igenomes Datasets
 
 .. toctree::
    :maxdepth: 2
-   :titlesonly:
    :caption: Datasets
 
    AGPv3/2023-04-26

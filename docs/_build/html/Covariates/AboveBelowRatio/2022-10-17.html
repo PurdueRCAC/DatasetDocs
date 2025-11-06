@@ -45,7 +45,12 @@
               <p class="caption" role="heading"><span class="caption-text">Categories</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Covariates Datasets</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">AboveBelowRatio</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">AboveBelowRatio</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#environment-variables">Environment Variables</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../CHELSA_2011-2040/2020-09-05.html">CHELSA_2011-2040</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../CHELSA_2041-2070/2020-09-05.html">CHELSA_2041-2070</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../CHELSA_2071-2100/2020-09-05.html">CHELSA_2071-2100</a></li>
@@ -72,6 +77,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../hydrological/index.html">hydrological Datasets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../igenomes/index.html">igenomes Datasets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../meteorological/index.html">meteorological Datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../geoai/index.html">geoai Datasets</a></li>
 </ul>
 
         </div>
@@ -101,28 +107,34 @@
              
   <section id="abovebelowratio">
 <h1>AboveBelowRatio<a class="headerlink" href="#abovebelowratio" title="Link to this heading"></a></h1>
+<p>Version: 2022-10-17</p>
 <p>Category: <strong>Covariates</strong></p>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
 <p>Aboveground biomass to belowground biomass ratio</p>
 <p>Ratio derived from biomass studies to explore environmental drivers.</p>
-<dl class="simple">
-<dt>This dataset contains data with the following attributes:</dt><dd><ul class="simple">
+<p>This dataset contains data with the following attributes:</p>
+<ul class="simple">
 <li><p>Time Resolution: ?</p></li>
 <li><p>Spatial Resolution: 1 km</p></li>
 <li><p>DOI: N/A</p></li>
 <li><p>Link: Directly obtained from the author</p></li>
 </ul>
-</dd>
-</dl>
-<section id="environment-variables-included">
-<h2>Environment variables included:<a class="headerlink" href="#environment-variables-included" title="Link to this heading"></a></h2>
-<p>$AboveBelowRatio_HOME     Location: /anvil/datasets/Covariates/AboveBelowRatio
-$AboveBelowRatio_ROOT     Location: /anvil/datasets/Covariates/AboveBelowRatio
-$AboveBelowRatio_VERSION  Version: 2022-10-17</p>
-<p>Tips:
-- Use echo $ENV_NAME to check the environment value.
-- To see all environment variables related to AboveBelowRatio, you can load the module then use: env | grep AboveBelowRatio
-- To unload the module and remove the environment settings: module unload AboveBelowRatio
-————————————————————-</p>
+<p><strong>Tips:</strong></p>
+<ul class="simple">
+<li><p>Use echo $ENV_NAME to check the environment value.</p></li>
+<li><p>To see all environment variables related to AboveBelowRatio, you can load the module then use: env | grep AboveBelowRatio</p></li>
+<li><p>To unload the module and remove the environment settings: module unload AboveBelowRatio</p></li>
+</ul>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h2>
+<p>To find and load available datasets:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ module avail
+$ module load datasets
+$ module load Covariates/AboveBelowRatio/2022-10-17
+</pre></div>
+</div>
 </section>
 <section id="environment-variables">
 <h2>Environment Variables<a class="headerlink" href="#environment-variables" title="Link to this heading"></a></h2>
@@ -138,10 +150,10 @@ $AboveBelowRatio_VERSION  Version: 2022-10-17</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">AboveBelowRatio_HOME</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/Covariates/AboveBelowRatio</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_AboveBelowRatio_ROOT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/Covariates/AboveBelowRatio</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_AboveBelowRatio_VERSION</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">2022-10-17</span></code></p></td>

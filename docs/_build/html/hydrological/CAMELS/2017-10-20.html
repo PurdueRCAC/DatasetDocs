@@ -47,12 +47,18 @@
 <li class="toctree-l1"><a class="reference internal" href="../../Covariates/index.html">Covariates Datasets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../geospatial/index.html">geospatial Datasets</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">hydrological Datasets</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">CAMELS</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">CAMELS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#environment-variables">Environment Variables</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../MERIT_Basins/2019-07-24.html">MERIT_Basins</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../igenomes/index.html">igenomes Datasets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../meteorological/index.html">meteorological Datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../geoai/index.html">geoai Datasets</a></li>
 </ul>
 
         </div>
@@ -82,37 +88,34 @@
              
   <section id="camels">
 <h1>CAMELS<a class="headerlink" href="#camels" title="Link to this heading"></a></h1>
+<p>Version: 2017-10-20</p>
 <p>Category: <strong>hydrological</strong></p>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
 <p>CAMELS (Catchment Attributes and Meteorology for Large-Sample Studies)</p>
-<p>CAMELS is a collection of datasets combining hydrological and meteorological observations with catchment attributes for
-hundreds of catchments across the United States and other regions. The dataset includes attributes such as geology,
-soil, climate, and land cover, along with daily streamflow and precipitation data. CAMELS is used for understanding
-hydrological processes, benchmarking hydrological models, and conducting comparative studies across diverse catchments.</p>
-<dl class="simple">
-<dt>This dataset contains data with the following attributes:</dt><dd><ul class="simple">
+<p>CAMELS is a collection of datasets combining hydrological and meteorological observations with catchment attributes for hundreds of catchments across the United States and other regions. The dataset includes attributes such as geology, soil, climate, and land cover, along with daily streamflow and precipitation data. CAMELS is used for understanding hydrological processes, benchmarking hydrological models, and conducting comparative studies across diverse catchments.</p>
+<p>This dataset contains data with the following attributes:</p>
+<ul class="simple">
 <li><p>Time Resolution: N/A</p></li>
 <li><p>Spatial Resolution: N/A</p></li>
 <li><p>DOI: 10.5194/hess-21-5293-2017</p></li>
 <li><p>Link: <a class="reference external" href="https://app.globus.org/file-manager?origin_id=bcd84d49-2bc8-4d52-891f-a472d4e05056&amp;origin_path=%2F">https://app.globus.org/file-manager?origin_id=bcd84d49-2bc8-4d52-891f-a472d4e05056&amp;origin_path=%2F</a></p></li>
 </ul>
-</dd>
-</dl>
-<section id="environment-variables-included">
-<h2>Environment variables included:<a class="headerlink" href="#environment-variables-included" title="Link to this heading"></a></h2>
-<p>$CAMELS_BASIN_DATASET_PUBLIC                                                                               Location: /anvil/datasets/hydrological/CAMELS/basin_dataset_public
-$CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING                                                            Location: /anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing
-$CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_DAYMET                                                     Location: /anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/daymet
-$CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_DAYMET_01                                                  Location: /anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/daymet/01
-$CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_DAYMET_02                                                  Location: /anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/daymet/02</p>
-<p>294 additional environment variables not shown.</p>
-<p>$CAMELS_HOME                                                                                               Location: /anvil/datasets/hydrological/CAMELS
-$CAMELS_ROOT                                                                                               Location: /anvil/datasets/hydrological/CAMELS
-$CAMELS_VERSION                                                                                            Version: 2017-10-20</p>
-<p>Tips:
-- Use echo $ENV_NAME to check the environment value.
-- To see all environment variables related to CAMELS, you can load the module then use: env | grep CAMELS
-- To unload the module and remove the environment settings: module unload CAMELS
-————————————————————-</p>
+<p><strong>Tips:</strong></p>
+<ul class="simple">
+<li><p>Use echo $ENV_NAME to check the environment value.</p></li>
+<li><p>To see all environment variables related to CAMELS, you can load the module then use: env | grep CAMELS</p></li>
+<li><p>To unload the module and remove the environment settings: module unload CAMELS</p></li>
+</ul>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h2>
+<p>To find and load available datasets:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ module avail
+$ module load datasets
+$ module load hydrological/CAMELS/2017-10-20
+</pre></div>
+</div>
 </section>
 <section id="environment-variables">
 <h2>Environment Variables<a class="headerlink" href="#environment-variables" title="Link to this heading"></a></h2>
@@ -128,907 +131,907 @@ $CAMELS_VERSION                                                                 
 </thead>
 <tbody>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_DAYMET</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/daymet&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/daymet</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_DAYMET_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/daymet/01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/daymet/01</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_DAYMET_02</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/daymet/02&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/daymet/02</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_DAYMET_03</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/daymet/03&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/daymet/03</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_DAYMET_04</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/daymet/04&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/daymet/04</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_DAYMET_05</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/daymet/05&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/daymet/05</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_DAYMET_06</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/daymet/06&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/daymet/06</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_DAYMET_07</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/daymet/07&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/daymet/07</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_DAYMET_08</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/daymet/08&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/daymet/08</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_DAYMET_09</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/daymet/09&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/daymet/09</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_DAYMET_10</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/daymet/10&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/daymet/10</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_DAYMET_11</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/daymet/11&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/daymet/11</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_DAYMET_12</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/daymet/12&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/daymet/12</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_DAYMET_13</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/daymet/13&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/daymet/13</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_DAYMET_14</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/daymet/14&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/daymet/14</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_DAYMET_15</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/daymet/15&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/daymet/15</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_DAYMET_16</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/daymet/16&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/daymet/16</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_DAYMET_17</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/daymet/17&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/daymet/17</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_DAYMET_18</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/daymet/18&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/daymet/18</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_MAURER</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/maurer&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/maurer</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_MAURER_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/maurer/01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/maurer/01</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_MAURER_02</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/maurer/02&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/maurer/02</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_MAURER_03</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/maurer/03&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/maurer/03</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_MAURER_04</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/maurer/04&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/maurer/04</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_MAURER_05</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/maurer/05&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/maurer/05</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_MAURER_06</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/maurer/06&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/maurer/06</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_MAURER_07</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/maurer/07&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/maurer/07</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_MAURER_08</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/maurer/08&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/maurer/08</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_MAURER_09</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/maurer/09&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/maurer/09</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_MAURER_10</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/maurer/10&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/maurer/10</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_MAURER_11</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/maurer/11&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/maurer/11</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_MAURER_12</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/maurer/12&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/maurer/12</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_MAURER_13</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/maurer/13&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/maurer/13</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_MAURER_14</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/maurer/14&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/maurer/14</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_MAURER_15</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/maurer/15&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/maurer/15</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_MAURER_16</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/maurer/16&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/maurer/16</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_MAURER_17</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/maurer/17&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/maurer/17</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_MAURER_18</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/maurer/18&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/maurer/18</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_NLDAS</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/nldas&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/nldas</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_NLDAS_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/nldas/01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/nldas/01</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_NLDAS_02</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/nldas/02&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/nldas/02</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_NLDAS_03</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/nldas/03&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/nldas/03</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_NLDAS_04</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/nldas/04&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/nldas/04</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_NLDAS_05</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/nldas/05&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/nldas/05</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_NLDAS_06</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/nldas/06&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/nldas/06</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_NLDAS_07</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/nldas/07&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/nldas/07</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_NLDAS_08</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/nldas/08&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/nldas/08</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_NLDAS_09</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/nldas/09&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/nldas/09</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_NLDAS_10</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/nldas/10&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/nldas/10</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_NLDAS_11</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/nldas/11&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/nldas/11</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_NLDAS_12</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/nldas/12&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/nldas/12</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_NLDAS_13</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/nldas/13&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/nldas/13</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_NLDAS_14</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/nldas/14&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/nldas/14</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_NLDAS_15</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/nldas/15&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/nldas/15</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_NLDAS_16</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/nldas/16&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/nldas/16</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_NLDAS_17</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/nldas/17&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/nldas/17</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_NLDAS_18</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/nldas/18&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/nldas/18</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_DAYMET</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/daymet&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/daymet</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_DAYMET_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/daymet/01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/daymet/01</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_DAYMET_02</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/daymet/02&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/daymet/02</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_DAYMET_03</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/daymet/03&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/daymet/03</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_DAYMET_04</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/daymet/04&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/daymet/04</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_DAYMET_05</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/daymet/05&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/daymet/05</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_DAYMET_06</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/daymet/06&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/daymet/06</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_DAYMET_07</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/daymet/07&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/daymet/07</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_DAYMET_08</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/daymet/08&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/daymet/08</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_DAYMET_09</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/daymet/09&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/daymet/09</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_DAYMET_10</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/daymet/10&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/daymet/10</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_DAYMET_11</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/daymet/11&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/daymet/11</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_DAYMET_12</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/daymet/12&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/daymet/12</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_DAYMET_13</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/daymet/13&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/daymet/13</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_DAYMET_14</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/daymet/14&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/daymet/14</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_DAYMET_15</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/daymet/15&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/daymet/15</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_DAYMET_16</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/daymet/16&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/daymet/16</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_DAYMET_17</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/daymet/17&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/daymet/17</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_DAYMET_18</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/daymet/18&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/daymet/18</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_NLDAS</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/nldas&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/nldas</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_NLDAS_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/nldas/01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/nldas/01</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_NLDAS_02</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/nldas/02&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/nldas/02</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_NLDAS_03</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/nldas/03&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/nldas/03</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_NLDAS_04</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/nldas/04&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/nldas/04</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_NLDAS_05</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/nldas/05&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/nldas/05</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_NLDAS_06</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/nldas/06&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/nldas/06</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_NLDAS_07</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/nldas/07&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/nldas/07</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_NLDAS_08</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/nldas/08&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/nldas/08</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_NLDAS_09</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/nldas/09&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/nldas/09</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_NLDAS_10</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/nldas/10&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/nldas/10</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_NLDAS_11</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/nldas/11&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/nldas/11</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_NLDAS_12</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/nldas/12&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/nldas/12</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_NLDAS_13</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/nldas/13&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/nldas/13</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_NLDAS_14</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/nldas/14&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/nldas/14</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_NLDAS_15</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/nldas/15&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/nldas/15</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_NLDAS_16</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/nldas/16&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/nldas/16</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_NLDAS_17</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/nldas/17&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/nldas/17</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_BASIN_MEAN_FORCING_V1P15_NLDAS_18</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public/basin_mean_forcing/v1p15/nldas/18&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public/basin_mean_forcing/v1p15/nldas/18</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/01</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_02</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/02&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/02</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_03</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/03&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/03</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_04</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/04&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/04</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_05</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/05&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/05</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_06</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/06&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/06</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_07</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/07&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/07</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_08</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/08&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/08</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_09</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/09&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/09</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_09_05056000_LUMP_CIDA_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/09/05056000_lump_cida_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/09/05056000_lump_cida_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_09_05057000_LUMP_CIDA_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/09/05057000_lump_cida_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/09/05057000_lump_cida_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_09_05057200_LUMP_CIDA_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/09/05057200_lump_cida_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/09/05057200_lump_cida_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_09_05062500_LUMP_CIDA_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/09/05062500_lump_cida_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/09/05062500_lump_cida_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_09_05087500_LUMP_CIDA_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/09/05087500_lump_cida_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/09/05087500_lump_cida_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_09_05120500_LUMP_CIDA_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/09/05120500_lump_cida_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/09/05120500_lump_cida_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_09_05123400_LUMP_CIDA_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/09/05123400_lump_cida_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/09/05123400_lump_cida_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_09_05129115_LUMP_CIDA_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/09/05129115_lump_cida_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/09/05129115_lump_cida_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_09_05131500_LUMP_CIDA_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/09/05131500_lump_cida_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/09/05131500_lump_cida_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_10</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/10&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/10</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_11</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/11&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/11</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_12</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/12&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/12</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_13</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/13&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/13</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_13_08267500_LUMP_CIDA_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/13/08267500_lump_cida_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/13/08267500_lump_cida_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_13_08269000_LUMP_CIDA_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/13/08269000_lump_cida_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/13/08269000_lump_cida_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_13_08271000_LUMP_CIDA_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/13/08271000_lump_cida_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/13/08271000_lump_cida_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_13_08324000_LUMP_CIDA_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/13/08324000_lump_cida_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/13/08324000_lump_cida_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_13_08377900_LUMP_CIDA_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/13/08377900_lump_cida_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/13/08377900_lump_cida_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_13_08378500_LUMP_CIDA_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/13/08378500_lump_cida_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/13/08378500_lump_cida_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_13_08380500_LUMP_CIDA_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/13/08380500_lump_cida_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/13/08380500_lump_cida_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_14</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/14&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/14</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_15</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/15&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/15</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_16</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/16&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/16</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_17</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/17&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/17</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_DAYMET_18</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/daymet/18&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/daymet/18</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/01</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_02</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/02&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/02</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_03</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/03&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/03</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_04</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/04&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/04</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_05</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/05&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/05</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_06</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/06&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/06</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_07</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/07&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/07</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_08</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/08&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/08</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_09</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/09&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/09</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_09_05056000_LUMP_MAURER_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/09/05056000_lump_maurer_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/09/05056000_lump_maurer_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_09_05057000_LUMP_MAURER_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/09/05057000_lump_maurer_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/09/05057000_lump_maurer_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_09_05057200_LUMP_MAURER_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/09/05057200_lump_maurer_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/09/05057200_lump_maurer_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_09_05062500_LUMP_MAURER_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/09/05062500_lump_maurer_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/09/05062500_lump_maurer_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_09_05087500_LUMP_MAURER_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/09/05087500_lump_maurer_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/09/05087500_lump_maurer_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_09_05120500_LUMP_MAURER_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/09/05120500_lump_maurer_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/09/05120500_lump_maurer_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_09_05123400_LUMP_MAURER_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/09/05123400_lump_maurer_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/09/05123400_lump_maurer_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_09_05129115_LUMP_MAURER_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/09/05129115_lump_maurer_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/09/05129115_lump_maurer_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_09_05131500_LUMP_MAURER_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/09/05131500_lump_maurer_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/09/05131500_lump_maurer_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_10</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/10&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/10</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_11</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/11&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/11</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_12</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/12&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/12</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_13</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/13&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/13</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_13_08267500_LUMP_MAURER_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/13/08267500_lump_maurer_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/13/08267500_lump_maurer_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_13_08269000_LUMP_MAURER_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/13/08269000_lump_maurer_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/13/08269000_lump_maurer_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_13_08271000_LUMP_MAURER_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/13/08271000_lump_maurer_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/13/08271000_lump_maurer_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_13_08324000_LUMP_MAURER_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/13/08324000_lump_maurer_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/13/08324000_lump_maurer_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_13_08377900_LUMP_MAURER_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/13/08377900_lump_maurer_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/13/08377900_lump_maurer_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_13_08378500_LUMP_MAURER_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/13/08378500_lump_maurer_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/13/08378500_lump_maurer_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_13_08380500_LUMP_MAURER_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/13/08380500_lump_maurer_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/13/08380500_lump_maurer_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_14</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/14&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/14</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_15</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/15&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/15</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_16</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/16&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/16</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_17</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/17&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/17</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_MAURER_18</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/maurer/18&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/maurer/18</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/01</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_02</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/02&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/02</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_03</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/03&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/03</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_04</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/04&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/04</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_05</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/05&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/05</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_06</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/06&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/06</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_07</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/07&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/07</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_08</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/08&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/08</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_09</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/09&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/09</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_09_05056000_LUMP_NLDAS_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/09/05056000_lump_nldas_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/09/05056000_lump_nldas_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_09_05057000_LUMP_NLDAS_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/09/05057000_lump_nldas_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/09/05057000_lump_nldas_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_09_05057200_LUMP_NLDAS_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/09/05057200_lump_nldas_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/09/05057200_lump_nldas_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_09_05062500_LUMP_NLDAS_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/09/05062500_lump_nldas_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/09/05062500_lump_nldas_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_09_05087500_LUMP_NLDAS_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/09/05087500_lump_nldas_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/09/05087500_lump_nldas_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_09_05120500_LUMP_NLDAS_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/09/05120500_lump_nldas_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/09/05120500_lump_nldas_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_09_05123400_LUMP_NLDAS_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/09/05123400_lump_nldas_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/09/05123400_lump_nldas_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_09_05129115_LUMP_NLDAS_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/09/05129115_lump_nldas_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/09/05129115_lump_nldas_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_09_05131500_LUMP_NLDAS_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/09/05131500_lump_nldas_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/09/05131500_lump_nldas_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_10</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/10&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/10</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_11</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/11&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/11</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_12</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/12&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/12</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_13</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/13&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/13</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_13_08267500_LUMP_NLDAS_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/13/08267500_lump_nldas_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/13/08267500_lump_nldas_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_13_08269000_LUMP_NLDAS_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/13/08269000_lump_nldas_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/13/08269000_lump_nldas_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_13_08271000_LUMP_NLDAS_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/13/08271000_lump_nldas_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/13/08271000_lump_nldas_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_13_08324000_LUMP_NLDAS_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/13/08324000_lump_nldas_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/13/08324000_lump_nldas_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_13_08377900_LUMP_NLDAS_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/13/08377900_lump_nldas_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/13/08377900_lump_nldas_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_13_08378500_LUMP_NLDAS_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/13/08378500_lump_nldas_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/13/08378500_lump_nldas_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_13_08380500_LUMP_NLDAS_FORCING_LEAP_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/13/08380500_lump_nldas_forcing_leap.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/13/08380500_lump_nldas_forcing_leap.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_14</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/14&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/14</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_15</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/15&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/15</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_16</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/16&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/16</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_17</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/17&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/17</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_MEAN_FORCING_NLDAS_18</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_mean_forcing/nldas/18&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_mean_forcing/nldas/18</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_METADATA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_metadata&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_metadata</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_METADATA_BASIN_ANNUAL_HYDROMETEOROLOGY_CHARACTERISTICS_DAYMET_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_metadata/basin_annual_hydrometeorology_characteristics_daymet.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_metadata/basin_annual_hydrometeorology_characteristics_daymet.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_METADATA_BASIN_ANNUAL_HYDROMETEOROLOGY_CHARACTERISTICS_MAURER_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_metadata/basin_annual_hydrometeorology_characteristics_maurer.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_metadata/basin_annual_hydrometeorology_characteristics_maurer.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_METADATA_BASIN_ANNUAL_HYDROMETEOROLOGY_CHARACTERISTICS_NLDAS_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_metadata/basin_annual_hydrometeorology_characteristics_nldas.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_metadata/basin_annual_hydrometeorology_characteristics_nldas.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_METADATA_BASIN_PHYSICAL_CHARACTERISTICS_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_metadata/basin_physical_characteristics.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_metadata/basin_physical_characteristics.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_METADATA_GAUGE_INFORMATION_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_metadata/gauge_information.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_metadata/gauge_information.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_BASIN_SIZE_ERRORS_10_PERCENT_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/basin_size_errors_10_percent.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/basin_size_errors_10_percent.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_DATASET_SUMMARY_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/dataset_summary.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/dataset_summary.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_ELEV_BANDS_FORCING</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/elev_bands_forcing&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/elev_bands_forcing</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_ELEV_BANDS_FORCING_DAYMET</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/elev_bands_forcing/daymet&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/elev_bands_forcing/daymet</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_ELEV_BANDS_FORCING_DAYMET_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/elev_bands_forcing/daymet/01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/elev_bands_forcing/daymet/01</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_ELEV_BANDS_FORCING_DAYMET_02</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/elev_bands_forcing/daymet/02&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/elev_bands_forcing/daymet/02</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_ELEV_BANDS_FORCING_DAYMET_03</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/elev_bands_forcing/daymet/03&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/elev_bands_forcing/daymet/03</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_ELEV_BANDS_FORCING_DAYMET_04</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/elev_bands_forcing/daymet/04&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/elev_bands_forcing/daymet/04</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_ELEV_BANDS_FORCING_DAYMET_05</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/elev_bands_forcing/daymet/05&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/elev_bands_forcing/daymet/05</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_ELEV_BANDS_FORCING_DAYMET_06</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/elev_bands_forcing/daymet/06&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/elev_bands_forcing/daymet/06</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_ELEV_BANDS_FORCING_DAYMET_07</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/elev_bands_forcing/daymet/07&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/elev_bands_forcing/daymet/07</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_ELEV_BANDS_FORCING_DAYMET_08</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/elev_bands_forcing/daymet/08&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/elev_bands_forcing/daymet/08</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_ELEV_BANDS_FORCING_DAYMET_09</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/elev_bands_forcing/daymet/09&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/elev_bands_forcing/daymet/09</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_ELEV_BANDS_FORCING_DAYMET_10</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/elev_bands_forcing/daymet/10&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/elev_bands_forcing/daymet/10</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_ELEV_BANDS_FORCING_DAYMET_11</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/elev_bands_forcing/daymet/11&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/elev_bands_forcing/daymet/11</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_ELEV_BANDS_FORCING_DAYMET_12</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/elev_bands_forcing/daymet/12&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/elev_bands_forcing/daymet/12</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_ELEV_BANDS_FORCING_DAYMET_13</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/elev_bands_forcing/daymet/13&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/elev_bands_forcing/daymet/13</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_ELEV_BANDS_FORCING_DAYMET_14</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/elev_bands_forcing/daymet/14&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/elev_bands_forcing/daymet/14</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_ELEV_BANDS_FORCING_DAYMET_15</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/elev_bands_forcing/daymet/15&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/elev_bands_forcing/daymet/15</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_ELEV_BANDS_FORCING_DAYMET_16</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/elev_bands_forcing/daymet/16&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/elev_bands_forcing/daymet/16</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_ELEV_BANDS_FORCING_DAYMET_17</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/elev_bands_forcing/daymet/17&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/elev_bands_forcing/daymet/17</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_ELEV_BANDS_FORCING_DAYMET_18</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/elev_bands_forcing/daymet/18&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/elev_bands_forcing/daymet/18</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_ELEV_BANDS_FORCING_DAYMET_VALID_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/elev_bands_forcing/daymet/valid.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/elev_bands_forcing/daymet/valid.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_HRU_FORCING</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/hru_forcing&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/hru_forcing</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_HRU_FORCING_DAYMET</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/hru_forcing/daymet&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/hru_forcing/daymet</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_HRU_FORCING_DAYMET_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/hru_forcing/daymet/01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/hru_forcing/daymet/01</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_HRU_FORCING_DAYMET_02</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/hru_forcing/daymet/02&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/hru_forcing/daymet/02</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_HRU_FORCING_DAYMET_03</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/hru_forcing/daymet/03&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/hru_forcing/daymet/03</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_HRU_FORCING_DAYMET_04</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/hru_forcing/daymet/04&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/hru_forcing/daymet/04</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_HRU_FORCING_DAYMET_05</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/hru_forcing/daymet/05&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/hru_forcing/daymet/05</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_HRU_FORCING_DAYMET_06</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/hru_forcing/daymet/06&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/hru_forcing/daymet/06</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_HRU_FORCING_DAYMET_07</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/hru_forcing/daymet/07&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/hru_forcing/daymet/07</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_HRU_FORCING_DAYMET_08</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/hru_forcing/daymet/08&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/hru_forcing/daymet/08</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_HRU_FORCING_DAYMET_09</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/hru_forcing/daymet/09&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/hru_forcing/daymet/09</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_HRU_FORCING_DAYMET_10</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/hru_forcing/daymet/10&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/hru_forcing/daymet/10</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_HRU_FORCING_DAYMET_11</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/hru_forcing/daymet/11&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/hru_forcing/daymet/11</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_HRU_FORCING_DAYMET_12</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/hru_forcing/daymet/12&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/hru_forcing/daymet/12</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_HRU_FORCING_DAYMET_13</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/hru_forcing/daymet/13&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/hru_forcing/daymet/13</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_HRU_FORCING_DAYMET_14</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/hru_forcing/daymet/14&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/hru_forcing/daymet/14</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_HRU_FORCING_DAYMET_15</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/hru_forcing/daymet/15&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/hru_forcing/daymet/15</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_HRU_FORCING_DAYMET_16</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/hru_forcing/daymet/16&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/hru_forcing/daymet/16</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_HRU_FORCING_DAYMET_17</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/hru_forcing/daymet/17&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/hru_forcing/daymet/17</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_HRU_FORCING_DAYMET_18</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/hru_forcing/daymet/18&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/hru_forcing/daymet/18</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_HRU_FORCING_DAYMET_VALID_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/hru_forcing/daymet/valid.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/hru_forcing/daymet/valid.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_README_BASIN_MEAN_FORCING_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/readme_basin_mean_forcing.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/readme_basin_mean_forcing.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_README_ELEV_BANDS_FORCING_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/readme_elev_bands_forcing.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/readme_elev_bands_forcing.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_README_FIRST_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/readme_FIRST.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/readme_FIRST.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_README_HRU_FORCING_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/readme_hru_forcing.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/readme_hru_forcing.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_README_MODEL_OUTPUT_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/readme_model_output.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/readme_model_output.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_README_SHAPEFILES_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/readme_shapefiles.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/readme_shapefiles.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_README_STREAMFLOW_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/readme_streamflow.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/readme_streamflow.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_SHAPEFILES</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/shapefiles&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/shapefiles</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_SHAPEFILES_MERGE</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/shapefiles/merge&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/shapefiles/merge</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/01</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_02</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/02&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/02</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_03</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/03&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/03</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_04</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/04&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/04</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_05</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/05&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/05</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_06</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/06&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/06</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_07</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/07&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/07</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_08</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/08&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/08</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_09</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/09&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/09</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_09_05056000_STREAMFLOW_QC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/09/05056000_streamflow_qc.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/09/05056000_streamflow_qc.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_09_05057000_STREAMFLOW_QC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/09/05057000_streamflow_qc.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/09/05057000_streamflow_qc.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_09_05057200_STREAMFLOW_QC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/09/05057200_streamflow_qc.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/09/05057200_streamflow_qc.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_09_05062500_STREAMFLOW_QC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/09/05062500_streamflow_qc.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/09/05062500_streamflow_qc.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_09_05087500_STREAMFLOW_QC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/09/05087500_streamflow_qc.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/09/05087500_streamflow_qc.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_09_05120500_STREAMFLOW_QC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/09/05120500_streamflow_qc.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/09/05120500_streamflow_qc.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_09_05123400_STREAMFLOW_QC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/09/05123400_streamflow_qc.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/09/05123400_streamflow_qc.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_09_05129115_STREAMFLOW_QC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/09/05129115_streamflow_qc.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/09/05129115_streamflow_qc.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_09_05131500_STREAMFLOW_QC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/09/05131500_streamflow_qc.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/09/05131500_streamflow_qc.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_10</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/10&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/10</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_11</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/11&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/11</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_12</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/12&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/12</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_13</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/13&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/13</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_13_08267500_STREAMFLOW_QC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/13/08267500_streamflow_qc.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/13/08267500_streamflow_qc.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_13_08269000_STREAMFLOW_QC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/13/08269000_streamflow_qc.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/13/08269000_streamflow_qc.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_13_08271000_STREAMFLOW_QC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/13/08271000_streamflow_qc.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/13/08271000_streamflow_qc.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_13_08324000_STREAMFLOW_QC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/13/08324000_streamflow_qc.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/13/08324000_streamflow_qc.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_13_08377900_STREAMFLOW_QC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/13/08377900_streamflow_qc.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/13/08377900_streamflow_qc.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_13_08378500_STREAMFLOW_QC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/13/08378500_streamflow_qc.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/13/08378500_streamflow_qc.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_13_08380500_STREAMFLOW_QC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/13/08380500_streamflow_qc.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/13/08380500_streamflow_qc.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_14</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/14&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/14</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_15</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/15&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/15</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_16</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/16&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/16</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_17</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/17&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/17</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_BASIN_DATASET_PUBLIC_V1P2_USGS_STREAMFLOW_18</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/basin_dataset_public_v1p2/usgs_streamflow/18&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS/basin_dataset_public_v1p2/usgs_streamflow/18</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CAMELS_HOME</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_CAMELS_ROOT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/CAMELS</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_CAMELS_VERSION</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">2017-10-20</span></code></p></td>

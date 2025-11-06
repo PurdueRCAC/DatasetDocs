@@ -1,34 +1,46 @@
+========
 SC-Earth
 ========
 
+Version: 2021-07-01
+
 Category: **meteorological**
+
+Description
+-----------
 
 SC-Earth (Surface Climate Data for Earth)
 
-SC-Earth provides global point-based daily surface climate data from January 1950 to December 2019. It encompasses
-various climate variables, facilitating comprehensive climate research and modeling efforts.
+SC-Earth provides global point-based daily surface climate data from January 1950 to December 2019. It encompasses various climate variables, facilitating comprehensive climate research and modeling efforts.
 
 This dataset contains data with the following attributes:
-  - Time Resolution: Daily (Jan 1950 - Dec 2019)
-  - Spatial Resolution: Point-based - Global
-  - DOI: 10.1175/JCLI-D-21-0067.1
-  - Link: https://zenodo.org/records/4762586
 
-Environment variables included:
--------------------------------------------------------------
+* Time Resolution: Daily (Jan 1950 - Dec 2019)
 
-$SCE_HOME     Location: /anvil/datasets/meteorological/SC-Earth
-$SCE_ROOT     Location: /anvil/datasets/meteorological/SC-Earth
-$SCE_VERSION  Version: 2021-07-01
+* Spatial Resolution: Point-based - Global
 
-Tips:
-- Use echo $ENV_NAME to check the environment value.
-- To see all environment variables related to SCE, you can load the module then use: env | grep SCE
-- To unload the module and remove the environment settings: module unload SCE
--------------------------------------------------------------
+* DOI: 10.1175/JCLI-D-21-0067.1
 
+* Link: https://zenodo.org/records/4762586
+
+**Tips:**
+
+* Use echo $ENV_NAME to check the environment value.
+
+* To see all environment variables related to SCE, you can load the module then use: env | grep SCE
+
+* To unload the module and remove the environment settings: module unload SCE
+
+Usage
+-----
+
+To find and load available datasets::
+
+    $ module avail
+    $ module load datasets
+    $ module load meteorological/SC-Earth/2021-07-01
 Environment Variables
----------------------
+-------------------
 
 .. list-table::
    :header-rows: 1
@@ -37,9 +49,8 @@ Environment Variables
    * - **Variable Name**
      - **Value**
    * - ``SCE_HOME``
-     - ``modroot``
+     - ``/anvil/datasets/meteorological/SC-Earth``
    * - ``RCAC_SCE_ROOT``
-     - ``modroot``
+     - ``/anvil/datasets/meteorological/SC-Earth``
    * - ``RCAC_SCE_VERSION``
      - ``2021-07-01``
-

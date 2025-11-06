@@ -1,14 +1,28 @@
+====
 hg19
 ====
 
+Version: 2023-04-26
+
 Category: **igenomes**
+
+Description
+-----------
 
 The contents of the annotation directories were downloaded from UCSC on: July 17, 2015.
 
 SmallRNA annotation files were downloaded from miRBase release 21.
 
+Usage
+-----
+
+To find and load available datasets::
+
+    $ module avail
+    $ module load datasets
+    $ module load igenomes/hg19/2023-04-26
 Environment Variables
----------------------
+-------------------
 
 .. list-table::
    :header-rows: 1
@@ -17,29 +31,28 @@ Environment Variables
    * - **Variable Name**
      - **Value**
    * - ``hg19_fasta``
-     - ``modroot.."/Sequence/WholeGenomeFasta/genome.fa"``
+     - ``/anvil/datasets/igenomes/Homo_sapiens/UCSC/hg19/Sequence/WholeGenomeFasta/genome.fa``
    * - ``hg19_bwa``
-     - ``modroot.."/Sequence/BWAIndex/version0.6.0/"``
+     - ``/anvil/datasets/igenomes/Homo_sapiens/UCSC/hg19/Sequence/BWAIndex/version0.6.0/``
    * - ``hg19_bowtie2``
-     - ``modroot.."/Sequence/Bowtie2Index/"``
+     - ``/anvil/datasets/igenomes/Homo_sapiens/UCSC/hg19/Sequence/Bowtie2Index/``
    * - ``hg19_star``
-     - ``modroot.."/Sequence/STARIndex/"``
+     - ``/anvil/datasets/igenomes/Homo_sapiens/UCSC/hg19/Sequence/STARIndex/``
    * - ``hg19_bismark``
-     - ``modroot.."/Sequence/BismarkIndex/"``
+     - ``/anvil/datasets/igenomes/Homo_sapiens/UCSC/hg19/Sequence/BismarkIndex/``
    * - ``hg19_gtf``
-     - ``modroot.."/Annotation/Genes/genes.gtf"``
+     - ``/anvil/datasets/igenomes/Homo_sapiens/UCSC/hg19/Annotation/Genes/genes.gtf``
    * - ``hg19_bed12``
-     - ``modroot.."/Annotation/Genes/genes.bed"``
+     - ``/anvil/datasets/igenomes/Homo_sapiens/UCSC/hg19/Annotation/Genes/genes.bed``
    * - ``hg19_readme``
-     - ``modroot.."/Annotation/README.txt"``
+     - ``/anvil/datasets/igenomes/Homo_sapiens/UCSC/hg19/Annotation/README.txt``
    * - ``hg19_mito_name``
      - ``chrM``
    * - ``hg19_macs_gsize``
      - ``2.7e9``
    * - ``hg19_HOME``
-     - ``modroot``
+     - ``/anvil/datasets/igenomes/Homo_sapiens/UCSC/hg19``
    * - ``RCAC_hg19_ROOT``
-     - ``modroot``
+     - ``/anvil/datasets/igenomes/Homo_sapiens/UCSC/hg19``
    * - ``RCAC_hg19_VERSION``
      - ``2023-04-26``
-

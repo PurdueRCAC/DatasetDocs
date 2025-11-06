@@ -1,14 +1,28 @@
+====
 Gm01
 ====
 
+Version: 2023-04-26
+
 Category: **igenomes**
+
+Description
+-----------
 
 The contents of the annotation directories were downloaded from Ensembl on: July 17, 2015.
 
 Gene annotation files were downloaded from EnsemblGenomes release 27. Ensembl now uses the name 'V1.0,' for this assembly. SmallRNA annotation files were downloaded from miRBase release 21.
 
+Usage
+-----
+
+To find and load available datasets::
+
+    $ module avail
+    $ module load datasets
+    $ module load igenomes/Gm01/2023-04-26
 Environment Variables
----------------------
+-------------------
 
 .. list-table::
    :header-rows: 1
@@ -17,25 +31,24 @@ Environment Variables
    * - **Variable Name**
      - **Value**
    * - ``Gm01_fasta``
-     - ``modroot.."/Sequence/WholeGenomeFasta/genome.fa"``
+     - ``/anvil/datasets/igenomes/Glycine_max/Ensembl/Gm01/Sequence/WholeGenomeFasta/genome.fa``
    * - ``Gm01_bwa``
-     - ``modroot.."/Sequence/BWAIndex/version0.6.0/"``
+     - ``/anvil/datasets/igenomes/Glycine_max/Ensembl/Gm01/Sequence/BWAIndex/version0.6.0/``
    * - ``Gm01_bowtie2``
-     - ``modroot.."/Sequence/Bowtie2Index/"``
+     - ``/anvil/datasets/igenomes/Glycine_max/Ensembl/Gm01/Sequence/Bowtie2Index/``
    * - ``Gm01_star``
-     - ``modroot.."/Sequence/STARIndex/"``
+     - ``/anvil/datasets/igenomes/Glycine_max/Ensembl/Gm01/Sequence/STARIndex/``
    * - ``Gm01_bismark``
-     - ``modroot.."/Sequence/BismarkIndex/"``
+     - ``/anvil/datasets/igenomes/Glycine_max/Ensembl/Gm01/Sequence/BismarkIndex/``
    * - ``Gm01_gtf``
-     - ``modroot.."/Annotation/Genes/genes.gtf"``
+     - ``/anvil/datasets/igenomes/Glycine_max/Ensembl/Gm01/Annotation/Genes/genes.gtf``
    * - ``Gm01_bed12``
-     - ``modroot.."/Annotation/Genes/genes.bed"``
+     - ``/anvil/datasets/igenomes/Glycine_max/Ensembl/Gm01/Annotation/Genes/genes.bed``
    * - ``Gm01_readme``
-     - ``modroot.."/Annotation/README.txt"``
+     - ``/anvil/datasets/igenomes/Glycine_max/Ensembl/Gm01/Annotation/README.txt``
    * - ``Gm01_HOME``
-     - ``modroot``
+     - ``/anvil/datasets/igenomes/Glycine_max/Ensembl/Gm01``
    * - ``RCAC_Gm01_ROOT``
-     - ``modroot``
+     - ``/anvil/datasets/igenomes/Glycine_max/Ensembl/Gm01``
    * - ``RCAC_Gm01_VERSION``
      - ``2023-04-26``
-

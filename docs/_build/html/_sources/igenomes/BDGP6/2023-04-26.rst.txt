@@ -1,10 +1,26 @@
+=====
 BDGP6
 =====
 
+Version: 2023-04-26
+
 Category: **igenomes**
 
+Description
+-----------
+
+
+
+Usage
+-----
+
+To find and load available datasets::
+
+    $ module avail
+    $ module load datasets
+    $ module load igenomes/BDGP6/2023-04-26
 Environment Variables
----------------------
+-------------------
 
 .. list-table::
    :header-rows: 1
@@ -13,27 +29,26 @@ Environment Variables
    * - **Variable Name**
      - **Value**
    * - ``BDGP6_fasta``
-     - ``modroot.."/Sequence/WholeGenomeFasta/genome.fa"``
+     - ``/anvil/datasets/igenomes/Drosophila_melanogaster/Ensembl/BDGP6/Sequence/WholeGenomeFasta/genome.fa``
    * - ``BDGP6_bwa``
-     - ``modroot.."/Sequence/BWAIndex/version0.6.0/"``
+     - ``/anvil/datasets/igenomes/Drosophila_melanogaster/Ensembl/BDGP6/Sequence/BWAIndex/version0.6.0/``
    * - ``BDGP6_bowtie2``
-     - ``modroot.."/Sequence/Bowtie2Index/"``
+     - ``/anvil/datasets/igenomes/Drosophila_melanogaster/Ensembl/BDGP6/Sequence/Bowtie2Index/``
    * - ``BDGP6_star``
-     - ``modroot.."/Sequence/STARIndex/"``
+     - ``/anvil/datasets/igenomes/Drosophila_melanogaster/Ensembl/BDGP6/Sequence/STARIndex/``
    * - ``BDGP6_bismark``
-     - ``modroot.."/Sequence/BismarkIndex/"``
+     - ``/anvil/datasets/igenomes/Drosophila_melanogaster/Ensembl/BDGP6/Sequence/BismarkIndex/``
    * - ``BDGP6_gtf``
-     - ``modroot.."/Annotation/Genes/genes.gtf"``
+     - ``/anvil/datasets/igenomes/Drosophila_melanogaster/Ensembl/BDGP6/Annotation/Genes/genes.gtf``
    * - ``BDGP6_bed12``
-     - ``modroot.."/Annotation/Genes/genes.bed"``
+     - ``/anvil/datasets/igenomes/Drosophila_melanogaster/Ensembl/BDGP6/Annotation/Genes/genes.bed``
    * - ``BDGP6_mito_name``
      - ``M``
    * - ``BDGP6_macs_gsize``
      - ``1.2e8``
    * - ``BDGP6_HOME``
-     - ``modroot``
+     - ``/anvil/datasets/igenomes/Drosophila_melanogaster/Ensembl/BDGP6``
    * - ``RCAC_BDGP6_ROOT``
-     - ``modroot``
+     - ``/anvil/datasets/igenomes/Drosophila_melanogaster/Ensembl/BDGP6``
    * - ``RCAC_BDGP6_VERSION``
      - ``2023-04-26``
-

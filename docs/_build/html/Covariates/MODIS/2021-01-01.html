@@ -57,7 +57,12 @@
 <li class="toctree-l2"><a class="reference internal" href="../GEDI/2022-03-29.html">GEDI</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Global_AI_ET/2022-07-20.html">Global_AI_ET</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../HumanFootprint/2016-11-17.html">HumanFootprint</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">MODIS</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">MODIS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#environment-variables">Environment Variables</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../PBCOR_V1.0/2020-01-01.html">PBCOR_V1.0</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../PlantedYear/2022-05-06.html">PlantedYear</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ProtectedArea/2019-01-01.html">ProtectedArea</a></li>
@@ -72,6 +77,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../hydrological/index.html">hydrological Datasets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../igenomes/index.html">igenomes Datasets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../meteorological/index.html">meteorological Datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../geoai/index.html">geoai Datasets</a></li>
 </ul>
 
         </div>
@@ -101,34 +107,34 @@
              
   <section id="modis">
 <h1>MODIS<a class="headerlink" href="#modis" title="Link to this heading"></a></h1>
+<p>Version: 2021-01-01</p>
 <p>Category: <strong>Covariates</strong></p>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
 <p>Enhanced Vegetation Index</p>
 <p>MODIS data for vegetation index analysis.</p>
-<dl class="simple">
-<dt>This dataset contains data with the following attributes:</dt><dd><ul class="simple">
+<p>This dataset contains data with the following attributes:</p>
+<ul class="simple">
 <li><p>Time Resolution: 2000-2019</p></li>
 <li><p>Spatial Resolution: 1 km</p></li>
 <li><p>DOI: N/A</p></li>
 <li><p>Link: Obtained from Dr. Xiaolu Tang</p></li>
 </ul>
-</dd>
-</dl>
-<section id="environment-variables-included">
-<h2>Environment variables included:<a class="headerlink" href="#environment-variables-included" title="Link to this heading"></a></h2>
-<p>$MODIS_MAXEVI       Location: /anvil/datasets/Covariates/MODIS/maxEVI
-$MODIS_MAXLAI       Location: /anvil/datasets/Covariates/MODIS/maxLAI
-$MODIS_MAXNDVI      Location: /anvil/datasets/Covariates/MODIS/maxNDVI
-$MODIS_MEANB1       Location: /anvil/datasets/Covariates/MODIS/meanB1
-$MODIS_MEANFPAR     Location: /anvil/datasets/Covariates/MODIS/meanFpar</p>
-<p>4 additional environment variables not shown.</p>
-<p>$MODIS_HOME         Location: /anvil/datasets/Covariates/MODIS
-$MODIS_ROOT         Location: /anvil/datasets/Covariates/MODIS
-$MODIS_VERSION      Version: 2021-01-01</p>
-<p>Tips:
-- Use echo $ENV_NAME to check the environment value.
-- To see all environment variables related to MODIS, you can load the module then use: env | grep MODIS
-- To unload the module and remove the environment settings: module unload MODIS
-————————————————————-</p>
+<p><strong>Tips:</strong></p>
+<ul class="simple">
+<li><p>Use echo $ENV_NAME to check the environment value.</p></li>
+<li><p>To see all environment variables related to MODIS, you can load the module then use: env | grep MODIS</p></li>
+<li><p>To unload the module and remove the environment settings: module unload MODIS</p></li>
+</ul>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h2>
+<p>To find and load available datasets:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ module avail
+$ module load datasets
+$ module load Covariates/MODIS/2021-01-01
+</pre></div>
+</div>
 </section>
 <section id="environment-variables">
 <h2>Environment Variables<a class="headerlink" href="#environment-variables" title="Link to this heading"></a></h2>
@@ -144,37 +150,37 @@ $MODIS_VERSION      Version: 2021-01-01</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_MAXEVI</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/maxEVI&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/Covariates/MODIS/maxEVI</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_MAXLAI</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/maxLAI&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/Covariates/MODIS/maxLAI</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_MAXNDVI</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/maxNDVI&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/Covariates/MODIS/maxNDVI</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_MEANB1</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/meanB1&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/Covariates/MODIS/meanB1</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_MEANFPAR</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/meanFpar&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/Covariates/MODIS/meanFpar</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_MEANLST_DAY</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/meanLST_day&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/Covariates/MODIS/meanLST_day</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_SUMET</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/sumET&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/Covariates/MODIS/sumET</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_SUMGPP</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/sumGPP&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/Covariates/MODIS/sumGPP</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_SUMPET</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/sumPET&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/Covariates/MODIS/sumPET</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_HOME</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/Covariates/MODIS</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_MODIS_ROOT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/Covariates/MODIS</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_MODIS_VERSION</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">2021-01-01</span></code></p></td>

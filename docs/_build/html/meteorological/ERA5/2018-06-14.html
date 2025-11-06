@@ -52,7 +52,12 @@
 <li class="toctree-l2"><a class="reference internal" href="../ECCC_RDRSv2.1/2021-09-07.html">ECCC_RDRSv2.1</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../EM-Earth/2021-04-01.html">EM-Earth</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../EMDNA/2021-07-13.html">EMDNA</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">ERA5</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">ERA5</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#environment-variables">Environment Variables</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../ERA5_small/2018-06-14.html">ERA5_small</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../NASA_NEX-GDDP-CMIP6/2022-02-22.html">NASA_NEX-GDDP-CMIP6</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ORNL_Daymet/2022-11-01.html">ORNL_Daymet</a></li>
@@ -61,6 +66,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../SCDNA/2020-10-02.html">SCDNA</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../geoai/index.html">geoai Datasets</a></li>
 </ul>
 
         </div>
@@ -90,37 +96,34 @@
              
   <section id="era5">
 <h1>ERA5<a class="headerlink" href="#era5" title="Link to this heading"></a></h1>
+<p>Version: 2018-06-14</p>
 <p>Category: <strong>meteorological</strong></p>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
 <p>ERA5</p>
-<p>ERA5 is a comprehensive reanalysis dataset produced by the European Centre for Medium-Range Weather Forecasts (ECMWF).
-It offers hourly estimates of atmospheric, land, and oceanic variables from January 1940 to the present, with a global
-spatial resolution of approximately 30 km. ERA5 is widely used for climate research, weather forecasting, and
-environmental monitoring.</p>
-<dl class="simple">
-<dt>This dataset contains data with the following attributes:</dt><dd><ul class="simple">
+<p>ERA5 is a comprehensive reanalysis dataset produced by the European Centre for Medium-Range Weather Forecasts (ECMWF). It offers hourly estimates of atmospheric, land, and oceanic variables from January 1940 to the present, with a global spatial resolution of approximately 30 km. ERA5 is widely used for climate research, weather forecasting, and environmental monitoring.</p>
+<p>This dataset contains data with the following attributes:</p>
+<ul class="simple">
 <li><p>Time Resolution: Hourly (Jan 1940 - Present)</p></li>
 <li><p>Spatial Resolution: 30km - Global</p></li>
 <li><p>DOI: 10.24381/cds.adbb2d47</p></li>
 <li><p>Link: <a class="reference external" href="https://console.cloud.google.com/storage/browser/gcp-public-data-arco-era5/raw?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22">https://console.cloud.google.com/storage/browser/gcp-public-data-arco-era5/raw?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22</a>))</p></li>
 </ul>
-</dd>
-</dl>
-<section id="environment-variables-included">
-<h2>Environment variables included:<a class="headerlink" href="#environment-variables-included" title="Link to this heading"></a></h2>
-<p>$ERA5_ERA5GRIB                  Location: /anvil/datasets/meteorological/ERA5/ERA5GRIB
-$ERA5_ERA5GRIB_HRES             Location: /anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES
-$ERA5_ERA5GRIB_HRES_DAILY       Location: /anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES/Daily
-$ERA5_ERA5GRIB_HRES_DAILY_1940  Location: /anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES/Daily/1940
-$ERA5_ERA5GRIB_HRES_DAILY_1941  Location: /anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES/Daily/1941</p>
-<p>10 additional environment variables not shown.</p>
-<p>$ERA5_HOME                      Location: /anvil/datasets/meteorological/ERA5
-$ERA5_ROOT                      Location: /anvil/datasets/meteorological/ERA5
-$ERA5_VERSION                   Version: 2018-06-14</p>
-<p>Tips:
-- Use echo $ENV_NAME to check the environment value.
-- To see all environment variables related to ERA5, you can load the module then use: env | grep ERA5
-- To unload the module and remove the environment settings: module unload ERA5
-————————————————————-</p>
+<p><strong>Tips:</strong></p>
+<ul class="simple">
+<li><p>Use echo $ENV_NAME to check the environment value.</p></li>
+<li><p>To see all environment variables related to ERA5, you can load the module then use: env | grep ERA5</p></li>
+<li><p>To unload the module and remove the environment settings: module unload ERA5</p></li>
+</ul>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h2>
+<p>To find and load available datasets:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ module avail
+$ module load datasets
+$ module load meteorological/ERA5/2018-06-14
+</pre></div>
+</div>
 </section>
 <section id="environment-variables">
 <h2>Environment Variables<a class="headerlink" href="#environment-variables" title="Link to this heading"></a></h2>
@@ -136,55 +139,55 @@ $ERA5_VERSION                   Version: 2018-06-14</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ERA5_ERA5GRIB</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/ERA5GRIB&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ERA5/ERA5GRIB</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ERA5_ERA5GRIB_HRES</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/ERA5GRIB/HRES&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ERA5_ERA5GRIB_HRES_DAILY</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/ERA5GRIB/HRES/Daily&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES/Daily</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ERA5_ERA5GRIB_HRES_DAILY_1940</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/ERA5GRIB/HRES/Daily/1940&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES/Daily/1940</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ERA5_ERA5GRIB_HRES_DAILY_1941</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/ERA5GRIB/HRES/Daily/1941&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES/Daily/1941</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ERA5_ERA5GRIB_HRES_DAILY_1942</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/ERA5GRIB/HRES/Daily/1942&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES/Daily/1942</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ERA5_ERA5GRIB_HRES_DAILY_1943</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/ERA5GRIB/HRES/Daily/1943&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES/Daily/1943</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ERA5_ERA5GRIB_HRES_DAILY_1944</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/ERA5GRIB/HRES/Daily/1944&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES/Daily/1944</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ERA5_ERA5GRIB_HRES_DAILY_1945</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/ERA5GRIB/HRES/Daily/1945&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES/Daily/1945</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ERA5_ERA5GRIB_HRES_DAILY_1946</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/ERA5GRIB/HRES/Daily/1946&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES/Daily/1946</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ERA5_ERA5GRIB_HRES_DAILY_1947</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/ERA5GRIB/HRES/Daily/1947&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES/Daily/1947</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ERA5_ERA5GRIB_HRES_DAILY_1948</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/ERA5GRIB/HRES/Daily/1948&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES/Daily/1948</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ERA5_ERA5GRIB_HRES_DAILY_1949</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/ERA5GRIB/HRES/Daily/1949&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES/Daily/1949</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ERA5_ERA5GRIB_HRES_DAILY_1950</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/ERA5GRIB/HRES/Daily/1950&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES/Daily/1950</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ERA5_ERA5GRIB_HRES_DAILY_1951</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/ERA5GRIB/HRES/Daily/1951&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ERA5/ERA5GRIB/HRES/Daily/1951</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ERA5_HOME</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ERA5</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_ERA5_ROOT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ERA5</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_ERA5_VERSION</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">2018-06-14</span></code></p></td>

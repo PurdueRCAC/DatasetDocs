@@ -48,7 +48,12 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">geospatial Datasets</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../MERIT_Hydro/2019-05-28.html">MERIT_Hydro</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../MODIS-MCD12Q1.006/2018-05-14.html">MODIS-MCD12Q1.006</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">MODIS_MCD12Q1.061</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">MODIS_MCD12Q1.061</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#environment-variables">Environment Variables</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../MODIS_MOD16A2.061/2021-03-11.html">MODIS_MOD16A2.061</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../MODIS_MOD16A2GF.061/2021-03-11.html">MODIS_MOD16A2GF.061</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../MODIS_MOD16A3GF.061/2021-03-11.html">MODIS_MOD16A3GF.061</a></li>
@@ -60,6 +65,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../hydrological/index.html">hydrological Datasets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../igenomes/index.html">igenomes Datasets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../meteorological/index.html">meteorological Datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../geoai/index.html">geoai Datasets</a></li>
 </ul>
 
         </div>
@@ -89,35 +95,34 @@
              
   <section id="modis-mcd12q1-061">
 <h1>MODIS_MCD12Q1.061<a class="headerlink" href="#modis-mcd12q1-061" title="Link to this heading"></a></h1>
+<p>Version: 2022-04-20</p>
 <p>Category: <strong>geospatial</strong></p>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
 <p>MODIS MCD12Q1.061</p>
-<p>An updated version of the MODIS land cover dataset, MCD12Q1.061 offers improved classification algorithms and data
-quality, providing annual global land cover information for various applications.</p>
-<dl class="simple">
-<dt>This dataset contains data with the following attributes:</dt><dd><ul class="simple">
+<p>An updated version of the MODIS land cover dataset, MCD12Q1.061 offers improved classification algorithms and data quality, providing annual global land cover information for various applications.</p>
+<p>This dataset contains data with the following attributes:</p>
+<ul class="simple">
 <li><p>Time Resolution: N/A</p></li>
 <li><p>Spatial Resolution: N/A</p></li>
 <li><p>DOI: 10.5067/MODIS/MCD12Q1.061</p></li>
 <li><p>Link: <a class="reference external" href="https://app.globus.org/file-manager?origin_id=bfc25d77-927c-4c88-b63a-13b698759056&amp;origin_path=%2F">https://app.globus.org/file-manager?origin_id=bfc25d77-927c-4c88-b63a-13b698759056&amp;origin_path=%2F</a></p></li>
 </ul>
-</dd>
-</dl>
-<section id="environment-variables-included">
-<h2>Environment variables included:<a class="headerlink" href="#environment-variables-included" title="Link to this heading"></a></h2>
-<p>$MODIS_LAND_COVER_V61_2001_01_01  Location: /anvil/datasets/geospatial/MODIS_MCD12Q1.061/2001.01.01
-$MODIS_LAND_COVER_V61_2002_01_01  Location: /anvil/datasets/geospatial/MODIS_MCD12Q1.061/2002.01.01
-$MODIS_LAND_COVER_V61_2003_01_01  Location: /anvil/datasets/geospatial/MODIS_MCD12Q1.061/2003.01.01
-$MODIS_LAND_COVER_V61_2004_01_01  Location: /anvil/datasets/geospatial/MODIS_MCD12Q1.061/2004.01.01
-$MODIS_LAND_COVER_V61_2005_01_01  Location: /anvil/datasets/geospatial/MODIS_MCD12Q1.061/2005.01.01</p>
-<p>17 additional environment variables not shown.</p>
-<p>$MODIS_LAND_COVER_V61_HOME        Location: /anvil/datasets/geospatial/MODIS_MCD12Q1.061
-$MODIS_LAND_COVER_V61_ROOT        Location: /anvil/datasets/geospatial/MODIS_MCD12Q1.061
-$MODIS_LAND_COVER_V61_VERSION     Version: 2022-04-20</p>
-<p>Tips:
-- Use echo $ENV_NAME to check the environment value.
-- To see all environment variables related to MODIS_LAND_COVER_V61, you can load the module then use: env | grep MODIS_LAND_COVER_V61
-- To unload the module and remove the environment settings: module unload MODIS_LAND_COVER_V61
-————————————————————-</p>
+<p><strong>Tips:</strong></p>
+<ul class="simple">
+<li><p>Use echo $ENV_NAME to check the environment value.</p></li>
+<li><p>To see all environment variables related to MODIS_LAND_COVER_V61, you can load the module then use: env | grep MODIS_LAND_COVER_V61</p></li>
+<li><p>To unload the module and remove the environment settings: module unload MODIS_LAND_COVER_V61</p></li>
+</ul>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h2>
+<p>To find and load available datasets:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ module avail
+$ module load datasets
+$ module load geospatial/MODIS_MCD12Q1.061/2022-04-20
+</pre></div>
+</div>
 </section>
 <section id="environment-variables">
 <h2>Environment Variables<a class="headerlink" href="#environment-variables" title="Link to this heading"></a></h2>
@@ -133,76 +138,76 @@ $MODIS_LAND_COVER_V61_VERSION     Version: 2022-04-20</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_LAND_COVER_V61_2001_01_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2001.01.01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MCD12Q1.061/2001.01.01</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_LAND_COVER_V61_2002_01_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2002.01.01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MCD12Q1.061/2002.01.01</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_LAND_COVER_V61_2003_01_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2003.01.01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MCD12Q1.061/2003.01.01</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_LAND_COVER_V61_2004_01_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2004.01.01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MCD12Q1.061/2004.01.01</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_LAND_COVER_V61_2005_01_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2005.01.01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MCD12Q1.061/2005.01.01</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_LAND_COVER_V61_2006_01_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2006.01.01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MCD12Q1.061/2006.01.01</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_LAND_COVER_V61_2007_01_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2007.01.01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MCD12Q1.061/2007.01.01</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_LAND_COVER_V61_2008_01_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2008.01.01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MCD12Q1.061/2008.01.01</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_LAND_COVER_V61_2009_01_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2009.01.01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MCD12Q1.061/2009.01.01</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_LAND_COVER_V61_2010_01_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2010.01.01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MCD12Q1.061/2010.01.01</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_LAND_COVER_V61_2011_01_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2011.01.01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MCD12Q1.061/2011.01.01</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_LAND_COVER_V61_2012_01_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2012.01.01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MCD12Q1.061/2012.01.01</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_LAND_COVER_V61_2013_01_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2013.01.01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MCD12Q1.061/2013.01.01</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_LAND_COVER_V61_2014_01_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2014.01.01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MCD12Q1.061/2014.01.01</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_LAND_COVER_V61_2015_01_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2015.01.01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MCD12Q1.061/2015.01.01</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_LAND_COVER_V61_2016_01_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2016.01.01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MCD12Q1.061/2016.01.01</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_LAND_COVER_V61_2017_01_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2017.01.01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MCD12Q1.061/2017.01.01</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_LAND_COVER_V61_2018_01_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2018.01.01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MCD12Q1.061/2018.01.01</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_LAND_COVER_V61_2019_01_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2019.01.01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MCD12Q1.061/2019.01.01</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_LAND_COVER_V61_2020_01_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2020.01.01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MCD12Q1.061/2020.01.01</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_LAND_COVER_V61_2021_01_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.01.01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MCD12Q1.061/2021.01.01</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_LAND_COVER_V61_2022_01_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.01.01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MCD12Q1.061/2022.01.01</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_LAND_COVER_V61_HOME</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MCD12Q1.061</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_MODIS_LAND_COVER_V61_ROOT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MCD12Q1.061</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_MODIS_LAND_COVER_V61_VERSION</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">2022-04-20</span></code></p></td>

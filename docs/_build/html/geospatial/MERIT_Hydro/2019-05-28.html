@@ -46,7 +46,12 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../Covariates/index.html">Covariates Datasets</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">geospatial Datasets</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">MERIT_Hydro</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">MERIT_Hydro</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#environment-variables">Environment Variables</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../MODIS-MCD12Q1.006/2018-05-14.html">MODIS-MCD12Q1.006</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../MODIS_MCD12Q1.061/2022-04-20.html">MODIS_MCD12Q1.061</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../MODIS_MOD16A2.061/2021-03-11.html">MODIS_MOD16A2.061</a></li>
@@ -60,6 +65,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../hydrological/index.html">hydrological Datasets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../igenomes/index.html">igenomes Datasets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../meteorological/index.html">meteorological Datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../geoai/index.html">geoai Datasets</a></li>
 </ul>
 
         </div>
@@ -89,37 +95,34 @@
              
   <section id="merit-hydro">
 <h1>MERIT_Hydro<a class="headerlink" href="#merit-hydro" title="Link to this heading"></a></h1>
+<p>Version: 2019-05-28</p>
 <p>Category: <strong>geospatial</strong></p>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
 <p>MERIT Hydro (Multi-Error-Removed Improved-Terrain Hydrography)</p>
-<p>MERIT Hydro is a high-resolution global hydrography dataset developed to enhance the accuracy of river networks and
-watershed boundaries. By correcting errors in existing digital elevation models, it provides detailed information on
-river flow directions, streamlines, and catchment areas. The dataset is utilized in hydrological modeling and water
-resource management.</p>
-<dl class="simple">
-<dt>This dataset contains data with the following attributes:</dt><dd><ul class="simple">
+<p>MERIT Hydro is a high-resolution global hydrography dataset developed to enhance the accuracy of river networks and watershed boundaries. By correcting errors in existing digital elevation models, it provides detailed information on river flow directions, streamlines, and catchment areas. The dataset is utilized in hydrological modeling and water resource management.</p>
+<p>This dataset contains data with the following attributes:</p>
+<ul class="simple">
 <li><p>Time Resolution: N/A</p></li>
 <li><p>Spatial Resolution: N/A</p></li>
 <li><p>DOI: 10.1029/2019WR024873</p></li>
 <li><p>Link: <a class="reference external" href="https://app.globus.org/file-manager?origin_id=ed0c7900-6369-4340-9354-12be791ee8e4&amp;origin_path=%2F">https://app.globus.org/file-manager?origin_id=ed0c7900-6369-4340-9354-12be791ee8e4&amp;origin_path=%2F</a></p></li>
 </ul>
-</dd>
-</dl>
-<section id="environment-variables-included">
-<h2>Environment variables included:<a class="headerlink" href="#environment-variables-included" title="Link to this heading"></a></h2>
-<p>$MERIT_HYDRO_DIR      Location: /anvil/datasets/geospatial/MERIT_Hydro/dir
-$MERIT_HYDRO_ELV      Location: /anvil/datasets/geospatial/MERIT_Hydro/elv
-$MERIT_HYDRO_HND      Location: /anvil/datasets/geospatial/MERIT_Hydro/hnd
-$MERIT_HYDRO_UPA      Location: /anvil/datasets/geospatial/MERIT_Hydro/upa
-$MERIT_HYDRO_UPG      Location: /anvil/datasets/geospatial/MERIT_Hydro/upg</p>
-<p>1 additional environment variables not shown.</p>
-<p>$MERIT_HYDRO_HOME     Location: /anvil/datasets/geospatial/MERIT_Hydro
-$MERIT_HYDRO_ROOT     Location: /anvil/datasets/geospatial/MERIT_Hydro
-$MERIT_HYDRO_VERSION  Version: 2019-05-28</p>
-<p>Tips:
-- Use echo $ENV_NAME to check the environment value.
-- To see all environment variables related to MERIT_HYDRO, you can load the module then use: env | grep MERIT_HYDRO
-- To unload the module and remove the environment settings: module unload MERIT_HYDRO
-————————————————————-</p>
+<p><strong>Tips:</strong></p>
+<ul class="simple">
+<li><p>Use echo $ENV_NAME to check the environment value.</p></li>
+<li><p>To see all environment variables related to MERIT_HYDRO, you can load the module then use: env | grep MERIT_HYDRO</p></li>
+<li><p>To unload the module and remove the environment settings: module unload MERIT_HYDRO</p></li>
+</ul>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h2>
+<p>To find and load available datasets:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ module avail
+$ module load datasets
+$ module load geospatial/MERIT_Hydro/2019-05-28
+</pre></div>
+</div>
 </section>
 <section id="environment-variables">
 <h2>Environment Variables<a class="headerlink" href="#environment-variables" title="Link to this heading"></a></h2>
@@ -135,28 +138,28 @@ $MERIT_HYDRO_VERSION  Version: 2019-05-28</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MERIT_HYDRO_DIR</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/dir&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MERIT_Hydro/dir</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MERIT_HYDRO_ELV</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/elv&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MERIT_Hydro/elv</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MERIT_HYDRO_HND</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/hnd&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MERIT_Hydro/hnd</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MERIT_HYDRO_UPA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/upa&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MERIT_Hydro/upa</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MERIT_HYDRO_UPG</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/upg&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MERIT_Hydro/upg</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MERIT_HYDRO_WTH</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/wth&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MERIT_Hydro/wth</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MERIT_HYDRO_HOME</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MERIT_Hydro</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_MERIT_HYDRO_ROOT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MERIT_Hydro</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_MERIT_HYDRO_VERSION</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">2019-05-28</span></code></p></td>

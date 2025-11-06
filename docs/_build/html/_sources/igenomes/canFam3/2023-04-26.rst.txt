@@ -1,14 +1,28 @@
+=======
 canFam3
 =======
 
+Version: 2023-04-26
+
 Category: **igenomes**
+
+Description
+-----------
 
 The contents of the annotation directories were downloaded from UCSC on: July 17, 2015.
 
 SmallRNA annotation files were downloaded from miRBase release 21.
 
+Usage
+-----
+
+To find and load available datasets::
+
+    $ module avail
+    $ module load datasets
+    $ module load igenomes/canFam3/2023-04-26
 Environment Variables
----------------------
+-------------------
 
 .. list-table::
    :header-rows: 1
@@ -17,27 +31,26 @@ Environment Variables
    * - **Variable Name**
      - **Value**
    * - ``canFam3_fasta``
-     - ``modroot.."/Sequence/WholeGenomeFasta/genome.fa"``
+     - ``/anvil/datasets/igenomes/Canis_familiaris/UCSC/canFam3/Sequence/WholeGenomeFasta/genome.fa``
    * - ``canFam3_bwa``
-     - ``modroot.."/Sequence/BWAIndex/version0.6.0/"``
+     - ``/anvil/datasets/igenomes/Canis_familiaris/UCSC/canFam3/Sequence/BWAIndex/version0.6.0/``
    * - ``canFam3_bowtie2``
-     - ``modroot.."/Sequence/Bowtie2Index/"``
+     - ``/anvil/datasets/igenomes/Canis_familiaris/UCSC/canFam3/Sequence/Bowtie2Index/``
    * - ``canFam3_star``
-     - ``modroot.."/Sequence/STARIndex/"``
+     - ``/anvil/datasets/igenomes/Canis_familiaris/UCSC/canFam3/Sequence/STARIndex/``
    * - ``canFam3_bismark``
-     - ``modroot.."/Sequence/BismarkIndex/"``
+     - ``/anvil/datasets/igenomes/Canis_familiaris/UCSC/canFam3/Sequence/BismarkIndex/``
    * - ``canFam3_gtf``
-     - ``modroot.."/Annotation/Genes/genes.gtf"``
+     - ``/anvil/datasets/igenomes/Canis_familiaris/UCSC/canFam3/Annotation/Genes/genes.gtf``
    * - ``canFam3_bed12``
-     - ``modroot.."/Annotation/Genes/genes.bed"``
+     - ``/anvil/datasets/igenomes/Canis_familiaris/UCSC/canFam3/Annotation/Genes/genes.bed``
    * - ``canFam3_readme``
-     - ``modroot.."/Annotation/README.txt"``
+     - ``/anvil/datasets/igenomes/Canis_familiaris/UCSC/canFam3/Annotation/README.txt``
    * - ``canFam3_mito_name``
      - ``chrM``
    * - ``canFam3_HOME``
-     - ``modroot``
+     - ``/anvil/datasets/igenomes/Canis_familiaris/UCSC/canFam3``
    * - ``RCAC_canFam3_ROOT``
-     - ``modroot``
+     - ``/anvil/datasets/igenomes/Canis_familiaris/UCSC/canFam3``
    * - ``RCAC_canFam3_VERSION``
      - ``2023-04-26``
-

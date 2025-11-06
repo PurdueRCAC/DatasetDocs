@@ -1,10 +1,26 @@
+===
 rn6
 ===
 
+Version: 2023-04-26
+
 Category: **igenomes**
 
+Description
+-----------
+
+
+
+Usage
+-----
+
+To find and load available datasets::
+
+    $ module avail
+    $ module load datasets
+    $ module load igenomes/rn6/2023-04-26
 Environment Variables
----------------------
+-------------------
 
 .. list-table::
    :header-rows: 1
@@ -13,25 +29,24 @@ Environment Variables
    * - **Variable Name**
      - **Value**
    * - ``rn6_fasta``
-     - ``modroot.."/Sequence/WholeGenomeFasta/genome.fa"``
+     - ``/anvil/datasets/igenomes/Rattus_norvegicus/UCSC/rn6/Sequence/WholeGenomeFasta/genome.fa``
    * - ``rn6_bwa``
-     - ``modroot.."/Sequence/BWAIndex/version0.6.0/"``
+     - ``/anvil/datasets/igenomes/Rattus_norvegicus/UCSC/rn6/Sequence/BWAIndex/version0.6.0/``
    * - ``rn6_bowtie2``
-     - ``modroot.."/Sequence/Bowtie2Index/"``
+     - ``/anvil/datasets/igenomes/Rattus_norvegicus/UCSC/rn6/Sequence/Bowtie2Index/``
    * - ``rn6_star``
-     - ``modroot.."/Sequence/STARIndex/"``
+     - ``/anvil/datasets/igenomes/Rattus_norvegicus/UCSC/rn6/Sequence/STARIndex/``
    * - ``rn6_bismark``
-     - ``modroot.."/Sequence/BismarkIndex/"``
+     - ``/anvil/datasets/igenomes/Rattus_norvegicus/UCSC/rn6/Sequence/BismarkIndex/``
    * - ``rn6_gtf``
-     - ``modroot.."/Annotation/Genes/genes.gtf"``
+     - ``/anvil/datasets/igenomes/Rattus_norvegicus/UCSC/rn6/Annotation/Genes/genes.gtf``
    * - ``rn6_bed12``
-     - ``modroot.."/Annotation/Genes/genes.bed"``
+     - ``/anvil/datasets/igenomes/Rattus_norvegicus/UCSC/rn6/Annotation/Genes/genes.bed``
    * - ``rn6_mito_name``
      - ``chrM``
    * - ``rn6_HOME``
-     - ``modroot``
+     - ``/anvil/datasets/igenomes/Rattus_norvegicus/UCSC/rn6``
    * - ``RCAC_rn6_ROOT``
-     - ``modroot``
+     - ``/anvil/datasets/igenomes/Rattus_norvegicus/UCSC/rn6``
    * - ``RCAC_rn6_VERSION``
      - ``2023-04-26``
-

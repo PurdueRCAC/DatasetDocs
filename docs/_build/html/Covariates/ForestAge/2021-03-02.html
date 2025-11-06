@@ -51,7 +51,12 @@
 <li class="toctree-l2"><a class="reference internal" href="../CHELSA_2071-2100/2020-09-05.html">CHELSA_2071-2100</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../CHELSA_Present_bio/2020-09-05.html">CHELSA_Present_bio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Cattle/2018-08-23.html">Cattle</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">ForestAge</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">ForestAge</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#environment-variables">Environment Variables</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../ForestHeight2020/2022-04-15.html">ForestHeight2020</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ForestManagement/2021-02-15.html">ForestManagement</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../GEDI/2022-03-29.html">GEDI</a></li>
@@ -72,6 +77,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../hydrological/index.html">hydrological Datasets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../igenomes/index.html">igenomes Datasets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../meteorological/index.html">meteorological Datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../geoai/index.html">geoai Datasets</a></li>
 </ul>
 
         </div>
@@ -101,28 +107,34 @@
              
   <section id="forestage">
 <h1>ForestAge<a class="headerlink" href="#forestage" title="Link to this heading"></a></h1>
+<p>Version: 2021-03-02</p>
 <p>Category: <strong>Covariates</strong></p>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
 <p>Global Forest Age</p>
 <p>Mapped global forest age from inventories, biomass, and climate data.</p>
-<dl class="simple">
-<dt>This dataset contains data with the following attributes:</dt><dd><ul class="simple">
+<p>This dataset contains data with the following attributes:</p>
+<ul class="simple">
 <li><p>Time Resolution: 2010</p></li>
 <li><p>Spatial Resolution: 1 km</p></li>
 <li><p>DOI: 10.5194/essd-13-4881-2021</p></li>
 <li><p>Link: <a class="reference external" href="https://doi.org/10.17871/ForestAgeBGI.2021">https://doi.org/10.17871/ForestAgeBGI.2021</a></p></li>
 </ul>
-</dd>
-</dl>
-<section id="environment-variables-included">
-<h2>Environment variables included:<a class="headerlink" href="#environment-variables-included" title="Link to this heading"></a></h2>
-<p>$ForestAge_HOME     Location: /anvil/datasets/Covariates/ForestAge
-$ForestAge_ROOT     Location: /anvil/datasets/Covariates/ForestAge
-$ForestAge_VERSION  Version: 2021-03-02</p>
-<p>Tips:
-- Use echo $ENV_NAME to check the environment value.
-- To see all environment variables related to ForestAge, you can load the module then use: env | grep ForestAge
-- To unload the module and remove the environment settings: module unload ForestAge
-————————————————————-</p>
+<p><strong>Tips:</strong></p>
+<ul class="simple">
+<li><p>Use echo $ENV_NAME to check the environment value.</p></li>
+<li><p>To see all environment variables related to ForestAge, you can load the module then use: env | grep ForestAge</p></li>
+<li><p>To unload the module and remove the environment settings: module unload ForestAge</p></li>
+</ul>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h2>
+<p>To find and load available datasets:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ module avail
+$ module load datasets
+$ module load Covariates/ForestAge/2021-03-02
+</pre></div>
+</div>
 </section>
 <section id="environment-variables">
 <h2>Environment Variables<a class="headerlink" href="#environment-variables" title="Link to this heading"></a></h2>
@@ -138,10 +150,10 @@ $ForestAge_VERSION  Version: 2021-03-02</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ForestAge_HOME</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/Covariates/ForestAge</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_ForestAge_ROOT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/Covariates/ForestAge</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_ForestAge_VERSION</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">2021-03-02</span></code></p></td>

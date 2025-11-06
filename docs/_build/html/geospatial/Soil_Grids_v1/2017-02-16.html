@@ -54,12 +54,18 @@
 <li class="toctree-l2"><a class="reference internal" href="../MODIS_MOD16A3GF.061/2021-03-11.html">MODIS_MOD16A3GF.061</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../MODIS_MYD16A2.061/2021-03-11.html">MODIS_MYD16A2.061</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../NALCMS/2020-01-01.html">NALCMS</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Soil_Grids_v1</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Soil_Grids_v1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#environment-variables">Environment Variables</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../hydrological/index.html">hydrological Datasets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../igenomes/index.html">igenomes Datasets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../meteorological/index.html">meteorological Datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../geoai/index.html">geoai Datasets</a></li>
 </ul>
 
         </div>
@@ -89,37 +95,34 @@
              
   <section id="soil-grids-v1">
 <h1>Soil_Grids_v1<a class="headerlink" href="#soil-grids-v1" title="Link to this heading"></a></h1>
+<p>Version: 2017-02-16</p>
 <p>Category: <strong>geospatial</strong></p>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
 <p>Soil Grids v1</p>
-<p>Soil Grids v1 is a global dataset that maps soil properties at six standard depths (0–5 cm, 5–15 cm, 15–30 cm, 30–60 cm,
-60–100 cm, and 100–200 cm). It includes variables such as soil organic carbon, pH, texture, and bulk density. The
-dataset is derived from soil profile observations and machine learning methods, and it has a spatial resolution of 250
-meters. Soil Grids v1 is used for research in agriculture, forestry, and soil science.</p>
-<dl class="simple">
-<dt>This dataset contains data with the following attributes:</dt><dd><ul class="simple">
+<p>Soil Grids v1 is a global dataset that maps soil properties at six standard depths (0–5 cm, 5–15 cm, 15–30 cm, 30–60 cm, 60–100 cm, and 100–200 cm). It includes variables such as soil organic carbon, pH, texture, and bulk density. The dataset is derived from soil profile observations and machine learning methods, and it has a spatial resolution of 250 meters. Soil Grids v1 is used for research in agriculture, forestry, and soil science.</p>
+<p>This dataset contains data with the following attributes:</p>
+<ul class="simple">
 <li><p>Time Resolution: N/A</p></li>
 <li><p>Spatial Resolution: N/A</p></li>
 <li><p>DOI: 10.1371/journal.pone.0169748</p></li>
 <li><p>Link: <a class="reference external" href="https://app.globus.org/file-manager?origin_id=b06f4aa7-87c2-4657-a06c-3008557ec725&amp;origin_path=%2F">https://app.globus.org/file-manager?origin_id=b06f4aa7-87c2-4657-a06c-3008557ec725&amp;origin_path=%2F</a></p></li>
 </ul>
-</dd>
-</dl>
-<section id="environment-variables-included">
-<h2>Environment variables included:<a class="headerlink" href="#environment-variables-included" title="Link to this heading"></a></h2>
-<p>$SOIL_GRIDS_V1_SOILGRIDS                                      Location: /anvil/datasets/geospatial/Soil_Grids_v1/soilgrids
-$SOIL_GRIDS_V1_SOILGRIDS_FORMER                               Location: /anvil/datasets/geospatial/Soil_Grids_v1/soilgrids/former
-$SOIL_GRIDS_V1_SOILGRIDS_FORMER_2017_03_10                    Location: /anvil/datasets/geospatial/Soil_Grids_v1/soilgrids/former/2017-03-10
-$SOIL_GRIDS_V1_SOILGRIDS_FORMER_2017_03_10_DATA               Location: /anvil/datasets/geospatial/Soil_Grids_v1/soilgrids/former/2017-03-10/data
-$SOIL_GRIDS_V1_SOILGRIDS_FORMER_2017_03_10_DATA_LEGENDS       Location: /anvil/datasets/geospatial/Soil_Grids_v1/soilgrids/former/2017-03-10/data/legends</p>
-<p>1 additional environment variables not shown.</p>
-<p>$SOIL_GRIDS_V1_HOME                                           Location: /anvil/datasets/geospatial/Soil_Grids_v1
-$SOIL_GRIDS_V1_ROOT                                           Location: /anvil/datasets/geospatial/Soil_Grids_v1
-$SOIL_GRIDS_V1_VERSION                                        Version: 2017-02-16</p>
-<p>Tips:
-- Use echo $ENV_NAME to check the environment value.
-- To see all environment variables related to SOIL_GRIDS_V1, you can load the module then use: env | grep SOIL_GRIDS_V1
-- To unload the module and remove the environment settings: module unload SOIL_GRIDS_V1
-————————————————————-</p>
+<p><strong>Tips:</strong></p>
+<ul class="simple">
+<li><p>Use echo $ENV_NAME to check the environment value.</p></li>
+<li><p>To see all environment variables related to SOIL_GRIDS_V1, you can load the module then use: env | grep SOIL_GRIDS_V1</p></li>
+<li><p>To unload the module and remove the environment settings: module unload SOIL_GRIDS_V1</p></li>
+</ul>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h2>
+<p>To find and load available datasets:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ module avail
+$ module load datasets
+$ module load geospatial/Soil_Grids_v1/2017-02-16
+</pre></div>
+</div>
 </section>
 <section id="environment-variables">
 <h2>Environment Variables<a class="headerlink" href="#environment-variables" title="Link to this heading"></a></h2>
@@ -135,28 +138,28 @@ $SOIL_GRIDS_V1_VERSION                                        Version: 2017-02-1
 </thead>
 <tbody>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SOIL_GRIDS_V1_SOILGRIDS</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/soilgrids&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/Soil_Grids_v1/soilgrids</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">SOIL_GRIDS_V1_SOILGRIDS_FORMER</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/soilgrids/former&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/Soil_Grids_v1/soilgrids/former</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SOIL_GRIDS_V1_SOILGRIDS_FORMER_2017_03_10</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/soilgrids/former/2017-03-10&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/Soil_Grids_v1/soilgrids/former/2017-03-10</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">SOIL_GRIDS_V1_SOILGRIDS_FORMER_2017_03_10_DATA</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/soilgrids/former/2017-03-10/data&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/Soil_Grids_v1/soilgrids/former/2017-03-10/data</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SOIL_GRIDS_V1_SOILGRIDS_FORMER_2017_03_10_DATA_LEGENDS</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/soilgrids/former/2017-03-10/data/legends&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/Soil_Grids_v1/soilgrids/former/2017-03-10/data/legends</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">SOIL_GRIDS_V1_SOILGRIDS_FORMER_2017_03_10_DATA_LEGENDS_TEST</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/soilgrids/former/2017-03-10/data/legends/test&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/Soil_Grids_v1/soilgrids/former/2017-03-10/data/legends/test</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SOIL_GRIDS_V1_HOME</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/Soil_Grids_v1</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_SOIL_GRIDS_V1_ROOT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/Soil_Grids_v1</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_SOIL_GRIDS_V1_VERSION</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">2017-02-16</span></code></p></td>

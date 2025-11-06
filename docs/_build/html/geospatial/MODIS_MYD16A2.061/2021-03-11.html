@@ -52,7 +52,12 @@
 <li class="toctree-l2"><a class="reference internal" href="../MODIS_MOD16A2.061/2021-03-11.html">MODIS_MOD16A2.061</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../MODIS_MOD16A2GF.061/2021-03-11.html">MODIS_MOD16A2GF.061</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../MODIS_MOD16A3GF.061/2021-03-11.html">MODIS_MOD16A3GF.061</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">MODIS_MYD16A2.061</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">MODIS_MYD16A2.061</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#environment-variables">Environment Variables</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../NALCMS/2020-01-01.html">NALCMS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Soil_Grids_v1/2017-02-16.html">Soil_Grids_v1</a></li>
 </ul>
@@ -60,6 +65,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../hydrological/index.html">hydrological Datasets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../igenomes/index.html">igenomes Datasets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../meteorological/index.html">meteorological Datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../geoai/index.html">geoai Datasets</a></li>
 </ul>
 
         </div>
@@ -89,36 +95,34 @@
              
   <section id="modis-myd16a2-061">
 <h1>MODIS_MYD16A2.061<a class="headerlink" href="#modis-myd16a2-061" title="Link to this heading"></a></h1>
+<p>Version: 2021-03-11</p>
 <p>Category: <strong>geospatial</strong></p>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
 <p>MODIS MYD16A2.061</p>
-<p>The MYD16A2.061 dataset provides 8-day evapotranspiration (ET) and potential evapotranspiration (PET) data derived from
-the Moderate Resolution Imaging Spectroradiometer (MODIS) aboard the Aqua satellite. The data is available globally and
-supports studies related to water cycles, vegetation health, and land-atmosphere interactions.</p>
-<dl class="simple">
-<dt>This dataset contains data with the following attributes:</dt><dd><ul class="simple">
+<p>The MYD16A2.061 dataset provides 8-day evapotranspiration (ET) and potential evapotranspiration (PET) data derived from the Moderate Resolution Imaging Spectroradiometer (MODIS) aboard the Aqua satellite. The data is available globally and supports studies related to water cycles, vegetation health, and land-atmosphere interactions.</p>
+<p>This dataset contains data with the following attributes:</p>
+<ul class="simple">
 <li><p>Time Resolution: N/A</p></li>
 <li><p>Spatial Resolution: N/A</p></li>
 <li><p>DOI: 10.5067/MODIS/MYD16A2.061</p></li>
 <li><p>Link: <a class="reference external" href="https://app.globus.org/file-manager?origin_id=92ca7734-34ca-4c2d-a013-7d5a1ca2c27a&amp;origin_path=%2F">https://app.globus.org/file-manager?origin_id=92ca7734-34ca-4c2d-a013-7d5a1ca2c27a&amp;origin_path=%2F</a></p></li>
 </ul>
-</dd>
-</dl>
-<section id="environment-variables-included">
-<h2>Environment variables included:<a class="headerlink" href="#environment-variables-included" title="Link to this heading"></a></h2>
-<p>$MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_01_01  Location: /anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.01.01
-$MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_01_09  Location: /anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.01.09
-$MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_01_17  Location: /anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.01.17
-$MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_01_25  Location: /anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.01.25
-$MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_02_02  Location: /anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.02.02</p>
-<p>139 additional environment variables not shown.</p>
-<p>$MODIS_AQUA_EVAPOTRANSPIRATION_V61_HOME        Location: /anvil/datasets/geospatial/MODIS_MYD16A2.061
-$MODIS_AQUA_EVAPOTRANSPIRATION_V61_ROOT        Location: /anvil/datasets/geospatial/MODIS_MYD16A2.061
-$MODIS_AQUA_EVAPOTRANSPIRATION_V61_VERSION     Version: 2021-03-11</p>
-<p>Tips:
-- Use echo $ENV_NAME to check the environment value.
-- To see all environment variables related to MODIS_AQUA_EVAPOTRANSPIRATION_V61, you can load the module then use: env | grep MODIS_AQUA_EVAPOTRANSPIRATION_V61
-- To unload the module and remove the environment settings: module unload MODIS_AQUA_EVAPOTRANSPIRATION_V61
-————————————————————-</p>
+<p><strong>Tips:</strong></p>
+<ul class="simple">
+<li><p>Use echo $ENV_NAME to check the environment value.</p></li>
+<li><p>To see all environment variables related to MODIS_AQUA_EVAPOTRANSPIRATION_V61, you can load the module then use: env | grep MODIS_AQUA_EVAPOTRANSPIRATION_V61</p></li>
+<li><p>To unload the module and remove the environment settings: module unload MODIS_AQUA_EVAPOTRANSPIRATION_V61</p></li>
+</ul>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h2>
+<p>To find and load available datasets:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ module avail
+$ module load datasets
+$ module load geospatial/MODIS_MYD16A2.061/2021-03-11
+</pre></div>
+</div>
 </section>
 <section id="environment-variables">
 <h2>Environment Variables<a class="headerlink" href="#environment-variables" title="Link to this heading"></a></h2>
@@ -134,442 +138,442 @@ $MODIS_AQUA_EVAPOTRANSPIRATION_V61_VERSION     Version: 2021-03-11</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_01_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.01.01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.01.01</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_01_09</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.01.09&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.01.09</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_01_17</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.01.17&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.01.17</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_01_25</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.01.25&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.01.25</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_02_02</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.02.02&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.02.02</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_02_10</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.02.10&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.02.10</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_02_18</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.02.18&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.02.18</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_02_26</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.02.26&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.02.26</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_03_06</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.03.06&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.03.06</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_03_14</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.03.14&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.03.14</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_03_22</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.03.22&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.03.22</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_03_30</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.03.30&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.03.30</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_04_07</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.04.07&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.04.07</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_04_15</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.04.15&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.04.15</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_04_23</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.04.23&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.04.23</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_05_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.05.01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.05.01</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_05_09</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.05.09&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.05.09</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_05_17</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.05.17&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.05.17</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_05_25</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.05.25&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.05.25</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_06_02</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.06.02&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.06.02</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_06_10</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.06.10&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.06.10</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_06_18</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.06.18&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.06.18</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_06_26</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.06.26&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.06.26</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_07_04</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.07.04&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.07.04</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_07_12</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.07.12&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.07.12</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_07_20</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.07.20&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.07.20</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_07_28</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.07.28&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.07.28</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_08_05</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.08.05&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.08.05</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_08_13</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.08.13&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.08.13</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_08_21</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.08.21&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.08.21</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_08_29</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.08.29&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.08.29</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_09_06</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.09.06&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.09.06</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_09_14</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.09.14&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.09.14</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_09_22</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.09.22&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.09.22</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_09_30</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.09.30&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.09.30</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_10_08</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.10.08&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.10.08</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_10_16</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.10.16&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.10.16</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_10_24</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.10.24&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.10.24</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_11_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.11.01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.11.01</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_11_09</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.11.09&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.11.09</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_11_17</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.11.17&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.11.17</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_11_25</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.11.25&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.11.25</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_12_03</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.12.03&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.12.03</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_12_11</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.12.11&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.12.11</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_12_19</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.12.19&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.12.19</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2021_12_27</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2021.12.27&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2021.12.27</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_01_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.01.01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.01.01</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_01_09</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.01.09&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.01.09</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_01_17</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.01.17&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.01.17</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_01_25</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.01.25&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.01.25</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_02_02</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.02.02&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.02.02</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_02_10</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.02.10&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.02.10</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_02_18</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.02.18&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.02.18</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_02_26</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.02.26&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.02.26</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_03_06</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.03.06&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.03.06</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_03_14</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.03.14&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.03.14</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_03_22</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.03.22&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.03.22</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_03_30</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.03.30&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.03.30</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_04_15</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.04.15&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.04.15</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_04_23</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.04.23&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.04.23</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_05_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.05.01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.05.01</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_05_09</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.05.09&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.05.09</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_05_17</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.05.17&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.05.17</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_05_25</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.05.25&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.05.25</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_06_02</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.06.02&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.06.02</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_06_10</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.06.10&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.06.10</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_06_18</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.06.18&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.06.18</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_06_26</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.06.26&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.06.26</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_07_04</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.07.04&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.07.04</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_07_12</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.07.12&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.07.12</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_07_20</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.07.20&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.07.20</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_07_28</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.07.28&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.07.28</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_08_05</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.08.05&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.08.05</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_08_13</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.08.13&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.08.13</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_08_21</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.08.21&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.08.21</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_08_29</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.08.29&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.08.29</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_09_06</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.09.06&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.09.06</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_09_14</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.09.14&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.09.14</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_09_22</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.09.22&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.09.22</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_09_30</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.09.30&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.09.30</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_10_08</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.10.08&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.10.08</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_10_16</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.10.16&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.10.16</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_10_24</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.10.24&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.10.24</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_11_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.11.01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.11.01</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_11_09</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.11.09&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.11.09</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_11_17</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.11.17&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.11.17</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_11_25</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.11.25&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.11.25</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_12_03</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.12.03&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.12.03</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_12_11</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.12.11&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.12.11</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_12_19</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.12.19&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.12.19</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2022_12_27</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2022.12.27&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2022.12.27</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_01_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.01.01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.01.01</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_01_09</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.01.09&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.01.09</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_01_17</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.01.17&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.01.17</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_01_25</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.01.25&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.01.25</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_02_02</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.02.02&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.02.02</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_02_10</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.02.10&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.02.10</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_02_18</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.02.18&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.02.18</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_02_26</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.02.26&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.02.26</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_03_06</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.03.06&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.03.06</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_03_14</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.03.14&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.03.14</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_03_22</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.03.22&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.03.22</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_03_30</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.03.30&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.03.30</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_04_07</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.04.07&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.04.07</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_04_15</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.04.15&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.04.15</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_04_23</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.04.23&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.04.23</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_05_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.05.01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.05.01</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_05_09</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.05.09&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.05.09</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_05_17</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.05.17&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.05.17</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_05_25</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.05.25&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.05.25</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_06_02</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.06.02&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.06.02</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_06_10</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.06.10&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.06.10</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_06_18</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.06.18&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.06.18</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_06_26</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.06.26&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.06.26</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_07_04</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.07.04&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.07.04</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_07_12</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.07.12&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.07.12</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_07_20</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.07.20&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.07.20</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_07_28</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.07.28&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.07.28</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_08_05</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.08.05&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.08.05</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_08_13</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.08.13&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.08.13</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_08_21</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.08.21&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.08.21</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_08_29</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.08.29&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.08.29</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_09_06</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.09.06&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.09.06</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_09_14</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.09.14&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.09.14</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_09_22</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.09.22&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.09.22</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_09_30</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.09.30&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.09.30</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_10_08</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.10.08&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.10.08</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_10_16</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.10.16&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.10.16</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_10_24</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.10.24&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.10.24</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_11_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.11.01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.11.01</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_11_09</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.11.09&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.11.09</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_11_17</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.11.17&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.11.17</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_11_25</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.11.25&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.11.25</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_12_03</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.12.03&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.12.03</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_12_11</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.12.11&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.12.11</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_12_19</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.12.19&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.12.19</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2023_12_27</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2023.12.27&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2023.12.27</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2024_01_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2024.01.01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2024.01.01</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2024_01_09</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2024.01.09&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2024.01.09</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2024_01_17</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2024.01.17&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2024.01.17</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2024_01_25</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2024.01.25&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2024.01.25</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2024_02_02</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2024.02.02&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2024.02.02</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2024_02_10</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2024.02.10&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2024.02.10</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_2024_02_18</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2024.02.18&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061/2024.02.18</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MODIS_AQUA_EVAPOTRANSPIRATION_V61_HOME</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_MODIS_AQUA_EVAPOTRANSPIRATION_V61_ROOT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/geospatial/MODIS_MYD16A2.061</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_MODIS_AQUA_EVAPOTRANSPIRATION_V61_VERSION</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">2021-03-11</span></code></p></td>

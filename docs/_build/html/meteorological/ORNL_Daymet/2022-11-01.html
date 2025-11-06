@@ -55,12 +55,18 @@
 <li class="toctree-l2"><a class="reference internal" href="../ERA5/2018-06-14.html">ERA5</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ERA5_small/2018-06-14.html">ERA5_small</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../NASA_NEX-GDDP-CMIP6/2022-02-22.html">NASA_NEX-GDDP-CMIP6</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">ORNL_Daymet</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">ORNL_Daymet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#environment-variables">Environment Variables</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../Ouranos_ESPO-G6-R2/2024-01-11.html">Ouranos_ESPO-G6-R2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../SC-Earth/2021-07-01.html">SC-Earth</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../SCDNA/2020-10-02.html">SCDNA</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../geoai/index.html">geoai Datasets</a></li>
 </ul>
 
         </div>
@@ -90,30 +96,34 @@
              
   <section id="ornl-daymet">
 <h1>ORNL_Daymet<a class="headerlink" href="#ornl-daymet" title="Link to this heading"></a></h1>
+<p>Version: 2022-11-01</p>
 <p>Category: <strong>meteorological</strong></p>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
 <p>ORNL Daymet</p>
-<p>Daymet offers daily surface meteorological data for North America, including variables such as temperature,
-precipitation, and radiation. Spanning from January 1980 to December 2022, it provides data at a 1 km spatial
-resolution. The dataset supports ecological, hydrological, and agricultural research.</p>
-<dl class="simple">
-<dt>This dataset contains data with the following attributes:</dt><dd><ul class="simple">
+<p>Daymet offers daily surface meteorological data for North America, including variables such as temperature, precipitation, and radiation. Spanning from January 1980 to December 2022, it provides data at a 1 km spatial resolution. The dataset supports ecological, hydrological, and agricultural research.</p>
+<p>This dataset contains data with the following attributes:</p>
+<ul class="simple">
 <li><p>Time Resolution: Daily (Jan 1980 - Dec 2022)</p></li>
 <li><p>Spatial Resolution: 1km - North America</p></li>
 <li><p>DOI: 10.3334/ORNLDAAC/2129</p></li>
 <li><p>Link: <a class="reference external" href="https://app.globus.org/file-manager?origin_id=2070a9db-caac-48d0-8aa7-05c176a49f88&amp;origin_path=%2F">https://app.globus.org/file-manager?origin_id=2070a9db-caac-48d0-8aa7-05c176a49f88&amp;origin_path=%2F</a></p></li>
 </ul>
-</dd>
-</dl>
-<section id="environment-variables-included">
-<h2>Environment variables included:<a class="headerlink" href="#environment-variables-included" title="Link to this heading"></a></h2>
-<p>$DAYMET_HOME     Location: /anvil/datasets/meteorological/ORNL_Daymet
-$DAYMET_ROOT     Location: /anvil/datasets/meteorological/ORNL_Daymet
-$DAYMET_VERSION  Version: 2022-11-01</p>
-<p>Tips:
-- Use echo $ENV_NAME to check the environment value.
-- To see all environment variables related to DAYMET, you can load the module then use: env | grep DAYMET
-- To unload the module and remove the environment settings: module unload DAYMET
-————————————————————-</p>
+<p><strong>Tips:</strong></p>
+<ul class="simple">
+<li><p>Use echo $ENV_NAME to check the environment value.</p></li>
+<li><p>To see all environment variables related to DAYMET, you can load the module then use: env | grep DAYMET</p></li>
+<li><p>To unload the module and remove the environment settings: module unload DAYMET</p></li>
+</ul>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h2>
+<p>To find and load available datasets:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ module avail
+$ module load datasets
+$ module load meteorological/ORNL_Daymet/2022-11-01
+</pre></div>
+</div>
 </section>
 <section id="environment-variables">
 <h2>Environment Variables<a class="headerlink" href="#environment-variables" title="Link to this heading"></a></h2>
@@ -129,10 +139,10 @@ $DAYMET_VERSION  Version: 2022-11-01</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">DAYMET_HOME</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ORNL_Daymet</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_DAYMET_ROOT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ORNL_Daymet</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_DAYMET_VERSION</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">2022-11-01</span></code></p></td>

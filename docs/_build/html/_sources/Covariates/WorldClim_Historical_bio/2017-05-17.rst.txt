@@ -1,33 +1,46 @@
+========================
 WorldClim_Historical_bio
 ========================
 
+Version: 2017-05-17
+
 Category: **Covariates**
+
+Description
+-----------
 
 WorldClim Historical Climate Data
 
 Historical climate data for global land areas.
 
 This dataset contains data with the following attributes:
-  - Time Resolution: 1970-2000
-  - Spatial Resolution: 30 arc-seconds (~1 km)
-  - DOI: 10.1038/sdata.2017.190
-  - Link: https://www.worldclim.org/data/worldclim21.html
 
-Environment variables included:
--------------------------------------------------------------
+* Time Resolution: 1970-2000
 
-$WorldClim_Historical_bio_HOME     Location: /anvil/datasets/Covariates/WorldClim_Historical_bio
-$WorldClim_Historical_bio_ROOT     Location: /anvil/datasets/Covariates/WorldClim_Historical_bio
-$WorldClim_Historical_bio_VERSION  Version: 2017-05-17
+* Spatial Resolution: 30 arc-seconds (~1 km)
 
-Tips:
-- Use echo $ENV_NAME to check the environment value.
-- To see all environment variables related to WorldClim_Historical_bio, you can load the module then use: env | grep WorldClim_Historical_bio
-- To unload the module and remove the environment settings: module unload WorldClim_Historical_bio
--------------------------------------------------------------
+* DOI: 10.1038/sdata.2017.190
 
+* Link: https://www.worldclim.org/data/worldclim21.html
+
+**Tips:**
+
+* Use echo $ENV_NAME to check the environment value.
+
+* To see all environment variables related to WorldClim_Historical_bio, you can load the module then use: env | grep WorldClim_Historical_bio
+
+* To unload the module and remove the environment settings: module unload WorldClim_Historical_bio
+
+Usage
+-----
+
+To find and load available datasets::
+
+    $ module avail
+    $ module load datasets
+    $ module load Covariates/WorldClim_Historical_bio/2017-05-17
 Environment Variables
----------------------
+-------------------
 
 .. list-table::
    :header-rows: 1
@@ -36,9 +49,8 @@ Environment Variables
    * - **Variable Name**
      - **Value**
    * - ``WorldClim_Historical_bio_HOME``
-     - ``modroot``
+     - ``/anvil/datasets/Covariates/WorldClim_Historical_bio``
    * - ``RCAC_WorldClim_Historical_bio_ROOT``
-     - ``modroot``
+     - ``/anvil/datasets/Covariates/WorldClim_Historical_bio``
    * - ``RCAC_WorldClim_Historical_bio_VERSION``
      - ``2017-05-17``
-

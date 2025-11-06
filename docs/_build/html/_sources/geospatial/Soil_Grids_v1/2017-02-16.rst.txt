@@ -1,43 +1,46 @@
+=============
 Soil_Grids_v1
 =============
 
+Version: 2017-02-16
+
 Category: **geospatial**
+
+Description
+-----------
 
 Soil Grids v1
 
-Soil Grids v1 is a global dataset that maps soil properties at six standard depths (0–5 cm, 5–15 cm, 15–30 cm, 30–60 cm,
-60–100 cm, and 100–200 cm). It includes variables such as soil organic carbon, pH, texture, and bulk density. The
-dataset is derived from soil profile observations and machine learning methods, and it has a spatial resolution of 250
-meters. Soil Grids v1 is used for research in agriculture, forestry, and soil science.
+Soil Grids v1 is a global dataset that maps soil properties at six standard depths (0–5 cm, 5–15 cm, 15–30 cm, 30–60 cm, 60–100 cm, and 100–200 cm). It includes variables such as soil organic carbon, pH, texture, and bulk density. The dataset is derived from soil profile observations and machine learning methods, and it has a spatial resolution of 250 meters. Soil Grids v1 is used for research in agriculture, forestry, and soil science.
 
 This dataset contains data with the following attributes:
-  - Time Resolution: N/A
-  - Spatial Resolution: N/A
-  - DOI: 10.1371/journal.pone.0169748
-  - Link: https://app.globus.org/file-manager?origin_id=b06f4aa7-87c2-4657-a06c-3008557ec725&origin_path=%2F
 
-Environment variables included:
--------------------------------------------------------------
-$SOIL_GRIDS_V1_SOILGRIDS                                      Location: /anvil/datasets/geospatial/Soil_Grids_v1/soilgrids
-$SOIL_GRIDS_V1_SOILGRIDS_FORMER                               Location: /anvil/datasets/geospatial/Soil_Grids_v1/soilgrids/former
-$SOIL_GRIDS_V1_SOILGRIDS_FORMER_2017_03_10                    Location: /anvil/datasets/geospatial/Soil_Grids_v1/soilgrids/former/2017-03-10
-$SOIL_GRIDS_V1_SOILGRIDS_FORMER_2017_03_10_DATA               Location: /anvil/datasets/geospatial/Soil_Grids_v1/soilgrids/former/2017-03-10/data
-$SOIL_GRIDS_V1_SOILGRIDS_FORMER_2017_03_10_DATA_LEGENDS       Location: /anvil/datasets/geospatial/Soil_Grids_v1/soilgrids/former/2017-03-10/data/legends
+* Time Resolution: N/A
 
-1 additional environment variables not shown.
+* Spatial Resolution: N/A
 
-$SOIL_GRIDS_V1_HOME                                           Location: /anvil/datasets/geospatial/Soil_Grids_v1
-$SOIL_GRIDS_V1_ROOT                                           Location: /anvil/datasets/geospatial/Soil_Grids_v1
-$SOIL_GRIDS_V1_VERSION                                        Version: 2017-02-16
+* DOI: 10.1371/journal.pone.0169748
 
-Tips:
-- Use echo $ENV_NAME to check the environment value.
-- To see all environment variables related to SOIL_GRIDS_V1, you can load the module then use: env | grep SOIL_GRIDS_V1
-- To unload the module and remove the environment settings: module unload SOIL_GRIDS_V1
--------------------------------------------------------------
+* Link: https://app.globus.org/file-manager?origin_id=b06f4aa7-87c2-4657-a06c-3008557ec725&origin_path=%2F
 
+**Tips:**
+
+* Use echo $ENV_NAME to check the environment value.
+
+* To see all environment variables related to SOIL_GRIDS_V1, you can load the module then use: env | grep SOIL_GRIDS_V1
+
+* To unload the module and remove the environment settings: module unload SOIL_GRIDS_V1
+
+Usage
+-----
+
+To find and load available datasets::
+
+    $ module avail
+    $ module load datasets
+    $ module load geospatial/Soil_Grids_v1/2017-02-16
 Environment Variables
----------------------
+-------------------
 
 .. list-table::
    :header-rows: 1
@@ -46,21 +49,20 @@ Environment Variables
    * - **Variable Name**
      - **Value**
    * - ``SOIL_GRIDS_V1_SOILGRIDS``
-     - ``modroot.."/soilgrids"``
+     - ``/anvil/datasets/geospatial/Soil_Grids_v1/soilgrids``
    * - ``SOIL_GRIDS_V1_SOILGRIDS_FORMER``
-     - ``modroot.."/soilgrids/former"``
+     - ``/anvil/datasets/geospatial/Soil_Grids_v1/soilgrids/former``
    * - ``SOIL_GRIDS_V1_SOILGRIDS_FORMER_2017_03_10``
-     - ``modroot.."/soilgrids/former/2017-03-10"``
+     - ``/anvil/datasets/geospatial/Soil_Grids_v1/soilgrids/former/2017-03-10``
    * - ``SOIL_GRIDS_V1_SOILGRIDS_FORMER_2017_03_10_DATA``
-     - ``modroot.."/soilgrids/former/2017-03-10/data"``
+     - ``/anvil/datasets/geospatial/Soil_Grids_v1/soilgrids/former/2017-03-10/data``
    * - ``SOIL_GRIDS_V1_SOILGRIDS_FORMER_2017_03_10_DATA_LEGENDS``
-     - ``modroot.."/soilgrids/former/2017-03-10/data/legends"``
+     - ``/anvil/datasets/geospatial/Soil_Grids_v1/soilgrids/former/2017-03-10/data/legends``
    * - ``SOIL_GRIDS_V1_SOILGRIDS_FORMER_2017_03_10_DATA_LEGENDS_TEST``
-     - ``modroot.."/soilgrids/former/2017-03-10/data/legends/test"``
+     - ``/anvil/datasets/geospatial/Soil_Grids_v1/soilgrids/former/2017-03-10/data/legends/test``
    * - ``SOIL_GRIDS_V1_HOME``
-     - ``modroot``
+     - ``/anvil/datasets/geospatial/Soil_Grids_v1``
    * - ``RCAC_SOIL_GRIDS_V1_ROOT``
-     - ``modroot``
+     - ``/anvil/datasets/geospatial/Soil_Grids_v1``
    * - ``RCAC_SOIL_GRIDS_V1_VERSION``
      - ``2017-02-16``
-

@@ -64,7 +64,12 @@
 <li class="toctree-l2"><a class="reference internal" href="../Gm01/2023-04-26.html">Gm01</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../IRGSP-1.0/2023-04-26.html">IRGSP-1.0</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Mmul_1/2023-04-26.html">Mmul_1</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">R64-1-1</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">R64-1-1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#environment-variables">Environment Variables</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../Rnor_5.0/2023-04-26.html">Rnor_5.0</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Rnor_6.0/2023-04-26.html">Rnor_6.0</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Sbi1/2023-04-26.html">Sbi1</a></li>
@@ -89,6 +94,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../meteorological/index.html">meteorological Datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../geoai/index.html">geoai Datasets</a></li>
 </ul>
 
         </div>
@@ -118,7 +124,20 @@
              
   <section id="r64-1-1">
 <h1>R64-1-1<a class="headerlink" href="#r64-1-1" title="Link to this heading"></a></h1>
+<p>Version: 2023-04-26</p>
 <p>Category: <strong>igenomes</strong></p>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h2>
+<p>To find and load available datasets:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ module avail
+$ module load datasets
+$ module load igenomes/R64-1-1/2023-04-26
+</pre></div>
+</div>
+</section>
 <section id="environment-variables">
 <h2>Environment Variables<a class="headerlink" href="#environment-variables" title="Link to this heading"></a></h2>
 <table class="docutils align-default">
@@ -133,25 +152,25 @@
 </thead>
 <tbody>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">R6411_fasta</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/Sequence/WholeGenomeFasta/genome.fa&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/igenomes/Saccharomyces_cerevisiae/Ensembl/R64-1-1/Sequence/WholeGenomeFasta/genome.fa</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">R6411_bwa</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/Sequence/BWAIndex/version0.6.0/&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/igenomes/Saccharomyces_cerevisiae/Ensembl/R64-1-1/Sequence/BWAIndex/version0.6.0/</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">R6411_bowtie2</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/Sequence/Bowtie2Index/&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/igenomes/Saccharomyces_cerevisiae/Ensembl/R64-1-1/Sequence/Bowtie2Index/</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">R6411_star</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/Sequence/STARIndex/&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/igenomes/Saccharomyces_cerevisiae/Ensembl/R64-1-1/Sequence/STARIndex/</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">R6411_bismark</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/Sequence/BismarkIndex/&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/igenomes/Saccharomyces_cerevisiae/Ensembl/R64-1-1/Sequence/BismarkIndex/</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">R6411_gtf</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/Annotation/Genes/genes.gtf&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/igenomes/Saccharomyces_cerevisiae/Ensembl/R64-1-1/Annotation/Genes/genes.gtf</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">R6411_bed12</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/Annotation/Genes/genes.bed&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/igenomes/Saccharomyces_cerevisiae/Ensembl/R64-1-1/Annotation/Genes/genes.bed</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">R6411_mito_name</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">MT</span></code></p></td>
@@ -160,10 +179,10 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">1.2e7</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">R64-1-1_HOME</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/igenomes/Saccharomyces_cerevisiae/Ensembl/R64-1-1</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_R64-1-1_ROOT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/igenomes/Saccharomyces_cerevisiae/Ensembl/R64-1-1</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_R64-1-1_VERSION</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">2023-04-26</span></code></p></td>

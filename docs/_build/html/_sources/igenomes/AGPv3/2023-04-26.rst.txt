@@ -1,10 +1,26 @@
+=====
 AGPv3
 =====
 
+Version: 2023-04-26
+
 Category: **igenomes**
 
+Description
+-----------
+
+
+
+Usage
+-----
+
+To find and load available datasets::
+
+    $ module avail
+    $ module load datasets
+    $ module load igenomes/AGPv3/2023-04-26
 Environment Variables
----------------------
+-------------------
 
 .. list-table::
    :header-rows: 1
@@ -13,25 +29,24 @@ Environment Variables
    * - **Variable Name**
      - **Value**
    * - ``AGPv3_fasta``
-     - ``modroot.."/Sequence/WholeGenomeFasta/genome.fa"``
+     - ``/anvil/datasets/igenomes/Zea_mays/Ensembl/AGPv3/Sequence/WholeGenomeFasta/genome.fa``
    * - ``AGPv3_bwa``
-     - ``modroot.."/Sequence/BWAIndex/version0.6.0/"``
+     - ``/anvil/datasets/igenomes/Zea_mays/Ensembl/AGPv3/Sequence/BWAIndex/version0.6.0/``
    * - ``AGPv3_bowtie2``
-     - ``modroot.."/Sequence/Bowtie2Index/"``
+     - ``/anvil/datasets/igenomes/Zea_mays/Ensembl/AGPv3/Sequence/Bowtie2Index/``
    * - ``AGPv3_star``
-     - ``modroot.."/Sequence/STARIndex/"``
+     - ``/anvil/datasets/igenomes/Zea_mays/Ensembl/AGPv3/Sequence/STARIndex/``
    * - ``AGPv3_bismark``
-     - ``modroot.."/Sequence/BismarkIndex/"``
+     - ``/anvil/datasets/igenomes/Zea_mays/Ensembl/AGPv3/Sequence/BismarkIndex/``
    * - ``AGPv3_gtf``
-     - ``modroot.."/Annotation/Genes/genes.gtf"``
+     - ``/anvil/datasets/igenomes/Zea_mays/Ensembl/AGPv3/Annotation/Genes/genes.gtf``
    * - ``AGPv3_bed12``
-     - ``modroot.."/Annotation/Genes/genes.bed"``
+     - ``/anvil/datasets/igenomes/Zea_mays/Ensembl/AGPv3/Annotation/Genes/genes.bed``
    * - ``AGPv3_mito_name``
      - ``Mt``
    * - ``AGPv3_HOME``
-     - ``modroot``
+     - ``/anvil/datasets/igenomes/Zea_mays/Ensembl/AGPv3``
    * - ``RCAC_AGPv3_ROOT``
-     - ``modroot``
+     - ``/anvil/datasets/igenomes/Zea_mays/Ensembl/AGPv3``
    * - ``RCAC_AGPv3_VERSION``
      - ``2023-04-26``
-

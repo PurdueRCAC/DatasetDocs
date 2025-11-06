@@ -57,10 +57,16 @@
 <li class="toctree-l2"><a class="reference internal" href="../NASA_NEX-GDDP-CMIP6/2022-02-22.html">NASA_NEX-GDDP-CMIP6</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ORNL_Daymet/2022-11-01.html">ORNL_Daymet</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Ouranos_ESPO-G6-R2/2024-01-11.html">Ouranos_ESPO-G6-R2</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">SC-Earth</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">SC-Earth</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#environment-variables">Environment Variables</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../SCDNA/2020-10-02.html">SCDNA</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../geoai/index.html">geoai Datasets</a></li>
 </ul>
 
         </div>
@@ -90,29 +96,34 @@
              
   <section id="sc-earth">
 <h1>SC-Earth<a class="headerlink" href="#sc-earth" title="Link to this heading"></a></h1>
+<p>Version: 2021-07-01</p>
 <p>Category: <strong>meteorological</strong></p>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
 <p>SC-Earth (Surface Climate Data for Earth)</p>
-<p>SC-Earth provides global point-based daily surface climate data from January 1950 to December 2019. It encompasses
-various climate variables, facilitating comprehensive climate research and modeling efforts.</p>
-<dl class="simple">
-<dt>This dataset contains data with the following attributes:</dt><dd><ul class="simple">
+<p>SC-Earth provides global point-based daily surface climate data from January 1950 to December 2019. It encompasses various climate variables, facilitating comprehensive climate research and modeling efforts.</p>
+<p>This dataset contains data with the following attributes:</p>
+<ul class="simple">
 <li><p>Time Resolution: Daily (Jan 1950 - Dec 2019)</p></li>
 <li><p>Spatial Resolution: Point-based - Global</p></li>
 <li><p>DOI: 10.1175/JCLI-D-21-0067.1</p></li>
 <li><p>Link: <a class="reference external" href="https://zenodo.org/records/4762586">https://zenodo.org/records/4762586</a></p></li>
 </ul>
-</dd>
-</dl>
-<section id="environment-variables-included">
-<h2>Environment variables included:<a class="headerlink" href="#environment-variables-included" title="Link to this heading"></a></h2>
-<p>$SCE_HOME     Location: /anvil/datasets/meteorological/SC-Earth
-$SCE_ROOT     Location: /anvil/datasets/meteorological/SC-Earth
-$SCE_VERSION  Version: 2021-07-01</p>
-<p>Tips:
-- Use echo $ENV_NAME to check the environment value.
-- To see all environment variables related to SCE, you can load the module then use: env | grep SCE
-- To unload the module and remove the environment settings: module unload SCE
-————————————————————-</p>
+<p><strong>Tips:</strong></p>
+<ul class="simple">
+<li><p>Use echo $ENV_NAME to check the environment value.</p></li>
+<li><p>To see all environment variables related to SCE, you can load the module then use: env | grep SCE</p></li>
+<li><p>To unload the module and remove the environment settings: module unload SCE</p></li>
+</ul>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h2>
+<p>To find and load available datasets:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ module avail
+$ module load datasets
+$ module load meteorological/SC-Earth/2021-07-01
+</pre></div>
+</div>
 </section>
 <section id="environment-variables">
 <h2>Environment Variables<a class="headerlink" href="#environment-variables" title="Link to this heading"></a></h2>
@@ -128,10 +139,10 @@ $SCE_VERSION  Version: 2021-07-01</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SCE_HOME</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/SC-Earth</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_SCE_ROOT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/SC-Earth</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_SCE_VERSION</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">2021-07-01</span></code></p></td>

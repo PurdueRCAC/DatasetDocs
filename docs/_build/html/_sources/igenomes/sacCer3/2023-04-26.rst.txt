@@ -1,12 +1,26 @@
+=======
 sacCer3
 =======
 
+Version: 2023-04-26
+
 Category: **igenomes**
+
+Description
+-----------
 
 The contents of this directory were downloaded from UCSC on: March 6, 2013
 
+Usage
+-----
+
+To find and load available datasets::
+
+    $ module avail
+    $ module load datasets
+    $ module load igenomes/sacCer3/2023-04-26
 Environment Variables
----------------------
+-------------------
 
 .. list-table::
    :header-rows: 1
@@ -15,25 +29,24 @@ Environment Variables
    * - **Variable Name**
      - **Value**
    * - ``sacCer3_fasta``
-     - ``modroot.."/Sequence/WholeGenomeFasta/genome.fa"``
+     - ``/anvil/datasets/igenomes/Saccharomyces_cerevisiae/UCSC/sacCer3/Sequence/WholeGenomeFasta/genome.fa``
    * - ``sacCer3_bwa``
-     - ``modroot.."/Sequence/BWAIndex/version0.6.0/"``
+     - ``/anvil/datasets/igenomes/Saccharomyces_cerevisiae/UCSC/sacCer3/Sequence/BWAIndex/version0.6.0/``
    * - ``sacCer3_bowtie2``
-     - ``modroot.."/Sequence/Bowtie2Index/"``
+     - ``/anvil/datasets/igenomes/Saccharomyces_cerevisiae/UCSC/sacCer3/Sequence/Bowtie2Index/``
    * - ``sacCer3_star``
-     - ``modroot.."/Sequence/STARIndex/"``
+     - ``/anvil/datasets/igenomes/Saccharomyces_cerevisiae/UCSC/sacCer3/Sequence/STARIndex/``
    * - ``sacCer3_bismark``
-     - ``modroot.."/Sequence/BismarkIndex/"``
+     - ``/anvil/datasets/igenomes/Saccharomyces_cerevisiae/UCSC/sacCer3/Sequence/BismarkIndex/``
    * - ``sacCer3_readme``
-     - ``modroot.."/Annotation/README.txt"``
+     - ``/anvil/datasets/igenomes/Saccharomyces_cerevisiae/UCSC/sacCer3/Annotation/README.txt``
    * - ``sacCer3_mito_name``
      - ``chrM``
    * - ``sacCer3_macs_gsize``
      - ``1.2e7``
    * - ``sacCer3_HOME``
-     - ``modroot``
+     - ``/anvil/datasets/igenomes/Saccharomyces_cerevisiae/UCSC/sacCer3``
    * - ``RCAC_sacCer3_ROOT``
-     - ``modroot``
+     - ``/anvil/datasets/igenomes/Saccharomyces_cerevisiae/UCSC/sacCer3``
    * - ``RCAC_sacCer3_VERSION``
      - ``2023-04-26``
-

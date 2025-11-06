@@ -48,11 +48,17 @@
 <li class="toctree-l1"><a class="reference internal" href="../../geospatial/index.html">geospatial Datasets</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">hydrological Datasets</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../CAMELS/2017-10-20.html">CAMELS</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">MERIT_Basins</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">MERIT_Basins</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#environment-variables">Environment Variables</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../igenomes/index.html">igenomes Datasets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../meteorological/index.html">meteorological Datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../geoai/index.html">geoai Datasets</a></li>
 </ul>
 
         </div>
@@ -82,37 +88,34 @@
              
   <section id="merit-basins">
 <h1>MERIT_Basins<a class="headerlink" href="#merit-basins" title="Link to this heading"></a></h1>
+<p>Version: 2019-07-24</p>
 <p>Category: <strong>hydrological</strong></p>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
 <p>MERIT Basins (Multi-Error-Removed Improved-Terrain Basins)</p>
-<p>MERIT Basins is a dataset derived from the MERIT Hydro digital elevation model, delineating global river basins and sub-
-basins. It provides information on basin boundaries and hydrological flow directions, making it suitable for
-hydrological modeling and water resource management. The dataset supports large-scale studies of river networks and
-basin-level hydrology.</p>
-<dl class="simple">
-<dt>This dataset contains data with the following attributes:</dt><dd><ul class="simple">
+<p>MERIT Basins is a dataset derived from the MERIT Hydro digital elevation model, delineating global river basins and sub- basins. It provides information on basin boundaries and hydrological flow directions, making it suitable for hydrological modeling and water resource management. The dataset supports large-scale studies of river networks and basin-level hydrology.</p>
+<p>This dataset contains data with the following attributes:</p>
+<ul class="simple">
 <li><p>Time Resolution: N/A</p></li>
 <li><p>Spatial Resolution: N/A</p></li>
 <li><p>DOI: 10.1029/2019WR025287</p></li>
 <li><p>Link: <a class="reference external" href="https://app.globus.org/file-manager?origin_id=42666942-fcce-4b56-9087-fd9c1c75d0ef&amp;origin_path=%2F">https://app.globus.org/file-manager?origin_id=42666942-fcce-4b56-9087-fd9c1c75d0ef&amp;origin_path=%2F</a></p></li>
 </ul>
-</dd>
-</dl>
-<section id="environment-variables-included">
-<h2>Environment variables included:<a class="headerlink" href="#environment-variables-included" title="Link to this heading"></a></h2>
-<p>$MERIT_BASINS_MERIT_HYDRO_V00_BASINS_V01                                 Location: /anvil/datasets/hydrological/MERIT_Basins/MERIT_Hydro_v00_Basins_v01
-$MERIT_BASINS_MERIT_HYDRO_V00_BASINS_V01_LEVEL_01                        Location: /anvil/datasets/hydrological/MERIT_Basins/MERIT_Hydro_v00_Basins_v01/level_01
-$MERIT_BASINS_MERIT_HYDRO_V00_BASINS_V01_LEVEL_01_ADDITIONAL_PROPERTIES  Location: /anvil/datasets/hydrological/MERIT_Basins/MERIT_Hydro_v00_Basins_v01/level_01/additional_properties
-$MERIT_BASINS_MERIT_HYDRO_V00_BASINS_V01_LEVEL_02                        Location: /anvil/datasets/hydrological/MERIT_Basins/MERIT_Hydro_v00_Basins_v01/level_02
-$MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01                                 Location: /anvil/datasets/hydrological/MERIT_Basins/MERIT_Hydro_v07_Basins_v01</p>
-<p>10 additional environment variables not shown.</p>
-<p>$MERIT_BASINS_HOME                                                       Location: /anvil/datasets/hydrological/MERIT_Basins
-$MERIT_BASINS_ROOT                                                       Location: /anvil/datasets/hydrological/MERIT_Basins
-$MERIT_BASINS_VERSION                                                    Version: 2019-07-24</p>
-<p>Tips:
-- Use echo $ENV_NAME to check the environment value.
-- To see all environment variables related to MERIT_BASINS, you can load the module then use: env | grep MERIT_BASINS
-- To unload the module and remove the environment settings: module unload MERIT_BASINS
-————————————————————-</p>
+<p><strong>Tips:</strong></p>
+<ul class="simple">
+<li><p>Use echo $ENV_NAME to check the environment value.</p></li>
+<li><p>To see all environment variables related to MERIT_BASINS, you can load the module then use: env | grep MERIT_BASINS</p></li>
+<li><p>To unload the module and remove the environment settings: module unload MERIT_BASINS</p></li>
+</ul>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h2>
+<p>To find and load available datasets:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ module avail
+$ module load datasets
+$ module load hydrological/MERIT_Basins/2019-07-24
+</pre></div>
+</div>
 </section>
 <section id="environment-variables">
 <h2>Environment Variables<a class="headerlink" href="#environment-variables" title="Link to this heading"></a></h2>
@@ -128,55 +131,55 @@ $MERIT_BASINS_VERSION                                                    Version
 </thead>
 <tbody>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MERIT_BASINS_MERIT_HYDRO_V00_BASINS_V01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/MERIT_Hydro_v00_Basins_v01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/MERIT_Basins/MERIT_Hydro_v00_Basins_v01</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MERIT_BASINS_MERIT_HYDRO_V00_BASINS_V01_LEVEL_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/MERIT_Hydro_v00_Basins_v01/level_01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/MERIT_Basins/MERIT_Hydro_v00_Basins_v01/level_01</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MERIT_BASINS_MERIT_HYDRO_V00_BASINS_V01_LEVEL_01_ADDITIONAL_PROPERTIES</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/MERIT_Hydro_v00_Basins_v01/level_01/additional_properties&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/MERIT_Basins/MERIT_Hydro_v00_Basins_v01/level_01/additional_properties</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MERIT_BASINS_MERIT_HYDRO_V00_BASINS_V01_LEVEL_02</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/MERIT_Hydro_v00_Basins_v01/level_02&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/MERIT_Basins/MERIT_Hydro_v00_Basins_v01/level_02</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/MERIT_Hydro_v07_Basins_v01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/MERIT_Basins/MERIT_Hydro_v07_Basins_v01</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01_BUGFIX1</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/MERIT_Hydro_v07_Basins_v01_bugfix1&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/MERIT_Basins/MERIT_Hydro_v07_Basins_v01_bugfix1</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01_BUGFIX1_COASTAL_HILLSLOPES</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/MERIT_Hydro_v07_Basins_v01_bugfix1/coastal_hillslopes&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/MERIT_Basins/MERIT_Hydro_v07_Basins_v01_bugfix1/coastal_hillslopes</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01_BUGFIX1_PFAF_LEVEL_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/MERIT_Hydro_v07_Basins_v01_bugfix1/pfaf_level_01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/MERIT_Basins/MERIT_Hydro_v07_Basins_v01_bugfix1/pfaf_level_01</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01_BUGFIX1_PFAF_LEVEL_02</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/MERIT_Hydro_v07_Basins_v01_bugfix1/pfaf_level_02&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/MERIT_Basins/MERIT_Hydro_v07_Basins_v01_bugfix1/pfaf_level_02</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01_PFAF_LEVEL_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/MERIT_Hydro_v07_Basins_v01/pfaf_level_01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/MERIT_Basins/MERIT_Hydro_v07_Basins_v01/pfaf_level_01</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01_PFAF_LEVEL_02</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/MERIT_Hydro_v07_Basins_v01/pfaf_level_02&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/MERIT_Basins/MERIT_Hydro_v07_Basins_v01/pfaf_level_02</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01_README_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/MERIT_Hydro_v07_Basins_v01/ReadMe.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/MERIT_Basins/MERIT_Hydro_v07_Basins_v01/ReadMe.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01_ZIP</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/MERIT_Hydro_v07_Basins_v01/zip&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/MERIT_Basins/MERIT_Hydro_v07_Basins_v01/zip</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01_ZIP_PFAF_LEVEL_01</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/MERIT_Hydro_v07_Basins_v01/zip/pfaf_level_01&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/MERIT_Basins/MERIT_Hydro_v07_Basins_v01/zip/pfaf_level_01</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MERIT_BASINS_MERIT_HYDRO_V07_BASINS_V01_ZIP_PFAF_LEVEL_02</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/MERIT_Hydro_v07_Basins_v01/zip/pfaf_level_02&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/MERIT_Basins/MERIT_Hydro_v07_Basins_v01/zip/pfaf_level_02</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MERIT_BASINS_HOME</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/MERIT_Basins</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_MERIT_BASINS_ROOT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/hydrological/MERIT_Basins</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_MERIT_BASINS_VERSION</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">2019-07-24</span></code></p></td>

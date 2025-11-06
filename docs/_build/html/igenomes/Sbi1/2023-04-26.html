@@ -67,7 +67,12 @@
 <li class="toctree-l2"><a class="reference internal" href="../R64-1-1/2023-04-26.html">R64-1-1</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Rnor_5.0/2023-04-26.html">Rnor_5.0</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Rnor_6.0/2023-04-26.html">Rnor_6.0</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Sbi1</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Sbi1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#environment-variables">Environment Variables</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../Sscrofa10.2/2023-04-26.html">Sscrofa10.2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../TAIR10/2023-04-26.html">TAIR10</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../UMD3.1/2023-04-26.html">UMD3.1</a></li>
@@ -89,6 +94,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../meteorological/index.html">meteorological Datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../geoai/index.html">geoai Datasets</a></li>
 </ul>
 
         </div>
@@ -118,9 +124,22 @@
              
   <section id="sbi1">
 <h1>Sbi1<a class="headerlink" href="#sbi1" title="Link to this heading"></a></h1>
+<p>Version: 2023-04-26</p>
 <p>Category: <strong>igenomes</strong></p>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
 <p>The contents of the annotation directories were downloaded from Ensembl on: July 17, 2015.</p>
 <p>Gene annotation files were downloaded from EnsemblGenomes release 27. Ensembl now uses the name ‘Sorbi1, Dec 2007’ for this assembly. SmallRNA annotation files were downloaded from miRBase release 21.</p>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h2>
+<p>To find and load available datasets:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ module avail
+$ module load datasets
+$ module load igenomes/Sbi1/2023-04-26
+</pre></div>
+</div>
+</section>
 <section id="environment-variables">
 <h2>Environment Variables<a class="headerlink" href="#environment-variables" title="Link to this heading"></a></h2>
 <table class="docutils align-default">
@@ -135,34 +154,34 @@
 </thead>
 <tbody>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Sbi1_fasta</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/Sequence/WholeGenomeFasta/genome.fa&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/igenomes/Sorghum_bicolor/Ensembl/Sbi1/Sequence/WholeGenomeFasta/genome.fa</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">Sbi1_bwa</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/Sequence/BWAIndex/version0.6.0/&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/igenomes/Sorghum_bicolor/Ensembl/Sbi1/Sequence/BWAIndex/version0.6.0/</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Sbi1_bowtie2</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/Sequence/Bowtie2Index/&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/igenomes/Sorghum_bicolor/Ensembl/Sbi1/Sequence/Bowtie2Index/</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">Sbi1_star</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/Sequence/STARIndex/&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/igenomes/Sorghum_bicolor/Ensembl/Sbi1/Sequence/STARIndex/</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Sbi1_bismark</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/Sequence/BismarkIndex/&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/igenomes/Sorghum_bicolor/Ensembl/Sbi1/Sequence/BismarkIndex/</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">Sbi1_gtf</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/Annotation/Genes/genes.gtf&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/igenomes/Sorghum_bicolor/Ensembl/Sbi1/Annotation/Genes/genes.gtf</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Sbi1_bed12</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/Annotation/Genes/genes.bed&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/igenomes/Sorghum_bicolor/Ensembl/Sbi1/Annotation/Genes/genes.bed</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">Sbi1_readme</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/Annotation/README.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/igenomes/Sorghum_bicolor/Ensembl/Sbi1/Annotation/README.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Sbi1_HOME</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/igenomes/Sorghum_bicolor/Ensembl/Sbi1</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_Sbi1_ROOT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/igenomes/Sorghum_bicolor/Ensembl/Sbi1</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_Sbi1_VERSION</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">2023-04-26</span></code></p></td>

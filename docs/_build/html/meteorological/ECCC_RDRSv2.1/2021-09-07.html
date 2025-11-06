@@ -49,7 +49,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../../hydrological/index.html">hydrological Datasets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../igenomes/index.html">igenomes Datasets</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">meteorological Datasets</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">ECCC_RDRSv2.1</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">ECCC_RDRSv2.1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#environment-variables">Environment Variables</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../EM-Earth/2021-04-01.html">EM-Earth</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../EMDNA/2021-07-13.html">EMDNA</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ERA5/2018-06-14.html">ERA5</a></li>
@@ -61,6 +66,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../SCDNA/2020-10-02.html">SCDNA</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../geoai/index.html">geoai Datasets</a></li>
 </ul>
 
         </div>
@@ -90,37 +96,34 @@
              
   <section id="eccc-rdrsv2-1">
 <h1>ECCC_RDRSv2.1<a class="headerlink" href="#eccc-rdrsv2-1" title="Link to this heading"></a></h1>
+<p>Version: 2021-09-07</p>
 <p>Category: <strong>meteorological</strong></p>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
 <p>ECCC RDRS (Environment and Climate Change Canada Regional Deterministic Reforecast System)</p>
-<p>The RDRSv2.1 dataset is a high-resolution atmospheric reanalysis produced by Environment and Climate Change Canada
-(ECCC). It offers hourly data from January 1980 to December 2018, covering North America at a 10 km spatial resolution.
-The dataset includes variables such as temperature, precipitation, and wind, and is utilized in hydrological modeling
-and climate studies.</p>
-<dl class="simple">
-<dt>This dataset contains data with the following attributes:</dt><dd><ul class="simple">
+<p>The RDRSv2.1 dataset is a high-resolution atmospheric reanalysis produced by Environment and Climate Change Canada (ECCC). It offers hourly data from January 1980 to December 2018, covering North America at a 10 km spatial resolution. The dataset includes variables such as temperature, precipitation, and wind, and is utilized in hydrological modeling and climate studies.</p>
+<p>This dataset contains data with the following attributes:</p>
+<ul class="simple">
 <li><p>Time Resolution: Hourly (Jan 1980 - Dec 2018)</p></li>
 <li><p>Spatial Resolution: 10km - North America</p></li>
 <li><p>DOI: 10.5194/hess-25-4917-2021</p></li>
 <li><p>Link: <a class="reference external" href="https://app.globus.org/file-manager?origin_id=3e4b05eb-7d5f-4c11-8280-f2b009e69a92&amp;origin_path=%2F">https://app.globus.org/file-manager?origin_id=3e4b05eb-7d5f-4c11-8280-f2b009e69a92&amp;origin_path=%2F</a></p></li>
 </ul>
-</dd>
-</dl>
-<section id="environment-variables-included">
-<h2>Environment variables included:<a class="headerlink" href="#environment-variables-included" title="Link to this heading"></a></h2>
-<p>$ECCC_RDRS_1980                           Location: /anvil/datasets/meteorological/ECCC_RDRSv2.1/1980
-$ECCC_RDRS_1980_LICENCE_GENERAL_ECCC_TXT  Location: /anvil/datasets/meteorological/ECCC_RDRSv2.1/1980/LICENCE_GENERAL_ECCC.txt
-$ECCC_RDRS_1980_LICENSE_CASPAR_TXT        Location: /anvil/datasets/meteorological/ECCC_RDRSv2.1/1980/license_CaSPAr.txt
-$ECCC_RDRS_1981                           Location: /anvil/datasets/meteorological/ECCC_RDRSv2.1/1981
-$ECCC_RDRS_1981_LICENCE_GENERAL_ECCC_TXT  Location: /anvil/datasets/meteorological/ECCC_RDRSv2.1/1981/LICENCE_GENERAL_ECCC.txt</p>
-<p>112 additional environment variables not shown.</p>
-<p>$ECCC_RDRS_HOME                           Location: /anvil/datasets/meteorological/ECCC_RDRSv2.1
-$ECCC_RDRS_ROOT                           Location: /anvil/datasets/meteorological/ECCC_RDRSv2.1
-$ECCC_RDRS_VERSION                        Version: 2021-09-07</p>
-<p>Tips:
-- Use echo $ENV_NAME to check the environment value.
-- To see all environment variables related to ECCC_RDRS, you can load the module then use: env | grep ECCC_RDRS
-- To unload the module and remove the environment settings: module unload ECCC_RDRS
-————————————————————-</p>
+<p><strong>Tips:</strong></p>
+<ul class="simple">
+<li><p>Use echo $ENV_NAME to check the environment value.</p></li>
+<li><p>To see all environment variables related to ECCC_RDRS, you can load the module then use: env | grep ECCC_RDRS</p></li>
+<li><p>To unload the module and remove the environment settings: module unload ECCC_RDRS</p></li>
+</ul>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h2>
+<p>To find and load available datasets:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ module avail
+$ module load datasets
+$ module load meteorological/ECCC_RDRSv2.1/2021-09-07
+</pre></div>
+</div>
 </section>
 <section id="environment-variables">
 <h2>Environment Variables<a class="headerlink" href="#environment-variables" title="Link to this heading"></a></h2>
@@ -136,361 +139,361 @@ $ECCC_RDRS_VERSION                        Version: 2021-09-07</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1980</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1980&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1980</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1980_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1980/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1980/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1980_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1980/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1980/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1981</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1981&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1981</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1981_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1981/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1981/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1981_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1981/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1981/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1982</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1982&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1982</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1982_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1982/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1982/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1982_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1982/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1982/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1983</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1983&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1983</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1983_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1983/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1983/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1983_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1983/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1983/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1984</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1984&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1984</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1984_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1984/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1984/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1984_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1984/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1984/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1985</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1985&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1985</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1985_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1985/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1985/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1985_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1985/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1985/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1986</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1986&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1986</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1986_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1986/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1986/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1986_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1986/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1986/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1987</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1987&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1987</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1987_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1987/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1987/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1987_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1987/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1987/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1988</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1988&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1988</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1988_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1988/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1988/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1988_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1988/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1988/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1989</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1989&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1989</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1989_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1989/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1989/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1989_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1989/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1989/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1990</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1990&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1990</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1990_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1990/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1990/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1990_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1990/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1990/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1991</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1991&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1991</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1991_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1991/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1991/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1991_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1991/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1991/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1992</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1992&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1992</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1992_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1992/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1992/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1992_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1992/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1992/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1993</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1993&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1993</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1993_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1993/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1993/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1993_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1993/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1993/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1994</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1994&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1994</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1994_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1994/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1994/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1994_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1994/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1994/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1995</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1995&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1995</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1995_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1995/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1995/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1995_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1995/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1995/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1996</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1996&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1996</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1996_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1996/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1996/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1996_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1996/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1996/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1997</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1997&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1997</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1997_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1997/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1997/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1997_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1997/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1997/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1998</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1998&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1998</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1998_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1998/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1998/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1998_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1998/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1998/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1999</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1999&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1999</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1999_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1999/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1999/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_1999_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/1999/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/1999/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2000</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2000&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2000</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2000_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2000/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2000/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2000_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2000/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2000/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2001</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2001&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2001</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2001_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2001/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2001/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2001_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2001/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2001/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2002</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2002&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2002</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2002_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2002/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2002/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2002_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2002/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2002/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2003</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2003&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2003</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2003_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2003/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2003/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2003_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2003/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2003/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2004</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2004&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2004</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2004_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2004/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2004/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2004_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2004/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2004/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2005</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2005&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2005</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2005_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2005/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2005/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2005_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2005/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2005/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2006</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2006&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2006</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2006_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2006/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2006/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2006_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2006/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2006/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2007</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2007&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2007</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2007_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2007/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2007/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2007_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2007/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2007/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2008</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2008&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2008</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2008_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2008/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2008/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2008_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2008/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2008/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2009</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2009&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2009</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2009_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2009/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2009/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2009_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2009/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2009/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2010</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2010&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2010</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2010_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2010/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2010/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2010_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2010/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2010/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2011</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2011&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2011</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2011_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2011/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2011/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2011_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2011/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2011/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2012</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2012&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2012</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2012_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2012/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2012/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2012_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2012/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2012/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2013</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2013&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2013</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2013_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2013/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2013/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2013_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2013/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2013/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2014</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2014&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2014</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2014_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2014/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2014/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2014_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2014/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2014/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2015</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2015&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2015</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2015_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2015/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2015/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2015_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2015/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2015/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2016</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2016&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2016</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2016_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2016/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2016/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2016_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2016/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2016/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2017</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2017&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2017</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2017_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2017/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2017/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2017_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2017/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2017/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2018</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2018&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2018</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2018_LICENCE_GENERAL_ECCC_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2018/LICENCE_GENERAL_ECCC.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2018/LICENCE_GENERAL_ECCC.txt</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_2018_LICENSE_CASPAR_TXT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/2018/license_CaSPAr.txt&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1/2018/license_CaSPAr.txt</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ECCC_RDRS_HOME</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_ECCC_RDRS_ROOT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/meteorological/ECCC_RDRSv2.1</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_ECCC_RDRS_VERSION</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">2021-09-07</span></code></p></td>

@@ -1,33 +1,46 @@
+================
 ForestManagement
 ================
 
+Version: 2021-02-15
+
 Category: **Covariates**
+
+Description
+-----------
 
 Forest Management Classes
 
 Detailed forest management data at a 100m resolution.
 
 This dataset contains data with the following attributes:
-  - Time Resolution: 2015
-  - Spatial Resolution: 100 m
-  - DOI: 10.1038/s41597-022-01332-3
-  - Link: https://zenodo.org/record/5879022#.ZDmgPbrMKUk
 
-Environment variables included:
--------------------------------------------------------------
+* Time Resolution: 2015
 
-$ForestManagement_HOME     Location: /anvil/datasets/Covariates/ForestManagement
-$ForestManagement_ROOT     Location: /anvil/datasets/Covariates/ForestManagement
-$ForestManagement_VERSION  Version: 2021-02-15
+* Spatial Resolution: 100 m
 
-Tips:
-- Use echo $ENV_NAME to check the environment value.
-- To see all environment variables related to ForestManagement, you can load the module then use: env | grep ForestManagement
-- To unload the module and remove the environment settings: module unload ForestManagement
--------------------------------------------------------------
+* DOI: 10.1038/s41597-022-01332-3
 
+* Link: https://zenodo.org/record/5879022#.ZDmgPbrMKUk
+
+**Tips:**
+
+* Use echo $ENV_NAME to check the environment value.
+
+* To see all environment variables related to ForestManagement, you can load the module then use: env | grep ForestManagement
+
+* To unload the module and remove the environment settings: module unload ForestManagement
+
+Usage
+-----
+
+To find and load available datasets::
+
+    $ module avail
+    $ module load datasets
+    $ module load Covariates/ForestManagement/2021-02-15
 Environment Variables
----------------------
+-------------------
 
 .. list-table::
    :header-rows: 1
@@ -36,9 +49,8 @@ Environment Variables
    * - **Variable Name**
      - **Value**
    * - ``ForestManagement_HOME``
-     - ``modroot``
+     - ``/anvil/datasets/Covariates/ForestManagement``
    * - ``RCAC_ForestManagement_ROOT``
-     - ``modroot``
+     - ``/anvil/datasets/Covariates/ForestManagement``
    * - ``RCAC_ForestManagement_VERSION``
      - ``2021-02-15``
-

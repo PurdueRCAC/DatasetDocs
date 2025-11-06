@@ -75,7 +75,12 @@
 <li class="toctree-l2"><a class="reference internal" href="../bosTau8/2023-04-26.html">bosTau8</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../canFam3/2023-04-26.html">canFam3</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ce10/2023-04-26.html">ce10</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">danRer10</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">danRer10</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#environment-variables">Environment Variables</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../dm6/2023-04-26.html">dm6</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../equCab2/2023-04-26.html">equCab2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../galGal4/2023-04-26.html">galGal4</a></li>
@@ -89,6 +94,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../meteorological/index.html">meteorological Datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../geoai/index.html">geoai Datasets</a></li>
 </ul>
 
         </div>
@@ -118,7 +124,20 @@
              
   <section id="danrer10">
 <h1>danRer10<a class="headerlink" href="#danrer10" title="Link to this heading"></a></h1>
+<p>Version: 2023-04-26</p>
 <p>Category: <strong>igenomes</strong></p>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h2>
+<p>To find and load available datasets:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ module avail
+$ module load datasets
+$ module load igenomes/danRer10/2023-04-26
+</pre></div>
+</div>
+</section>
 <section id="environment-variables">
 <h2>Environment Variables<a class="headerlink" href="#environment-variables" title="Link to this heading"></a></h2>
 <table class="docutils align-default">
@@ -133,25 +152,25 @@
 </thead>
 <tbody>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">danRer10_fasta</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/Sequence/WholeGenomeFasta/genome.fa&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/igenomes/Danio_rerio/UCSC/danRer10/Sequence/WholeGenomeFasta/genome.fa</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">danRer10_bwa</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/Sequence/BWAIndex/version0.6.0/&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/igenomes/Danio_rerio/UCSC/danRer10/Sequence/BWAIndex/version0.6.0/</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">danRer10_bowtie2</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/Sequence/Bowtie2Index/&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/igenomes/Danio_rerio/UCSC/danRer10/Sequence/Bowtie2Index/</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">danRer10_star</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/Sequence/STARIndex/&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/igenomes/Danio_rerio/UCSC/danRer10/Sequence/STARIndex/</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">danRer10_bismark</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/Sequence/BismarkIndex/&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/igenomes/Danio_rerio/UCSC/danRer10/Sequence/BismarkIndex/</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">danRer10_gtf</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/Annotation/Genes/genes.gtf&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/igenomes/Danio_rerio/UCSC/danRer10/Annotation/Genes/genes.gtf</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">danRer10_bed12</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot..&quot;/Annotation/Genes/genes.bed&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/igenomes/Danio_rerio/UCSC/danRer10/Annotation/Genes/genes.bed</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">danRer10_mito_name</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">chrM</span></code></p></td>
@@ -160,10 +179,10 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">1.37e9</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">danRer10_HOME</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/igenomes/Danio_rerio/UCSC/danRer10</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_danRer10_ROOT</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">modroot</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/anvil/datasets/igenomes/Danio_rerio/UCSC/danRer10</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">RCAC_danRer10_VERSION</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">2023-04-26</span></code></p></td>
