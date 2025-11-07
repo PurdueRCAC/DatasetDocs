@@ -13,6 +13,7 @@ Welcome! Below are the top-level dataset categories on Purdue Anvil HPC cluster.
    hydrological/index
    igenomes/index
    meteorological/index
+   geoai/index
 
 .. Comment out before we make them work...
    Indices and tables
