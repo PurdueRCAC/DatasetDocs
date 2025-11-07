@@ -1,4 +1,4 @@
-# DatasetDocs
+# Federated DatasetDocs for Purdue Anvil
 
 This repository serves two purposes:
 1. It hosts a documentation generator for Lmod dataset module files
