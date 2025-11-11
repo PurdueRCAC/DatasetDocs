@@ -1,7 +1,8 @@
 .. _geoai:
 
+===================
 geoai Datasets
-=====
+===================
 
 .. toctree::
    :maxdepth: 1

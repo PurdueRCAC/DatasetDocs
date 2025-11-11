@@ -8,6 +8,7 @@ Welcome! Below are the top-level dataset categories on Purdue Anvil HPC cluster.
    :maxdepth: 2
    :caption: Categories
 
+   ai/index
    Covariates/index
    geospatial/index
    hydrological/index
